@@ -8,35 +8,67 @@ import (
 )
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
 	data := One.GetChar()
 	initTemplate.Temp.ExecuteTemplate(w, "index", data)
 }
 
 func DisplayPersos(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
 	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
 }
 
 func DisplayArcs(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
 	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
 }
 
 func DisplayEvents(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
 	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
 }
 
 func DisplayCategories(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
 	initTemplate.Temp.ExecuteTemplate(w, "categories", nil)
 }
 
 func DisplaySearch(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
 	initTemplate.Temp.ExecuteTemplate(w, "search", nil)
 }
 
 func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
 	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
 }
 
 func DisplayAddArticle(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
 	initTemplate.Temp.ExecuteTemplate(w, "addarticle", nil)
 }
 
