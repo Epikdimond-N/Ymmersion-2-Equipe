@@ -9,7 +9,7 @@ import (
 var Temp *template.Template
 
 func InitTemplate() {
-	temp, errTemp := template.ParseGlob("./site-web/temp/*.html")
+	temp, errTemp := template.ParseGlob("./temp/*.html")
 	if errTemp != nil {
 		fmt.Printf("Oupss une erreur lié au Templates : %v", errTemp.Error())
 		os.Exit(1)
