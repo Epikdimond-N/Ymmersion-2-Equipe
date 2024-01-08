@@ -1,12 +1,12 @@
 package request
 
 type Specs struct {
-	FullName string `json:"fullName"`
-	Age      int    `json:"age"`
-	Apropo   aPropo `json:"aPropo"`
+	FullName string  `json:"fullName"`
+	Age      int     `json:"age"`
+	Apropos  aPropos `json:"aPropos"`
 }
 
-type aPropo struct {
+type aPropos struct {
 	Description string `json:"description"`
 	Role        string `json:"role"`
 	Fruit       string `json:"demonFruit"`

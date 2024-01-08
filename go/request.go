@@ -33,11 +33,21 @@ func GetChar() []Character {
 	var char []Character
 	for _, character := range characters.Persos {
 		fmt.Printf("Character ID: %d\n", character.ID)
+
+		fmt.Printf("Name: %s\n", character.Name)
 		if character.Img != "" {
 			fmt.Printf("Image URL: %s\n", character.Img)
 		}
-		fmt.Printf("Name: %s\n", character.Name)
-		fmt.Printf("Description: %s\n", character.Specs.Apropo.Description)
+
+		fmt.Printf("Description: %s\n", character.Specs.FullName)
+		fmt.Printf("Description: %d\n", character.Specs.Age)
+		fmt.Printf("Description: %s\n", character.Specs.Apropos.Description)
+		fmt.Printf("Description: %s\n", character.Specs.Apropos.Role)
+		fmt.Printf("Description: %s\n", character.Specs.Apropos.Fruit)
+		fmt.Printf("Description: %s\n", character.Specs.Apropos.Personalité)
+		fmt.Printf("Description: %s\n", character.Specs.Apropos.Apparence)
+		fmt.Printf("Description: %s\n", character.Specs.Apropos.Capacités)
+		fmt.Printf("Description: %s\n", character.Specs.Apropos.Histoire)
 
 		fmt.Println("-------------")
 		var newChar Character
@@ -46,7 +56,16 @@ func GetChar() []Character {
 		if character.Img != "" {
 			newChar.Img = character.Img
 		}
-		newChar.Specs.Apropo.Description = character.Specs.Apropo.Description
+		newChar.Specs.FullName = character.Specs.FullName
+		newChar.Specs.Age = character.Specs.Age
+
+		newChar.Specs.Apropos.Description = character.Specs.Apropos.Description
+		newChar.Specs.Apropos.Role = character.Specs.Apropos.Role
+		newChar.Specs.Apropos.Fruit = character.Specs.Apropos.Fruit
+		newChar.Specs.Apropos.Personalité = character.Specs.Apropos.Personalité
+		newChar.Specs.Apropos.Apparence = character.Specs.Apropos.Apparence
+		newChar.Specs.Apropos.Capacités = character.Specs.Apropos.Capacités
+		newChar.Specs.Apropos.Histoire = character.Specs.Apropos.Histoire
 
 		char = append(char, newChar)
 	}
