@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	// controller "tpspotify/site-web/controller"
+	controller "onepiece/controller"
 )
 
 func InitServe() {
@@ -16,8 +16,7 @@ func InitServe() {
 	http.HandleFunc("/search", controller.DisplaySearch)         //template search
 	http.HandleFunc("/admin", controller.DisplayAdmin)           //template admin
 	http.HandleFunc("/addarticle", controller.DisplayAddArticle) //template addarticle
-	http.HandleFunc("/error404", controller.DisplayAdmin) //template erreur 404 
-
+	http.HandleFunc("/error404", controller.Display404)        //template erreur 404
 
 	rootDoc, _ := os.Getwd()
 	fileserver := http.FileServer(http.Dir(rootDoc + "/site-web/assets"))
