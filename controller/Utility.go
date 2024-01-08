@@ -4,6 +4,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"log"
@@ -152,54 +153,64 @@ func CheckPasswordHash(password, hash string) bool {
 }
 
 // Login , warning <<
-// updating still not done !!!!!
-func UpdateChar() error {
-	// Read the JSON file
-	file, err := os.ReadFile("nico.json")
+func UpdateChar(name string, img string, fullname string, age int, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
+	// Read JSON data from file
+	fileData, err := os.ReadFile("nico.json")
 	if err != nil {
-		fmt.Println("Error reading file:", err)
-		return nil
+		return fmt.Errorf("error reading file: %w", err)
 	}
 
-	// Unmarshal JSON data into Categories struct
-	var data map[string]One.Categories
-	err = json.Unmarshal(file, &data)
-	if err != nil {
-		fmt.Println("Error parsing JSON:", err)
-		return nil
+	// Unmarshal the JSON data into a map[string]interface{}
+	var parsedData map[string]interface{}
+	if err := json.Unmarshal(fileData, &parsedData); err != nil {
+		return fmt.Errorf("error parsing JSON: %w", err)
 	}
 
-	// Accessing characters under the "Persos" category
-	characters, ok := data["categories"]
+	// New character data
+	newPerso := map[string]interface{}{
+		"ID":   99,
+		"Name": name,
+		"Img":  img,
+		"Specs": map[string]interface{}{
+			"FullName": fullname,
+			"Age":      age,
+			"Apropos": map[string]string{
+				"Description": desc,
+				"Role":        role,
+				"Fruit":       fruit,
+				"Personalité": persona,
+				"Apparence":   apparence,
+				"Capacités":   capacite,
+				"Histoire":    histoire,
+			},
+		},
+	}
+
+	categories, ok := parsedData["categories"].(map[string]interface{})
 	if !ok {
-		fmt.Println("No 'categories' found in JSON")
-		return nil
+		return errors.New("error accessing categories data")
 	}
+	// Append the new character to the "Persos" array in parsedData
+	persos, ok := categories["Persos"].([]interface{})
+	if !ok {
+		return errors.New("error accessing Persos data")
+	}
+	persos = append(persos, newPerso)
+	categories["Persos"] = persos
+	parsedData["categories"] = categories
 
-	fmt.Printf("json:%v\n", characters)
-
-	//----------------------------------------------------------
-
-	var myStruct []One.Character
-	var newChar One.Character
-	newChar.ID = 99
-	newChar.Name = "Nicolas"
-	newChar.Img = ""
-	newChar.Specs.FullName = "Nicolas D. Moyon"
-	newChar.Specs.Age = 27
-	newChar.Specs.Apropos.Description = "Fait son code"
-	newChar.Specs.Apropos.Role = "Student"
-	newChar.Specs.Apropos.Fruit = "le fruit du PC"
-	newChar.Specs.Apropos.Personalité = "Fatigué"
-	newChar.Specs.Apropos.Apparence = "Beau gosse"
-	newChar.Specs.Apropos.Capacités = "Pertinan, a soudainement une bonne idée"
-	newChar.Specs.Apropos.Histoire = "Rien a dire, no comment"
-	myStruct = append(myStruct, newChar)
-	jsonFromSlice, err := json.MarshalIndent(myStruct, "", " ")
+	// Marshal the modified data back to JSON
+	updatedData, err := json.MarshalIndent(parsedData, "", "    ")
 	if err != nil {
-		fmt.Println("Error Marshaling:", err)
-		return nil
+		return fmt.Errorf("error marshaling JSON: %w", err)
 	}
-	fmt.Println(string(jsonFromSlice))
+
+	// Write the updated JSON data back to the file
+	if err := os.WriteFile("nico.json", updatedData, 0644); err != nil {
+		return fmt.Errorf("error writing to file: %w", err)
+	}
+
+	fmt.Println("Successfully added a new perso and updated nico.json")
 	return nil
+
 }

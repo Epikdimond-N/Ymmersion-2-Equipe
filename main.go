@@ -1,14 +1,14 @@
 package main
 
 import (
-	One "onepiece/controller"
+	One "onepiece/go"
 )
 
 func main() {
 	//initTemplate.InitTemplate()
 	//routeur.InitServe()
 	//One.GetArcs()
-	//One.GetChar()
+	One.GetChar()
 	//One.GetEvents()
-	One.UpdateChar()
+	//Two.UpdateChar()
 }

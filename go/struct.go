@@ -1,12 +1,6 @@
 package request
 
-type Specs struct {
-	FullName string  `json:"fullName"`
-	Age      int     `json:"age"`
-	Apropos  aPropos `json:"aPropos"`
-}
-
-type aPropos struct {
+type APropos struct {
 	Description string `json:"description"`
 	Role        string `json:"role"`
 	Fruit       string `json:"demonFruit"`
@@ -16,6 +10,11 @@ type aPropos struct {
 	Histoire    string `json:"histoire"`
 }
 
+type Specs struct {
+	FullName string  `json:"fullName"`
+	Age      int     `json:"age"`
+	Apropos  APropos `json:"aPropos"`
+}
 type Character struct {
 	ID    int    `json:"id"`
 	Name  string `json:"name"`
@@ -27,6 +26,8 @@ type Arc struct {
 	ID          int    `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img,omitempty"`
+	Episode     string `json:"épisodes"`
+	Chapitre    string `json:"chapitre"`
 	Description string `json:"description"`
 }
 

@@ -111,6 +111,8 @@ func GetArcs() []Arc {
 		if Arcs.Img != "" {
 			newArcs.Img = Arcs.Img
 		}
+		newArcs.Episode = Arcs.Episode
+		newArcs.Chapitre = Arcs.Chapitre
 		newArcs.Description = Arcs.Description
 
 		arc = append(arc, newArcs)
