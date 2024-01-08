@@ -16,14 +16,14 @@ type Specs struct {
 	Apropos  APropos `json:"aPropos"`
 }
 type Character struct {
-	ID    int    `json:"id"`
+	ID    string `json:"id"`
 	Name  string `json:"name"`
-	Img   string `json:"img,omitempty"`
+	Img   string `json:"img"`
 	Specs Specs  `json:"specs"`
 }
 
 type Arc struct {
-	ID          int    `json:"id"`
+	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img,omitempty"`
 	Episode     string `json:"épisodes"`
@@ -32,7 +32,7 @@ type Arc struct {
 }
 
 type Event struct {
-	ID          int    `json:"id"`
+	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img,omitempty"`
 	Description string `json:"description"`
@@ -42,6 +42,12 @@ type Categories struct {
 	Persos []Character `json:"Persos"`
 	Arc    []Arc       `json:"Arcs"`
 	Events []Event     `json:"Events"`
+}
+
+type ResponseData struct {
+	ID          string
+	Img         string
+	Description string
 }
 
 // Login part, plz don't touch >>

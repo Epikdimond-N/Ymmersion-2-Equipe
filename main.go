@@ -1,14 +1,15 @@
 package main
 
 import (
-	One "onepiece/go"
+	"onepiece/routeur"
+	initTemplate "onepiece/temp"
 )
 
 func main() {
-	//initTemplate.InitTemplate()
-	//routeur.InitServe()
+	initTemplate.InitTemplate()
+	routeur.InitServe()
 	//One.GetArcs()
-	One.GetChar()
+	//One.GetChar()
 	//One.GetEvents()
 	//Two.UpdateChar()
 }

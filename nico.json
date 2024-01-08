@@ -2,7 +2,7 @@
     "categories": {
         "Persos": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Luffy",
                 "img": "",
                 "specs": {
@@ -22,7 +22,7 @@
             },
 
             {
-                "id": 2,
+                "id": "2",
                 "name": "Zoro",
                 "img": "",
                 "specs": {
@@ -42,7 +42,7 @@
             },
 
             {
-                "id": 3,
+                "id": "3",
                 "name": "Sanjii",
                 "img": "",
                 "specs": {
@@ -62,7 +62,7 @@
             },
 
             {
-                "id": 4,
+                "id": "4",
                 "name": "Nami",
                 "img": "",
                 "specs": {
@@ -82,7 +82,7 @@
             },
 
             {
-                "id": 5,
+                "id": "5",
                 "name": "Usoop",
                 "img": "",
                 "specs": {
@@ -102,7 +102,7 @@
             },
 
             {
-                "id": 6,
+                "id": "6",
                 "name": "Nico Robin",
                 "img": "",
                 "specs": {
@@ -122,7 +122,7 @@
             },
 
             {
-                "id": 7,
+                "id": "7",
                 "name": "Kaido",
                 "img": "",
                 "specs": {
@@ -142,7 +142,7 @@
             },
 
             {
-                "id": 8,
+                "id": "8",
                 "name": "BigMom",
                 "img": "",
                 "specs": {
@@ -162,7 +162,7 @@
             },
 
             {
-                "id": 9,
+                "id": "9",
                 "name": "Shanks le Roux",
                 "img": "",
                 "specs": {
@@ -182,7 +182,7 @@
             },
 
             {
-                "id": 10,
+                "id": "10",
                 "name": "Marshall D. Teach, surnommé Barbe Noire",
                 "img": "",
                 "specs": {
@@ -203,7 +203,7 @@
         ],
         "Arcs": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -212,7 +212,7 @@
             },
 
             {
-                "id": 2,
+                "id": "2",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -220,7 +220,7 @@
             },
 
             {
-                "id": 3,
+                "id": "3",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -228,7 +228,7 @@
             },
 
             {
-                "id": 4,
+                "id": "4",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -236,7 +236,7 @@
             },
 
             {
-                "id": 5,
+                "id": "5",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -244,7 +244,7 @@
             },
 
             {
-                "id": 6,
+                "id": "6",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -252,7 +252,7 @@
             },
 
             {
-                "id": 7,
+                "id": "7",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -260,7 +260,7 @@
             },
             
             {
-                "id": 8,
+                "id": "8",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -268,7 +268,7 @@
             },
 
             {
-                "id": 9,
+                "id": "9",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -276,7 +276,7 @@
             },
 
             {
-                "id": 10,
+                "id": "10",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -284,7 +284,7 @@
             },
 
             {
-                "id": 11,
+                "id": "11",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -292,7 +292,7 @@
             },
 
             {
-                "id": 12,
+                "id": "12",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -300,7 +300,7 @@
             },
 
             {
-                "id": 13,
+                "id": "13",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -308,7 +308,7 @@
             },
 
             {
-                "id": 14,
+                "id": "14",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -316,22 +316,14 @@
             },
 
             {
-                "id": 15,
+                "id": "15",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
                 "description": "Description of Arc 1"
             },
             {
-                "id": 16,
-                "name": "Arc 1",
-                "img": "",
-                "épisodes": "",
-                "description": "Description of Arc 1"
-            },
-
-            {
-                "id": 17,
+                "id": "16",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -339,14 +331,7 @@
             },
 
             {
-                "id": 18,
-                "name": "Arc 1",
-                "img": "",
-                "épisodes": "",
-                "description": "Description of Arc 1"
-            },
-            {
-                "id": 19,
+                "id": "17",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -354,7 +339,14 @@
             },
 
             {
-                "id": 20,
+                "id": "18",
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": "19",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -362,14 +354,7 @@
             },
 
             {
-                "id": 21,
-                "name": "Arc 1",
-                "img": "",
-                "épisodes": "",
-                "description": "Description of Arc 1"
-            },
-            {
-                "id": 22,
+                "id": "20",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -377,7 +362,14 @@
             },
 
             {
-                "id": 23,
+                "id": "21",
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": "22",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -385,14 +377,7 @@
             },
 
             {
-                "id": 24,
-                "name": "Arc 1",
-                "img": "",
-                "épisodes": "",
-                "description": "Description of Arc 1"
-            },
-            {
-                "id": 25,
+                "id": "23",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -400,7 +385,14 @@
             },
 
             {
-                "id": 26,
+                "id": "24",
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": "25",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -408,14 +400,7 @@
             },
 
             {
-                "id": 27,
-                "name": "Arc 1",
-                "img": "",
-                "épisodes": "",
-                "description": "Description of Arc 1"
-            },
-            {
-                "id": 28,
+                "id": "26",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -423,7 +408,14 @@
             },
 
             {
-                "id": 29,
+                "id": "27",
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": "28",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -431,7 +423,7 @@
             },
 
             {
-                "id": 30,
+                "id": "29",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -439,7 +431,15 @@
             },
 
             {
-                "id": 31,
+                "id": "30",
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": "31",
                 "name": "Arc 1",
                 "img": "",
                 "épisodes": "",
@@ -449,52 +449,52 @@
         ],
         "Events": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Event 1",
                 "description": "Description of Event 1"
             },
             {
-                "id": 2,
+                "id": "2",
                 "name": "Event 2",
                 "description": "Description of Event 2"
             },
             {
-                "id": 3,
+                "id": "3",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": 4,
+                "id": "4",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": 5,
+                "id": "5",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": 6,
+                "id": "6",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": 7,
+                "id": "7",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": 8,
+                "id": "8",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": 9,
+                "id": "9",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": 10,
+                "id": "10",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             }

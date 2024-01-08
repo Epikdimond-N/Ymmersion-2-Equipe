@@ -214,3 +214,37 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 	return nil
 
 }
+
+// Function to find unique IDs, images, and descriptions based on entity name
+func FindInfoByName(categories One.Categories, name string) (ids []string, images []string, descriptions []string) {
+	idMap := make(map[string]bool) // Map to store unique IDs
+
+	for _, character := range categories.Persos {
+		if character.Name == name && !idMap[character.ID] {
+			ids = append(ids, character.ID)
+			images = append(images, character.Img)
+			descriptions = append(descriptions, character.Specs.Apropos.Description)
+			idMap[character.ID] = true
+		}
+	}
+
+	for _, arc := range categories.Arc {
+		if arc.Name == name && !idMap[arc.ID] {
+			ids = append(ids, arc.ID)
+			images = append(images, arc.Img)
+			descriptions = append(descriptions, arc.Description)
+			idMap[arc.ID] = true
+		}
+	}
+
+	for _, event := range categories.Events {
+		if event.Name == name && !idMap[event.ID] {
+			ids = append(ids, event.ID)
+			images = append(images, event.Img)
+			descriptions = append(descriptions, event.Description)
+			idMap[event.ID] = true
+		}
+	}
+
+	return ids, images, descriptions
+}

@@ -1,19 +1,33 @@
 package controller
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	One "onepiece/go"
 	initTemplate "onepiece/temp"
+	"os"
+	"strings"
 )
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//if !logged {
+	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//	return
+	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "index", nil)
+}
+
+func DisplayChar(w http.ResponseWriter, r *http.Request) {
+	data := One.GetChar()
+	ToSend, err := One.GetCharacterByID(data, "1")
+	if err != nil {
+		// Handle error (e.g., character not found)
+		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	data := One.GetChar()
-	initTemplate.Temp.ExecuteTemplate(w, "index", data)
+	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
 }
 
 func DisplayPersos(w http.ResponseWriter, r *http.Request) {
@@ -48,14 +62,6 @@ func DisplayCategories(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "categories", nil)
 }
 
-func DisplaySearch(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
-	}
-	initTemplate.Temp.ExecuteTemplate(w, "search", nil)
-}
-
 func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 	if !logged {
 		http.Redirect(w, r, "/", http.StatusSeeOther)
@@ -74,6 +80,72 @@ func DisplayAddArticle(w http.ResponseWriter, r *http.Request) {
 
 func Display404(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "404", nil)
+}
+
+func HandleSearch(w http.ResponseWriter, r *http.Request) {
+	name := r.URL.Query().Get("name")
+	if name == "" {
+		http.Error(w, "Please provide a name to search", http.StatusBadRequest)
+		return
+	}
+
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		http.Error(w, "Failed to read JSON data", http.StatusInternalServerError)
+		return
+	}
+
+	var data map[string]One.Categories
+	err = json.Unmarshal(jsonData, &data)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return
+	}
+	fmt.Println(data)
+	var searchResults []One.ResponseData
+
+	// Search within Persos
+	for _, character := range data {
+		if strings.EqualFold(character.Name, name) {
+			searchResults = append(searchResults, One.ResponseData{
+				ID:          character.ID,
+				Img:         character.Img,
+				Description: character.Specs.Apropos.Description,
+				// Add other fields if needed
+			})
+		}
+	}
+
+	// Search within Arcs
+	for _, arc := range data.Arc {
+		if strings.EqualFold(arc.Name, name) {
+			searchResults = append(searchResults, One.ResponseData{
+				ID:          arc.ID,
+				Img:         arc.Img,
+				Description: arc.Description,
+				// Add other fields if needed
+			})
+		}
+	}
+
+	// Search within Events
+	for _, event := range data.Events {
+		if strings.EqualFold(event.Name, name) {
+			searchResults = append(searchResults, One.ResponseData{
+				ID:          event.ID,
+				Img:         event.Img,
+				Description: event.Description,
+				// Add other fields if needed
+			})
+		}
+	}
+	fmt.Println(searchResults)
+	// Execute the template with searchResults
+	err1 := initTemplate.Temp.ExecuteTemplate(w, "search", searchResults)
+	if err1 != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 }
 
 // Login part, warning >>
