@@ -41,3 +41,75 @@ func GetChar() {
 		fmt.Println("-------------")
 	}
 }
+
+func GetArcs() {
+	// Read the JSON file
+	file, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Error reading file:", err)
+		return
+	}
+
+	// Unmarshal JSON data into Categories struct
+	var data map[string]Categories
+	err = json.Unmarshal(file, &data)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return
+	}
+
+	// Accessing characters under the "Arcs" category
+	arcs, ok := data["categories"]
+	if !ok {
+		fmt.Println("No 'categories' found in JSON")
+		return
+	}
+
+	// Display information about each arcs
+	for _, Arcs := range arcs.Arc {
+		fmt.Printf("Character ID: %d\n", Arcs.ID)
+		if Arcs.Img != "" {
+			fmt.Printf("Image URL: %s\n", Arcs.Img)
+		}
+		fmt.Printf("Name: %s\n", Arcs.Name)
+		fmt.Printf("Description: %s\n", Arcs.Description)
+
+		fmt.Println("-------------")
+	}
+}
+
+func GetEvents() {
+	// Read the JSON file
+	file, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Error reading file:", err)
+		return
+	}
+
+	// Unmarshal JSON data into Categories struct
+	var data map[string]Categories
+	err = json.Unmarshal(file, &data)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return
+	}
+
+	// Accessing characters under the "Events" category
+	events, ok := data["categories"]
+	if !ok {
+		fmt.Println("No 'categories' found in JSON")
+		return
+	}
+
+	// Display information about each event
+	for _, Events := range events.Events {
+		fmt.Printf("Character ID: %d\n", Events.ID)
+		if Events.Img != "" {
+			fmt.Printf("Image URL: %s\n", Events.Img)
+		}
+		fmt.Printf("Name: %s\n", Events.Name)
+		fmt.Printf("Description: %s\n", Events.Description)
+
+		fmt.Println("-------------")
+	}
+}
