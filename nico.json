@@ -18,8 +18,9 @@
                 "specs": {
                     "fullName": "17",
                     "age": 12,
-                    "description":{
-                        "role": "texte",
+                    "aPropos":{
+                    "description": "texte",
+                    "role": "texte",
                     "demonFruit": "texte",
                     "personalité": "texte", 
                     "apparence": "texte",
