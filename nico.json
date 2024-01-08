@@ -402,53 +402,53 @@
         "Events": [
             {
                 "id": 1,
-                "name": "Event 1",
-                "description": "Description of Event 1"
+                "name": "L'exécution de Gol D. Roger ",
+                "description": "L'exécution du Roi des Pirates, Gol D. Roger, marque le début de l'ère des pirates et inspire de nombreux aventuriers à chercher le One Piece."
             },
             {
                 "id": 2,
-                "name": "Event 2",
-                "description": "Description of Event 2"
+                "name": "La rencontre à Whisky Peak",
+                "description": "L'équipage de Luffy arrive à Whisky Peak, où ils rencontrent les agents de Baroque Works et découvrent la vérité derrière l'organisation."
             },
             {
                 "id": 3,
-                "name": "Event 3",
-                "description": "Description of Event 3"
+                "name": "L'arc Water Seven/Enies Lobby",
+                "description": "Les événements dramatiques à Water Seven, y compris le duel entre Luffy et Usopp, culminent dans une bataille épique à Enies Lobby pour sauver Nico Robin."
             },
             {
                 "id": 4,
-                "name": "Event 3",
-                "description": "Description of Event 3"
+                "name": "L'incident de l'archipel Sabaody",
+                "description": "Les tensions atteignent leur paroxysme à l'archipel Sabaody avec l'incident des Pacifistas et la séparation forcée de l'équipage."
             },
             {
                 "id": 5,
-                "name": "Event 3",
-                "description": "Description of Event 3"
+                "name": "La guerre au sommet à Marineford",
+                "description": "La guerre entre la Marine et l'équipage de Barbe Blanche éclate à Marineford, avec d'innombrables personnages majeurs impliqués."
             },
             {
                 "id": 6,
-                "name": "Event 3",
-                "description": "Description of Event 3"
+                "name": "La révélation de l'histoire ancienne",
+                "description": "Nico Robin révèle l'histoire ancienne à l'équipage, expliquant les Ponéglyphes, le siècle manquant, et l'importance de l'île de Raftel."
             },
             {
                 "id": 7,
-                "name": "Event 3",
-                "description": "Description of Event 3"
+                "name": "La rencontre avec les Yonko à Whole Cake Island ",
+                "description": "L'équipage affronte Big Mom à Whole Cake Island pour sauver Sanji, et les dynamiques complexes entre les Yonko sont explorées."
             },
             {
                 "id": 8,
-                "name": "Event 3",
-                "description": "Description of Event 3"
+                "name": "L'arc Reverie",
+                "description": "La réunion des dirigeants mondiaux à Levely aborde des questions cruciales, y compris celles liées à Luffy et à l'équipage."
             },
             {
                 "id": 9,
-                "name": "Event 3",
-                "description": "Description of Event 3"
+                "name": "L'attaque de Kaido à Wano Kuni",
+                "description": "L'arrivée de Kaido à Wano Kuni change la donne, mettant en lumière la puissance des Empereurs et les enjeux de l'arc en cours."
             },
             {
                 "id": 10,
-                "name": "Event 3",
-                "description": "Description of Event 3"
+                "name": "La découverte de l'identité de Joy Boy",
+                "description": "Les révélations sur Joy Boy et l'importance de la volonté des D. commencent à éclaircir les mystères qui entourent le One Piece."
             }
         ]
     }
