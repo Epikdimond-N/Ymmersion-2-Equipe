@@ -27,6 +27,7 @@ func ResetUserValue() {
 
 }
 
+// Login , warning >>
 func LoadUsersFromFile(filename string) error {
 	// Check if the file exists
 	fileInfo, err := os.Stat(filename)
@@ -148,4 +149,57 @@ func HashPassword(password string) string {
 func CheckPasswordHash(password, hash string) bool {
 	hashedPassword := HashPassword(password)
 	return hashedPassword == hash
+}
+
+// Login , warning <<
+// updating still not done !!!!!
+func UpdateChar() error {
+	// Read the JSON file
+	file, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Error reading file:", err)
+		return nil
+	}
+
+	// Unmarshal JSON data into Categories struct
+	var data map[string]One.Categories
+	err = json.Unmarshal(file, &data)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return nil
+	}
+
+	// Accessing characters under the "Persos" category
+	characters, ok := data["categories"]
+	if !ok {
+		fmt.Println("No 'categories' found in JSON")
+		return nil
+	}
+
+	fmt.Printf("json:%v\n", characters)
+
+	//----------------------------------------------------------
+
+	var myStruct []One.Character
+	var newChar One.Character
+	newChar.ID = 99
+	newChar.Name = "Nicolas"
+	newChar.Img = ""
+	newChar.Specs.FullName = "Nicolas D. Moyon"
+	newChar.Specs.Age = 27
+	newChar.Specs.Apropos.Description = "Fait son code"
+	newChar.Specs.Apropos.Role = "Student"
+	newChar.Specs.Apropos.Fruit = "le fruit du PC"
+	newChar.Specs.Apropos.Personalité = "Fatigué"
+	newChar.Specs.Apropos.Apparence = "Beau gosse"
+	newChar.Specs.Apropos.Capacités = "Pertinan, a soudainement une bonne idée"
+	newChar.Specs.Apropos.Histoire = "Rien a dire, no comment"
+	myStruct = append(myStruct, newChar)
+	jsonFromSlice, err := json.MarshalIndent(myStruct, "", " ")
+	if err != nil {
+		fmt.Println("Error Marshaling:", err)
+		return nil
+	}
+	fmt.Println(string(jsonFromSlice))
+	return nil
 }
