@@ -23,5 +23,4 @@ func InitServe() {
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
 	fmt.Println("\nLien vers le site : http://localhost:8080 (CTRL+CLICK)")
 	http.ListenAndServe("localhost:8080", nil)
-
 }
