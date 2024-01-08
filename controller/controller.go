@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"fmt"
 	"net/http"
 	One "onepiece/go"
 	initTemplate "onepiece/temp"
@@ -42,3 +43,102 @@ func DisplayAddArticle(w http.ResponseWriter, r *http.Request) {
 func Display404(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "404", nil)
 }
+
+// Login part, warning >>
+func RegisterHandler(w http.ResponseWriter, r *http.Request) {
+	initTemplate.Temp.ExecuteTemplate(w, "Register", nil)
+}
+
+func ConfirmRegisterHandler(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodPost {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
+	username := r.FormValue("username")
+	password := r.FormValue("password")
+	isAdmin := r.FormValue("admin")
+
+	// Check if username already exists
+	if _, exists := users[username]; exists {
+		http.Error(w, "Username already exists", http.StatusConflict)
+		return
+	}
+
+	hashedPassword := HashPassword(password)
+	users[username] = One.User{Username: username, Password: hashedPassword, IsAdmin: isAdmin}
+	// Save users to a file
+	if err := saveUsersToFile("users.json"); err != nil {
+		http.Error(w, "Failed to register user", http.StatusInternalServerError)
+		return
+	}
+	http.Redirect(w, r, "/login", http.StatusSeeOther)
+}
+
+func LoginHandler(w http.ResponseWriter, r *http.Request) {
+	// Load users from a file on startup
+	if err := LoadUsersFromFile("users.json"); err != nil {
+		panic(err)
+	}
+	// Check if there are query parameters in the URL
+	queryParams := r.URL.Query()
+	// Get a specific query parameter value by key
+	invalidParam := queryParams.Get("invalid")
+	var Invalid string
+	Invalid = ""
+	// Use the obtained query parameter value
+	if invalidParam != "" {
+		Invalid = "Invalid username or password"
+		invalidParam = ""
+	}
+
+	initTemplate.Temp.ExecuteTemplate(w, "Login", Invalid)
+}
+
+func SuccessLoginHandler(w http.ResponseWriter, r *http.Request) {
+
+	if r.Method != http.MethodPost {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
+
+	username = r.FormValue("username")
+	password = r.FormValue("password")
+	admin := r.FormValue("admin")
+	user, exists := users[username]
+	if !exists || !CheckPasswordHash(password, user.Password) {
+		http.Redirect(w, r, "/login?invalid=true", http.StatusSeeOther)
+		return
+	}
+
+	if admin == "yes" {
+		IsAdmin = true
+	}
+	logged = true
+	// Successfully logged in
+	// Handle further operations (e.g., setting session, redirecting, etc.)
+	http.Redirect(w, r, "/", http.StatusSeeOther)
+}
+
+func LogoutHandler(w http.ResponseWriter, r *http.Request) {
+	ResetUserValue()
+	http.Redirect(w, r, "/", http.StatusSeeOther)
+}
+
+func ChangeLoginHandler(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
+	oldpassword := r.FormValue("oldpassword")
+	newpassword := r.FormValue("newpassword")
+	err := UpdateUserCredentials(username, oldpassword, newpassword)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+	fmt.Println("Password updated successfully.")
+	ResetUserValue()
+	http.Redirect(w, r, "/", http.StatusSeeOther)
+}
+
+//Login part , warning <<

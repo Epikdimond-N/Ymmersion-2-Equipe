@@ -17,6 +17,12 @@ func InitServe() {
 	http.HandleFunc("/admin", controller.DisplayAdmin)           //template admin
 	http.HandleFunc("/addarticle", controller.DisplayAddArticle) //template addarticle
 	http.HandleFunc("/error404", controller.Display404)          //template error404
+	http.HandleFunc("/register", controller.RegisterHandler)
+	http.HandleFunc("/confirmRegister", controller.ConfirmRegisterHandler)
+	http.HandleFunc("/login", controller.LoginHandler)
+	http.HandleFunc("/successLogin", controller.SuccessLoginHandler)
+	http.HandleFunc("/logout", controller.LogoutHandler)
+	http.HandleFunc("/changeLogin", controller.ChangeLoginHandler)
 
 	rootDoc, _ := os.Getwd()
 	fileserver := http.FileServer(http.Dir(rootDoc + "/assets"))

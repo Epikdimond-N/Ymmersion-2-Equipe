@@ -42,3 +42,13 @@ type Categories struct {
 	Arc    []Arc       `json:"Arcs"`
 	Events []Event     `json:"Events"`
 }
+
+// Login part, plz don't touch >>
+
+type User struct {
+	Username string `json:"username"`
+	Password string `json:"password"`
+	IsAdmin  string `json:"admin"`
+}
+
+// Login part, plz don't touch <<
