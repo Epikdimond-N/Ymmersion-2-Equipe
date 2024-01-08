@@ -3,18 +3,140 @@
         "Persos": [
             {
                 "id": 1,
-                "name": "Monkey D. Luffy",
-                "img": "../static/img/luffy.jpg",
-                "description": "Monkey D. Luffy est un pirate et le principal protagoniste du manga et anime One Piece. Luffy est le fils du chef de l'Armée Révolutionnaire, Monkey D. Dragon, le petit-fils du célèbre héros de la Marine, Monkey D. Garp, le fils adoptif d'une bandit des montagnes, Curly Dadan ainsi que le frère adoptif du défunt Portgas D. Ace et de Sabo."
+                "name": "Luffy",
+                "specs": {
+                    "fullName": "Monkey D. Luffy",
+                    "age": "Au début de la série, Luffy a environ 17 ans.",
+                    "aPropos":{
+                    "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
+                    "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line.",
+                    "demonFruit": "Gomu Gomu no Mi, une Fruits du Démon de type Paramecia, a transformé son corps en caoutchouc. Cette capacité offre une souplesse extraordinaire et une immunité aux attaques contondantes, tout en le rendant vulnérable aux attaques tranchantes.",
+                    "personalité": "Déterminé et optimiste, Luffy fait preuve d'une loyauté inébranlable envers ses amis, considérant son équipage comme sa famille. Sa personnalité franche et directe reflète un courage authentique, et son enthousiasme contagieux motive ceux qui l'entourent.", 
+                    "apparence": "Vêtu de son chapeau de paille emblématique, Luffy porte une tenue caractéristique et arbore une cicatrice sous son œil gauche, résultat des épreuves sur son chemin.",
+                    "capacités": "Maîtrisant le Haki, Luffy développe le puissant Haki des Rois, capable d'intimider voire d'assommer ceux de volonté plus faible. Sa force surhumaine, associée à sa physiologie caoutchouteuse, lui permet d'étirer ses membres et d'exécuter des attaques dévastatrices.",
+                    "histoire": "Né dans l'East Blue, Luffy embarque pour son aventure après avoir mangé le Gomu Gomu no Mi par inadvertance. Capable de repousser ses limites, il s'efforce de devenir le Roi des Pirates, faisant face à des adversités impensables et formant des liens durables avec son équipage. Sa quête du One Piece dévoile une histoire épique de bravoure et de camaraderie."
+                    }
+                    
+                }
             },
+
             {
                 "id": 2,
-                "name": "Roronoa Zoro",
-                "description": "Description of Character 2"
+                "name": "Zoro",
+                "specs": {
+                    "fullName": "Roronoa Zoro",
+                    "age": "Environ 19 ans au début de la série.",
+                    "aPropos":{
+                    "description": " Zoro, avec ses trois cicatrices sur l'œil gauche, évoque la prestance d'un puissant épéiste. Son regard sérieux et son attitude calme cachent une détermination féroce.",
+                    "role": "Premier épéiste et bras droit de Luffy dans les Pirates du Chapeau de Paille, Zoro cherche à devenir le plus grand épéiste du monde.",
+                    "demonFruit": "Aucun. Zoro est un maître épéiste, maniant trois sabres simultanément.",
+                    "personalité": "Sérieux et loyal, Zoro incarne la discipline et le calme. Sa fidélité envers Luffy et son équipage est inébranlable, et il poursuit son rêve avec une détermination sans faille.", 
+                    "apparence": "Portant souvent un bandana et ses trois sabres, Zoro a une allure musclée et intimidante.",
+                    "capacités": "Expert dans le maniement du sabre, Zoro est un épéiste de classe mondiale. Il peut utiliser des techniques puissantes telles que le Santoryu (Trois sabres).",
+                    "histoire": "Originaire du Village de Shimotsuki, Zoro se joint à Luffy pour réaliser son rêve de devenir le plus grand épéiste. Il accumule des cicatrices en chemin, témoins de son parcours ardu."
+                    }
+                    
+                }
             },
+
             {
                 "id": 3,
                 "name": "Sanjii",
+                "specs": {
+                    "fullName": "Vinsmoke Sanji",
+                    "age": "Environ 19 ans au début de la série.",
+                    "aPropos":{
+                    "description": "Sanji, le cuistot passionné, est reconnaissable à sa jambe droite cachée et à sa coiffure unique. Son style est un mélange de classe et de combativité.",
+                    "role": "Cuisinier et combattant des Pirates du Chapeau de Paille, Sanji poursuit son rêve de découvrir l'All Blue.",
+                    "demonFruit": "Jambe noire, une version améliorée du Germa 66 permettant à Sanji d'utiliser le Diable Jambe.",
+                    "personalité": "Sanji est élégant, charmeur et passionné par la cuisine. Sa politesse envers les femmes et son sens de l'honneur ajoutent une couche de complexité à sa personnalité.", 
+                    "apparence": "Vêtu d'un costume noir et arborant une jambe droite souvent dissimulée, Sanji a une allure raffinée.",
+                    "capacités": "Maître du Black Leg Style, Sanji excelle dans le combat au corps à corps. Sa Diable Jambe lui permet d'enchâsser ses pieds en feu pour augmenter la puissance de ses coups.",
+                    "histoire": "Originaire du North Blue, Sanji s'est libéré des liens de la famille Vinsmoke pour poursuivre son propre chemin. Son amour pour la cuisine et son code d'honneur font de lui un membre essentiel de l'équipage."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 4,
+                "name": "Nami",
+                "specs": {
+                    "fullName": "Nami",
+                    "age": "Débute la série à environ 18 ans.",
+                    "aPropos":{
+                    "description": "Nami est une navigatrice talentueuse et stratégique, souvent vêtue de tenues pratiques pour la navigation. Ses tatouages en forme de mandarines symbolisent son village natal, Cocoyashi.",
+                    "role": "Navigatrice des Pirates du Chapeau de Paille, Nami aspire à cartographier le monde et à dessiner une carte complète.",
+                    "demonFruit": "Climat-Tact, un bâton spécial qui utilise le pouvoir du Fruit de la Climatologie, permettant de manipuler le climat.",
+                    "personalité": "Intelligente et pragmatique, Nami est également attentionnée envers ses compagnons d'équipage. Son obsession pour les cartes cache une profonde loyauté envers Luffy et les autres.", 
+                    "apparence": "Avec une longue chevelure rousse et des tatouages distinctifs, Nami a une allure aventurière.",
+                    "capacités": "Maîtrisant la navigation et la cartographie, Nami est une tacticienne habile. Son Climat-Tact lui confère des capacités météorologiques puissantes.",
+                    "histoire": "Originaire de Cocoyashi Village, Nami rejoint l'équipage après l'Arc Arlong Park, où elle se libère du joug d'Arlong et poursuit son rêve de cartographier le monde."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 5,
+                "name": "Usoop",
+                "specs": {
+                    "fullName": "Débute la série à environ 17 ans.",
+                    "age": 12,
+                    "aPropos":{
+                    "description": " Usopp est un menteur invétéré, souvent portant un chapeau unique et une écharpe. Ses vêtements colorés reflètent son esprit fantasque.",
+                    "role": "Tireur d'élite des Pirates du Chapeau de Paille, Usopp aspire à devenir un valeureux guerrier des mers.",
+                    "demonFruit": "Aucun. Usopp se distingue par sa maîtrise du tir au lance-pierre et des inventions étonnantes.",
+                    "personalité": "Imagination débordante et rêveur, Usopp apporte une touche d'humour à l'équipage. Malgré ses mensonges, il montre un grand courage lorsque la situation l'exige.", 
+                    "apparence": "Usopp est reconnaissable avec son nez long et fin, et il porte souvent des vêtements aux couleurs vives.",
+                    "capacités": "Expert au lance-pierre et à la fabrication d'inventions, Usopp est un tireur d'élite capable de manœuvres astucieuses.",
+                    "histoire": "Originaire du Village de Syrup, Usopp rejoint les Pirates du Chapeau de Paille à Syrup Village, emmené par son rêve de devenir un brave guerrier des mers."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 6,
+                "name": "Nico Robin",
+                "specs": {
+                    "fullName": "Nico Robin",
+                    "age": "Débute la série à environ 28 ans.",
+                    "aPropos":{
+                    "description": "Robin arbore une aura calme, souvent vêtue de manière élégante. Son symbole distinctif est le tatouage du Démon à Cent Fleurs sur son bras gauche.",
+                    "role": "Archéologue des Pirates du Chapeau de Paille, Robin recherche des informations sur le Siècle Manquant et l'histoire ancienne.",
+                    "demonFruit": "Hana Hana no Mi, un Fruit de la Flore qui permet à Robin de créer des parties de son corps sur n'importe quelle surface.",
+                    "personalité": "Calme et intellectuelle, Robin a une perspective réaliste et une compréhension profonde de l'histoire du monde. Elle est un pilier de sagesse au sein de l'équipage.", 
+                    "apparence": "Avec des cheveux noirs longs et lisses, Robin a une apparence élégante et mature.",
+                    "capacités": "La maîtrise du Hana Hana no Mi permet à Robin de créer des bras supplémentaires pour des attaques variées et des manœuvres complexes.",
+                    "histoire": "Originaire de l'Île d'Ohara, Robin a survécu à l'incident d'Ohara et rejoint les Pirates du Chapeau de Paille après l'Arc Alabasta."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 7,
+                "name": "Kaido",
+                "specs": {
+                    "fullName": "Kaido",
+                    "age": "59 il est considéré comme l'un des êtres les plus anciens et puissants du monde.",
+                    "aPropos":{
+                    "description": "texte",
+                    "role": "texte",
+                    "demonFruit": "texte",
+                    "personalité": "texte", 
+                    "apparence": "texte",
+                    "capacités": "texte",
+                    "histoire": "texte"
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 8,
+                "name": "BigMom",
                 "specs": {
                     "fullName": "17",
                     "age": 12,
@@ -30,42 +152,46 @@
                     
                 }
             },
-            {
-                "id": 4,
-                "name": "Nami",
-                "description": "Description of Character 3"
-            },
-            {
-                "id": 5,
-                "name": "Usoop",
-                "description": "Description of Character 3"
-            },
-            {
-                "id": 6,
-                "name": "Nico Robin",
-                "description": "Description of Character 3"
-            },
-            {
-                "id": 7,
-                "name": "Character 3",
-                "description": "Description of Character 3"
-            },
-            {
-                "id": 8,
-                "name": "Character 3",
-                "description": "Description of Character 3"
-            },
+
             {
                 "id": 9,
-                "name": "Character 3",
-                "description": "Description of Character 3"
+                "name": "SanksLeRoux",
+                "specs": {
+                    "fullName": "17",
+                    "age": 12,
+                    "aPropos":{
+                    "description": "texte",
+                    "role": "texte",
+                    "demonFruit": "texte",
+                    "personalité": "texte", 
+                    "apparence": "texte",
+                    "capacités": "texte",
+                    "histoire": "texte"
+                    }
+                    
+                }
             },
+
             {
                 "id": 10,
-                "name": "Character 3",
-                "description": "Description of Character 3"
+                "name": "BarbeNoire",
+                "specs": {
+                    "fullName": "17",
+                    "age": 12,
+                    "aPropos":{
+                    "description": "texte",
+                    "role": "texte",
+                    "demonFruit": "texte",
+                    "personalité": "texte", 
+                    "apparence": "texte",
+                    "capacités": "texte",
+                    "histoire": "texte"
+                    }
+                    
+                }
             }
         ],
+
         "Arcs": [
             {
                 "id": 1,
