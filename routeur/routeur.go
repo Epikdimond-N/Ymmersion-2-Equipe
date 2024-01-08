@@ -3,8 +3,8 @@ package routeur
 import (
 	"fmt"
 	"net/http"
+	controller "onepiece/controller"
 	"os"
-	// controller "tpspotify/site-web/controller"
 )
 
 func InitServe() {
@@ -16,7 +16,7 @@ func InitServe() {
 	http.HandleFunc("/search", controller.DisplaySearch)         //template search
 	http.HandleFunc("/admin", controller.DisplayAdmin)           //template admin
 	http.HandleFunc("/addarticle", controller.DisplayAddArticle) //template addarticle
-	http.HandleFunc("/error404", controller.DisplayAdmin)        //template erreur 404
+	http.HandleFunc("/error404", controller.Display404)          //template erreur 404
 
 	rootDoc, _ := os.Getwd()
 	fileserver := http.FileServer(http.Dir(rootDoc + "/site-web/assets"))
