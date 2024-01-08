@@ -15,7 +15,19 @@
             {
                 "id": 3,
                 "name": "Character 3",
-                "description": "Description of Character 3"
+                "specs": {
+                    "fullName": "17",
+                    "age": 12,
+                    "description":{
+                        "role": "texte",
+                    "demonFruit": "texte",
+                    "personalité": "texte", 
+                    "apparence": "texte",
+                    "capacités": "texte",
+                    "histoire": "texte"
+                    }
+                    
+                }
             },
             {
                 "id": 4,
