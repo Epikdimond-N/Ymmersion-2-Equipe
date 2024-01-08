@@ -1,5 +1,7 @@
 package main
 
-func main(){
-	
+import One "onepiece/go"
+
+func main() {
+	One.GetChar()
 }

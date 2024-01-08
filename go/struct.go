@@ -1,1 +1,12 @@
 package request
+
+type Character struct {
+	ID          int    `json:"id"`
+	Name        string `json:"name"`
+	Img         string `json:"img,omitempty"`
+	Description string `json:"description"`
+}
+
+type Categories struct {
+	Persos []Character `json:"Persos"`
+}
