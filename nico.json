@@ -1,0 +1,160 @@
+{
+    "categories": {
+        "Persos": [
+            {
+                "id": 1,
+                "name": "Character 1",
+                "description": "Description of Character 1"
+            },
+            {
+                "id": 2,
+                "name": "Character 2",
+                "description": "Description of Character 2"
+            },
+            {
+                "id": 3,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 4,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 5,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 6,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 7,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 8,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 9,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 10,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            }
+        ],
+        "Arcs": [
+            {
+                "id": 1,
+                "name": "Arc 1",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": 2,
+                "name": "Arc 2",
+                "description": "Description of Arc 2"
+            },
+            {
+                "id": 3,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 4,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 5,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 6,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 7,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 8,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 9,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 10,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            }
+        ],
+        "Sorties/évenements/produits dérivés": [
+            {
+                "id": 1,
+                "name": "Event 1",
+                "description": "Description of Event 1"
+            },
+            {
+                "id": 2,
+                "name": "Event 2",
+                "description": "Description of Event 2"
+            },
+            {
+                "id": 3,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 4,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 5,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 6,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 7,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 8,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 9,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 10,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            }
+        ]
+    }
+}
