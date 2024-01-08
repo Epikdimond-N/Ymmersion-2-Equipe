@@ -105,7 +105,7 @@
                 "description": "Description of Arc 3"
             }
         ],
-        "Sorties/évenements/produits dérivés": [
+        "Events": [
             {
                 "id": 1,
                 "name": "Event 1",
