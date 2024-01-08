@@ -9,7 +9,14 @@
   </head>
   <body>
     <p>Texte pour tester</p>
-
+    {{range .}}
+    <li>
+      <div>Nom du personnage: {{.Name}}</div> <br>
+      <div><img src="{{.Img}}" alt="Char Img" class=""></div> <br>
+      <div>Description {{.Description}}</div><br>
+      <hr>
+    </li>
+    {{end}}
   </body>
 </html>
 {{end}}

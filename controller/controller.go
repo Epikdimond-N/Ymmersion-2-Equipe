@@ -2,11 +2,13 @@ package controller
 
 import (
 	"net/http"
+	One "onepiece/go"
 	initTemplate "onepiece/temp"
 )
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
-	initTemplate.Temp.ExecuteTemplate(w, "index", nil)
+	data := One.GetChar()
+	initTemplate.Temp.ExecuteTemplate(w, "index", data)
 }
 
 func DisplayPersos(w http.ResponseWriter, r *http.Request) {
