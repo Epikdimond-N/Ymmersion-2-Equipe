@@ -37,7 +37,7 @@ func GetChar() []Character {
 			fmt.Printf("Image URL: %s\n", character.Img)
 		}
 		fmt.Printf("Name: %s\n", character.Name)
-		fmt.Printf("Description: %s\n", character.Specs.Description)
+		fmt.Printf("Description: %s\n", character.Specs.Apropo.Description)
 
 		fmt.Println("-------------")
 		var newChar Character
@@ -46,7 +46,7 @@ func GetChar() []Character {
 		if character.Img != "" {
 			newChar.Img = character.Img
 		}
-		newChar.Specs.Description = character.Specs.Description
+		newChar.Specs.Apropo.Description = character.Specs.Apropo.Description
 
 		char = append(char, newChar)
 	}
