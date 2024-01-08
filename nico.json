@@ -3,8 +3,9 @@
         "Persos": [
             {
                 "id": 1,
-                "name": "Character 1",
-                "description": "Description of Character 1"
+                "name": "Monkey D. Luffy",
+                "img": "https://static.wikia.nocookie.net/onepiece/images/7/7f/Monkey_D._Luffy_Anime_Post_Ellipse_Infobox.png/revision/latest/scale-to-width-down/270?cb=20170617172443&path-prefix=fr",
+                "description": "Monkey D. Luffy est un pirate et le principal protagoniste du manga et anime One Piece. Luffy est le fils du chef de l'Armée Révolutionnaire, Monkey D. Dragon, le petit-fils du célèbre héros de la Marine, Monkey D. Garp, le fils adoptif d'une bandit des montagnes, Curly Dadan ainsi que le frère adoptif du défunt Portgas D. Ace et de Sabo."
             },
             {
                 "id": 2,
