@@ -6,12 +6,12 @@ import (
 	"os"
 )
 
-func GetChar() {
+func GetChar() []Character {
 	// Read the JSON file
 	file, err := os.ReadFile("nico.json")
 	if err != nil {
 		fmt.Println("Error reading file:", err)
-		return
+		return nil
 	}
 
 	// Unmarshal JSON data into Categories struct
@@ -19,17 +19,18 @@ func GetChar() {
 	err = json.Unmarshal(file, &data)
 	if err != nil {
 		fmt.Println("Error parsing JSON:", err)
-		return
+		return nil
 	}
 
 	// Accessing characters under the "Persos" category
 	characters, ok := data["categories"]
 	if !ok {
 		fmt.Println("No 'categories' found in JSON")
-		return
+		return nil
 	}
 
 	// Display information about each character
+	var char []Character
 	for _, character := range characters.Persos {
 		fmt.Printf("Character ID: %d\n", character.ID)
 		if character.Img != "" {
@@ -39,7 +40,18 @@ func GetChar() {
 		fmt.Printf("Description: %s\n", character.Description)
 
 		fmt.Println("-------------")
+		var newChar Character
+		newChar.ID = character.ID
+		newChar.Name = character.Name
+		if character.Img != "" {
+			newChar.Img = character.Img
+		}
+		newChar.Description = character.Description
+
+		char = append(char, newChar)
 	}
+
+	return char
 }
 
 func GetArcs() {
