@@ -4,6 +4,7 @@
             {
                 "id": 1,
                 "name": "Luffy",
+                "img": "",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
                     "age": 17,
@@ -23,6 +24,7 @@
             {
                 "id": 2,
                 "name": "Zoro",
+                "img": "",
                 "specs": {
                     "fullName": "Roronoa Zoro",
                     "age": 19,
@@ -42,6 +44,7 @@
             {
                 "id": 3,
                 "name": "Sanjii",
+                "img": "",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
                     "age": 19,
@@ -61,6 +64,7 @@
             {
                 "id": 4,
                 "name": "Nami",
+                "img": "",
                 "specs": {
                     "fullName": "Nami",
                     "age": 18,
@@ -80,6 +84,7 @@
             {
                 "id": 5,
                 "name": "Usoop",
+                "img": "",
                 "specs": {
                     "fullName": "Usopp",
                     "age": 17,
@@ -99,6 +104,7 @@
             {
                 "id": 6,
                 "name": "Nico Robin",
+                "img": "",
                 "specs": {
                     "fullName": "Nico Robin",
                     "age": 28,
@@ -118,6 +124,7 @@
             {
                 "id": 7,
                 "name": "Kaido",
+                "img": "",
                 "specs": {
                     "fullName": "Kaido",
                     "age": 59,
@@ -137,6 +144,7 @@
             {
                 "id": 8,
                 "name": "BigMom",
+                "img": "",
                 "specs": {
                     "fullName": "Charlotte Linlin, surnommée Big Mom",
                     "age": 68,
@@ -156,6 +164,7 @@
             {
                 "id": 9,
                 "name": "Shanks le Roux",
+                "img": "",
                 "specs": {
                     "fullName": "Shanks",
                     "age": 39,
@@ -175,6 +184,7 @@
             {
                 "id": 10,
                 "name": "Marshall D. Teach, surnommé Barbe Noire",
+                "img": "",
                 "specs": {
                     "fullName": "17",
                     "age": 40,
@@ -196,53 +206,247 @@
             {
                 "id": 1,
                 "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "chapitre": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 2,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 3,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 4,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 5,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 6,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 7,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            
+            {
+                "id": 8,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 9,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 10,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 11,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 12,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 13,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 14,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 15,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
                 "description": "Description of Arc 1"
             },
             {
-                "id": 2,
-                "name": "Arc 2",
-                "description": "Description of Arc 2"
+                "id": 16,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 17,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 18,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
             },
             {
-                "id": 3,
-                "name": "Arc 3",
-                "description": "Description of Arc 3"
+                "id": 19,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 20,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 21,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
             },
             {
-                "id": 4,
-                "name": "Arc 3",
-                "description": "Description of Arc 3"
+                "id": 22,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 23,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 24,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
             },
             {
-                "id": 5,
-                "name": "Arc 3",
-                "description": "Description of Arc 3"
+                "id": 25,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 26,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 27,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
             },
             {
-                "id": 6,
-                "name": "Arc 3",
-                "description": "Description of Arc 3"
+                "id": 28,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
             },
+
             {
-                "id": 7,
-                "name": "Arc 3",
-                "description": "Description of Arc 3"
+                "id": 29,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
             },
+
             {
-                "id": 8,
-                "name": "Arc 3",
-                "description": "Description of Arc 3"
+                "id": 30,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
             },
+
             {
-                "id": 9,
-                "name": "Arc 3",
-                "description": "Description of Arc 3"
-            },
-            {
-                "id": 10,
-                "name": "Arc 3",
-                "description": "Description of Arc 3"
+                "id": 31,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
             }
+
         ],
         "Events": [
             {
