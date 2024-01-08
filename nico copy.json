@@ -1,0 +1,504 @@
+{
+    "categories": {
+        "Persos": [
+            {
+                "id": 1,
+                "name": "Luffy",
+                "img": "",
+                "specs": {
+                    "fullName": "Monkey D. Luffy",
+                    "age": 17,
+                    "aPropos":{
+                    "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
+                    "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line.",
+                    "demonFruit": "Gomu Gomu no Mi, une Fruits du Démon de type Paramecia, a transformé son corps en caoutchouc. Cette capacité offre une souplesse extraordinaire et une immunité aux attaques contondantes, tout en le rendant vulnérable aux attaques tranchantes.",
+                    "personalité": "Déterminé et optimiste, Luffy fait preuve d'une loyauté inébranlable envers ses amis, considérant son équipage comme sa famille. Sa personnalité franche et directe reflète un courage authentique, et son enthousiasme contagieux motive ceux qui l'entourent.", 
+                    "apparence": "Vêtu de son chapeau de paille emblématique, Luffy porte une tenue caractéristique et arbore une cicatrice sous son œil gauche, résultat des épreuves sur son chemin.",
+                    "capacités": "Maîtrisant le Haki, Luffy développe le puissant Haki des Rois, capable d'intimider voire d'assommer ceux de volonté plus faible. Sa force surhumaine, associée à sa physiologie caoutchouteuse, lui permet d'étirer ses membres et d'exécuter des attaques dévastatrices.",
+                    "histoire": "Né dans l'East Blue, Luffy embarque pour son aventure après avoir mangé le Gomu Gomu no Mi par inadvertance. Capable de repousser ses limites, il s'efforce de devenir le Roi des Pirates, faisant face à des adversités impensables et formant des liens durables avec son équipage. Sa quête du One Piece dévoile une histoire épique de bravoure et de camaraderie."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 2,
+                "name": "Zoro",
+                "img": "",
+                "specs": {
+                    "fullName": "Roronoa Zoro",
+                    "age": 19,
+                    "aPropos":{
+                    "description": " Zoro, avec ses trois cicatrices sur l'œil gauche, évoque la prestance d'un puissant épéiste. Son regard sérieux et son attitude calme cachent une détermination féroce.",
+                    "role": "Premier épéiste et bras droit de Luffy dans les Pirates du Chapeau de Paille, Zoro cherche à devenir le plus grand épéiste du monde.",
+                    "demonFruit": "Aucun. Zoro est un maître épéiste, maniant trois sabres simultanément.",
+                    "personalité": "Sérieux et loyal, Zoro incarne la discipline et le calme. Sa fidélité envers Luffy et son équipage est inébranlable, et il poursuit son rêve avec une détermination sans faille.", 
+                    "apparence": "Portant souvent un bandana et ses trois sabres, Zoro a une allure musclée et intimidante.",
+                    "capacités": "Expert dans le maniement du sabre, Zoro est un épéiste de classe mondiale. Il peut utiliser des techniques puissantes telles que le Santoryu (Trois sabres).",
+                    "histoire": "Originaire du Village de Shimotsuki, Zoro se joint à Luffy pour réaliser son rêve de devenir le plus grand épéiste. Il accumule des cicatrices en chemin, témoins de son parcours ardu."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 3,
+                "name": "Sanjii",
+                "img": "",
+                "specs": {
+                    "fullName": "Vinsmoke Sanji",
+                    "age": 19,
+                    "aPropos":{
+                    "description": "Sanji, le cuistot passionné, est reconnaissable à sa jambe droite cachée et à sa coiffure unique. Son style est un mélange de classe et de combativité.",
+                    "role": "Cuisinier et combattant des Pirates du Chapeau de Paille, Sanji poursuit son rêve de découvrir l'All Blue.",
+                    "demonFruit": "Jambe noire, une version améliorée du Germa 66 permettant à Sanji d'utiliser le Diable Jambe.",
+                    "personalité": "Sanji est élégant, charmeur et passionné par la cuisine. Sa politesse envers les femmes et son sens de l'honneur ajoutent une couche de complexité à sa personnalité.", 
+                    "apparence": "Vêtu d'un costume noir et arborant une jambe droite souvent dissimulée, Sanji a une allure raffinée.",
+                    "capacités": "Maître du Black Leg Style, Sanji excelle dans le combat au corps à corps. Sa Diable Jambe lui permet d'enchâsser ses pieds en feu pour augmenter la puissance de ses coups.",
+                    "histoire": "Originaire du North Blue, Sanji s'est libéré des liens de la famille Vinsmoke pour poursuivre son propre chemin. Son amour pour la cuisine et son code d'honneur font de lui un membre essentiel de l'équipage."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 4,
+                "name": "Nami",
+                "img": "",
+                "specs": {
+                    "fullName": "Nami",
+                    "age": 18,
+                    "aPropos":{
+                    "description": "Nami est une navigatrice talentueuse et stratégique, souvent vêtue de tenues pratiques pour la navigation. Ses tatouages en forme de mandarines symbolisent son village natal, Cocoyashi.",
+                    "role": "Navigatrice des Pirates du Chapeau de Paille, Nami aspire à cartographier le monde et à dessiner une carte complète.",
+                    "demonFruit": "Climat-Tact, un bâton spécial qui utilise le pouvoir du Fruit de la Climatologie, permettant de manipuler le climat.",
+                    "personalité": "Intelligente et pragmatique, Nami est également attentionnée envers ses compagnons d'équipage. Son obsession pour les cartes cache une profonde loyauté envers Luffy et les autres.", 
+                    "apparence": "Avec une longue chevelure rousse et des tatouages distinctifs, Nami a une allure aventurière.",
+                    "capacités": "Maîtrisant la navigation et la cartographie, Nami est une tacticienne habile. Son Climat-Tact lui confère des capacités météorologiques puissantes.",
+                    "histoire": "Originaire de Cocoyashi Village, Nami rejoint l'équipage après l'Arc Arlong Park, où elle se libère du joug d'Arlong et poursuit son rêve de cartographier le monde."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 5,
+                "name": "Usoop",
+                "img": "",
+                "specs": {
+                    "fullName": "Usopp",
+                    "age": 17,
+                    "aPropos":{
+                    "description": " Usopp est un menteur invétéré, souvent portant un chapeau unique et une écharpe. Ses vêtements colorés reflètent son esprit fantasque.",
+                    "role": "Tireur d'élite des Pirates du Chapeau de Paille, Usopp aspire à devenir un valeureux guerrier des mers.",
+                    "demonFruit": "Aucun. Usopp se distingue par sa maîtrise du tir au lance-pierre et des inventions étonnantes.",
+                    "personalité": "Imagination débordante et rêveur, Usopp apporte une touche d'humour à l'équipage. Malgré ses mensonges, il montre un grand courage lorsque la situation l'exige.", 
+                    "apparence": "Usopp est reconnaissable avec son nez long et fin, et il porte souvent des vêtements aux couleurs vives.",
+                    "capacités": "Expert au lance-pierre et à la fabrication d'inventions, Usopp est un tireur d'élite capable de manœuvres astucieuses.",
+                    "histoire": "Originaire du Village de Syrup, Usopp rejoint les Pirates du Chapeau de Paille à Syrup Village, emmené par son rêve de devenir un brave guerrier des mers."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 6,
+                "name": "Nico Robin",
+                "img": "",
+                "specs": {
+                    "fullName": "Nico Robin",
+                    "age": 28,
+                    "aPropos":{
+                    "description": "Robin arbore une aura calme, souvent vêtue de manière élégante. Son symbole distinctif est le tatouage du Démon à Cent Fleurs sur son bras gauche.",
+                    "role": "Archéologue des Pirates du Chapeau de Paille, Robin recherche des informations sur le Siècle Manquant et l'histoire ancienne.",
+                    "demonFruit": "Hana Hana no Mi, un Fruit de la Flore qui permet à Robin de créer des parties de son corps sur n'importe quelle surface.",
+                    "personalité": "Calme et intellectuelle, Robin a une perspective réaliste et une compréhension profonde de l'histoire du monde. Elle est un pilier de sagesse au sein de l'équipage.", 
+                    "apparence": "Avec des cheveux noirs longs et lisses, Robin a une apparence élégante et mature.",
+                    "capacités": "La maîtrise du Hana Hana no Mi permet à Robin de créer des bras supplémentaires pour des attaques variées et des manœuvres complexes.",
+                    "histoire": "Originaire de l'Île d'Ohara, Robin a survécu à l'incident d'Ohara et rejoint les Pirates du Chapeau de Paille après l'Arc Alabasta."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 7,
+                "name": "Kaido",
+                "img": "",
+                "specs": {
+                    "fullName": "Kaido",
+                    "age": 59,
+                    "aPropos":{
+                    "description": "Kaido est immense, avec une stature imposante et des tatouages tribaux sur le corps. Il porte souvent un manteau noir et a une expression sévère.",
+                    "role": "Kaido est le capitaine des Beast Pirates et l'un des Empereurs de la Mer. Il cherche constamment à défier la mort et à créer le plus grand conflit mondial.",
+                    "demonFruit": "Uo Uo no Mi, modèle Seiryu (Fruit du Dragon) - Mythique, une variante rare du Zoan Mythique lui permettant de se transformer en dragon.",
+                    "personalité": "Kaido est connu pour sa quête obsessionnelle de trouver un moyen de mourir. Il est impitoyable, adore les défis et cherche à instaurer un règne de chaos et de terreur.", 
+                    "apparence": "Kaido a des cheveux bleus, une barbe fournie et des cicatrices sur le visage. Sa présence émet une aura intimidante.",
+                    "capacités": "Possédant une force incroyable, Kaido est pratiquement invincible. Son Fruit du Démon lui permet de se transformer en un dragon massif, ajoutant à sa puissance dévastatrice.",
+                    "histoire": " Les détails de l'histoire de Kaido sont en grande partie inconnus. Il est réputé pour avoir survécu à d'innombrables batailles et exécutions, renforçant sa réputation d'être indestructible."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 8,
+                "name": "BigMom",
+                "img": "",
+                "specs": {
+                    "fullName": "Charlotte Linlin, surnommée Big Mom",
+                    "age": 68,
+                    "aPropos":{
+                    "description": "Big Mom est une femme massive avec une peau rose, un chapeau extravagant et une expression souvent souriante, mais dérangeante.",
+                    "role": "Big Mom est la capitaine des Big Mom Pirates et fait partie des Quatre Empereurs. Elle cherche à créer un monde où toutes les races coexistent pacifiquement.",
+                    "demonFruit": "Soru Soru no Mi, un Fruit Paramecia lui permettant de manipuler les âmes.",
+                    "personalité": " Big Mom est instable émotionnellement, passant du sourire à la colère en un instant. Sa quête pour créer un monde idéal est basée sur une vision utopique.", 
+                    "apparence": "Avec son énorme taille, sa robe colorée et son chapeau élaboré, Big Mom a une apparence extravagante.",
+                    "capacités": "La Soru Soru no Mi lui permet de manipuler les âmes, influençant la force vitale des individus. Elle est également redoutable au combat physique.",
+                    "histoire": "Issue de la Famille Charlotte, Big Mom a construit un empire basé sur la puissance et la loyauté. Son objectif de créer un monde harmonieux est motivé par des expériences passées."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 9,
+                "name": "Shanks le Roux",
+                "img": "",
+                "specs": {
+                    "fullName": "Shanks",
+                    "age": 39,
+                    "aPropos":{
+                    "description": "Shanks a des cheveux roux, une barbe et une cicatrice sur son œil gauche, témoignant d'un événement mystérieux. Il porte souvent un manteau rouge.",
+                    "role": "Capitaine des Red-Haired Pirates, Shanks est un ancien membre de l'équipage de Gol D. Roger et l'un des Quatre Empereurs.",
+                    "demonFruit": "Aucun (Shanks ne possède pas de Fruit du Démon).",
+                    "personalité": "Shanks est calme, charismatique et a le respect des autres pirates. Il est prêt à prendre des risques pour protéger ceux qu'il chérit.", 
+                    "apparence": "Avec son manteau rouge et son attitude décontractée, Shanks a une présence imposante.",
+                    "capacités": "Shanks est un épéiste talentueux et un redoutable utilisateur du Haki. Sa maîtrise de l'épée est reconnue même par Mihawk, le plus grand épéiste du monde.",
+                    "histoire": "Shanks est connu pour avoir sauvé la vie de Luffy dans son enfance en perdant son bras contre un monstre marin. Son implication dans la première partie de l'histoire reste enveloppée de mystère."
+                    }
+                    
+                }
+            },
+
+            {
+                "id": 10,
+                "name": "Marshall D. Teach, surnommé Barbe Noire",
+                "img": "",
+                "specs": {
+                    "fullName": "17",
+                    "age": 40,
+                    "aPropos":{
+                    "description": "Barbe Noire a une allure imposante avec une barbe noire et un chapeau de pirate caractéristique. Sa silhouette massive dissimule des ambitions obscures.",
+                    "role": "Ancien membre de l'équipage de Barbe Blanche, Teach devient capitaine des Pirates de Barbe Noire et cherche à devenir le nouvel empereur.",
+                    "demonFruit": "Yami Yami no Mi (Fruit des Ténèbres), une Logia qui lui permet de créer, contrôler et devenir les ténèbres.",
+                    "personalité": "Barbe Noire est calculateur, impitoyable et cherche constamment à accroître sa puissance. Il est prêt à sacrifier quiconque pour atteindre ses objectifs.", 
+                    "apparence": "Avec sa barbe noire et son manteau sombre, Barbe Noire a une présence menaçante.",
+                    "capacités": "Le Yami Yami no Mi lui confère des pouvoirs liés aux ténèbres, le rendant invulnérable à de nombreux types d'attaques. Il peut également annihiler la capacité des autres Fruits du Démon au contact.",
+                    "histoire": "Ancien commandant de Barbe Blanche, Teach s'est retourné contre son ancien capitaine pour s'emparer du pouvoir du Gura Gura no Mi. Ses actions sont motivées par une quête insatiable de pouvoir et de notoriété."
+                    }
+                    
+                }
+            }
+        ],
+
+        "Arcs": [
+            {
+                "id": 1,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "chapitre": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 2,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 3,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 4,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 5,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 6,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 7,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            
+            {
+                "id": 8,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 9,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 10,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 11,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 12,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 13,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 14,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 15,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": 16,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 17,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 18,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": 19,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 20,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 21,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": 22,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 23,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 24,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": 25,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 26,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 27,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": 28,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 29,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 30,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            },
+
+            {
+                "id": 31,
+                "name": "Arc 1",
+                "img": "",
+                "épisodes": "",
+                "description": "Description of Arc 1"
+            }
+
+        ],
+        "Events": [
+            {
+                "id": 1,
+                "name": "Event 1",
+                "description": "Description of Event 1"
+            },
+            {
+                "id": 2,
+                "name": "Event 2",
+                "description": "Description of Event 2"
+            },
+            {
+                "id": 3,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 4,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 5,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 6,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 7,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 8,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 9,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 10,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            }
+        ]
+    }
+}

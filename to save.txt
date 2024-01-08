@@ -1,0 +1,1 @@
+name string, img string, fullname string, age int, desc string, role string, fruit string, persona string, apparence string, capacite string, histoir string
