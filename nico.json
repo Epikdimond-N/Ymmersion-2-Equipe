@@ -1,0 +1,161 @@
+{
+    "categories": {
+        "Persos": [
+            {
+                "id": 1,
+                "name": "Monkey D. Luffy",
+                "img": "https://static.wikia.nocookie.net/onepiece/images/7/7f/Monkey_D._Luffy_Anime_Post_Ellipse_Infobox.png/revision/latest/scale-to-width-down/270?cb=20170617172443&path-prefix=fr",
+                "description": "Monkey D. Luffy est un pirate et le principal protagoniste du manga et anime One Piece. Luffy est le fils du chef de l'Armée Révolutionnaire, Monkey D. Dragon, le petit-fils du célèbre héros de la Marine, Monkey D. Garp, le fils adoptif d'une bandit des montagnes, Curly Dadan ainsi que le frère adoptif du défunt Portgas D. Ace et de Sabo."
+            },
+            {
+                "id": 2,
+                "name": "Character 2",
+                "description": "Description of Character 2"
+            },
+            {
+                "id": 3,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 4,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 5,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 6,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 7,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 8,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 9,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            },
+            {
+                "id": 10,
+                "name": "Character 3",
+                "description": "Description of Character 3"
+            }
+        ],
+        "Arcs": [
+            {
+                "id": 1,
+                "name": "Arc 1",
+                "description": "Description of Arc 1"
+            },
+            {
+                "id": 2,
+                "name": "Arc 2",
+                "description": "Description of Arc 2"
+            },
+            {
+                "id": 3,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 4,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 5,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 6,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 7,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 8,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 9,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            },
+            {
+                "id": 10,
+                "name": "Arc 3",
+                "description": "Description of Arc 3"
+            }
+        ],
+        "Sorties/évenements/produits dérivés": [
+            {
+                "id": 1,
+                "name": "Event 1",
+                "description": "Description of Event 1"
+            },
+            {
+                "id": 2,
+                "name": "Event 2",
+                "description": "Description of Event 2"
+            },
+            {
+                "id": 3,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 4,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 5,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 6,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 7,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 8,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 9,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            },
+            {
+                "id": 10,
+                "name": "Event 3",
+                "description": "Description of Event 3"
+            }
+        ]
+    }
+}
