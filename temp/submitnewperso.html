@@ -1,4 +1,4 @@
-N{{define "newPersos"}}
+{{define "newPersos"}}
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,8 +14,8 @@ N{{define "newPersos"}}
     <form action="/NewPersos" method="post">
         <label for="PersosName">Persos Name:</label>
         <input type="text" id="PersosName" name="PersosName" required><br><br>
-        <label for="PersosImage">image:</label>
-        <input type="image" id="PersosImage" name="PersosImage" required><br><br>
+        <label for="PersosImage">image, must be under 10MB</label>
+        <input type="file" id="PersosImage" name="PersosImage" required><br><br>
         <label for="PersosFullName">Nom complet :</label>
         <input type="text" id="PersosFullName" name="PersosFullName" required><br><br>
         <label for="PersosAge">Age du personnage:</label>
