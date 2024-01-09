@@ -28,50 +28,50 @@ func DisplayChar(w http.ResponseWriter, r *http.Request) {
 }
 
 func DisplayPersos(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
-	}
+	// if !logged {
+	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	return
+	// }
 	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
 }
 
 func DisplayArcs(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
-	}
+	// if !logged {
+	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	return
+	// }
 	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
 }
 
 func DisplayEvents(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
-	}
+	// if !logged {
+	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	return
+	// }
 	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
 }
 
 func DisplayCategories(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
-	}
+	// if !logged {
+	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	return
+	// }
 	initTemplate.Temp.ExecuteTemplate(w, "categories", nil)
 }
 
 func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
-	}
+	// if !logged {
+	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	return
+	// }
 	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
 }
 
 func DisplayAddArticle(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
-	}
+	// if !logged {
+	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	return
+	// }
 	initTemplate.Temp.ExecuteTemplate(w, "addarticle", nil)
 }
 
