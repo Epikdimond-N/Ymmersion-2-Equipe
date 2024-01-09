@@ -323,31 +323,39 @@ func getDescriptionByID(id string) string {
 func getDescriptionByIDOther(id string) string {
 	jsonData, err := os.ReadFile("nico.json")
 	if err != nil {
-		fmt.Println("Failed to read JSON data:", err)
+		fmt.Printf("failed to read JSON data: %v", err)
 		return ""
+
 	}
 
-	var categoryData One.CategoryData
-	err = json.Unmarshal(jsonData, &categoryData)
+	// Struct to unmarshal the JSON data
+	var parsedData map[string]map[string][]map[string]string
+
+	// Unmarshal the JSON data into the struct
+	err = json.Unmarshal(jsonData, &parsedData)
 	if err != nil {
-		fmt.Println("Error parsing JSON:", err)
+		fmt.Println("Error:", err)
 		return ""
 	}
-	// Loop through Arcs to find the corresponding description for the given ID
-	for _, arc := range categoryData.Arcs {
-		if arc.ID == id {
-			return arc.Description
-		}
 
-		// Loop through Events to find the corresponding description for the given ID
-		for _, event := range categoryData.Events {
-			if event.ID == id {
-				return event.Description
-			}
-		}
-		fmt.Println("Invalid dataType provided")
+	// Accessing the 'Arcs' section
+	arcList := parsedData["categories"]["Arc"]
+	eventList := parsedData["categories"]["Events"]
+	// Loop through each arc to get its description
+	for _, arc := range arcList {
+		arcName := arc["name"]
+		arcDescription := arc["description"]
+		fmt.Printf("Arc: %s\nDescription: %s\n\n", arcName, arcDescription)
+		return arcDescription
 	}
 
-	fmt.Println("Description not found for ID")
+	for _, arc := range eventList {
+		eventName := arc["name"]
+		eventDescription := arc["description"]
+		fmt.Printf("Arc: %s\nDescription: %s\n\n", eventName, eventDescription)
+		return eventDescription
+	}
+
+	fmt.Printf("description not found for ID: %s", id)
 	return ""
 }
