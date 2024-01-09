@@ -180,7 +180,7 @@
                     
                 }
             },
-
+            
             {
                 "id": "Persos/Marshall Teach Barbe Noire",
                 "name": "Barbe Noire",
@@ -199,8 +199,40 @@
                     }
                     
                 }
-            }
+            },
+            {
+                "id": "Persos/Dracule_Mihawk",
+                "name": "Dracule Mihawk",
+                "img": "../static/img/Mihawk.jpg",
+                "specs": {
+                  "fullName": "Dracule Mihawk",
+                  "aPropos": {
+                    "description": "Dracule Mihawk, également connu sous le nom d'Hawkeye Mihawk, est un personnage énigmatique et redoutable dans l'univers de One Piece. Il est réputé comme le meilleur bretteur du monde.",
+                    "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur.",
+                    "apparence": "Mihawk est un homme grand et mince avec des cheveux noirs et une barbe fine. Il est souvent vu portant des vêtements élégants et tenant son épée emblématique, Kokuto Yoru.",
+                    "capacités": "Maître du sabre, Mihawk est célèbre pour sa maîtrise exceptionnelle de l'épée. Son épée principale, Kokuto Yoru, est une lame noire redoutable. Il peut exécuter des attaques puissantes avec une précision mortelle.",
+                    "histoire": "Peu d'informations sont connues sur le passé de Mihawk. Cependant, il est reconnu comme le rival de Shanks le Roux, un autre Grand Corsaire. Mihawk joue un rôle important dans l'histoire de One Piece en tant que personnage mystérieux et puissant."
+                  }
+                }
+              },
+              {
+                "id": "Persos/Edward_Newgate",
+                "name": "Edward Newgate",
+                "img": "../static/img/Edward_Newgate.jpg",
+                "specs": {
+                  "fullName": "Edward Newgate",
+                  "aPropos": {
+                    "description": "Edward Newgate, plus connu sous le nom de Barbe Blanche, était l'un des pirates les plus puissants et respectés de son époque. Il a été le capitaine de l'Équipage de Barbe Blanche.",
+                    "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage.",
+                    "apparence": "Barbe Blanche était un homme colossal avec une barbe blanche épaisse et une immense cicatrice sur son torse. Il portait un manteau d'amiral et détenait le Gura Gura no Mi, un Fruits du Démon de type Paramecia.",
+                    "capacités": "Avec le Gura Gura no Mi, Barbe Blanche pouvait créer des séismes dévastateurs, le qualifiant de Homme le plus proche du One Piece. Il était également extrêmement robuste et résistant aux attaques.",
+                    "histoire": "La vie de Barbe Blanche a été marquée par des aventures tumultueuses. Il a joué un rôle clé lors de la bataille de Marineford, où il a combattu pour son équipage et a finalement perdu la vie. Malgré sa mort, l'héritage de Barbe Blanche perdure dans le monde de One Piece."
+                  }
+                }
+              }
+              
         ],
+
         "Arcs": [
             {
                 "id": "Arcs/Arc romance Dawn",
