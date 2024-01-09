@@ -7,6 +7,31 @@ import (
 	initTemplate "onepiece/temp"
 )
 
+func NewCharHandler(w http.ResponseWriter, r *http.Request) {
+	//if !logged {
+	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//	return
+	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "newPersos", nil)
+}
+func NewArcHandler(w http.ResponseWriter, r *http.Request) {
+	//if !logged {
+	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//	return
+	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
+}
+func NewEventHandler(w http.ResponseWriter, r *http.Request) {
+	//if !logged {
+	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//	return
+	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
+}
+
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
 	//if !logged {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
