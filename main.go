@@ -13,4 +13,5 @@ func main() {
 	//One.GetChar()
 	//One.GetEvents()
 	// One.UpdateChar()
+	//Two.UpdateChar()
 }

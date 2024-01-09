@@ -1,12 +1,16 @@
 package request
 
-type Specs struct {
-	FullName string  `json:"fullName"`
-	Age      int     `json:"age"`
-	Apropos  aPropos `json:"aPropos"`
+type SearchResult struct {
+	ID          string
+	Image       string
+	Description string
 }
 
-type aPropos struct {
+type CategoryData struct {
+	Categories map[string][]Character `json:"categories"`
+}
+
+type APropos struct {
 	Description string `json:"description"`
 	Role        string `json:"role"`
 	Fruit       string `json:"demonFruit"`
@@ -16,22 +20,29 @@ type aPropos struct {
 	Histoire    string `json:"histoire"`
 }
 
+type Specs struct {
+	FullName string  `json:"fullName"`
+	Age      int     `json:"age"`
+	Apropos  APropos `json:"aPropos"`
+}
 type Character struct {
-	ID    int    `json:"id"`
+	ID    string `json:"id"`
 	Name  string `json:"name"`
-	Img   string `json:"img,omitempty"`
+	Img   string `json:"img"`
 	Specs Specs  `json:"specs"`
 }
 
 type Arc struct {
-	ID          int    `json:"id"`
+	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img,omitempty"`
+	Episode     string `json:"épisodes"`
+	Chapitre    string `json:"chapitre"`
 	Description string `json:"description"`
 }
 
 type Event struct {
-	ID          int    `json:"id"`
+	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img,omitempty"`
 	Description string `json:"description"`
@@ -41,6 +52,12 @@ type Categories struct {
 	Persos []Character `json:"Persos"`
 	Arc    []Arc       `json:"Arcs"`
 	Events []Event     `json:"Events"`
+}
+
+type ResponseData struct {
+	ID          string
+	Img         string
+	Description string
 }
 
 // Login part, plz don't touch >>

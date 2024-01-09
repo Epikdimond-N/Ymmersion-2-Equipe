@@ -1,0 +1,73 @@
+{{define "char"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Presentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .character-info {
+      margin-top: 20px;
+    }
+    .info-item {
+      margin-bottom: 10px;
+    }
+    .info-label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Character Presentation</h1>
+    <div class="character-info">
+      <h2>Character Details</h2>
+      <div class="info-item">
+        <span class="info-label">ID: {{.ID}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Name: {{.Name}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Image: {{.Img}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Full Name: {{.Specs.FullName}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Age: {{.Specs.Age}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Role: {{.Specs.Apropos.Role}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Demon Fruit: {{.Specs.Apropos.Fruit}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Personality: {{.Specs.Apropos.Personalité}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Appearance: {{.Specs.Apropos.Apparence}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Abilities: {{.Specs.Apropos.Capacités}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">History: {{.Specs.Apropos.Histoire}}</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+{{end}}

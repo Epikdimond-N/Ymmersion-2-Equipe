@@ -1,0 +1,22 @@
+{{define "search"}}
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>Search Results</title>
+  </head>
+  <body>
+    <h1>Search Results</h1>
+    <ul>
+      {{range .}}
+        <li>
+          <strong>ID:</strong> {{.ID}}<br/>
+          <strong>Image:</strong> <img src="{{.Image}}" alt="Image not available"><br/>
+          <strong>Description:</strong> {{.Description}}<br/><br/>
+        </li>
+      {{end}}
+    </ul>
+  </body>
+</html>
+{{end}}
