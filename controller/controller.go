@@ -2,10 +2,92 @@ package controller
 
 import (
 	"fmt"
+	"io"
 	"net/http"
 	One "onepiece/go"
 	initTemplate "onepiece/temp"
+	"os"
+	"path/filepath"
+	"strconv"
 )
+
+func NewCharHandler(w http.ResponseWriter, r *http.Request) {
+	//if !logged {
+	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//	return
+	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "newPersos", nil)
+}
+func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
+	// Parse the multipart form data with a maximum upload size of 10MB
+	r.ParseMultipartForm(10 << 20)
+
+	// Retrieve the file from the form
+	file, handler, err := r.FormFile("PersosImage")
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+
+	// Create the file in the destination directory
+	// Change the file path as per your directory structure
+	filePath := filepath.Join("assets", "imgpersos", handler.Filename)
+	dst, err := os.Create(filePath)
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return
+	}
+	defer dst.Close()
+
+	// Copy the file to the destination directory
+	if _, err = io.Copy(dst, file); err != nil {
+		// Handle error
+		http.Error(w, "Error copying the file", http.StatusInternalServerError)
+		return
+	}
+
+	// Once the file is saved, retrieve other form data and call the function to update the character
+	name := r.FormValue("PersosName")
+	fullname := r.FormValue("PersosFullName")
+	age, _ := strconv.Atoi(r.FormValue("PersosAge"))
+	desc := r.FormValue("PersosDescription")
+	role := r.FormValue("PersosRole")
+	fruit := r.FormValue("PersosFruit")
+	persona := r.FormValue("PersosPersonalite")
+	apparence := r.FormValue("PersosApparence")
+	capacites := r.FormValue("PersosCapacités")
+	histoire := r.FormValue("PersosHistoires")
+
+	// Call the function to update character passing the file path as img
+	if err := UpdateChar(name, filePath, fullname, age, desc, role, fruit, persona, apparence, capacites, histoire); err != nil {
+		// Handle error
+		http.Error(w, "Error updating character", http.StatusInternalServerError)
+		return
+	}
+
+	// Optionally, redirect the user to a success page
+	http.Redirect(w, r, "/success", http.StatusFound)
+}
+func NewArcHandler(w http.ResponseWriter, r *http.Request) {
+	//if !logged {
+	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//	return
+	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
+}
+func NewEventHandler(w http.ResponseWriter, r *http.Request) {
+	//if !logged {
+	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//	return
+	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
+}
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
 	//if !logged {
