@@ -27,6 +27,9 @@ func InitServe() {
 	http.HandleFunc("/admin/newChar", controller.NewCharHandler)
 	http.HandleFunc("/admin/newArc", controller.NewArcHandler)
 	http.HandleFunc("/admin/newEvent", controller.NewEventHandler)
+	http.HandleFunc("/admin/newChar/gestion", controller.NewPersosHandler)
+	//http.HandleFunc("/admin/newArc/gestion", controller.)
+	//http.HandleFunc("/admin/newEvent/gestion", controller.)
 
 	rootDoc, _ := os.Getwd()
 	fileserver := http.FileServer(http.Dir(rootDoc + "/assets"))
