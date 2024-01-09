@@ -287,28 +287,50 @@ func getImageByID(id string) string {
 }
 
 func getDescriptionByID(id string) string {
-	jsonData, err := os.ReadFile("nico.json")
+	// Read JSON data from file
+	data, err := os.ReadFile("nico.json")
 	if err != nil {
-		fmt.Println("Failed to read JSON data:", err)
+		fmt.Println("Error reading file:", err)
 		return ""
 	}
 
-	var categoryData One.CategoryData
-	err = json.Unmarshal(jsonData, &categoryData)
-	if err != nil {
-		fmt.Println("Error parsing JSON:", err)
+	// Unmarshal JSON into the defined structs
+	var charactersAndArcs One.Data
+	if err := json.Unmarshal(data, &charactersAndArcs); err != nil {
+		fmt.Println("Error unmarshalling JSON:", err)
 		return ""
 	}
 
-	for _, characters := range categoryData.Categories {
-		for _, character := range characters {
-			fmt.Println(character)
-			if character.ID == id {
-				return character.Specs.Apropos.Description
-			}
+	// Access and utilize the unmarshalled data as needed
+	//fmt.Println("-----------------------Characters--------------------------")
+	for _, character := range charactersAndArcs.Categories.Persos {
+		//fmt.Printf("ID: %s, Name: %s\n", character.ID, character.Name)
+		//fmt.Println("Specs:", character.Specs)
+		//fmt.Println("-------------------------------")
+		if id == character.ID {
+			return character.Specs.Apropos.Description
 		}
 	}
 
-	fmt.Println("description not found for ID:", id)
+	//fmt.Println("----------------------Arcs-----------------------:")
+	for _, arc := range charactersAndArcs.Categories.Arcs {
+		//fmt.Printf("ID: %s, Name: %s\n", arc.ID, arc.Name)
+		//fmt.Println("Description:", arc.Description)
+		//fmt.Println("-------------------------------")
+		if id == arc.ID {
+			return arc.Description
+		}
+	}
+	// Access and utilize the unmarshalled data as needed
+	//fmt.Println("--------------One Piece Events ---------------------")
+	for _, event := range charactersAndArcs.Categories.EventsOnePiece {
+		//fmt.Printf("ID: %s, Name: %s\n", event.ID, event.Name)
+		//fmt.Println("Description:", event.Description)
+		//fmt.Println("-------------------------------")
+		if id == event.ID {
+			return event.Description
+		}
+	}
+
 	return ""
 }

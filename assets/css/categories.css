@@ -16,7 +16,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    background: -webkit-linear-gradient(90deg, #131169,#1a17b4,#131169);/* Chrome 10-25, Safari 5.1-6 */                          
+    background: -webkit-linear-gradient(90deg, #131169,#1a17b4,#131169);                          
 }
 
 .menu{

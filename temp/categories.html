@@ -1,11 +1,11 @@
-{{define "index"}}
+{{define "categories"}}
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/index.css" />
-    <title>Accueil</title>
+    <link rel="stylesheet" href="../static/css/categories.css" />
+    <title>Categories</title>
   </head>
   <body>
     <header>
@@ -38,11 +38,11 @@
 
       <div class="menu">
         <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-        <form action="/search" method="get">
+        <form action="" method="">
           <input
             type="text"
             id="search"
-            name="name"
+            name="q"
             placeholder="Cherchez le One Piece !"
           />
         </form>
@@ -58,36 +58,8 @@
         </div>
       </div>
     </header>
-    <section>
-      <!-- <p>Texte pour tester</p>
-      {{range .}}
-      <li>
-        <div>Nom du personnage: {{.Name}}</div>
-        <br />
-        <div><img src="{{.Img}}" alt="Char Img" class="" /></div>
-        <br />
-        <div>Nom complet {{.Specs.FullName}}</div>
-        <br />
-        <div>Age {{.Specs.Age}}</div>
-        <br />
-        <div>Description {{.Specs.Apropos.Description}}</div>
-        <br />
-        <div>Role {{.Specs.Apropos.Role}}</div>
-        <br />
-        <div>Fruit du démon {{.Specs.Apropos.Fruit}}</div>
-        <br />
-        <div>Personalité {{.Specs.Apropos.Personalité}}</div>
-        <br />
-        <div>Apparence {{.Specs.Apropos.Apparence}}</div>
-        <br />
-        <div>Capacités {{.Specs.Apropos.Capacités}}</div>
-        <br />
-        <div>Histoire {{.Specs.Apropos.Histoire}}</div>
-        <br />
-        <hr />
-      </li>
-      {{end}} -->
-    </section>
+    <section></section>
+    <footer></footer>
   </body>
 </html>
 {{end}}

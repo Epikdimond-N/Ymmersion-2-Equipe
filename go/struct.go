@@ -1,5 +1,12 @@
 package request
 
+type Data struct {
+	Categories struct {
+		Persos         []Character `json:"Persos"`
+		Arcs           []Arc       `json:"Arcs"`
+		EventsOnePiece []Event     `json:"EventsOnePiece"`
+	} `json:"categories"`
+}
 type SearchResult struct {
 	ID          string
 	Image       string
@@ -8,6 +15,9 @@ type SearchResult struct {
 
 type CategoryData struct {
 	Categories map[string][]Character `json:"categories"`
+	Persos     []Character            `json:"Persos"`
+	Arcs       []Arc                  `json:"Arcs"`
+	Events     []Event                `json:"Events"`
 }
 
 type APropos struct {
