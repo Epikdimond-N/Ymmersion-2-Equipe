@@ -10,6 +10,7 @@ import (
 	"log"
 	One "onepiece/go"
 	"os"
+	"strings"
 )
 
 var (
@@ -153,6 +154,7 @@ func CheckPasswordHash(password, hash string) bool {
 }
 
 // Login , warning <<
+
 func UpdateChar(name string, img string, fullname string, age int, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
 	// Read JSON data from file
 	fileData, err := os.ReadFile("nico.json")
@@ -216,35 +218,96 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 }
 
 // Function to find unique IDs, images, and descriptions based on entity name
-func FindInfoByName(categories One.Categories, name string) (ids []string, images []string, descriptions []string) {
-	idMap := make(map[string]bool) // Map to store unique IDs
+func FindInfoByName(search string) []One.SearchResult {
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return nil
+	}
 
-	for _, character := range categories.Persos {
-		if character.Name == name && !idMap[character.ID] {
-			ids = append(ids, character.ID)
-			images = append(images, character.Img)
-			descriptions = append(descriptions, character.Specs.Apropos.Description)
-			idMap[character.ID] = true
+	var categoryData One.CategoryData
+	err = json.Unmarshal(jsonData, &categoryData)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return nil
+	}
+
+	encounteredIDs := make(map[string]bool)
+	var searchResults []One.SearchResult // Store the search results directly as One.SearchResult
+
+	// Loop through all categories and search for the name in the description
+	for _, characters := range categoryData.Categories {
+		for _, character := range characters {
+			if strings.Contains(strings.ToLower(character.Specs.Apropos.Description), strings.ToLower(search)) {
+				if !encounteredIDs[character.ID] {
+					image := getImageByID(character.ID)
+					description := getDescriptionByID(character.ID)
+
+					searchResult := One.SearchResult{
+						ID:          character.ID,
+						Image:       image,
+						Description: description,
+					}
+
+					searchResults = append(searchResults, searchResult)
+					encounteredIDs[character.ID] = true
+				}
+			}
+		}
+	}
+	fmt.Println(searchResults)
+
+	return searchResults
+}
+
+func getImageByID(id string) string {
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return ""
+	}
+
+	var categoryData One.CategoryData
+	err = json.Unmarshal(jsonData, &categoryData)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return ""
+	}
+
+	for _, characters := range categoryData.Categories {
+		for _, character := range characters {
+			if character.ID == id {
+				return character.Img
+			}
 		}
 	}
 
-	for _, arc := range categories.Arc {
-		if arc.Name == name && !idMap[arc.ID] {
-			ids = append(ids, arc.ID)
-			images = append(images, arc.Img)
-			descriptions = append(descriptions, arc.Description)
-			idMap[arc.ID] = true
+	fmt.Println("Image not found for ID:", id)
+	return ""
+}
+
+func getDescriptionByID(id string) string {
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return ""
+	}
+
+	var categoryData One.CategoryData
+	err = json.Unmarshal(jsonData, &categoryData)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return ""
+	}
+
+	for _, characters := range categoryData.Categories {
+		for _, character := range characters {
+			if character.ID == id {
+				return character.Specs.Apropos.Description
+			}
 		}
 	}
 
-	for _, event := range categories.Events {
-		if event.Name == name && !idMap[event.ID] {
-			ids = append(ids, event.ID)
-			images = append(images, event.Img)
-			descriptions = append(descriptions, event.Description)
-			idMap[event.ID] = true
-		}
-	}
-
-	return ids, images, descriptions
+	fmt.Println("description not found for ID:", id)
+	return ""
 }
