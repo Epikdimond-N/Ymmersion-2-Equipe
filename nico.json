@@ -4,7 +4,7 @@
             {
                 "id": "1",
                 "name": "Luffy",
-                "img": "../static/img/luffy.jpg",
+                "img": "../static/img/Luffy.jpg",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
                     "age": 17,
@@ -24,7 +24,7 @@
             {
                 "id": "2",
                 "name": "Zoro",
-                "img": "../static/img/zoro.jpg",
+                "img": "../static/img/Zoro.jpg",
                 "specs": {
                     "fullName": "Roronoa Zoro",
                     "age": 19,
@@ -44,7 +44,7 @@
             {
                 "id": "3",
                 "name": "Sanjii",
-                "img": "../static/img/sanji.jpg",
+                "img": "../static/img/Sanji.jpg",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
                     "age": 19,
@@ -64,7 +64,7 @@
             {
                 "id": "4",
                 "name": "Nami",
-                "img": "../static/img/nami.jpg",
+                "img": "../static/img/Nami.jpg",
                 "specs": {
                     "fullName": "Nami",
                     "age": 18,
@@ -104,7 +104,7 @@
             {
                 "id": "6",
                 "name": "Robin",
-                "img": "../static/img/robin.jpg",
+                "img": "../static/img/Robin.jpg",
                 "specs": {
                     "fullName": "Nico Robin",
                     "age": 28,
@@ -124,7 +124,7 @@
             {
                 "id": "7",
                 "name": "Kaido",
-                "img": "../static/img/kaido.jpg",
+                "img": "../static/img/Kaido.jpg",
                 "specs": {
                     "fullName": "Le Roi des Bêtes Kaido",
                     "age": 59,
@@ -164,7 +164,7 @@
             {
                 "id": "9",
                 "name": "Shanks",
-                "img": "../static/img/shanks.jpg",
+                "img": "../static/img/Shanks.jpg",
                 "specs": {
                     "fullName": "Shanks Le Roux",
                     "age": 39,
@@ -184,7 +184,7 @@
             {
                 "id": "10",
                 "name": "Barbe Noire",
-                "img": "../static/img/barbenoire.jpg",
+                "img": "../static/img/BarbeNoire.jpg",
                 "specs": {
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
                     "age": 40,
