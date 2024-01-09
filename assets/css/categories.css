@@ -21,6 +21,14 @@
     margin: 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/static/img/categories/background.jpg");
+}
+
 .h-link{
     text-decoration: none;
     color: #fff;
@@ -83,9 +91,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height:70vh;
-    background-image: url("/static/img/categories/background.jpg");  
+    height: 80vh;
 }
 
 .container{
@@ -106,6 +112,9 @@ section{
 }
 
 footer{
-    height: 15vh;
-    background: -webkit-linear-gradient(90deg, #131169,#1a17b4,#131169);   
+    height: 30vh;
+    /* background-image: url("/static/img/categories/back-footer.png"); */
+    background-image: url("/static/img/categories/back-bateaux2.png");
+    background-position: top;
+    background-size: 2500px;
 }
