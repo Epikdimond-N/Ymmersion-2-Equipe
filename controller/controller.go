@@ -8,10 +8,10 @@ import (
 )
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/login", http.StatusSeeOther)
-		return
-	}
+	// if !logged {
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	// 	return
+	// }
 	data := One.GetChar()
 	initTemplate.Temp.ExecuteTemplate(w, "index", data)
 }

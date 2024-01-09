@@ -8,9 +8,43 @@
     <title>Accueil</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="menu">
+        <div class="cont">
+          <img class="home" src="../static/img/index/home.png" alt="Home" />
+          <p>ACCUEIL</p>
+        </div>
+        <div class="cont">
+          <img
+            class="categories"
+            src="../static/img/index/categories.png"
+            alt="Categories"
+          />
+          <p>CATEGORIES</p>
+        </div>
+
+        <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+      </div>
+      <img class="logo" src="../static/img/index/logo.png" alt="Logo One Piece" />
+
+      <div class="menu">
+        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+        <form action="" method="">
+          <input
+            type="text"
+            id="search"
+            name="q"
+            placeholder="Cherchez le One Piece !"
+          />
+        </form>
+        <div class="cont">
+          <img class="login" src="../static/img/index/login.png" alt="Login" />
+          <p>LOGIN</p>
+        </div>
+      </div>
+    </header>
     <section>
-      <p>Texte pour tester</p>
+      <!-- <p>Texte pour tester</p>
       {{range .}}
       <li>
         <div>Nom du personnage: {{.Name}}</div>
@@ -37,7 +71,7 @@
         <br />
         <hr />
       </li>
-      {{end}}
+      {{end}} -->
     </section>
   </body>
 </html>
