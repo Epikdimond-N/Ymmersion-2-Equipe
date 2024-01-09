@@ -42,7 +42,7 @@
             },
 
             {
-                "id": 3,
+                "id": "3",
                 "name": "Sanjii",
                 "img": "",
                 "specs": {
@@ -162,7 +162,7 @@
             },
 
             {
-                "id": 9,
+                "id": "9",
                 "name": "Shanks le Roux",
                 "img": "",
                 "specs": {
@@ -182,7 +182,7 @@
             },
 
             {
-                "id": 10,
+                "id": "10",
                 "name": "Marshall D. Teach, surnommé Barbe Noire",
                 "img": "",
                 "specs": {
@@ -203,7 +203,7 @@
         ],
         "Arcs": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Arc Romance Dawn",
                 "img": "",
                 "épisodesAnimé": "1-3",
@@ -212,7 +212,7 @@
             },
 
             {
-                "id": 2,
+                "id": "2",
                 "name": "Arc Orange Town",
                 "img": "",
                 "épisodesAnime": "4-8",
@@ -221,7 +221,7 @@
             },
 
             {
-                "id": 3,
+                "id": "3",
                 "name": "Arc Syrup Village",
                 "img": "",
                 "épisodesAnime": "9-18",
@@ -230,7 +230,7 @@
             },
 
             {
-                "id": 4,
+                "id": "4",
                 "name": "Arc Baratie",
                 "img": "",
                 "épisodesAnime": "19-30",
@@ -239,7 +239,7 @@
             },
 
             {
-                "id": 5,
+                "id": "5",
                 "name": "Arc Arlong Park",
                 "img": "",
                 "épisodesAnime": "31-44",
@@ -248,7 +248,7 @@
             },
 
             {
-                "id": 6,
+                "id": "6",
                 "name": "Arc Loguetown",
                 "img": "",
                 "épisodesAnime": "45-48",
@@ -257,7 +257,7 @@
             },
 
             {
-                "id": 7,
+                "id": "7",
                 "name": "Arc Île de Drum (Drum Island)",
                 "img": "",
                 "épisodesAnime": "78-91",
@@ -266,7 +266,7 @@
             },
             
             {
-                "id": 8,
+                "id": "8",
                 "name": "Arc Alabasta",
                 "img": "",
                 "épisodesAnime": "92-130",
@@ -275,7 +275,7 @@
             },
 
             {
-                "id": 9,
+                "id": "9",
                 "name": "Arc Jaya",
                 "img": "",
                 "épisodesAnime": "144-152",
@@ -284,7 +284,7 @@
             },
 
             {
-                "id": 10,
+                "id": "10",
                 "name": "Arc Skypiea",
                 "img": "",
                 "épisodesAnime": "153-195",
@@ -292,7 +292,7 @@
                 "description": "Luffy et son équipage atteignent Skypiea, une île céleste, et affrontent Ener, un homme avec des pouvoirs de Fruit du Démon. Cet arc explore la recherche du trésor de Skypiea."
             },
             {
-                "id": 11,
+                "id": "11",
                 "name": "Arc Water Seven",
                 "img": "",
                 "épisodesAnime": "207-263",
@@ -301,7 +301,7 @@
             },
 
             {
-                "id": 12,
+                "id": "12",
                 "name": "Arc Enies Lobby",
                 "img": "",
                 "épisodesAnime": "264-312",
@@ -309,7 +309,7 @@
                 "description": "L'équipage continue sa lutte à Enies Lobby pour sauver Nico Robin. Les liens d'amitié sont mis à l'épreuve, et des moments épiques se déroulent."
             },
             {
-                "id": 13,
+                "id": "13",
                 "name": "Arc Thriller Bark",
                 "img": "",
                 "épisodesAnime": "337-381",
@@ -318,7 +318,7 @@
             },
 
             {
-                "id": 14,
+                "id": "14",
                 "name": "Arc Archipel Sabaody",
                 "img": "",
                 "épisodesAnime": "385-405",
@@ -327,7 +327,7 @@
             },
 
             {
-                "id": 15,
+                "id": "15",
                 "name": "Arc Île des Hommes-Poissons (Fish-Man Island)",
                 "img": "",
                 "épisodesAnime": "517-574",
@@ -335,7 +335,7 @@
                 "description": "L'équipage explore Fish-Man Island, où des conflits entre humains et hommes-poissons éclatent. L'arc aborde des thèmes de racisme et d'acceptation."
             },
             {
-                "id": 16,
+                "id": "16",
                 "name": "Arc Punk Hazard",
                 "img": "",
                 "épisodesAnime": "579-625",
@@ -344,7 +344,7 @@
             },
 
             {
-                "id": 17,
+                "id": "17",
                 "name": "Arc Dressrosa",
                 "img": "",
                 "épisodesAnime": "629-746",
@@ -353,7 +353,7 @@
             },
 
             {
-                "id": 18,
+                "id": "18",
                 "name": "Arc Zou",
                 "img": "",
                 "épisodesAnime": "751-779",
@@ -361,7 +361,7 @@
                 "description": "L'équipage découvre l'île de Zou, portant les cicatrices de la guerre. Ils se lancent dans une quête pour atteindre Wano Kuni et sauver Sanji."
             },
             {
-                "id": 19,
+                "id": "19",
                 "name": "Arc Whole Cake Island",
                 "img": "",
                 "épisodesAnime": "783-877",
@@ -370,7 +370,7 @@
             },
 
             {
-                "id": 20,
+                "id": "20",
                 "name": "Arc Levely",
                 "img": "",
                 "épisodesAnime": "",
@@ -379,7 +379,7 @@
             },
 
             {
-                "id": 21,
+                "id": "21",
                 "name": "Arc Wano Kuni",
                 "img": "",
                 "épisodesAnime": "890-1085",
@@ -388,7 +388,7 @@
             },
 
             {
-                "id": 22,
+                "id": "22",
                 "name": "Arc Egg Head",
                 "img": "",
                 "épisodesAnime": "1086",

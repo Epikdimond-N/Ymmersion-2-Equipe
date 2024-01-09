@@ -221,36 +221,35 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 func FindInfoByName(search string) []One.SearchResult {
 	jsonData, err := os.ReadFile("nico.json")
 	if err != nil {
-		fmt.Println("Failed to read JSON data")
+		fmt.Println("Failed to read JSON data:", err)
 		return nil
 	}
 
 	var categoryData One.CategoryData
 	err = json.Unmarshal(jsonData, &categoryData)
 	if err != nil {
-		fmt.Println("Error parsing JSON")
+		fmt.Println("Error parsing JSON:", err)
 		return nil
 	}
 
-	var searchResults []struct {
-		ID       string
-		Category string
-	}
-
 	encounteredIDs := make(map[string]bool)
+	var searchResults []One.SearchResult // Store the search results directly as One.SearchResult
 
 	// Loop through all categories and search for the name in the description
-	for category, characters := range categoryData.Categories {
+	for _, characters := range categoryData.Categories {
 		for _, character := range characters {
 			if strings.Contains(strings.ToLower(character.Specs.Apropos.Description), strings.ToLower(search)) {
 				if !encounteredIDs[character.ID] {
-					searchResults = append(searchResults, struct {
-						ID       string
-						Category string
-					}{
-						ID:       character.ID,
-						Category: category,
-					})
+					image := getImageByID(character.ID)
+					description := getDescriptionByID(character.ID)
+
+					searchResult := One.SearchResult{
+						ID:          character.ID,
+						Image:       image,
+						Description: description,
+					}
+
+					searchResults = append(searchResults, searchResult)
 					encounteredIDs[character.ID] = true
 				}
 			}
@@ -258,23 +257,7 @@ func FindInfoByName(search string) []One.SearchResult {
 	}
 	fmt.Println(searchResults)
 
-	var searchResults1 []One.SearchResult
-
-	// Loop through search results and populate the slice
-	for _, result := range searchResults {
-		// Assuming you have functions to get image and description by ID
-		image := getImageByID(result.ID)
-		description := getDescriptionByID(result.ID)
-
-		searchResult := One.SearchResult{
-			ID:          result.ID,
-			Image:       image,
-			Description: description,
-		}
-
-	}
-
-	return searchResults1
+	return searchResults
 }
 
 func getImageByID(id string) string {
