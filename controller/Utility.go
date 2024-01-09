@@ -300,15 +300,54 @@ func getDescriptionByID(id string) string {
 		return ""
 	}
 
-	for _, characters := range categoryData.Categories {
-		for _, character := range characters {
-			fmt.Println(character)
+	// Loop through each category in the JSON data
+	for _, category := range categoryData.Categories {
+		// Loop through each character within the category
+		for _, character := range category {
+			// Check if the character ID matches the provided ID
 			if character.ID == id {
-				return character.Specs.Apropos.Description
+				// If the character has a description, return it
+				if character.Specs.Apropos.Description != "" {
+					return character.Specs.Apropos.Description
+				}
+				// If the character does not have a description, try an alternate method
+				return getDescriptionByIDOther(id)
 			}
 		}
 	}
 
-	fmt.Println("description not found for ID:", id)
+	fmt.Println("Description not found for ID:", id)
+	return ""
+}
+
+func getDescriptionByIDOther(id string) string {
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return ""
+	}
+
+	var categoryData One.CategoryData
+	err = json.Unmarshal(jsonData, &categoryData)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return ""
+	}
+	// Loop through Arcs to find the corresponding description for the given ID
+	for _, arc := range categoryData.Arcs {
+		if arc.ID == id {
+			return arc.Description
+		}
+
+		// Loop through Events to find the corresponding description for the given ID
+		for _, event := range categoryData.Events {
+			if event.ID == id {
+				return event.Description
+			}
+		}
+		fmt.Println("Invalid dataType provided")
+	}
+
+	fmt.Println("Description not found for ID")
 	return ""
 }

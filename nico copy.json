@@ -44,7 +44,7 @@
             {
                 "id": "3",
                 "name": "Sanjii",
-                "img": "",
+                "img": "../static/img/sanji.jpg",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
                     "age": 19,
@@ -164,7 +164,7 @@
             {
                 "id": "9",
                 "name": "Shanks le Roux",
-                "img": "",
+                "img": "../static/img/shangsleroux.jpg",
                 "specs": {
                     "fullName": "Shanks Le Roux",
                     "age": 39,
@@ -184,7 +184,7 @@
             {
                 "id": "10",
                 "name": "Marshall D. Teach, surnommé Barbe Noire",
-                "img": "",
+                "img": "../static/img/Barbenoir.jpg",
                 "specs": {
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
                     "age": 40,
