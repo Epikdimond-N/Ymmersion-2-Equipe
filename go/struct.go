@@ -1,5 +1,15 @@
 package request
 
+type SearchResult struct {
+	ID          string
+	Image       string
+	Description string
+}
+
+type CategoryData struct {
+	Categories map[string][]Character `json:"categories"`
+}
+
 type APropos struct {
 	Description string `json:"description"`
 	Role        string `json:"role"`
