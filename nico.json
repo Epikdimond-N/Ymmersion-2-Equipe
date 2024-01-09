@@ -44,7 +44,7 @@
             {
                 "id": "3",
                 "name": "Sanjii",
-                "img": "",
+                "img": "../static/img/sanji.jpg",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
                     "age": 19,
