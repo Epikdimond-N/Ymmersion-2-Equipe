@@ -1,5 +1,15 @@
 package request
 
+type SearchResult struct {
+	ID          string
+	Image       string
+	Description string
+}
+
+type CategoryData struct {
+	Categories map[string][]Character `json:"categories"`
+}
+
 type APropos struct {
 	Description string `json:"description"`
 	Role        string `json:"role"`
@@ -16,25 +26,25 @@ type Specs struct {
 	Apropos  APropos `json:"aPropos"`
 }
 type Character struct {
-	ID    int    `json:"id"`
+	ID    string `json:"id"`
 	Name  string `json:"name"`
-	Img   string `json:"img,omitempty"`
+	Img   string `json:"img"`
 	Specs Specs  `json:"specs"`
 }
 
 type Arc struct {
-	ID          int    `json:"id"`
+	ID          string `json:"id"`
 	Name        string `json:"name"`
-	Img         string `json:"img,omitempty"`
+	Img         string `json:"img"`
 	Episode     string `json:"épisodes"`
 	Chapitre    string `json:"chapitre"`
 	Description string `json:"description"`
 }
 
 type Event struct {
-	ID          int    `json:"id"`
+	ID          string `json:"id"`
 	Name        string `json:"name"`
-	Img         string `json:"img,omitempty"`
+	Img         string `json:"img"`
 	Description string `json:"description"`
 }
 
@@ -42,6 +52,12 @@ type Categories struct {
 	Persos []Character `json:"Persos"`
 	Arc    []Arc       `json:"Arcs"`
 	Events []Event     `json:"Events"`
+}
+
+type ResponseData struct {
+	ID          string
+	Img         string
+	Description string
 }
 
 // Login part, plz don't touch >>

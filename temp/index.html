@@ -4,27 +4,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/index.css" />
     <title>Accueil</title>
   </head>
   <body>
-    <p>Texte pour tester</p>
-    {{range .}}
-    <li>
-      <div>Nom du personnage: {{.Name}}</div> <br>
-      <div><img src="{{.Img}}" alt="Char Img" class=""></div> <br>
-      <div>Nom complet {{.Specs.FullName}}</div><br>
-      <div>Age {{.Specs.Age}}</div><br>
-      <div>Description {{.Specs.Apropos.Description}}</div><br>
-      <div>Role {{.Specs.Apropos.Role}}</div><br>
-      <div>Fruit du démon {{.Specs.Apropos.Fruit}}</div><br>
-      <div>Personalité {{.Specs.Apropos.Personalité}}</div><br>
-      <div>Apparence {{.Specs.Apropos.Apparence}}</div><br>
-      <div>Capacités {{.Specs.Apropos.Capacités}}</div><br>
-      <div>Histoire {{.Specs.Apropos.Histoire}}</div><br>
-      <hr>
-    </li>
-    {{end}}
+    <header>
+      <div class="menu">
+        <div class="cont">
+          <img class="home" src="../static/img/index/home.png" alt="Home" />
+          <p>ACCUEIL</p>
+        </div>
+        <div class="cont">
+          <img
+            class="categories"
+            src="../static/img/index/categories.png"
+            alt="Categories"
+          />
+          <p>CATEGORIES</p>
+        </div>
+
+        <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+      </div>
+      <img class="logo" src="../static/img/index/logo.png" alt="Logo One Piece" />
+
+      <div class="menu">
+        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+        <form action="" method="">
+          <input
+            type="text"
+            id="search"
+            name="q"
+            placeholder="Cherchez le One Piece !"
+          />
+        </form>
+        <div class="cont">
+          <img class="login" src="../static/img/index/login.png" alt="Login" />
+          <p>LOGIN</p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <!-- <p>Texte pour tester</p>
+      {{range .}}
+      <li>
+        <div>Nom du personnage: {{.Name}}</div>
+        <br />
+        <div><img src="{{.Img}}" alt="Char Img" class="" /></div>
+        <br />
+        <div>Nom complet {{.Specs.FullName}}</div>
+        <br />
+        <div>Age {{.Specs.Age}}</div>
+        <br />
+        <div>Description {{.Specs.Apropos.Description}}</div>
+        <br />
+        <div>Role {{.Specs.Apropos.Role}}</div>
+        <br />
+        <div>Fruit du démon {{.Specs.Apropos.Fruit}}</div>
+        <br />
+        <div>Personalité {{.Specs.Apropos.Personalité}}</div>
+        <br />
+        <div>Apparence {{.Specs.Apropos.Apparence}}</div>
+        <br />
+        <div>Capacités {{.Specs.Apropos.Capacités}}</div>
+        <br />
+        <div>Histoire {{.Specs.Apropos.Histoire}}</div>
+        <br />
+        <hr />
+      </li>
+      {{end}} -->
+    </section>
   </body>
 </html>
 {{end}}

@@ -8,12 +8,23 @@ import (
 )
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//if !logged {
+	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	//	return
+	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "index", nil)
+}
+
+func DisplayChar(w http.ResponseWriter, r *http.Request) {
+	data := One.GetChar()
+	ToSend, err := One.GetCharacterByID(data, "1")
+	if err != nil {
+		// Handle error (e.g., character not found)
+		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	data := One.GetChar()
-	initTemplate.Temp.ExecuteTemplate(w, "index", data)
+	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
 }
 
 func DisplayPersos(w http.ResponseWriter, r *http.Request) {
@@ -48,14 +59,6 @@ func DisplayCategories(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "categories", nil)
 }
 
-func DisplaySearch(w http.ResponseWriter, r *http.Request) {
-	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
-	}
-	initTemplate.Temp.ExecuteTemplate(w, "search", nil)
-}
-
 func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 	if !logged {
 		http.Redirect(w, r, "/", http.StatusSeeOther)
@@ -74,6 +77,23 @@ func DisplayAddArticle(w http.ResponseWriter, r *http.Request) {
 
 func Display404(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "404", nil)
+}
+
+func HandleSearch(w http.ResponseWriter, r *http.Request) {
+	search := r.URL.Query().Get("name")
+	if search == "" {
+		http.Error(w, "Please provide a name to search", http.StatusBadRequest)
+		return
+	}
+
+	searchResults := FindInfoByName(search)
+
+	// Execute the template with searchResults
+	err := initTemplate.Temp.ExecuteTemplate(w, "search", searchResults)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 }
 
 // Login part, warning >>

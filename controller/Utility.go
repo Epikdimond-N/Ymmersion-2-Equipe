@@ -10,6 +10,7 @@ import (
 	"log"
 	One "onepiece/go"
 	"os"
+	"strings"
 )
 
 var (
@@ -153,6 +154,7 @@ func CheckPasswordHash(password, hash string) bool {
 }
 
 // Login , warning <<
+
 func UpdateChar(name string, img string, fullname string, age int, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
 	// Read JSON data from file
 	fileData, err := os.ReadFile("nico.json")
@@ -213,4 +215,100 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 	fmt.Println("Successfully added a new perso and updated nico.json")
 	return nil
 
+}
+
+// Function to find unique IDs, images, and descriptions based on entity name
+func FindInfoByName(search string) []One.SearchResult {
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return nil
+	}
+
+	var categoryData One.CategoryData
+	err = json.Unmarshal(jsonData, &categoryData)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return nil
+	}
+	encounteredIDs := make(map[string]bool)
+	var searchResults []One.SearchResult // Store the search results directly as One.SearchResult
+
+	// Loop through all categories and search for the name in the description
+	for _, characters := range categoryData.Categories {
+		for _, character := range characters {
+			if strings.Contains(strings.ToLower(character.Specs.Apropos.Description), strings.ToLower(search)) ||
+				strings.Contains(strings.ToLower(character.Name), strings.ToLower(search)) ||
+				strings.Contains(strings.ToLower(character.Specs.FullName), strings.ToLower(search)) {
+				if !encounteredIDs[character.ID] {
+					image := getImageByID(character.ID)
+					description := getDescriptionByID(character.ID)
+
+					searchResult := One.SearchResult{
+						ID:          character.ID,
+						Image:       image,
+						Description: description,
+					}
+
+					searchResults = append(searchResults, searchResult)
+					encounteredIDs[character.ID] = true
+				}
+			}
+		}
+	}
+
+	return searchResults
+}
+
+func getImageByID(id string) string {
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return ""
+	}
+
+	var categoryData One.CategoryData
+	err = json.Unmarshal(jsonData, &categoryData)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return ""
+	}
+
+	for _, characters := range categoryData.Categories {
+		for _, character := range characters {
+			if character.ID == id {
+				return character.Img
+			}
+		}
+	}
+
+	fmt.Println("Image not found for ID:", id)
+	return ""
+}
+
+func getDescriptionByID(id string) string {
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return ""
+	}
+
+	var categoryData One.CategoryData
+	err = json.Unmarshal(jsonData, &categoryData)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return ""
+	}
+
+	for _, characters := range categoryData.Categories {
+		for _, character := range characters {
+			fmt.Println(character)
+			if character.ID == id {
+				return character.Specs.Apropos.Description
+			}
+		}
+	}
+
+	fmt.Println("description not found for ID:", id)
+	return ""
 }

@@ -32,7 +32,7 @@ func GetChar() []Character {
 	// Display information about each character
 	var char []Character
 	for _, character := range characters.Persos {
-		fmt.Printf("Character ID: %d\n", character.ID)
+		fmt.Printf("Character ID: %s\n", character.ID)
 
 		fmt.Printf("Name: %s\n", character.Name)
 		if character.Img != "" {
@@ -97,7 +97,7 @@ func GetArcs() []Arc {
 	var arc []Arc
 	// Display information about each arcs
 	for _, Arcs := range arcs.Arc {
-		fmt.Printf("Arcs ID: %d\n", Arcs.ID)
+		fmt.Printf("Arcs ID: %s\n", Arcs.ID)
 		if Arcs.Img != "" {
 			fmt.Printf("Image URL: %s\n", Arcs.Img)
 		}
@@ -146,7 +146,7 @@ func GetEvents() []Event {
 	var event []Event
 	// Display information about each event
 	for _, Events := range events.Events {
-		fmt.Printf("Event ID: %d\n", Events.ID)
+		fmt.Printf("Event ID: %s\n", Events.ID)
 		if Events.Img != "" {
 			fmt.Printf("Image URL: %s\n", Events.Img)
 		}
@@ -166,4 +166,13 @@ func GetEvents() []Event {
 	}
 
 	return event
+}
+
+func GetCharacterByID(characters []Character, id string) (Character, error) {
+	for _, character := range characters {
+		if character.ID == id {
+			return character, nil // Return the character if the ID matches
+		}
+	}
+	return Character{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
 }

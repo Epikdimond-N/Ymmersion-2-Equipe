@@ -1,3 +1,66 @@
 *{
-    background-color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background: -webkit-linear-gradient(90deg, #131169,#1a17b4,#131169);/* Chrome 10-25, Safari 5.1-6 */                          
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: 40px;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    font-weight: 1000;
+    color: #fff;
+    align-items: center;
+}
+
+.home{
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.categories{
+    height: 70px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.admin{
+    height: 100px;
+}
+
+.logo{
+    height: 100px;
+}
+
+.login{
+    height:60px;
+}
+
+input{
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+body{
+    z-index: 2;
+    background-image: url("/static/img/index/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
 }
