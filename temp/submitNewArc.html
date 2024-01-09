@@ -1,0 +1,29 @@
+{{define "newArc"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/statics/fav.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <script src="/static/JS/script.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register Arc</h1>
+    <form action="/NewArc" method="post">
+        <label for="arcName">Arc Name:</label>
+        <input type="text" id="arcName" name="arcName" required><br><br>
+        <label for="arcImage">image:</label>
+        <input type="image" id="arcImage" name="arcImage" required><br><br>
+        <label for="arcEpisodeAnime">Arc épisode animé (debut-fin):</label>
+        <input type="text" id="arcEpisodeAnime" name="arcEpisodeAnime" required><br><br>
+        <label for="arcChapitreManga">Arc chapitre manga (debut-fin):</label>
+        <input type="text" id="arcChapitreManga" name="arcChapitreManga" required><br><br>
+        <label for="arcDescription">Arc description:</label>
+        <input type="text" id="arcDescription" name="arcDescription" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+{{end}}

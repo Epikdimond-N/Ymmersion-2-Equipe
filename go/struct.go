@@ -1,5 +1,12 @@
 package request
 
+type Data struct {
+	Categories struct {
+		Persos         []Character `json:"Persos"`
+		Arcs           []Arc       `json:"Arcs"`
+		EventsOnePiece []Event     `json:"EventsOnePiece"`
+	} `json:"categories"`
+}
 type SearchResult struct {
 	ID          string
 	Image       string

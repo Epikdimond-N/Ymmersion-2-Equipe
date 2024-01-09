@@ -287,67 +287,50 @@ func getImageByID(id string) string {
 }
 
 func getDescriptionByID(id string) string {
-	jsonData, err := os.ReadFile("nico.json")
+	// Read JSON data from file
+	data, err := os.ReadFile("nico.json")
 	if err != nil {
-		fmt.Println("Failed to read JSON data:", err)
+		fmt.Println("Error reading file:", err)
 		return ""
 	}
 
-	var categoryData One.CategoryData
-	err = json.Unmarshal(jsonData, &categoryData)
-	if err != nil {
-		fmt.Println("Error parsing JSON:", err)
+	// Unmarshal JSON into the defined structs
+	var charactersAndArcs One.Data
+	if err := json.Unmarshal(data, &charactersAndArcs); err != nil {
+		fmt.Println("Error unmarshalling JSON:", err)
 		return ""
 	}
 
-	// Loop through each category in the JSON data
-	for _, category := range categoryData.Categories {
-		// Loop through each character within the category
-		for _, character := range category {
-			// Check if the character ID matches the provided ID
-			if character.ID == id {
-				// If the character has a description, return it
-				if character.Specs.Apropos.Description != "" {
-					return character.Specs.Apropos.Description
-				}
-				// If the character does not have a description, try an alternate method
-				return getDescriptionByIDOther(id)
-			}
+	// Access and utilize the unmarshalled data as needed
+	//fmt.Println("-----------------------Characters--------------------------")
+	for _, character := range charactersAndArcs.Categories.Persos {
+		//fmt.Printf("ID: %s, Name: %s\n", character.ID, character.Name)
+		//fmt.Println("Specs:", character.Specs)
+		//fmt.Println("-------------------------------")
+		if id == character.ID {
+			return character.Specs.Apropos.Description
 		}
 	}
 
-	fmt.Println("Description not found for ID:", id)
-	return ""
-}
-
-func getDescriptionByIDOther(id string) string {
-	jsonData, err := os.ReadFile("nico.json")
-	if err != nil {
-		fmt.Println("Failed to read JSON data:", err)
-		return ""
-	}
-
-	var categoryData One.CategoryData
-	err = json.Unmarshal(jsonData, &categoryData)
-	if err != nil {
-		fmt.Println("Error parsing JSON:", err)
-		return ""
-	}
-	// Loop through Arcs to find the corresponding description for the given ID
-	for _, arc := range categoryData.Arcs {
-		if arc.ID == id {
+	//fmt.Println("----------------------Arcs-----------------------:")
+	for _, arc := range charactersAndArcs.Categories.Arcs {
+		//fmt.Printf("ID: %s, Name: %s\n", arc.ID, arc.Name)
+		//fmt.Println("Description:", arc.Description)
+		//fmt.Println("-------------------------------")
+		if id == arc.ID {
 			return arc.Description
 		}
-
-		// Loop through Events to find the corresponding description for the given ID
-		for _, event := range categoryData.Events {
-			if event.ID == id {
-				return event.Description
-			}
+	}
+	// Access and utilize the unmarshalled data as needed
+	//fmt.Println("--------------One Piece Events ---------------------")
+	for _, event := range charactersAndArcs.Categories.EventsOnePiece {
+		//fmt.Printf("ID: %s, Name: %s\n", event.ID, event.Name)
+		//fmt.Println("Description:", event.Description)
+		//fmt.Println("-------------------------------")
+		if id == event.ID {
+			return event.Description
 		}
-		fmt.Println("Invalid dataType provided")
 	}
 
-	fmt.Println("Description not found for ID")
 	return ""
 }
