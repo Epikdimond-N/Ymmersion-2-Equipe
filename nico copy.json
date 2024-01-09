@@ -4,7 +4,7 @@
             {
                 "id": 1,
                 "name": "Luffy",
-                "img": "",
+                "img": "../static/img/luffy.jpg",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
                     "age": 17,
@@ -24,7 +24,7 @@
             {
                 "id": 2,
                 "name": "Zoro",
-                "img": "",
+                "img":  "../static/img/luffy.jpg",
                 "specs": {
                     "fullName": "Roronoa Zoro",
                     "age": 19,
@@ -44,7 +44,7 @@
             {
                 "id": 3,
                 "name": "Sanjii",
-                "img": "",
+                "img": "../static/img/sanji.jpg",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
                     "age": 19,
@@ -64,7 +64,7 @@
             {
                 "id": 4,
                 "name": "Nami",
-                "img": "",
+                "img": "../static/img/Nami.jpg",
                 "specs": {
                     "fullName": "Nami",
                     "age": 18,
@@ -84,7 +84,7 @@
             {
                 "id": 5,
                 "name": "Usoop",
-                "img": "",
+                "img": "../static/img/usoop.jpg",
                 "specs": {
                     "fullName": "Usopp",
                     "age": 17,
@@ -104,7 +104,7 @@
             {
                 "id": 6,
                 "name": "Nico Robin",
-                "img": "",
+                "img": "../static/img/robin.jpg",
                 "specs": {
                     "fullName": "Nico Robin",
                     "age": 28,
@@ -124,7 +124,7 @@
             {
                 "id": 7,
                 "name": "Kaido",
-                "img": "",
+                "img": "../static/img/kaido.jpg",
                 "specs": {
                     "fullName": "Kaido",
                     "age": 59,
@@ -144,7 +144,7 @@
             {
                 "id": 8,
                 "name": "BigMom",
-                "img": "",
+                "img": "../static/img/bigmom.jpg",
                 "specs": {
                     "fullName": "Charlotte Linlin, surnommée Big Mom",
                     "age": 68,
@@ -164,7 +164,7 @@
             {
                 "id": 9,
                 "name": "Shanks le Roux",
-                "img": "",
+                "img": "../static/img/shangsleroux.jpg",
                 "specs": {
                     "fullName": "Shanks",
                     "age": 39,
@@ -184,7 +184,7 @@
             {
                 "id": 10,
                 "name": "Marshall D. Teach, surnommé Barbe Noire",
-                "img": "",
+                "img": "../static/img/Barbenoir.jpg",
                 "specs": {
                     "fullName": "17",
                     "age": 40,
@@ -206,7 +206,7 @@
             {
                 "id": 1,
                 "name": "Arc 1",
-                "img": "",
+                "img": "../static/img/romance down arc.jpg",
                 "épisodes": "",
                 "chapitre": "",
                 "description": "Description of Arc 1"
@@ -215,7 +215,7 @@
             {
                 "id": 2,
                 "name": "Arc 1",
-                "img": "",
+                "img": "../static/img/arc orange.jpg",
                 "épisodes": "",
                 "description": "Description of Arc 1"
             },
@@ -223,7 +223,7 @@
             {
                 "id": 3,
                 "name": "Arc 1",
-                "img": "",
+                "img": "../static/img/syrup village.jpg",
                 "épisodes": "",
                 "description": "Description of Arc 1"
             },
@@ -231,12 +231,13 @@
             {
                 "id": 4,
                 "name": "Arc 1",
-                "img": "",
+                "img": "../static/img/arc baratie.jpg",
                 "épisodes": "",
-                "description": "Description of Arc 1"
+                "description": "Description of Arc 1"    
             },
 
             {
+            
                 "id": 5,
                 "name": "Arc 1",
                 "img": "",
