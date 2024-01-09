@@ -1,0 +1,41 @@
+{{define "NewPersos"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/statics/fav.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <script src="/static/JS/script.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register Persos</h1>
+    <form action="/NewPersos" method="post">
+        <label for="PersosName">Persos Name:</label>
+        <input type="text" id="PersosName" name="PersosName" required><br><br>
+        <label for="PersosImage">image:</label>
+        <input type="image" id="PersosImage" name="PersosImage" required><br><br>
+        <label for="PersosFullName">Nom complet :</label>
+        <input type="text" id="PersosFullName" name="PersosFullName" required><br><br>
+        <label for="PersosAge">Age du personnage:</label>
+        <input type="text" id="PersosAge" name="PersosAge" required><br><br>
+        <label for="PersosDescription">Drescriprion du personnage :</label>
+        <input type="text" id="PersosDescription" name="PersosDescription" required><br><br>
+        <label for="PersosRole">Role du personnage:</label>
+        <input type="text" id="PersosRole" name="PersosRole" required><br><br>
+        <label for="PersosFruit">Le Fruit du demon (si il n'en a pas, preciser)</label>
+        <input type="text" id="PersosFruit" name="PersosFruit" required><br><br>
+        <label for="PersosPersonalite">Personalité du personage:</label>
+        <input type="text" id="PersosPersonalite" name="PersosPersonalite" required><br><br>
+        <label for="PersosApparence">Apparence du personnage :</label>
+        <input type="text" id="PersosApparence" name="PersosApparence" required><br><br>
+        <label for="PersosCapacités">Capacité du personnage:</label>
+        <input type="text" id="PersosCapacités" name="PersosCapacités" required><br><br>
+        <label for="PersosHistoires">Histoire du personnage:</label>
+        <input type="text" id="PersosHistoires" name="PersosHistoires" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+{{end}}
