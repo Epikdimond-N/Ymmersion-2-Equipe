@@ -35,7 +35,7 @@ type Character struct {
 type Arc struct {
 	ID          string `json:"id"`
 	Name        string `json:"name"`
-	Img         string `json:"img,omitempty"`
+	Img         string `json:"img"`
 	Episode     string `json:"épisodes"`
 	Chapitre    string `json:"chapitre"`
 	Description string `json:"description"`
@@ -44,7 +44,7 @@ type Arc struct {
 type Event struct {
 	ID          string `json:"id"`
 	Name        string `json:"name"`
-	Img         string `json:"img,omitempty"`
+	Img         string `json:"img"`
 	Description string `json:"description"`
 }
 

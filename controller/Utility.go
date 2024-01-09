@@ -231,14 +231,15 @@ func FindInfoByName(search string) []One.SearchResult {
 		fmt.Println("Error parsing JSON:", err)
 		return nil
 	}
-
 	encounteredIDs := make(map[string]bool)
 	var searchResults []One.SearchResult // Store the search results directly as One.SearchResult
 
 	// Loop through all categories and search for the name in the description
 	for _, characters := range categoryData.Categories {
 		for _, character := range characters {
-			if strings.Contains(strings.ToLower(character.Specs.Apropos.Description), strings.ToLower(search)) {
+			if strings.Contains(strings.ToLower(character.Specs.Apropos.Description), strings.ToLower(search)) ||
+				strings.Contains(strings.ToLower(character.Name), strings.ToLower(search)) ||
+				strings.Contains(strings.ToLower(character.Specs.FullName), strings.ToLower(search)) {
 				if !encounteredIDs[character.ID] {
 					image := getImageByID(character.ID)
 					description := getDescriptionByID(character.ID)
@@ -255,7 +256,6 @@ func FindInfoByName(search string) []One.SearchResult {
 			}
 		}
 	}
-	fmt.Println(searchResults)
 
 	return searchResults
 }
@@ -302,6 +302,7 @@ func getDescriptionByID(id string) string {
 
 	for _, characters := range categoryData.Categories {
 		for _, character := range characters {
+			fmt.Println(character)
 			if character.ID == id {
 				return character.Specs.Apropos.Description
 			}
