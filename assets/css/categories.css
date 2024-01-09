@@ -61,11 +61,30 @@ input{
 
 }
 
-body{
-    z-index: 2;
-    background-image: url("/static/img/index/background.jpg");
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:70vh;
+    background-image: url("/static/img/categories/back.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
+    background-size: cover;  
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.affiche{
+    width: 250px;
+}
+
+footer{
+    height: 15vh;
+    background: -webkit-linear-gradient(90deg, #131169,#1a17b4,#131169);   
 }
