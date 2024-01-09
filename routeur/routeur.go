@@ -24,9 +24,9 @@ func InitServe() {
 	http.HandleFunc("/successLogin", controller.SuccessLoginHandler)       // verifé les donnés entrée et les data du json user.json
 	http.HandleFunc("/logout", controller.LogoutHandler)                   // reset les variable login / username / password / admin
 	http.HandleFunc("/changeLogin", controller.ChangeLoginHandler)         // ouvre la possibilité de changer de username
-	http.HandleFunc("/Admin/newChar", controller.NewCharHandler)
-	http.HandleFunc("/Admin/newArc", controller.NewArcHandler)
-	http.HandleFunc("/Admin/newEvent", controller.NewEventHandler)
+	//http.HandleFunc("/Admin/newChar", controller.NewCharHandler)
+	//http.HandleFunc("/Admin/newArc", controller.NewArcHandler)
+	//http.HandleFunc("/Admin/newEvent", controller.NewEventHandler)
 
 	rootDoc, _ := os.Getwd()
 	fileserver := http.FileServer(http.Dir(rootDoc + "/assets"))
