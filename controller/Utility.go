@@ -302,31 +302,31 @@ func getDescriptionByID(id string) string {
 	}
 
 	// Access and utilize the unmarshalled data as needed
-	fmt.Println("-----------------------Characters--------------------------")
+	//fmt.Println("-----------------------Characters--------------------------")
 	for _, character := range charactersAndArcs.Categories.Persos {
-		fmt.Printf("ID: %s, Name: %s\n", character.ID, character.Name)
-		fmt.Println("Specs:", character.Specs)
-		fmt.Println("-------------------------------")
+		//fmt.Printf("ID: %s, Name: %s\n", character.ID, character.Name)
+		//fmt.Println("Specs:", character.Specs)
+		//fmt.Println("-------------------------------")
 		if id == character.ID {
 			return character.Specs.Apropos.Description
 		}
 	}
 
-	fmt.Println("----------------------Arcs-----------------------:")
+	//fmt.Println("----------------------Arcs-----------------------:")
 	for _, arc := range charactersAndArcs.Categories.Arcs {
-		fmt.Printf("ID: %s, Name: %s\n", arc.ID, arc.Name)
-		fmt.Println("Description:", arc.Description)
-		fmt.Println("-------------------------------")
+		//fmt.Printf("ID: %s, Name: %s\n", arc.ID, arc.Name)
+		//fmt.Println("Description:", arc.Description)
+		//fmt.Println("-------------------------------")
 		if id == arc.ID {
 			return arc.Description
 		}
 	}
 	// Access and utilize the unmarshalled data as needed
-	fmt.Println("--------------One Piece Events ---------------------")
+	//fmt.Println("--------------One Piece Events ---------------------")
 	for _, event := range charactersAndArcs.Categories.EventsOnePiece {
-		fmt.Printf("ID: %s, Name: %s\n", event.ID, event.Name)
-		fmt.Println("Description:", event.Description)
-		fmt.Println("-------------------------------")
+		//fmt.Printf("ID: %s, Name: %s\n", event.ID, event.Name)
+		//fmt.Println("Description:", event.Description)
+		//fmt.Println("-------------------------------")
 		if id == event.ID {
 			return event.Description
 		}
