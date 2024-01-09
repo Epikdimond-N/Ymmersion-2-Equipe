@@ -170,7 +170,7 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 
 	// New character data
 	newPerso := map[string]interface{}{
-		"ID":   99,
+		"ID":   "perso/" + fullname,
 		"Name": name,
 		"Img":  img,
 		"Specs": map[string]interface{}{
