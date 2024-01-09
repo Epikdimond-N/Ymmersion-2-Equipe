@@ -19,6 +19,7 @@ func NewCharHandler(w http.ResponseWriter, r *http.Request) {
 
 	initTemplate.Temp.ExecuteTemplate(w, "newPersos", nil)
 }
+
 func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	// Parse the multipart form data with a maximum upload size of 10MB
 	r.ParseMultipartForm(10 << 20)
@@ -70,7 +71,7 @@ func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Optionally, redirect the user to a success page
-	http.Redirect(w, r, "/success", http.StatusFound)
+	http.Redirect(w, r, "/", http.StatusFound)
 }
 func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 	//if !logged {

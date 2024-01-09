@@ -169,21 +169,26 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 	}
 
 	// New character data
+	newID := "Persos/" + fullname
+	for idExists(parsedData, newID) {
+		newID += "/new"
+	}
+
 	newPerso := map[string]interface{}{
-		"ID":   "Persos/" + fullname,
-		"Name": name,
-		"Img":  img,
-		"Specs": map[string]interface{}{
-			"FullName": fullname,
-			"Age":      age,
-			"Apropos": map[string]string{
-				"Description": desc,
-				"Role":        role,
-				"Fruit":       fruit,
-				"Personalité": persona,
-				"Apparence":   apparence,
-				"Capacités":   capacite,
-				"Histoire":    histoire,
+		"id":   newID,
+		"name": name,
+		"img":  img,
+		"specs": map[string]interface{}{
+			"fullName": fullname,
+			"age":      age,
+			"aPropos": map[string]string{
+				"description": desc,
+				"role":        role,
+				"demonFruit":  fruit,
+				"personalité": persona,
+				"apparence":   apparence,
+				"capacités":   capacite,
+				"histoire":    histoire,
 			},
 		},
 	}
@@ -192,7 +197,7 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 	if !ok {
 		return errors.New("error accessing categories data")
 	}
-	// Append the new character to the "Persos" array in parsedData
+
 	persos, ok := categories["Persos"].([]interface{})
 	if !ok {
 		return errors.New("error accessing Persos data")
@@ -214,7 +219,136 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 
 	fmt.Println("Successfully added a new perso and updated nico.json")
 	return nil
+}
 
+func idExists(data map[string]interface{}, id string) bool {
+	categories, ok := data["categories"].(map[string]interface{})
+	if !ok {
+		return false
+	}
+
+	persos, ok := categories["Persos"].([]interface{})
+	if !ok {
+		return false
+	}
+
+	for _, perso := range persos {
+		if p, ok := perso.(map[string]interface{}); ok {
+			if pID, exists := p["ID"].(string); exists && pID == id {
+				return true
+			}
+		}
+	}
+	return false
+}
+
+func UpdateArc(name string, img string, episode string, chapitre string, desc string) error {
+	// Read JSON data from file
+	fileData, err := os.ReadFile("nico.json")
+	if err != nil {
+		return fmt.Errorf("error reading file: %w", err)
+	}
+
+	// Unmarshal the JSON data into a map[string]interface{}
+	var parsedData map[string]interface{}
+	if err := json.Unmarshal(fileData, &parsedData); err != nil {
+		return fmt.Errorf("error parsing JSON: %w", err)
+	}
+
+	// New character data
+	newID := "Arcs/" + name
+	for idExists(parsedData, newID) {
+		newID += "/new"
+	}
+
+	newArc := map[string]interface{}{
+		"id":             newID,
+		"name":           name,
+		"img":            img,
+		"épisodesAnimé":  episode,
+		"chapitresManga": chapitre,
+		"description":    desc,
+	}
+
+	categories, ok := parsedData["categories"].(map[string]interface{})
+	if !ok {
+		return errors.New("error accessing categories data")
+	}
+
+	arcs, ok := categories["Arcs"].([]interface{})
+	if !ok {
+		return errors.New("error accessing Persos data")
+	}
+	arcs = append(arcs, newArc)
+	categories["Arcs"] = arcs
+	parsedData["categories"] = categories
+
+	// Marshal the modified data back to JSON
+	updatedData, err := json.MarshalIndent(parsedData, "", "    ")
+	if err != nil {
+		return fmt.Errorf("error marshaling JSON: %w", err)
+	}
+
+	// Write the updated JSON data back to the file
+	if err := os.WriteFile("nico.json", updatedData, 0644); err != nil {
+		return fmt.Errorf("error writing to file: %w", err)
+	}
+
+	fmt.Println("Successfully added a new perso and updated nico.json")
+	return nil
+}
+
+func UpdateEvent(name string, desc string) error {
+	// Read JSON data from file
+	fileData, err := os.ReadFile("nico.json")
+	if err != nil {
+		return fmt.Errorf("error reading file: %w", err)
+	}
+
+	// Unmarshal the JSON data into a map[string]interface{}
+	var parsedData map[string]interface{}
+	if err := json.Unmarshal(fileData, &parsedData); err != nil {
+		return fmt.Errorf("error parsing JSON: %w", err)
+	}
+
+	// New character data
+	newID := "Events/" + name
+	for idExists(parsedData, newID) {
+		newID += "/new"
+	}
+
+	newEvent := map[string]interface{}{
+		"id":          newID,
+		"name":        name,
+		"description": desc,
+	}
+
+	categories, ok := parsedData["categories"].(map[string]interface{})
+	if !ok {
+		return errors.New("error accessing categories data")
+	}
+
+	events, ok := categories["EventsOnePiece"].([]interface{})
+	if !ok {
+		return errors.New("error accessing Persos data")
+	}
+	events = append(events, newEvent)
+	categories["EventsOnePiece"] = events
+	parsedData["categories"] = categories
+
+	// Marshal the modified data back to JSON
+	updatedData, err := json.MarshalIndent(parsedData, "", "    ")
+	if err != nil {
+		return fmt.Errorf("error marshaling JSON: %w", err)
+	}
+
+	// Write the updated JSON data back to the file
+	if err := os.WriteFile("nico.json", updatedData, 0644); err != nil {
+		return fmt.Errorf("error writing to file: %w", err)
+	}
+
+	fmt.Println("Successfully added a new perso and updated nico.json")
+	return nil
 }
 
 // Function to find unique IDs, images, and descriptions based on entity name
