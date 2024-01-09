@@ -180,7 +180,7 @@
                     
                 }
             },
-            
+
             {
                 "id": "Persos/Marshall Teach Barbe Noire",
                 "name": "Barbe Noire",
@@ -218,7 +218,7 @@
               {
                 "id": "Persos/Edward_Newgate",
                 "name": "Edward Newgate",
-                "img": "../static/img/Edward_Newgate.jpg",
+                "img": "../static/img/EdwardNewgate.jpg",
                 "specs": {
                   "fullName": "Edward Newgate",
                   "aPropos": {
