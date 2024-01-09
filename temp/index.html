@@ -8,6 +8,14 @@
     <title>Accueil</title>
   </head>
   <body>
+    <div class="search-bar">
+    <form action="/search" method="get">
+      <label for="searchInput">Search by KeyWord:</label>
+      <input type="text" id="searchInput" name="name" placeholder="Enter search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+    <a href="http://localhost:8080/char" target="_blank"><button>Go to /char</button></a>
     <p>Texte pour tester</p>
     {{range .}}
     <li>

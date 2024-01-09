@@ -4,6 +4,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"log"
@@ -27,6 +28,7 @@ func ResetUserValue() {
 
 }
 
+// Login , warning >>
 func LoadUsersFromFile(filename string) error {
 	// Check if the file exists
 	fileInfo, err := os.Stat(filename)
@@ -148,4 +150,101 @@ func HashPassword(password string) string {
 func CheckPasswordHash(password, hash string) bool {
 	hashedPassword := HashPassword(password)
 	return hashedPassword == hash
+}
+
+// Login , warning <<
+func UpdateChar(name string, img string, fullname string, age int, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
+	// Read JSON data from file
+	fileData, err := os.ReadFile("nico.json")
+	if err != nil {
+		return fmt.Errorf("error reading file: %w", err)
+	}
+
+	// Unmarshal the JSON data into a map[string]interface{}
+	var parsedData map[string]interface{}
+	if err := json.Unmarshal(fileData, &parsedData); err != nil {
+		return fmt.Errorf("error parsing JSON: %w", err)
+	}
+
+	// New character data
+	newPerso := map[string]interface{}{
+		"ID":   99,
+		"Name": name,
+		"Img":  img,
+		"Specs": map[string]interface{}{
+			"FullName": fullname,
+			"Age":      age,
+			"Apropos": map[string]string{
+				"Description": desc,
+				"Role":        role,
+				"Fruit":       fruit,
+				"Personalité": persona,
+				"Apparence":   apparence,
+				"Capacités":   capacite,
+				"Histoire":    histoire,
+			},
+		},
+	}
+
+	categories, ok := parsedData["categories"].(map[string]interface{})
+	if !ok {
+		return errors.New("error accessing categories data")
+	}
+	// Append the new character to the "Persos" array in parsedData
+	persos, ok := categories["Persos"].([]interface{})
+	if !ok {
+		return errors.New("error accessing Persos data")
+	}
+	persos = append(persos, newPerso)
+	categories["Persos"] = persos
+	parsedData["categories"] = categories
+
+	// Marshal the modified data back to JSON
+	updatedData, err := json.MarshalIndent(parsedData, "", "    ")
+	if err != nil {
+		return fmt.Errorf("error marshaling JSON: %w", err)
+	}
+
+	// Write the updated JSON data back to the file
+	if err := os.WriteFile("nico.json", updatedData, 0644); err != nil {
+		return fmt.Errorf("error writing to file: %w", err)
+	}
+
+	fmt.Println("Successfully added a new perso and updated nico.json")
+	return nil
+
+}
+
+// Function to find unique IDs, images, and descriptions based on entity name
+func FindInfoByName(categories One.Categories, name string) (ids []string, images []string, descriptions []string) {
+	idMap := make(map[string]bool) // Map to store unique IDs
+
+	for _, character := range categories.Persos {
+		if character.Name == name && !idMap[character.ID] {
+			ids = append(ids, character.ID)
+			images = append(images, character.Img)
+			descriptions = append(descriptions, character.Specs.Apropos.Description)
+			idMap[character.ID] = true
+		}
+	}
+
+	for _, arc := range categories.Arc {
+		if arc.Name == name && !idMap[arc.ID] {
+			ids = append(ids, arc.ID)
+			images = append(images, arc.Img)
+			descriptions = append(descriptions, arc.Description)
+			idMap[arc.ID] = true
+		}
+	}
+
+	for _, event := range categories.Events {
+		if event.Name == name && !idMap[event.ID] {
+			ids = append(ids, event.ID)
+			images = append(images, event.Img)
+			descriptions = append(descriptions, event.Description)
+			idMap[event.ID] = true
+		}
+	}
+
+	return ids, images, descriptions
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	routeur "onepiece/routeur"
+	"onepiece/routeur"
 	initTemplate "onepiece/temp"
 )
 
@@ -11,4 +11,5 @@ func main() {
 	//One.GetArcs()
 	//One.GetChar()
 	//One.GetEvents()
+	//Two.UpdateChar()
 }
