@@ -301,14 +301,25 @@ func getDescriptionByID(id string) string {
 	}
 
 	for _, characters := range categoryData.Categories {
+		fmt.Println(characters)
 		for _, character := range characters {
-			fmt.Println(character)
-			if character.ID == id {
+			if character.ID == id && character.Specs.Apropos.Description != "" {
 				return character.Specs.Apropos.Description
+			} else {
+
+				return Descritpion
 			}
 		}
 	}
 
 	fmt.Println("description not found for ID:", id)
 	return ""
+}
+
+func getDescriptionByIDOther() string {
+	jsonData, err := os.ReadFile("nico.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return ""
+	}
 }
