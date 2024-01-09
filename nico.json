@@ -42,7 +42,7 @@
             },
 
             {
-                "id": 3,
+                "id": "3",
                 "name": "Sanjii",
                 "img": "",
                 "specs": {
@@ -103,7 +103,7 @@
 
             {
                 "id": "6",
-                "name": "Nico Robin",
+                "name": "Robin",
                 "img": "../static/img/robin.jpg",
                 "specs": {
                     "fullName": "Nico Robin",
@@ -162,9 +162,9 @@
             },
 
             {
-                "id": 9,
-                "name": "Shanks le Roux",
-                "img": "",
+                "id": "9",
+                "name": "Shanks",
+                "img": "../static/img/shanks.jpg",
                 "specs": {
                     "fullName": "Shanks Le Roux",
                     "age": 39,
@@ -182,9 +182,9 @@
             },
 
             {
-                "id": 10,
-                "name": "Marshall D. Teach, surnommé Barbe Noire",
-                "img": "",
+                "id": "10",
+                "name": "Barbe Noire",
+                "img": "../static/img/barbenoire.jpg",
                 "specs": {
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
                     "age": 40,
@@ -203,194 +203,194 @@
         ],
         "Arcs": [
             {
-                "id": 1,
+                "id": "11",
                 "name": "Arc Romance Dawn",
-                "img": "",
+                "img": "../static/img/ArcRomanceDawn.jpg",
                 "épisodesAnimé": "1-3",
                 "chapitresManga": "1-8",
                 "description": "Cet arc introduit Monkey D. Luffy et son rêve de devenir le Roi des Pirates. Il obtient ses pouvoirs de Fruit du Démon et commence son voyage."
             },
 
             {
-                "id": 2,
+                "id": "12",
                 "name": "Arc Orange Town",
-                "img": "",
+                "img": "../static/img/ArcOrangeTown.jpg",
                 "épisodesAnime": "4-8",
                 "chapitresManga": "8-21",
                 "description": "L'équipage affronte le Capitaine Baggy à Orange Town, renforçant leur amitié naissante."
             },
 
             {
-                "id": 3,
+                "id": "13",
                 "name": "Arc Syrup Village",
-                "img": "",
+                "img": "../static/img/ArcSyrupVillage.jpg",
                 "épisodesAnime": "9-18",
                 "chapitresManga": "22-41",
                 "description": "L'équipage aide Usopp à affronter les mensonges de Kuro à Syrup Village, renforçant leur détermination."
             },
 
             {
-                "id": 4,
+                "id": "14",
                 "name": "Arc Baratie",
-                "img": "",
+                "img": "../static/img/ArcBaratie.jpg",
                 "épisodesAnime": "19-30",
                 "chapitresManga": "42-68",
                 "description": "L'équipage rejoint le restaurant flottant Baratie, où ils font face à Don Krieg. Cet arc présente Sanji, le futur cuisinier de l'équipage."
             },
 
             {
-                "id": 5,
+                "id": "15",
                 "name": "Arc Arlong Park",
-                "img": "",
+                "img": "../static/img/ArcArlongPark.jpg",
                 "épisodesAnime": "31-44",
                 "chapitresManga": "69-95",
                 "description": "Les Pirates du Chapeau de Paille s'allient à Nami pour libérer son village natal d'Arlong. Cet arc aborde des thèmes de l'amitié et de la liberté."
             },
 
             {
-                "id": 6,
+                "id": "16",
                 "name": "Arc Loguetown",
-                "img": "",
+                "img": "../static/img/ArcLoguetown.jpg",
                 "épisodesAnime": "45-48",
                 "chapitresManga": "96-100",
                 "description": "L'équipage atteint Loguetown, où Luffy a son premier affrontement avec l'Amiral Smoker. Des éléments du passé de Luffy sont révélés."
             },
 
             {
-                "id": 7,
+                "id": "17",
                 "name": "Arc Île de Drum (Drum Island)",
-                "img": "",
+                "img": "../static/img/ArcIleDeDrum.jpg",
                 "épisodesAnime": "78-91",
                 "chapitresManga": "101-142",
                 "description": "L'équipage atteint Drum Island et rencontre le Docteur Hiluluk et son apprenti Chopper. Cet arc met en lumière la recherche d'un médecin pour l'équipage."
             },
             
             {
-                "id": 8,
+                "id": "18",
                 "name": "Arc Alabasta",
-                "img": "",
+                "img": "../static/img/ArcAlabasta.jpg",
                 "épisodesAnime": "92-130",
                 "chapitresManga": "155-217",
                 "description": "Luffy et son équipage se rendent à Alabasta pour arrêter Crocodile et sauver le royaume du sable. L'arc explore des thèmes de conspiration politique et de loyauté."
             },
 
             {
-                "id": 9,
+                "id": "19",
                 "name": "Arc Jaya",
-                "img": "",
+                "img": "../static/img/ArcJaya.jpg",
                 "épisodesAnime": "144-152",
                 "chapitresManga": "218-236",
                 "description": "L'équipage découvre des informations sur Skypiea et rencontre les Bellamy Pirates à Jaya. Cet arc prépare le terrain pour les aventures à venir."
             },
 
             {
-                "id": 10,
+                "id": "20",
                 "name": "Arc Skypiea",
-                "img": "",
+                "img": "../static/img/ArcSkypiea.jpg",
                 "épisodesAnime": "153-195",
                 "chapitresManga": "237-302",
                 "description": "Luffy et son équipage atteignent Skypiea, une île céleste, et affrontent Ener, un homme avec des pouvoirs de Fruit du Démon. Cet arc explore la recherche du trésor de Skypiea."
             },
             {
-                "id": 11,
+                "id": "21",
                 "name": "Arc Water Seven",
-                "img": "",
+                "img": "../static/img/ArcWaterSeven.jpg",
                 "épisodesAnime": "207-263",
                 "chapitresManga": "303-441",
                 "description": " L'équipage arrive à Water Seven, où des tensions émergent, conduisant à la tragédie du Merry Go et à la confrontation avec le CP9. Cet arc explore les sacrifices nécessaires pour réaliser les rêves."
             },
 
             {
-                "id": 12,
+                "id": "22",
                 "name": "Arc Enies Lobby",
-                "img": "",
+                "img": "../static/img/ArcEniesLobby.jpg",
                 "épisodesAnime": "264-312",
                 "chapitresManga": "442-490",
                 "description": "L'équipage continue sa lutte à Enies Lobby pour sauver Nico Robin. Les liens d'amitié sont mis à l'épreuve, et des moments épiques se déroulent."
             },
             {
-                "id": 13,
+                "id": "23",
                 "name": "Arc Thriller Bark",
-                "img": "",
+                "img": "../static/img/ArcThrillerBark.jpg",
                 "épisodesAnime": "337-381",
                 "chapitresManga": "490-541",
                 "description": "L'équipage atterrit sur l'île effrayante de Thriller Bark, où ils rencontrent Gecko Moria et son armée de zombies. Cet arc mêle horreur et comédie."
             },
 
             {
-                "id": 14,
+                "id": "24",
                 "name": "Arc Archipel Sabaody",
-                "img": "",
+                "img": "../static/img/ArcArchipelSabaody.jpg",
                 "épisodesAnime": "385-405",
                 "chapitresManga": "490-513",
                 "description": "L'équipage atteint l'archipel Sabaody, où les tensions montent avec les Nobles Mondiaux, culminant avec l'incident de l'Amiral Kizaru. L'arc explore les thèmes de la discrimination et de l'injustice."
             },
 
             {
-                "id": 15,
+                "id": "25",
                 "name": "Arc Île des Hommes-Poissons (Fish-Man Island)",
-                "img": "",
+                "img": "../static/img/ArcIleDesHommesPoissons.jpg",
                 "épisodesAnime": "517-574",
                 "chapitresManga": "603-653",
                 "description": "L'équipage explore Fish-Man Island, où des conflits entre humains et hommes-poissons éclatent. L'arc aborde des thèmes de racisme et d'acceptation."
             },
             {
-                "id": 16,
+                "id": "26",
                 "name": "Arc Punk Hazard",
-                "img": "",
+                "img": "../static/img/ArcPunkHazard.jpg",
                 "épisodesAnime": "579-625",
                 "chapitresManga": "654-699",
                 "description": "L'équipage atteint Punk Hazard, une île dévastée par les expériences du scientifique fou Caesar Clown. Les mystères du passé et du Gouvernement Mondial sont révélés."
             },
 
             {
-                "id": 17,
+                "id": "27",
                 "name": "Arc Dressrosa",
-                "img": "",
+                "img": "../static/img/ArcDressrosa.jpg",
                 "épisodesAnime": "629-746",
                 "chapitresManga": "700-801",
                 "description": "L'équipage se retrouve à Dressrosa, où ils affrontent le cruel Doflamingo. Les liens familiaux, les conflits politiques, et la puissance des Fruits du Démon sont au cœur de cet arc."
             },
 
             {
-                "id": 18,
+                "id": "28",
                 "name": "Arc Zou",
-                "img": "",
+                "img": "../static/img/ArcZou.jpg",
                 "épisodesAnime": "751-779",
                 "chapitresManga": "802-824",
                 "description": "L'équipage découvre l'île de Zou, portant les cicatrices de la guerre. Ils se lancent dans une quête pour atteindre Wano Kuni et sauver Sanji."
             },
             {
-                "id": 19,
+                "id": "29",
                 "name": "Arc Whole Cake Island",
-                "img": "",
+                "img": "../static/img/ArcWholeCakeIsland.jpg",
                 "épisodesAnime": "783-877",
                 "chapitresManga": "825-902",
                 "description": "L'équipage s'infiltre dans l'île de Whole Cake, dirigée par Big Mom, pour sauver Sanji. Les alliances sont forgées, et des batailles épiques se déroulent."
             },
 
             {
-                "id": 20,
+                "id": "30",
                 "name": "Arc Levely",
-                "img": "",
+                "img": "../static/img/ArcLevely.jpg",
                 "épisodesAnime": "",
                 "chapitresManga": "903-908",
                 "description": "La Levely,Rêverie ou Conseil des Rois (littéralement traduit par Conseil Mondial) est un conseil formé par le Gouvernement Mondial composé des plus grands dirigeants des différents royaumes du monde qui ont rejoint le Gouvernement Mondial qui se réunissent tous les 4 ans pour 7 jours."
             },
 
             {
-                "id": 21,
+                "id": "31",
                 "name": "Arc Wano Kuni",
-                "img": "",
+                "img": "../static/img/ArcWanoKuni.jpg",
                 "épisodesAnime": "890-1085",
                 "chapitresManga": "909-1057",
                 "description": "Le Pays des Wa (Wa no Kuni), ou Pays de l'Harmonie, aussi appelé « Pays Doré » est un pays peuplé essentiellement de samouraïs et de ninja"
             },
 
             {
-                "id": 22,
+                "id": "32",
                 "name": "Arc Egg Head",
-                "img": "",
+                "img": "../static/img/ArcEggHead.jpg",
                 "épisodesAnime": "1086",
                 "chapitresManga": "1058",
                 "description": "L'Arc Île d'Egg Head , également nommé Arc Île du Futur est le 32ème arc de la série One Piece et le premier arc de la Saga Finale."
@@ -399,52 +399,52 @@
         ],
         "EventsOnePiece": [
             {
-                "id": "1",
+                "id": "33",
                 "name": "Event 1",
                 "description": "Description of Event 1"
             },
             {
-                "id": "2",
+                "id": "34",
                 "name": "Event 2",
                 "description": "Description of Event 2"
             },
             {
-                "id": "3",
+                "id": "35",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": "4",
+                "id": "36",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": "5",
+                "id": "37",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": "6",
+                "id": "38",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": "7",
+                "id": "39",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": "8",
+                "id": "40",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": "9",
+                "id": "41",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             },
             {
-                "id": "10",
+                "id": "42",
                 "name": "Event 3",
                 "description": "Description of Event 3"
             }
