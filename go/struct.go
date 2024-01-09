@@ -8,6 +8,9 @@ type SearchResult struct {
 
 type CategoryData struct {
 	Categories map[string][]Character `json:"categories"`
+	Persos     []Character            `json:"Persos"`
+	Arcs       []Arc                  `json:"Arcs"`
+	Events     []Event                `json:"Events"`
 }
 
 type APropos struct {
