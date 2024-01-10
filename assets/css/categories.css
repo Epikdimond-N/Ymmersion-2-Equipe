@@ -118,3 +118,8 @@ footer{
     background-position: top;
     background-size: 2500px;
 }
+
+a{
+    text-decoration: none;
+    color: #0077be
+}

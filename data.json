@@ -4,7 +4,7 @@
             {
                 "id": "Persos/Monkey D. Luffy",
                 "name": "Luffy",
-                "img": "../static/img/Luffy.jpg",
+                "img": "../static/img/imgpersos/Luffy.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-luffy.png",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
@@ -154,7 +154,7 @@
                 "affiche": "../static/img/affiches-persos/affiche-brook.png",
                 "specs": {
                     "fullName": "Brook",
-                    "age": "90",
+                    "age": 90,
                     "aPropos": {
                         "description": "Brook est un squelette musicien avec une personnalité joyeuse. Il est souvent vu portant un chapeau et jouant du violon. Après avoir mangé le Yomi Yomi no Mi, il a été ressuscité.",
                         "role": "Musicien des Pirates du Chapeau de Paille, Brook apporte une touche musicale à l'équipage.",
@@ -214,7 +214,7 @@
                 "affiche": "../static/img/affiches-persos/affiche-ace.png",
                 "specs": {
                     "fullName": "Portgas D. Ace",
-                    "age": "Décédé à 20 ans",
+                    "age": 20,
                     "aPropos": {
                         "description": "Ace était le frère adoptif de Luffy et un utilisateur du Mera Mera no Mi, lui conférant des pouvoirs liés au feu.",
                         "role": "Ancien commandant de la 2e division de l'équipage de Barbe Blanche.",
@@ -437,6 +437,7 @@
                 "affiche": "../static/img/affiches-persos/affiche-mihawk.png",
                 "specs": {
                   "fullName": "Dracule Mihawk",
+                  "age": 43,
                   "aPropos": {
                     "description": "Dracule Mihawk, également connu sous le nom d'Hawkeye Mihawk, est un personnage énigmatique et redoutable dans l'univers de One Piece. Il est réputé comme le meilleur bretteur du monde.",
                     "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur.",
@@ -453,6 +454,7 @@
                 "affiche": "../static/img/affiches-persos/affiche-barbe-blanche.png",
                 "specs": {
                   "fullName": "Edward Newgate",
+                  "age": 74,
                   "aPropos": {
                     "description": "Edward Newgate, plus connu sous le nom de Barbe Blanche, était l'un des pirates les plus puissants et respectés de son époque. Il a été le capitaine de l'Équipage de Barbe Blanche.",
                     "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage.",

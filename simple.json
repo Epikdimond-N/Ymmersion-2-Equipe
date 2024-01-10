@@ -5,18 +5,20 @@
                 "id": "Persos/Monkey D. Luffy",
                 "name": "Luffy",
                 "img": "../static/img/Luffy.jpg",
+                "affiche": "../static/img/affiches-persos/affiche-luffy.png",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
                     "age": 17,
-                    "aPropos": {
-                        "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
-                        "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line.",
-                        "demonFruit": "Gomu Gomu no Mi, une Fruits du Démon de type Paramecia, a transformé son corps en caoutchouc. Cette capacité offre une souplesse extraordinaire et une immunité aux attaques contondantes, tout en le rendant vulnérable aux attaques tranchantes.",
-                        "personalité": "Déterminé et optimiste, Luffy fait preuve d'une loyauté inébranlable envers ses amis, considérant son équipage comme sa famille. Sa personnalité franche et directe reflète un courage authentique, et son enthousiasme contagieux motive ceux qui l'entourent.",
-                        "apparence": "Vêtu de son chapeau de paille emblématique, Luffy porte une tenue caractéristique et arbore une cicatrice sous son œil gauche, résultat des épreuves sur son chemin.",
-                        "capacités": "Maîtrisant le Haki, Luffy développe le puissant Haki des Rois, capable d'intimider voire d'assommer ceux de volonté plus faible. Sa force surhumaine, associée à sa physiologie caoutchouteuse, lui permet d'étirer ses membres et d'exécuter des attaques dévastatrices.",
-                        "histoire": "Né dans l'East Blue, Luffy embarque pour son aventure après avoir mangé le Gomu Gomu no Mi par inadvertance. Capable de repousser ses limites, il s'efforce de devenir le Roi des Pirates, faisant face à des adversités impensables et formant des liens durables avec son équipage. Sa quête du One Piece dévoile une histoire épique de bravoure et de camaraderie."
+                    "aPropos":{
+                    "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
+                    "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line.",
+                    "demonFruit": "Gomu Gomu no Mi, une Fruits du Démon de type Paramecia, a transformé son corps en caoutchouc. Cette capacité offre une souplesse extraordinaire et une immunité aux attaques contondantes, tout en le rendant vulnérable aux attaques tranchantes.",
+                    "personalité": "Déterminé et optimiste, Luffy fait preuve d'une loyauté inébranlable envers ses amis, considérant son équipage comme sa famille. Sa personnalité franche et directe reflète un courage authentique, et son enthousiasme contagieux motive ceux qui l'entourent.", 
+                    "apparence": "Vêtu de son chapeau de paille emblématique, Luffy porte une tenue caractéristique et arbore une cicatrice sous son œil gauche, résultat des épreuves sur son chemin.",
+                    "capacités": "Maîtrisant le Haki, Luffy développe le puissant Haki des Rois, capable d'intimider voire d'assommer ceux de volonté plus faible. Sa force surhumaine, associée à sa physiologie caoutchouteuse, lui permet d'étirer ses membres et d'exécuter des attaques dévastatrices.",
+                    "histoire": "Né dans l'East Blue, Luffy embarque pour son aventure après avoir mangé le Gomu Gomu no Mi par inadvertance. Capable de repousser ses limites, il s'efforce de devenir le Roi des Pirates, faisant face à des adversités impensables et formant des liens durables avec son équipage. Sa quête du One Piece dévoile une histoire épique de bravoure et de camaraderie."
                     }
+                    
                 }
             }
         ],

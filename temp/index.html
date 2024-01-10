@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/css/index.css" />
+    <link rel="stylesheet" href="../static/css/categories.css" />
     <title>Accueil</title>
   </head>
   <body>
     <header>
       <div class="menu">
         <div class="cont">
-          <a class="h-link" href="/accueil">
+          <a class="h-link" href="/Home">
             <img class="home" src="../static/img/index/home.png" alt="Home" />
             <p>ACCUEIL</p>
           </a>
@@ -63,10 +64,9 @@
 <!-- Display random characters -->
 <h2>Random Characters</h2>
 {{range .RandomCharacters}}
-  <div>
-    <h3><a href="/character?id={{.id}}">Name: {{.name}}</a></h3>
-    <p>Description: {{.specs.aPropos.description}}</p>
-    <!-- Display other character details -->
+  <div><a href="/character?id={{.id}}">
+    <h3>Name: {{.name}}</a></h3>
+    <p>Description: {{.specs.aPropos.description}}</p></a>
   </div>
 {{end}}
 
@@ -90,6 +90,7 @@
   </div>
 {{end}}
     </section>
+    <footer></footer>
   </body>
 </html>
 {{end}}

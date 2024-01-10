@@ -1,11 +1,11 @@
-{{define "char"}}
+{{define "arc"}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../static/css/categories.css" />
-  <title>Character Presentation</title>
+  <title>Arc Presentation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -81,38 +81,17 @@
     </div>
   </header>
   <div class="container">
-    <h1>Character Presentation</h1>
+    <h1>Arc Presentation</h1>
     <div class="character-info">
-      <h2>Character Details</h2>
+      <h2>Arc Details</h2>
       <div class="info-item">
         <span class="info-label">Name: {{.Name}}</span>
       </div>
       <div class="info-item">
-        <img class="info-label" src="{{.Img}}" alt="affiche perso" />
+        <img class="info-label" src="{{.Img}}" alt="affiche arc" />
       </div>
       <div class="info-item">
-        <span class="info-label">Full Name: {{.Specs.FullName}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Age: {{.Specs.Age}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Role: {{.Specs.Apropos.Role}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Demon Fruit: {{.Specs.Apropos.Fruit}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Personality: {{.Specs.Apropos.Personalité}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Appearance: {{.Specs.Apropos.Apparence}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Abilities: {{.Specs.Apropos.Capacités}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">History: {{.Specs.Apropos.Histoire}}</span>
+        <span class="info-label">Description: {{.Description}}</span>
       </div>
     </div>
   </div>

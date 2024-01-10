@@ -1,12 +1,33 @@
-{{define "Login"}}
+{{define "event"}}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/statics/fav.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../static/css/categories.css" />
-  <title>Login</title>
+  <title>Arc Presentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .character-info {
+      margin-top: 20px;
+    }
+    .info-item {
+      margin-bottom: 10px;
+    }
+    .info-label {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <header>
   <div class="menu">
@@ -58,23 +79,24 @@
     </div>
   </div>
 </header>
-<body class="element">
-  <h1>Login</h1>
-  <form action="/successLogin" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
-    <button type="submit" class="transitionButton">Login</button>
-  </form>
-  <div class="flex">
-    <div class="invalid">
-      <p>{{.}}</p>
-      <p>Don't have an account?</p>
+<body>
+  <div class="container">
+    <h1>Arc Presentation</h1>
+    <div class="character-info">
+      <h2>Arc Details</h2>
+      <div class="info-item">
+        <span class="info-label">Name: {{.Name}}</span>
+      </div>
+      <div class="info-item">
+        <img class="info-label" src="{{.Img}}" alt="affiche perso" />
+      </div>
+      <div class="info-item">
+        <span class="info-label">Description: {{.Description}}</span>
+      </div>
+      </div>
     </div>
-    <a href="/register" class="link">Create one</a>
   </div>
-  <footer></footer>
 </body>
+<footer></footer>
 </html>
 {{end}}

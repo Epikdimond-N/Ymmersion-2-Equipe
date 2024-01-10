@@ -472,14 +472,16 @@ func getDescriptionByID(id string) string {
 }
 
 func GetRandomItems(items []map[string]interface{}, count int) []map[string]interface{} {
-	rand.Seed(time.Now().UnixNano())
+	// Create a new source with a specific seed value
+	source := rand.NewSource(time.Now().UnixNano())
+	random := rand.New(source)
 
 	// Shuffle the items
-	rand.Shuffle(len(items), func(i, j int) {
+	random.Shuffle(len(items), func(i, j int) {
 		items[i], items[j] = items[j], items[i]
 	})
 
-	// Select 'count' number of items (in this case, 2)
+	// Select 'count' number of items
 	if count > len(items) {
 		count = len(items)
 	}

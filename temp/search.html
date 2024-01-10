@@ -4,19 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/categories.css" />
     <title>Search Results</title>
   </head>
   <body>
+    <header>
+      <div class="menu">
+        <div class="cont">
+          <a class="h-link" href="/Home">
+            <img class="home" src="../static/img/index/home.png" alt="Home" />
+            <p>ACCUEIL</p>
+          </a>
+        </div>
+        <div class="cont">
+          <a class="h-link" href="/categories">
+            <img
+              class="categories"
+              src="../static/img/index/categories.png"
+              alt="Categories"
+            />
+            <p>CATEGORIES</p>
+          </a>
+        </div>
+        <a class="h-link" href="/admin">
+          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+        </a>
+      </div>
+      <img
+        class="logo"
+        src="../static/img/index/logo.png"
+        alt="Logo One Piece"
+      />
+
+      <div class="menu">
+        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+        <form action="/search" method="get">
+          <input
+            type="text"
+            id="search"
+            name="name"
+            placeholder="Cherchez le One Piece !"
+          />
+        </form>
+        <div class="cont">
+          <a class="h-link" href="/login">
+            <img
+              class="login"
+              src="../static/img/index/login.png"
+              alt="Login"
+            />
+            <p>LOGIN</p>
+          </a>
+        </div>
+      </div>
+    </header>
     <h1>Search Results</h1>
     <ul>
       {{range .}}
         <li>
-          <strong>ID:</strong> {{.ID}}<br/>
-          <strong>Image:</strong> <img src="{{.Image}}" alt="Image not available"><br/>
-          <strong>Description:</strong> {{.Description}}<br/><br/>
+          <a href="/character?id={{.ID}}"><div><strong>Image:</strong> <img src="{{.Image}}" alt="Image not available"><br/>
+          <strong>Description:</strong> {{.Description}}<br/><br/></div></a></h3>
+          
         </li>
       {{end}}
     </ul>
+    <footer></footer>
   </body>
 </html>
 {{end}}
