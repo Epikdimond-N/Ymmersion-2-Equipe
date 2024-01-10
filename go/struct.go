@@ -40,10 +40,11 @@ type Specs struct {
 	Apropos  APropos `json:"aPropos"`
 }
 type Character struct {
-	ID    string `json:"id"`
-	Name  string `json:"name"`
-	Img   string `json:"img"`
-	Specs Specs  `json:"specs"`
+	ID      string `json:"id"`
+	Name    string `json:"name"`
+	Img     string `json:"img"`
+	Affiche string `json:"affiche"`
+	Specs   Specs  `json:"specs"`
 }
 
 type Arc struct {

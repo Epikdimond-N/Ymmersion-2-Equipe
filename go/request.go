@@ -14,8 +14,8 @@ func GetChar() []Character {
 		return nil
 	}
 
-	// Unmarshal JSON data into Categories struct
-	var data map[string]Categories
+	// Unmarshal JSON data into Data struct
+	var data Data
 	err = json.Unmarshal(file, &data)
 	if err != nil {
 		fmt.Println("Error parsing JSON:", err)
@@ -23,33 +23,11 @@ func GetChar() []Character {
 	}
 
 	// Accessing characters under the "Persos" category
-	characters, ok := data["categories"]
-	if !ok {
-		fmt.Println("No 'categories' found in JSON")
-		return nil
-	}
+	characters := data.Categories.Persos
 
 	// Display information about each character
 	var char []Character
-	for _, character := range characters.Persos {
-		fmt.Printf("Character ID: %s\n", character.ID)
-
-		fmt.Printf("Name: %s\n", character.Name)
-		if character.Img != "" {
-			fmt.Printf("Image URL: %s\n", character.Img)
-		}
-
-		fmt.Printf("Description: %s\n", character.Specs.FullName)
-		fmt.Printf("Description: %d\n", character.Specs.Age)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Description)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Role)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Fruit)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Personalité)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Apparence)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Capacités)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Histoire)
-
-		fmt.Println("-------------")
+	for _, character := range characters {
 		var newChar Character
 		newChar.ID = character.ID
 		newChar.Name = character.Name
@@ -169,11 +147,28 @@ func GetEvents() []Event {
 }
 
 func GetCharacterByID(characters []Character, id string) (Character, error) {
-	fmt.Println(characters)
 	for _, character := range characters {
 		if character.ID == id {
 			return character, nil // Return the character if the ID matches
 		}
 	}
 	return Character{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
+}
+
+func GetArcByID(arcs []Arc, id string) (Arc, error) {
+	for _, arc := range arcs {
+		if arc.ID == id {
+			return arc, nil // Return the character if the ID matches
+		}
+	}
+	return Arc{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
+}
+
+func GetEventByID(events []Event, id string) (Event, error) {
+	for _, event := range events {
+		if event.ID == id {
+			return event, nil // Return the character if the ID matches
+		}
+	}
+	return Event{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
 }
