@@ -212,19 +212,67 @@ func DisplayPersos(w http.ResponseWriter, r *http.Request) {
 }
 
 func DisplayArcs(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
+	file, err := os.Open("data.json")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+
+	// Decode JSON data into a DataHome struct
+	var data One.DataHome
+
+	err = json.NewDecoder(file).Decode(&data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	// Get the "Persos" data
+	persosData, ok := data.Categories["Arcs"]
+	if !ok {
+		http.Error(w, "Arcs data not found", http.StatusInternalServerError)
+		return
+	}
+
+	// Pass the selected data to the template for rendering
+	err = initTemplate.Temp.ExecuteTemplate(w, "selectarc", persosData)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 }
 
 func DisplayEvents(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
+	file, err := os.Open("data.json")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+
+	// Decode JSON data into a DataHome struct
+	var data One.DataHome
+
+	err = json.NewDecoder(file).Decode(&data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	// Get the "Persos" data
+	persosData, ok := data.Categories["EventsOnePiece"]
+	if !ok {
+		http.Error(w, "Events data not found", http.StatusInternalServerError)
+		return
+	}
+
+	// Pass the selected data to the template for rendering
+	err = initTemplate.Temp.ExecuteTemplate(w, "selectevent", persosData)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 }
 
 func DisplayCategories(w http.ResponseWriter, r *http.Request) {

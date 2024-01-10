@@ -96,6 +96,7 @@ input{
 }
 
 section{
+    padding: 100px;
     width: 1500px;
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +105,12 @@ section{
 .selectchar{
     width: 250px;
     margin:15px;
+    animation: zoomOut 0.5s ease 0s 1 normal backwards;
+}
+
+.selectchar:hover{
+    cursor: pointer;
+    animation: zoom 0.5s ease 0s 1 normal forwards;
 }
 
 footer{
