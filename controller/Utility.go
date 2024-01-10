@@ -8,9 +8,11 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"math/rand"
 	One "onepiece/go"
 	"os"
 	"strings"
+	"time"
 )
 
 var (
@@ -157,7 +159,7 @@ func CheckPasswordHash(password, hash string) bool {
 
 func UpdateChar(name string, img string, fullname string, age int, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
 	// Read JSON data from file
-	fileData, err := os.ReadFile("nico.json")
+	fileData, err := os.ReadFile("data.json")
 	if err != nil {
 		return fmt.Errorf("error reading file: %w", err)
 	}
@@ -213,11 +215,11 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 	}
 
 	// Write the updated JSON data back to the file
-	if err := os.WriteFile("nico.json", updatedData, 0644); err != nil {
+	if err := os.WriteFile("data.json", updatedData, 0644); err != nil {
 		return fmt.Errorf("error writing to file: %w", err)
 	}
 
-	fmt.Println("Successfully added a new perso and updated nico.json")
+	fmt.Println("Successfully added a new perso and updated data.json")
 	return nil
 }
 
@@ -244,7 +246,7 @@ func idExists(data map[string]interface{}, id string) bool {
 
 func UpdateArc(name string, img string, episode string, chapitre string, desc string) error {
 	// Read JSON data from file
-	fileData, err := os.ReadFile("nico.json")
+	fileData, err := os.ReadFile("data.json")
 	if err != nil {
 		return fmt.Errorf("error reading file: %w", err)
 	}
@@ -290,17 +292,17 @@ func UpdateArc(name string, img string, episode string, chapitre string, desc st
 	}
 
 	// Write the updated JSON data back to the file
-	if err := os.WriteFile("nico.json", updatedData, 0644); err != nil {
+	if err := os.WriteFile("data.json", updatedData, 0644); err != nil {
 		return fmt.Errorf("error writing to file: %w", err)
 	}
 
-	fmt.Println("Successfully added a new perso and updated nico.json")
+	fmt.Println("Successfully added a new perso and updated data.json")
 	return nil
 }
 
 func UpdateEvent(name string, desc string) error {
 	// Read JSON data from file
-	fileData, err := os.ReadFile("nico.json")
+	fileData, err := os.ReadFile("data.json")
 	if err != nil {
 		return fmt.Errorf("error reading file: %w", err)
 	}
@@ -343,17 +345,17 @@ func UpdateEvent(name string, desc string) error {
 	}
 
 	// Write the updated JSON data back to the file
-	if err := os.WriteFile("nico.json", updatedData, 0644); err != nil {
+	if err := os.WriteFile("data.json", updatedData, 0644); err != nil {
 		return fmt.Errorf("error writing to file: %w", err)
 	}
 
-	fmt.Println("Successfully added a new perso and updated nico.json")
+	fmt.Println("Successfully added a new perso and updated data.json")
 	return nil
 }
 
 // Function to find unique IDs, images, and descriptions based on entity name
 func FindInfoByName(search string) []One.SearchResult {
-	jsonData, err := os.ReadFile("nico.json")
+	jsonData, err := os.ReadFile("data.json")
 	if err != nil {
 		fmt.Println("Failed to read JSON data:", err)
 		return nil
@@ -395,7 +397,7 @@ func FindInfoByName(search string) []One.SearchResult {
 }
 
 func getImageByID(id string) string {
-	jsonData, err := os.ReadFile("nico.json")
+	jsonData, err := os.ReadFile("data.json")
 	if err != nil {
 		fmt.Println("Failed to read JSON data:", err)
 		return ""
@@ -422,7 +424,7 @@ func getImageByID(id string) string {
 
 func getDescriptionByID(id string) string {
 	// Read JSON data from file
-	data, err := os.ReadFile("nico.json")
+	data, err := os.ReadFile("data.json")
 	if err != nil {
 		fmt.Println("Error reading file:", err)
 		return ""
@@ -467,4 +469,19 @@ func getDescriptionByID(id string) string {
 	}
 
 	return ""
+}
+
+func GetRandomItems(items []map[string]interface{}, count int) []map[string]interface{} {
+	rand.Seed(time.Now().UnixNano())
+
+	// Shuffle the items
+	rand.Shuffle(len(items), func(i, j int) {
+		items[i], items[j] = items[j], items[i]
+	})
+
+	// Select 'count' number of items (in this case, 2)
+	if count > len(items) {
+		count = len(items)
+	}
+	return items[:count]
 }

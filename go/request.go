@@ -8,7 +8,7 @@ import (
 
 func GetChar() []Character {
 	// Read the JSON file
-	file, err := os.ReadFile("nico.json")
+	file, err := os.ReadFile("data.json")
 	if err != nil {
 		fmt.Println("Error reading file:", err)
 		return nil
@@ -74,7 +74,7 @@ func GetChar() []Character {
 
 func GetArcs() []Arc {
 	// Read the JSON file
-	file, err := os.ReadFile("nico.json")
+	file, err := os.ReadFile("data.json")
 	if err != nil {
 		fmt.Println("Error reading file:", err)
 		return nil
@@ -123,7 +123,7 @@ func GetArcs() []Arc {
 
 func GetEvents() []Event {
 	// Read the JSON file
-	file, err := os.ReadFile("nico.json")
+	file, err := os.ReadFile("data.json")
 	if err != nil {
 		fmt.Println("Error reading file:", err)
 		return nil
@@ -169,6 +169,7 @@ func GetEvents() []Event {
 }
 
 func GetCharacterByID(characters []Character, id string) (Character, error) {
+	fmt.Println(characters)
 	for _, character := range characters {
 		if character.ID == id {
 			return character, nil // Return the character if the ID matches

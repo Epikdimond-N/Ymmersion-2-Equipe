@@ -10,7 +10,7 @@ import (
 func InitServe() {
 	http.HandleFunc("/", controller.NotFoundHandler)                              // catch-all route for any unspecified paths and display page 404 << working
 	http.HandleFunc("/Home", controller.DisplayHome)                              // display root / page d'acceuil << a metre a jour pour qu'elle contienne 10 article random
-	http.HandleFunc("/char", controller.DisplayChar)                              // display given char ID << need update
+	http.HandleFunc("/character", controller.DisplayChar)                         // display given char ID << need update
 	http.HandleFunc("/arc", controller.DisplayArc)                                // display given arc ID << need update
 	http.HandleFunc("/event", controller.DisplayEvent)                            // display given event ID << need update
 	http.HandleFunc("/search", controller.HandleSearch)                           // host la barre de recherche et la page d'article trouvé << need update
