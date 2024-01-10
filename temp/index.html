@@ -64,10 +64,9 @@
 <!-- Display random characters -->
 <h2>Random Characters</h2>
 {{range .RandomCharacters}}
-  <div>
-    <h3><a href="/character?id={{.id}}">Name: {{.name}}</a></h3>
-    <p>Description: {{.specs.aPropos.description}}</p>
-    <!-- Display other character details -->
+  <div><a href="/character?id={{.id}}">
+    <h3>Name: {{.name}}</a></h3>
+    <p>Description: {{.specs.aPropos.description}}</p></a>
   </div>
 {{end}}
 

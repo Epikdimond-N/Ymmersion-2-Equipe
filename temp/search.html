@@ -62,9 +62,9 @@
     <ul>
       {{range .}}
         <li>
-          <strong>ID:</strong> {{.ID}}<br/>
-          <strong>Image:</strong> <img src="{{.Image}}" alt="Image not available"><br/>
-          <strong>Description:</strong> {{.Description}}<br/><br/>
+          <a href="/character?id={{.ID}}"><div><strong>Image:</strong> <img src="{{.Image}}" alt="Image not available"><br/>
+          <strong>Description:</strong> {{.Description}}<br/><br/></div></a></h3>
+          
         </li>
       {{end}}
     </ul>
