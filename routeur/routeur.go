@@ -27,7 +27,7 @@ func InitServe() {
 	http.HandleFunc("/successLogin", controller.SuccessLoginHandler)              // verifé les donnés entrée et les data du json user.json << working
 	http.HandleFunc("/logout", controller.LogoutHandler)                          // reset les variable login / username / password / admin << need update
 	http.HandleFunc("/changeLogin", controller.ChangeLoginHandler)                // ouvre la possibilité de changer de username << need update
-	http.HandleFunc("/admin/newChar", controller.NewCharHandler)                  // page admin d'ajout de char << need update
+	http.HandleFunc("/admin/newChar", controller.NewCharHandler)                  // page admin d'ajout de char << img of 10mb is ok ? << need update
 	http.HandleFunc("/admin/newArc", controller.NewArcHandler)                    // page admin d'ajout d'arc << need update
 	http.HandleFunc("/admin/newEvent", controller.NewEventHandler)                // page admin d'ajout d'event << need update
 	http.HandleFunc("/admin/newChar/gestion", controller.GestionNewPersosHandler) //system de gestion d'ajout char << need update

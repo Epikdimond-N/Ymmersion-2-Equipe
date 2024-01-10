@@ -36,7 +36,7 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Create the file in the destination directory
 	// Change the file path as per your directory structure
-	filePath := filepath.Join("assets", "imgpersos", handler.Filename)
+	filePath := filepath.Join("assets", "img", "imgpersos", handler.Filename)
 	dst, err := os.Create(filePath)
 	if err != nil {
 		// Handle error
@@ -84,6 +84,48 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
+	// Parse the multipart form data with a maximum upload size of 10MB
+	r.ParseMultipartForm(10 << 20)
+
+	// Retrieve the file from the form
+	file, handler, err := r.FormFile("arcImage")
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+
+	// Create the file in the destination directory
+	// Change the file path as per your directory structure
+	filePath := filepath.Join("assets", "img", "photoarcs", handler.Filename)
+	dst, err := os.Create(filePath)
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return
+	}
+	defer dst.Close()
+
+	// Copy the file to the destination directory
+	if _, err = io.Copy(dst, file); err != nil {
+		// Handle error
+		http.Error(w, "Error copying the file", http.StatusInternalServerError)
+		return
+	}
+
+	// Once the file is saved, retrieve other form data and call the function to update the character
+	name := r.FormValue("arcName")
+	episode := r.FormValue("arcEpisodeAnime")
+	chapitre := r.FormValue("arcChapitreManga")
+	desc := r.FormValue("PersosDescription")
+
+	// Call the function to update character passing the file path as img
+	if err := UpdateArc(name, filePath, episode, chapitre, desc); err != nil {
+		// Handle error
+		http.Error(w, "Error updating character", http.StatusInternalServerError)
+		return
+	}
 
 	http.Redirect(w, r, "/Home", http.StatusFound)
 }
@@ -93,8 +135,17 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
 	//	return
 	//}
+	name := r.FormValue("EventName")
+	desc := r.FormValue("EventDescription")
 
-	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
+	// Call the function to update character passing the file path as img
+	if err := UpdateEvent(name, desc); err != nil {
+		// Handle error
+		http.Error(w, "Error updating character", http.StatusInternalServerError)
+		return
+	}
+
+	http.Redirect(w, r, "/Home", http.StatusFound)
 }
 
 func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
