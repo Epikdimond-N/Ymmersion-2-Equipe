@@ -123,6 +123,215 @@
             },
 
             {
+                "id": "Persos/Tony_Tony_Chopper",
+                "name": "Chopper",
+                "img": "../static/img/Chopper.jpg",
+                "specs": {
+                    "fullName": "Tony Tony Chopper",
+                    "age": 17,
+                    "aPropos": {
+                        "description": "Chopper, le médecin de l'équipage, est un renne avec la capacité de se transformer en différentes formes humaines. Il porte généralement une grande casquette et est doté d'une personnalité innocente et compatissante.",
+                        "role": "Médecin des Pirates du Chapeau de Paille, Chopper utilise ses compétences médicales et ses transformations pour aider l'équipage.",
+                        "demonFruit": "Hito Hito no Mi, modèle Renne.",
+                        "personalité": "Chopper a une personnalité innocente et compatissante.",
+                        "apparence": "Souvent vu avec une grande casquette, Chopper peut prendre différentes formes humaines.",
+                        "capacités": "Chopper a des compétences médicales exceptionnelles et peut se transformer en différentes formes.",
+                        "histoire": "Originaire de Drum Island, Chopper a mangé le Fruit du Démon Hito Hito no Mi, modèle Renne. Après avoir rejoint l'équipage de Luffy, il a développé ses compétences médicales et a joué un rôle crucial dans de nombreuses aventures. Son rêve est de devenir un médecin accompli et d'explorer le monde médical pour aider les autres."
+                    }
+                }
+            },
+            
+            {
+                "id": "Persos/Brook",
+                "name": "Brook",
+                "img": "../static/img/Brook.jpg",
+                "specs": {
+                    "fullName": "Brook",
+                    "age": "90",
+                    "aPropos": {
+                        "description": "Brook est un squelette musicien avec une personnalité joyeuse. Il est souvent vu portant un chapeau et jouant du violon. Après avoir mangé le Yomi Yomi no Mi, il a été ressuscité.",
+                        "role": "Musicien des Pirates du Chapeau de Paille, Brook apporte une touche musicale à l'équipage.",
+                        "demonFruit": "Yomi Yomi no Mi.",
+                        "personalité": "Brook a une personnalité joyeuse malgré sa nature de squelette.",
+                        "apparence": "Portant souvent un chapeau, Brook est un squelette musicien.",
+                        "capacités": "Après avoir mangé le Yomi Yomi no Mi, Brook a obtenu une seconde chance à la vie et peut utiliser ses compétences musicales pour diverses situations.",
+                        "histoire": "Autrefois un pirate qui a mangé le Fruit du Démon Yomi Yomi no Mi, Brook est maintenant le musicien joyeux de l'équipage de Luffy. Il a rejoint l'équipage après que Luffy l'a aidé à récupérer son ombre et à retrouver sa forme physique. Brook a également joué un rôle clé lors de l'incident à Thriller Bark et a continué à divertir l'équipage avec sa musique."
+                    }
+                }
+            },
+            
+            {
+                "id": "Persos/Franky",
+                "name": "Franky",
+                "img": "../static/img/Franky.jpg",
+                "specs": {
+                    "fullName": "Franky",
+                    "age": 36,
+                    "aPropos": {
+                        "description": "Franky est un cyborg constructeur de bateaux avec une personnalité exubérante. Il a des bras puissants et peut se transformer en différentes formes.",
+                        "role": "Charpentier naval des Pirates du Chapeau de Paille, Franky est responsable de la construction et de l'entretien du Thousand Sunny.",
+                        "demonFruit": "Aucun.",
+                        "personalité": "Franky a une personnalité exubérante et est passionné par la construction navale.",
+                        "apparence": "Franky porte souvent des lunettes de soleil et a un corps mécanique impressionnant.",
+                        "capacités": "En tant que cyborg, Franky a une force physique surhumaine et est un expert en construction navale.",
+                        "histoire": "Autrefois connu sous le nom de Cutty Flam, Franky a modifié son propre corps pour devenir un cyborg. Il est devenu le charpentier naval des Pirates du Chapeau de Paille et a contribué à la construction du Thousand Sunny. Franky a joué un rôle crucial dans de nombreuses batailles, utilisant ses capacités mécaniques et son arsenal d'attaques pour défendre l'équipage."
+                    }
+                }
+            },
+            
+            {
+                "id": "Persos/Jinbe",
+                "name": "Jinbe",
+                "img": "../static/img/Jinbe.jpg",
+                "specs": {
+                    "fullName": "Jinbe",
+                    "age": 46,
+                    "aPropos": {
+                        "description": "Jinbe est un homme-poisson puissant avec une peau bleue et des marques caractéristiques sur son visage. Il a une personnalité calme et sage.",
+                        "role": "Timonier des Pirates du Chapeau de Paille, Jinbe est un expert en arts martiaux et possède une grande sagesse.",
+                        "demonFruit": "Aucun.",
+                        "personalité": "Jinbe a une personnalité calme et sage, et il est connu pour son honnêteté et sa loyauté.",
+                        "apparence": "Avec une peau bleue et des marques faciales distinctives, Jinbe a une présence imposante.",
+                        "capacités": "Jinbe est un maître des arts martiaux, utilisant le Karaté des Hommes-Poissons. Il possède une force physique considérable et une grande maîtrise du Haki.",
+                        "histoire": "Ancien capitaine des Pirates du Soleil, Jinbe a rejoint les Pirates du Chapeau de Paille en tant que timonier. Il est un expert en arts martiaux, utilisant le Karaté des Hommes-Poissons, et a joué un rôle crucial dans de nombreuses batailles. Jinbe est également connu pour sa loyauté envers Luffy et son équipage."
+                    }
+                }
+            },
+            
+            {
+                "id": "Persos/Portgas_D_Ace",
+                "name": "Ace",
+                "img": "../static/img/Ace.jpg",
+                "specs": {
+                    "fullName": "Portgas D. Ace",
+                    "age": "Décédé à 20 ans",
+                    "aPropos": {
+                        "description": "Ace était le frère adoptif de Luffy et un utilisateur du Mera Mera no Mi, lui conférant des pouvoirs liés au feu.",
+                        "role": "Ancien commandant de la 2e division de l'équipage de Barbe Blanche.",
+                        "demonFruit": "Mera Mera no Mi.",
+                        "personalité": "Ace avait une personnalité énergique et une grande détermination.",
+                        "apparence": "Avec une marque distinctive sous son œil gauche, Ace avait une apparence frappante.",
+                        "capacités": "Ace possédait des pouvoirs liés au feu grâce au Mera Mera no Mi, et il était un combattant redoutable.",
+                        "histoire": "Frère adoptif de Luffy et fils de Gol D. Roger, Ace a poursuivi son propre chemin en tant que pirate. Il a rejoint l'équipage de Barbe Blanche et est devenu l'un des commandants. Son histoire tragique s'est terminée lors de la guerre à Marineford, où il a sacrifié sa vie pour protéger Luffy."
+                    }
+                }
+            },
+            
+            {
+                "id": "Persos/Crocodile",
+                "name": "Crocodile",
+                "img": "../static/img/Crocodile.jpg",
+                "specs": {
+                    "fullName": "Sir Crocodile",
+                    "age": 44,
+                    "aPropos": {
+                        "description": "Crocodile est un ancien Capitaine Corsaire et utilisateur du Suna Suna no Mi, lui permettant de manipuler le sable.",
+                        "role": "Ancien président de Baroque Works et antagoniste principal de l'Arc Alabasta.",
+                        "demonFruit": "Suna Suna no Mi.",
+                        "personalité": "Crocodile est impitoyable, manipulateur et assoiffé de pouvoir.",
+                        "apparence": "Avec son manteau et son crochet doré, Crocodile a une apparence charismatique et menaçante.",
+                        "capacités": "Grâce au Suna Suna no Mi, Crocodile peut créer, contrôler et devenir du sable. Il est également un épéiste habile.",
+                        "histoire": "Crocodile a été le président secret de Baroque Works et a manipulé l'île d'Alabasta. Il a été vaincu par Luffy lors de l'Arc Alabasta. Plus tard, il a été révélé comme un ancien Capitaine Corsaire et a continué à jouer un rôle dans l'ombre."
+                    }
+                }
+            },
+
+            {
+                "id": "Persos/Eustass_Kidd",
+                "name": "Kidd",
+                "img": "../static/img/Kidd.jpg",
+                "specs": {
+                    "fullName": "Eustass Kidd",
+                    "age": 27,
+                    "aPropos": {
+                        "description": "Kidd est un pirate au physique imposant avec de nombreux tatouages et des cicatrices. Il a une personnalité violente et ambitieuse.",
+                        "role": "Capitaine des Kidd Pirates, Kidd est l'un des Onze Supernovas et un supernova notoire.",
+                        "demonFruit": "Aucun (jusqu'à ma dernière mise à jour en janvier 2022).",
+                        "personalité": "Kidd est connu pour sa personnalité violente, son ambition dévorante et son refus de s'incliner devant d'autres pirates.",
+                        "apparence": "Avec de nombreux tatouages, des cicatrices et un bras métallique, Kidd a une apparence intimidante.",
+                        "capacités": "Kidd est un utilisateur du Haki et est extrêmement habile dans l'utilisation de son bras métallique en combat.",
+                        "histoire": "Kidd est le capitaine des Kidd Pirates et est devenu célèbre pour sa violence et son ambition. Il est l'un des Onze Supernovas qui ont émergé lors de l'ellipse après le saut temporel. Kidd a défendu son indépendance et a eu des affrontements notables avec d'autres pirates et la Marine."
+                    }
+                }
+            },
+            
+            {
+                "id": "Persos/Trafalgar_D_Water_Law",
+                "name": "Law",
+                "img": "../static/img/Law.jpg",
+                "specs": {
+                    "fullName": "Trafalgar D. Water Law",
+                    "age": 26,
+                    "aPropos": {
+                        "description": "Law est un pirate avec une silhouette élancée, des tatouages et une expression souvent calme. Il est le capitaine des Heart Pirates.",
+                        "role": "Capitaine des Heart Pirates, Law est un membre clé de l'Alliance des Pirates de Chapeau de Paille et l'un des Onze Supernovas.",
+                        "demonFruit": "Ope Ope no Mi, un Fruit du Démon de type Paramecia qui lui permet de manipuler les objets à l'intérieur d'une sphère d'influence.",
+                        "personalité": "Law a une personnalité calme et stratégique, mais peut être impitoyable envers ses ennemis. Il a un profond sens de l'honneur.",
+                        "apparence": "Avec des tatouages et une expression calme, Law a une présence imposante.",
+                        "capacités": "Law est un utilisateur du Haki et possède le Ope Ope no Mi, lui permettant de manipuler les objets à l'intérieur d'une sphère d'influence.",
+                        "histoire": "Law a émergé comme l'un des Onze Supernovas après le saut temporel. Il est devenu un membre clé de l'Alliance des Pirates de Chapeau de Paille et a joué un rôle majeur dans l'intrigue de Punk Hazard et Dressrosa. Law a des motivations complexes liées à son Fruit du Démon et à son passé mystérieux."
+                    }
+                }
+            },
+            
+            {
+                "id": "Persos/Charlotte_Katakuri",
+                "name": "Katakuri",
+                "img": "../static/img/Katakuri.jpg",
+                "specs": {
+                    "fullName": "Charlotte Katakuri",
+                    "age": 48,
+                    "aPropos": {
+                        "description": "Katakuri est un homme au physique imposant, avec une peau brune et des cicatrices. Il porte généralement un foulard sur la bouche.",
+                        "role": "Commandant sucré de la Big Mom Pirates, Katakuri est l'un des Three Sweet Commanders et l'un des fils de Big Mom.",
+                        "demonFruit": "Mochi Mochi no Mi, un Fruit du Démon de type Paramecia qui lui permet de créer, manipuler et devenir du mochi.",
+                        "personalité": "Katakuri est calme, imperturbable et perfectionniste, mais cache son visage en raison de son complexe d'infériorité lié à sa bouche.",
+                        "apparence": "Avec une stature imposante et un foulard sur la bouche, Katakuri a une présence intimidante.",
+                        "capacités": "Katakuri est un utilisateur du Haki et possède le Mochi Mochi no Mi, lui permettant de créer, manipuler et devenir du mochi.",
+                        "histoire": "Katakuri est l'un des fils de Big Mom et est l'un des commandants les plus puissants de l'équipage. Il a combattu Luffy à Whole Cake Island, montrant une force exceptionnelle. Malgré son image imperturbable, Katakuri a des aspects de sa personnalité qui le rendent plus complexe et humain."
+                    }
+                }
+            },
+            
+            {
+                "id": "Persos/Sabo",
+                "name": "Sabo",
+                "img": "../static/img/Sabo.jpg",
+                "specs": {
+                    "fullName": "Sabo",
+                    "age": 24,
+                    "aPropos": {
+                        "description": "Sabo est le frère adoptif de Luffy et Ace, et il est le chef en second de l'Armée Révolutionnaire. Il porte souvent des lunettes et un chapeau.",
+                        "role": "Chef en second de l'Armée Révolutionnaire et membre clé de l'équipage de Dragon.",
+                        "demonFruit": "Mera Mera no Mi (après avoir mangé le Fruit du Démon de Ace).",
+                        "personalité": "Sabo est intelligent, stratégique et dévoué à la cause de la Révolution. Il a une forte détermination à protéger ses proches.",
+                        "apparence": "Avec des lunettes et un chapeau, Sabo a une apparence distinguée.",
+                        "capacités": "Sabo est un expert en arts martiaux et a obtenu les pouvoirs du Mera Mera no Mi après la mort d'Ace.",
+                        "histoire": "Ami d'enfance de Luffy et Ace, Sabo a été présumé mort pendant de nombreuses années. Cependant, il a survécu et a rejoint l'Armée Révolutionnaire. Après la mort d'Ace, Sabo a mangé le Mera Mera no Mi et est devenu un membre clé de l'équipage de Dragon."
+                    }
+                }
+            },
+
+            {
+                "id": "Persos/Baggy",
+                "name": "Baggy",
+                "img": "../static/img/Baggy.jpg",
+                "specs": {
+                    "fullName": "Baggy le Clown",
+                    "age": 39,
+                    "aPropos": {
+                        "description": "Baggy est un pirate avec une apparence clownesque et la capacité de séparer son corps en morceaux grâce à une balle Bara Bara no Mi.",
+                        "role": "Capitaine des Baggy Pirates et ancien membre de l'équipage de Roger.",
+                        "demonFruit": "Bara Bara no Mi, un Fruit du Démon de type Paramecia qui permet à Baggy de séparer son corps en morceaux.",
+                        "personalité": "Baggy est excentrique, opportuniste et aime être au centre de l'attention. Il a une histoire passée avec Shanks le Roux.",
+                        "apparence": "Avec un nez rouge, un chapeau de clown et une tenue extravagante, Baggy a une apparence de clown distincte.",
+                        "capacités": "Baggy est immunisé contre les attaques tranchantes grâce à son pouvoir de Fruit du Démon, mais sa force physique est normale.",
+                        "histoire": "Baggy était autrefois membre de l'équipage de Gol D. Roger. Il a acquis le Bara Bara no Mi et est devenu le capitaine des Baggy Pirates. Bien qu'il ait initialement été présenté comme un adversaire comique pour Luffy, Baggy a continué à jouer un rôle dans plusieurs arcs de l'histoire."
+                    }
+                }
+            },
+             
+            {
                 "id": "Persos/Kaido",
                 "name": "Kaido",
                 "img": "../static/img/Kaido.jpg",
