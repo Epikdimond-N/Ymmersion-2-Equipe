@@ -59,34 +59,36 @@
       </div>
     </header>
     <section>
-      <!-- <p>Texte pour tester</p>
-      {{range .}}
-      <li>
-        <div>Nom du personnage: {{.Name}}</div>
-        <br />
-        <div><img src="{{.Img}}" alt="Char Img" class="" /></div>
-        <br />
-        <div>Nom complet {{.Specs.FullName}}</div>
-        <br />
-        <div>Age {{.Specs.Age}}</div>
-        <br />
-        <div>Description {{.Specs.Apropos.Description}}</div>
-        <br />
-        <div>Role {{.Specs.Apropos.Role}}</div>
-        <br />
-        <div>Fruit du démon {{.Specs.Apropos.Fruit}}</div>
-        <br />
-        <div>Personalité {{.Specs.Apropos.Personalité}}</div>
-        <br />
-        <div>Apparence {{.Specs.Apropos.Apparence}}</div>
-        <br />
-        <div>Capacités {{.Specs.Apropos.Capacités}}</div>
-        <br />
-        <div>Histoire {{.Specs.Apropos.Histoire}}</div>
-        <br />
-        <hr />
-      </li>
-      {{end}} -->
+<!-- Display random characters -->
+<!-- Display random characters -->
+<h2>Random Characters</h2>
+{{range .RandomCharacters}}
+  <div>
+    <h3><a href="/character?id={{.id}}">Name: {{.name}}</a></h3>
+    <p>Description: {{.specs.aPropos.description}}</p>
+    <!-- Display other character details -->
+  </div>
+{{end}}
+
+<!-- Display random arcs -->
+<h2>Random Arcs</h2>
+{{range .RandomArcs}}
+  <div>
+    <h3><a href="/arc?id={{.id}}">Name: {{.name}}</a></h3>
+    <p>Description: {{.description}}</p>
+    <!-- Display other arc details -->
+  </div>
+{{end}}
+
+<!-- Display random events -->
+<h2>Random Events</h2>
+{{range .RandomEvents}}
+  <div>
+    <h3><a href="/event?id={{.id}}">Name: {{.name}}</a></h3>
+    <p>Description: {{.description}}</p>
+    <!-- Display other event details -->
+  </div>
+{{end}}
     </section>
   </body>
 </html>

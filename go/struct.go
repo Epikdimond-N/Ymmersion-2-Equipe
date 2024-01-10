@@ -1,5 +1,9 @@
 package request
 
+type DataHome struct {
+	Categories map[string][]map[string]interface{} `json:"categories"`
+}
+
 type Data struct {
 	Categories struct {
 		Persos         []Character `json:"Persos"`

@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
@@ -102,17 +103,54 @@ func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
-	//if !logged {
-	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	//	return
-	//}
+	// Open and read the JSON file
+	file, err := os.Open("data.json")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
 
-	initTemplate.Temp.ExecuteTemplate(w, "index", nil)
+	// Decode JSON data into a Data struct
+	var data One.DataHome
+	err = json.NewDecoder(file).Decode(&data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	// Select 2 random characters
+	randomCharacters := GetRandomItems(data.Categories["Persos"], 2)
+
+	// Select 2 random arcs
+	randomArcs := GetRandomItems(data.Categories["Arcs"], 2)
+
+	// Select 2 random events
+	randomEvents := GetRandomItems(data.Categories["EventsOnePiece"], 2)
+
+	// Create a map to pass selected data to the template
+	selectedData := map[string]interface{}{
+		"RandomCharacters": randomCharacters,
+		"RandomArcs":       randomArcs,
+		"RandomEvents":     randomEvents,
+	}
+
+	// Pass the selected data to the template for rendering
+	initTemplate.Temp.ExecuteTemplate(w, "index", selectedData)
 }
 
 func DisplayChar(w http.ResponseWriter, r *http.Request) {
+	// Retrieve the character ID from the URL query parameter
+	charID := r.URL.Query().Get("id")
+
+	// Check if the ID is empty or not provided
+	if charID == "" {
+		http.Error(w, "Character ID is required", http.StatusBadRequest)
+		return
+	}
+
 	data := One.GetChar()
-	ToSend, err := One.GetCharacterByID(data, "1")
+	ToSend, err := One.GetCharacterByID(data, charID)
 	if err != nil {
 		// Handle error (e.g., character not found)
 		http.Error(w, err.Error(), http.StatusNotFound)
