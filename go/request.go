@@ -169,7 +169,6 @@ func GetEvents() []Event {
 }
 
 func GetCharacterByID(characters []Character, id string) (Character, error) {
-	fmt.Println(characters)
 	for _, character := range characters {
 		if character.ID == id {
 			return character, nil // Return the character if the ID matches

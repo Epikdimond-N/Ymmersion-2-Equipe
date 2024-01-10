@@ -187,17 +187,28 @@ func DisplayPersos(w http.ResponseWriter, r *http.Request) {
 	}
 	defer file.Close()
 
-	// Decode JSON data into a Data struct
+	// Decode JSON data into a DataHome struct
 	var data One.DataHome
-	DataPerso := data.Categories["Persos"]
 
 	err = json.NewDecoder(file).Decode(&data)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+
+	// Get the "Persos" data
+	persosData, ok := data.Categories["Persos"]
+	if !ok {
+		http.Error(w, "Persos data not found", http.StatusInternalServerError)
+		return
+	}
+
 	// Pass the selected data to the template for rendering
-	initTemplate.Temp.ExecuteTemplate(w, "selectchar", DataPerso)
+	err = initTemplate.Temp.ExecuteTemplate(w, "selectchar", persosData)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 }
 
 func DisplayArcs(w http.ResponseWriter, r *http.Request) {
