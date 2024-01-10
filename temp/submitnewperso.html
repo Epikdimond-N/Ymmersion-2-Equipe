@@ -6,6 +6,7 @@
     <link rel="icon" href="/statics/fav.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/categories.css" />
+    <link rel="stylesheet" href="../static/css/contentCrea.css" />
     <title>Register</title>
 </head>
 <body>
@@ -61,30 +62,41 @@
       </header>
     <h1>Register Persos</h1>
     <form action="/NewPersos" method="post">
-        <label for="PersosName">Persos Name:</label>
-        <input type="text" id="PersosName" name="PersosName" required><br><br>
-        <label for="PersosImage">image, must be under 10MB</label>
-        <input type="file" id="PersosImage" name="PersosImage" required><br><br>
-        <label for="PersosFullName">Nom complet :</label>
-        <input type="text" id="PersosFullName" name="PersosFullName" required><br><br>
-        <label for="PersosAge">Age du personnage:</label>
-        <input type="text" id="PersosAge" name="PersosAge" required><br><br>
-        <label for="PersosDescription">Drescriprion du personnage :</label>
-        <input type="text" id="PersosDescription" name="PersosDescription" required><br><br>
-        <label for="PersosRole">Role du personnage:</label>
-        <input type="text" id="PersosRole" name="PersosRole" required><br><br>
-        <label for="PersosFruit">Le Fruit du demon (si il n'en a pas, preciser)</label>
-        <input type="text" id="PersosFruit" name="PersosFruit" required><br><br>
-        <label for="PersosPersonalite">Personalité du personage:</label>
-        <input type="text" id="PersosPersonalite" name="PersosPersonalite" required><br><br>
-        <label for="PersosApparence">Apparence du personnage :</label>
-        <input type="text" id="PersosApparence" name="PersosApparence" required><br><br>
-        <label for="PersosCapacités">Capacité du personnage:</label>
-        <input type="text" id="PersosCapacités" name="PersosCapacités" required><br><br>
-        <label for="PersosHistoires">Histoire du personnage:</label>
-        <input type="text" id="PersosHistoires" name="PersosHistoires" required><br><br>
-        <input type="submit" value="Register">
-    </form>
+      <label for="PersosName">Persos Name:</label>
+      <input type="text" id="PersosName" name="PersosName" required><br><br>
+
+      <label for="PersosImage">Image (must be under 10MB):</label>
+      <input type="file" id="PersosImage" name="PersosImage" required><br><br>
+
+      <label for="PersosFullName">Nom complet :</label>
+      <input type="text" id="PersosFullName" name="PersosFullName" required><br><br>
+
+      <label for="PersosAge">Age du personnage:</label>
+      <input type="text" id="PersosAge" name="PersosAge" required><br><br>
+
+      <label for="PersosDescription">Description du personnage :</label>
+      <textarea id="PersosDescription" name="PersosDescription" required></textarea><br><br>
+
+      <label for="PersosRole">Role du personnage:</label>
+      <input type="text" id="PersosRole" name="PersosRole" required><br><br>
+
+      <label for="PersosFruit">Le Fruit du demon (si il n'en a pas, preciser):</label>
+      <input type="text" id="PersosFruit" name="PersosFruit" required><br><br>
+
+      <label for="PersosPersonalite">Personalité du personage:</label>
+      <input type="text" id="PersosPersonalite" name="PersosPersonalite" required><br><br>
+
+      <label for="PersosApparence">Apparence du personnage :</label>
+      <input type="text" id="PersosApparence" name="PersosApparence" required><br><br>
+
+      <label for="PersosCapacités">Capacité du personnage:</label>
+      <input type="text" id="PersosCapacités" name="PersosCapacités" required><br><br>
+
+      <label for="PersosHistoires">Histoire du personnage:</label>
+      <textarea id="PersosHistoires" name="PersosHistoires" required></textarea><br><br>
+
+      <input type="submit" value="Register">
+  </form>
     <footer></footer>
 </body>
 </html>

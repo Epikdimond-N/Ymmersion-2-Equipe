@@ -123,9 +123,3 @@ a{
     text-decoration: none;
     color: #0077be
 }
-
-#arcDescription {
-    width: 300px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    font-size: 16px; /* Adjust the font size as needed */
-}
