@@ -176,14 +176,6 @@
                 "img": "../static/img/ArcEggHead.jpg",
                 "name": "Arc Egg Head",
                 "épisodesAnime": "1086"
-            },
-            {
-                "chapitresManga": "debut-fin",
-                "description": "le debut et la fin",
-                "id": "Arcs/Le code",
-                "img": "../static/img/photoarcs/Le code",
-                "name": "Le code",
-                "épisodesAnimé": "debut-fin"
             }
         ],
         "EventsOnePiece": [
