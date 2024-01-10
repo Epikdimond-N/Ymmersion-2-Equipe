@@ -9,7 +9,7 @@ import (
 
 func InitServe() {
 	http.HandleFunc("/", controller.NotFoundHandler)                              // catch-all route for any unspecified paths and display page 404 << working
-	http.HandleFunc("/Home", controller.DisplayHome)                              // display root / page d'acceuil << a metre a jour pour qu'elle contienne 10 article random
+	http.HandleFunc("/Home", controller.DisplayHome)                              // display root / page d'acceuil << working, 10 rondom article
 	http.HandleFunc("/character", controller.DisplayPerso)                        // display given char ID << need update
 	http.HandleFunc("/arc", controller.DisplayArc)                                // display given arc ID << need update
 	http.HandleFunc("/event", controller.DisplayEvent)                            // display given event ID << need update
@@ -19,6 +19,8 @@ func InitServe() {
 	http.HandleFunc("/events/article", controller.DisplayEvents)                  // display all events article << need update
 	http.HandleFunc("/categories", controller.DisplayCategories)                  // display categorie choice page << need update
 	http.HandleFunc("/admin", controller.DisplayAdmin)                            // display admin page << working
+	http.HandleFunc("/admin/delete", controller.DisplayAdmin)                     // display the form for delete << need update
+	http.HandleFunc("/admin/deleteThis", controller.DisplayAdmin)                 // display the article for confirmation << need update
 	http.HandleFunc("/register", controller.RegisterHandler)                      // creation de compte << working
 	http.HandleFunc("/confirmRegister", controller.ConfirmRegisterHandler)        // ecrit dans le json user.json  // gestion de creation de compte << working
 	http.HandleFunc("/login", controller.LoginHandler)                            // possibilité de se log, page de redirection si logged = false << working
