@@ -120,7 +120,7 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 	chapitre := r.FormValue("arcChapitreManga")
 	desc := r.FormValue("PersosDescription")
 
-	// Call the function to update character passing the file path as img
+	// Call the function to update arc passing the file path as img
 	if err := UpdateArc(name, filePath, episode, chapitre, desc); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
@@ -135,21 +135,20 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
 	//	return
 	//}
+
+	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
+}
+
+func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 	name := r.FormValue("EventName")
 	desc := r.FormValue("EventDescription")
 
-	// Call the function to update character passing the file path as img
+	// Call the function to update event passing the file path as img
 	if err := UpdateEvent(name, desc); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
 	}
-
-	http.Redirect(w, r, "/Home", http.StatusFound)
-}
-
-func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
-
 	http.Redirect(w, r, "/Home", http.StatusFound)
 }
 
