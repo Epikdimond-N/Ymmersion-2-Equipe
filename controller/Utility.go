@@ -376,10 +376,12 @@ func FindInfoByName(search string) []One.SearchResult {
 				strings.Contains(strings.ToLower(character.Name), strings.ToLower(search)) ||
 				strings.Contains(strings.ToLower(character.Specs.FullName), strings.ToLower(search)) {
 				if !encounteredIDs[character.ID] {
+					categorie := getCategorieByID(character.ID)
 					image := getImageByID(character.ID)
 					description := getDescriptionByID(character.ID)
 
 					searchResult := One.SearchResult{
+						Categorie:   categorie,
 						ID:          character.ID,
 						Image:       image,
 						Description: description,
@@ -504,4 +506,42 @@ func findByID(data One.CategoryData, id string) interface{} {
 		}
 	}
 	return nil // If the ID is not found
+}
+
+func getCategorieByID(ID string) string {
+	jsonData, err := os.ReadFile("data.json")
+	if err != nil {
+		fmt.Println("Failed to read JSON data:", err)
+		return ""
+	}
+
+	var data One.Data
+	err = json.Unmarshal(jsonData, &data)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return ""
+	}
+
+	// Check the character category
+	for _, character := range data.Categories.Persos {
+		if character.ID == ID {
+			return "Persos"
+		}
+	}
+
+	// Check the arc category
+	for _, arc := range data.Categories.Arcs {
+		if arc.ID == ID {
+			return "Arcs"
+		}
+	}
+
+	// Check the event category
+	for _, event := range data.Categories.EventsOnePiece {
+		if event.ID == ID {
+			return "EventsOnePiece"
+		}
+	}
+
+	return ""
 }
