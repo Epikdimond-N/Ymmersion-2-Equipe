@@ -12,6 +12,7 @@ type Data struct {
 	} `json:"categories"`
 }
 type SearchResult struct {
+	Categorie   string
 	ID          string
 	Image       string
 	Description string

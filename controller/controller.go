@@ -36,7 +36,7 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Create the file in the destination directory
 	// Change the file path as per your directory structure
-	filePath := filepath.Join("assets", "imgpersos", handler.Filename)
+	filePath := filepath.Join("assets", "img", "imgpersos", handler.Filename)
 	dst, err := os.Create(filePath)
 	if err != nil {
 		// Handle error
@@ -84,6 +84,48 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
+	// Parse the multipart form data with a maximum upload size of 10MB
+	r.ParseMultipartForm(10 << 20)
+
+	// Retrieve the file from the form
+	file, handler, err := r.FormFile("arcImage")
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+
+	// Create the file in the destination directory
+	// Change the file path as per your directory structure
+	filePath := filepath.Join("assets", "img", "photoarcs", handler.Filename)
+	dst, err := os.Create(filePath)
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return
+	}
+	defer dst.Close()
+
+	// Copy the file to the destination directory
+	if _, err = io.Copy(dst, file); err != nil {
+		// Handle error
+		http.Error(w, "Error copying the file", http.StatusInternalServerError)
+		return
+	}
+
+	// Once the file is saved, retrieve other form data and call the function to update the character
+	name := r.FormValue("arcName")
+	episode := r.FormValue("arcEpisodeAnime")
+	chapitre := r.FormValue("arcChapitreManga")
+	desc := r.FormValue("PersosDescription")
+
+	// Call the function to update arc passing the file path as img
+	if err := UpdateArc(name, filePath, episode, chapitre, desc); err != nil {
+		// Handle error
+		http.Error(w, "Error updating character", http.StatusInternalServerError)
+		return
+	}
 
 	http.Redirect(w, r, "/Home", http.StatusFound)
 }
@@ -94,11 +136,19 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//	return
 	//}
 
-	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
+	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
 }
 
 func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
+	name := r.FormValue("EventName")
+	desc := r.FormValue("EventDescription")
 
+	// Call the function to update event passing the file path as img
+	if err := UpdateEvent(name, desc); err != nil {
+		// Handle error
+		http.Error(w, "Error updating character", http.StatusInternalServerError)
+		return
+	}
 	http.Redirect(w, r, "/Home", http.StatusFound)
 }
 
@@ -309,6 +359,54 @@ func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 	// 	return
 	// }
 	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
+}
+
+func DisplayAdminDelete(w http.ResponseWriter, r *http.Request) {
+	// if !logged {
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	// 	return
+	// }
+	// if !admin {
+	// 	http.Redirect(w, r, "/Home", http.StatusSeeOther)
+	// 	return
+	// }
+	initTemplate.Temp.ExecuteTemplate(w, "adminDelete", nil)
+}
+
+func DisplayAdminDeleteConf(w http.ResponseWriter, r *http.Request) {
+	// if !logged {
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	// 	return
+	// }
+	// if !admin {
+	// 	http.Redirect(w, r, "/Home", http.StatusSeeOther)
+	// 	return
+	// }
+	ID := r.URL.Query().Get("id")
+	filePath := "data.json"
+
+	// Read the JSON file
+	jsonData, err := os.ReadFile(filePath)
+	if err != nil {
+		fmt.Println("Error reading JSON file:", err)
+		return
+	}
+
+	// Unmarshal the JSON data into the appropriate struct
+	var data One.CategoryData
+	if err := json.Unmarshal(jsonData, &data); err != nil {
+		fmt.Println("Error parsing JSON data:", err)
+		return
+	}
+
+	result := findByID(data, ID)
+	if result != nil {
+		fmt.Printf("Data found for ID '%s': %+v\n", ID, result)
+	} else {
+		fmt.Printf("No data found for ID '%s'\n", ID)
+	}
+
+	initTemplate.Temp.ExecuteTemplate(w, "adminDeleteConf", result)
 }
 
 func NotFoundHandler(w http.ResponseWriter, r *http.Request) {
