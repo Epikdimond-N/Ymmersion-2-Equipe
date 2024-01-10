@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
@@ -20,7 +21,7 @@ func NewCharHandler(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "newPersos", nil)
 }
 
-func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
+func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	// Parse the multipart form data with a maximum upload size of 10MB
 	r.ParseMultipartForm(10 << 20)
 
@@ -70,9 +71,9 @@ func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Optionally, redirect the user to a success page
 	http.Redirect(w, r, "/", http.StatusFound)
 }
+
 func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 	//if !logged {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -81,6 +82,12 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 
 	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
 }
+
+func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
+
+	http.Redirect(w, r, "/", http.StatusFound)
+}
+
 func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//if !logged {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -90,16 +97,78 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
 }
 
-func DisplayHome(w http.ResponseWriter, r *http.Request) {
-	//if !logged {
-	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	//	return
-	//}
+func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 
-	initTemplate.Temp.ExecuteTemplate(w, "index", nil)
+	http.Redirect(w, r, "/", http.StatusFound)
+}
+
+func DisplayHome(w http.ResponseWriter, r *http.Request) {
+	// Open and read the JSON file
+	file, err := os.Open("data.json")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+
+	// Decode JSON data into a Data struct
+	var data One.DataHome
+	err = json.NewDecoder(file).Decode(&data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	// Select 2 random characters
+	randomCharacters := GetRandomItems(data.Categories["Persos"], 2)
+
+	// Select 2 random arcs
+	randomArcs := GetRandomItems(data.Categories["Arcs"], 2)
+
+	// Select 2 random events
+	randomEvents := GetRandomItems(data.Categories["EventsOnePiece"], 2)
+
+	// Create a map to pass selected data to the template
+	selectedData := map[string]interface{}{
+		"RandomCharacters": randomCharacters,
+		"RandomArcs":       randomArcs,
+		"RandomEvents":     randomEvents,
+	}
+
+	// Pass the selected data to the template for rendering
+	initTemplate.Temp.ExecuteTemplate(w, "index", selectedData)
 }
 
 func DisplayChar(w http.ResponseWriter, r *http.Request) {
+	// Retrieve the character ID from the URL query parameter
+	charID := r.URL.Query().Get("id")
+
+	// Check if the ID is empty or not provided
+	if charID == "" {
+		http.Error(w, "Character ID is required", http.StatusBadRequest)
+		return
+	}
+
+	data := One.GetChar()
+	ToSend, err := One.GetCharacterByID(data, charID)
+	if err != nil {
+		// Handle error (e.g., character not found)
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
+}
+func DisplayArc(w http.ResponseWriter, r *http.Request) {
+	data := One.GetChar()
+	ToSend, err := One.GetCharacterByID(data, "1")
+	if err != nil {
+		// Handle error (e.g., character not found)
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
+}
+func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 	data := One.GetChar()
 	ToSend, err := One.GetCharacterByID(data, "1")
 	if err != nil {
@@ -150,15 +219,7 @@ func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
 }
 
-func DisplayAddArticle(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "addarticle", nil)
-}
-
-func Display404(w http.ResponseWriter, r *http.Request) {
+func NotFoundHandler(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "404", nil)
 }
 
