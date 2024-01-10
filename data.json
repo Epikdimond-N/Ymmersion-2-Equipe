@@ -253,6 +253,7 @@
             },
             {
                 "id": "Persos/Roronoa Zoro",
+                "name": "Zoro",
                 "img": "../static/img/imgpersos/Zoro.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-zoro.png",
                 "specs": {
@@ -272,6 +273,7 @@
             },
             {
                 "id": "Persos/Vinsmoke Sanji",
+                "name": "Sanji",
                 "img": "../static/img/imgpersos/Sanji.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sanji.png",
                 "specs": {
@@ -291,6 +293,7 @@
             },
             {
                 "id": "Persos/Nami",
+                "name": "Nami",
                 "img": "../static/img/imgpersos/Nami.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-nami.png",
                 "specs": {
@@ -309,8 +312,9 @@
                 }
             },
             {
-                "id": "Persos/Usoop",
-                "img": "../static/img/imgpersos/Usoop.jpg",
+                "id": "Persos/Usopp",
+                "name": "Usopp",
+                "img": "../static/img/imgpersos/Usopp.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-usopp.png",
                 "specs": {
                     "fullName": "Usopp",
@@ -348,7 +352,8 @@
                 }
             },
             {
-                "id": "Persos/Tony_Tony_Chopper",
+                "id": "Persos/Tony Tony Chopper",
+                "name": "Chopper",
                 "img": "../static/img/imgpersos/Chopper.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-chopper.png",
                 "specs": {
@@ -368,6 +373,7 @@
             },
             {
                 "id": "Persos/Brook",
+                "name": "Brook",
                 "img": "../static/img/imgpersos/Brook.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-brook.png",
                 "specs": {
@@ -387,6 +393,7 @@
             },
             {
                 "id": "Persos/Franky",
+                "name": "Franky",
                 "img": "../static/img/imgpersos/Franky.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-franky.png",
                 "specs": {
@@ -406,6 +413,7 @@
             },
             {
                 "id": "Persos/Jinbe",
+                "name": "Jinbe",
                 "img": "../static/img/imgpersos/Jinbe.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-jinbe.png",
                 "specs": {
@@ -424,7 +432,8 @@
                 }
             },
             {
-                "id": "Persos/Portgas_D_Ace",
+                "id": "Persos/Portgas D Ace",
+                "name": "Ace",
                 "img": "../static/img/imgpersos/Ace.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-ace.png",
                 "specs": {
@@ -444,6 +453,7 @@
             },
             {
                 "id": "Persos/Crocodile",
+                "name": "Crocodile",
                 "img": "../static/img/imgpersos/Crocodile.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-crocodile.png",
                 "specs": {
@@ -462,7 +472,8 @@
                 }
             },
             {
-                "id": "Persos/Eustass_Kidd",
+                "id": "Persos/Eustass Kidd",
+                "name": "Kidd",
                 "img": "../static/img/imgpersos/Kidd.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-kid.png",
                 "specs": {
@@ -481,7 +492,8 @@
                 }
             },
             {
-                "id": "Persos/Trafalgar_D_Water_Law",
+                "id": "Persos/Trafalgar D. WaterLaw",
+                "name": "Law",
                 "img": "../static/img/imgpersos/Law.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-law.png",
                 "specs": {
@@ -500,7 +512,8 @@
                 }
             },
             {
-                "id": "Persos/Charlotte_Katakuri",
+                "id": "Persos/Charlotte Katakuri",
+                "name": "Chaelotte",
                 "img": "../static/img/imgpersos/Katakuri.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-katakuri.png",
                 "specs": {
@@ -520,6 +533,7 @@
             },
             {
                 "id": "Persos/Sabo",
+                "name": "Sabo",
                 "img": "../static/img/imgpersos/Sabo.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sabo.png",
                 "specs": {
@@ -538,7 +552,8 @@
                 }
             },
             {
-                "id": "Persos/Baggy",
+                "id": "Persos/Baggy le Clown",
+                "name": "Baggy",
                 "img": "../static/img/imgpersos/Baggy.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-baggy.png",
                 "specs": {
@@ -557,7 +572,8 @@
                 }
             },
             {
-                "id": "Persos/Kaido",
+                "id": "Persos/Le Roi des Bêtes Kaido",
+                "name": "Kaido",
                 "img": "../static/img/imgpersos/Kaido.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-kaido.png",
                 "specs": {
@@ -576,7 +592,8 @@
                 }
             },
             {
-                "id": "Persos/BigMom",
+                "id": "Persos/Charlotte Linlin, surnommée Big Mom",
+                "name": "Big Mom",
                 "img": "../static/img/imgpersos/BigMom.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-big-mom.png",
                 "specs": {
@@ -596,6 +613,7 @@
             },
             {
                 "id": "Persos/Shanks Le Roux",
+                "name": "Shanks",
                 "img": "../static/img/imgpersos/Shanks.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-shanks.png",
                 "specs": {
@@ -614,7 +632,8 @@
                 }
             },
             {
-                "id": "Persos/Marshall Teach Barbe Noire",
+                "id": "Persos/Marshall D. Teach, Surnommé Barbe Noire",
+                "name": "Teach",
                 "img": "../static/img/imgpersos/BarbeNoire.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-barbe-noire.png",
                 "specs": {
@@ -633,7 +652,8 @@
                 }
             },
             {
-                "id": "Persos/Dracule_Mihawk",
+                "id": "Persos/Dracule Mihawk",
+                "name": "Mihawk",
                 "img": "../static/img/imgpersos/Mihawk.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-mihawk.png",
                 "specs": {
@@ -649,7 +669,8 @@
                 }
             },
             {
-                "id": "Persos/Edward_Newgate",
+                "id": "Persos/Edward Newgate",
+                "name":"Barbe Blanche" ,
                 "img": "../static/img/imgpersos/EdwardNewgate.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-barbe-blanche.png",
                 "specs": {
