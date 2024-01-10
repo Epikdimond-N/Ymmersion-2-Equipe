@@ -14,8 +14,8 @@ func GetChar() []Character {
 		return nil
 	}
 
-	// Unmarshal JSON data into Categories struct
-	var data map[string]Categories
+	// Unmarshal JSON data into Data struct
+	var data Data
 	err = json.Unmarshal(file, &data)
 	if err != nil {
 		fmt.Println("Error parsing JSON:", err)
@@ -23,33 +23,11 @@ func GetChar() []Character {
 	}
 
 	// Accessing characters under the "Persos" category
-	characters, ok := data["categories"]
-	if !ok {
-		fmt.Println("No 'categories' found in JSON")
-		return nil
-	}
+	characters := data.Categories.Persos
 
 	// Display information about each character
 	var char []Character
-	for _, character := range characters.Persos {
-		fmt.Printf("Character ID: %s\n", character.ID)
-
-		fmt.Printf("Name: %s\n", character.Name)
-		if character.Img != "" {
-			fmt.Printf("Image URL: %s\n", character.Img)
-		}
-
-		fmt.Printf("Description: %s\n", character.Specs.FullName)
-		fmt.Printf("Description: %d\n", character.Specs.Age)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Description)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Role)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Fruit)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Personalité)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Apparence)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Capacités)
-		fmt.Printf("Description: %s\n", character.Specs.Apropos.Histoire)
-
-		fmt.Println("-------------")
+	for _, character := range characters {
 		var newChar Character
 		newChar.ID = character.ID
 		newChar.Name = character.Name

@@ -4,7 +4,7 @@
             {
                 "id": "Persos/Monkey D. Luffy",
                 "name": "Luffy",
-                "img": "../static/img/Luffy.jpg",
+                "img": "../static/img/imgpersos/Luffy.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-luffy.png",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
@@ -25,7 +25,7 @@
             {
                 "id": "Persos/Roronoa Zoro",
                 "name": "Zoro",
-                "img": "../static/img/Zoro.jpg",
+                "img": "../static/img/imgpersos/Zoro.jpg",
                 "specs": {
                     "fullName": "Roronoa Zoro",
                     "age": 19,
@@ -45,7 +45,7 @@
             {
                 "id": "Persos/Vinsmoke Sanji",
                 "name": "Sanjii",
-                "img": "../static/img/Sanji.jpg",
+                "img": "../static/img/imgpersos/Sanji.jpg",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
                     "age": 19,
@@ -65,7 +65,7 @@
             {
                 "id": "Persos/Nami",
                 "name": "Nami",
-                "img": "../static/img/Nami.jpg",
+                "img": "../static/img/imgpersos/Nami.jpg",
                 "specs": {
                     "fullName": "Nami",
                     "age": 18,
@@ -85,7 +85,7 @@
             {
                 "id": "Persos/Usoop",
                 "name": "Usoop",
-                "img": "../static/img/Usoop.jpg",
+                "img": "../static/img/imgpersos/Usoop.jpg",
                 "specs": {
                     "fullName": "Usopp",
                     "age": 17,
@@ -105,7 +105,7 @@
             {
                 "id": "Persos/Nico Robin",
                 "name": "Robin",
-                "img": "../static/img/Robin.jpg",
+                "img": "../static/img/imgpersos/NicoRobin.jpg",
                 "specs": {
                     "fullName": "Nico Robin",
                     "age": 28,
@@ -125,7 +125,7 @@
             {
                 "id": "Persos/Tony_Tony_Chopper",
                 "name": "Chopper",
-                "img": "../static/img/Chopper.jpg",
+                "img": "../static/img/imgpersos/Chopper.jpg",
                 "specs": {
                     "fullName": "Tony Tony Chopper",
                     "age": 17,
@@ -144,10 +144,10 @@
             {
                 "id": "Persos/Brook",
                 "name": "Brook",
-                "img": "../static/img/Brook.jpg",
+                "img": "../static/img/imgpersos/Brook.jpg",
                 "specs": {
                     "fullName": "Brook",
-                    "age": "90",
+                    "age": 90,
                     "aPropos": {
                         "description": "Brook est un squelette musicien avec une personnalité joyeuse. Il est souvent vu portant un chapeau et jouant du violon. Après avoir mangé le Yomi Yomi no Mi, il a été ressuscité.",
                         "role": "Musicien des Pirates du Chapeau de Paille, Brook apporte une touche musicale à l'équipage.",
@@ -163,7 +163,7 @@
             {
                 "id": "Persos/Franky",
                 "name": "Franky",
-                "img": "../static/img/Franky.jpg",
+                "img": "../static/img/imgpersos/Franky.jpg",
                 "specs": {
                     "fullName": "Franky",
                     "age": 36,
@@ -182,7 +182,7 @@
             {
                 "id": "Persos/Jinbe",
                 "name": "Jinbe",
-                "img": "../static/img/Jinbe.jpg",
+                "img": "../static/img/imgpersos/Jinbe.jpg",
                 "specs": {
                     "fullName": "Jinbe",
                     "age": 46,
@@ -201,10 +201,10 @@
             {
                 "id": "Persos/Portgas_D_Ace",
                 "name": "Ace",
-                "img": "../static/img/Ace.jpg",
+                "img": "../static/img/imgpersos/Ace.jpg",
                 "specs": {
                     "fullName": "Portgas D. Ace",
-                    "age": "Décédé à 20 ans",
+                    "age": 20,
                     "aPropos": {
                         "description": "Ace était le frère adoptif de Luffy et un utilisateur du Mera Mera no Mi, lui conférant des pouvoirs liés au feu.",
                         "role": "Ancien commandant de la 2e division de l'équipage de Barbe Blanche.",
@@ -220,7 +220,7 @@
             {
                 "id": "Persos/Crocodile",
                 "name": "Crocodile",
-                "img": "../static/img/Crocodile.jpg",
+                "img": "../static/img/imgpersos/Crocodile.jpg",
                 "specs": {
                     "fullName": "Sir Crocodile",
                     "age": 44,
@@ -239,7 +239,7 @@
             {
                 "id": "Persos/Eustass_Kidd",
                 "name": "Kidd",
-                "img": "../static/img/Kidd.jpg",
+                "img": "../static/img/imgpersos/Kidd.jpg",
                 "specs": {
                     "fullName": "Eustass Kidd",
                     "age": 27,
@@ -258,7 +258,7 @@
             {
                 "id": "Persos/Trafalgar_D_Water_Law",
                 "name": "Law",
-                "img": "../static/img/Law.jpg",
+                "img": "../static/img/imgpersos/Law.jpg",
                 "specs": {
                     "fullName": "Trafalgar D. Water Law",
                     "age": 26,
@@ -277,7 +277,7 @@
             {
                 "id": "Persos/Charlotte_Katakuri",
                 "name": "Katakuri",
-                "img": "../static/img/Katakuri.jpg",
+                "img": "../static/img/imgpersos/Katakuri.jpg",
                 "specs": {
                     "fullName": "Charlotte Katakuri",
                     "age": 48,
@@ -296,7 +296,7 @@
             {
                 "id": "Persos/Sabo",
                 "name": "Sabo",
-                "img": "../static/img/Sabo.jpg",
+                "img": "../static/img/imgpersos/Sabo.jpg",
                 "specs": {
                     "fullName": "Sabo",
                     "age": 24,
@@ -315,7 +315,7 @@
             {
                 "id": "Persos/Baggy",
                 "name": "Baggy",
-                "img": "../static/img/Baggy.jpg",
+                "img": "../static/img/imgpersos/Baggy.jpg",
                 "specs": {
                     "fullName": "Baggy le Clown",
                     "age": 39,
@@ -334,7 +334,7 @@
             {
                 "id": "Persos/Kaido",
                 "name": "Kaido",
-                "img": "../static/img/Kaido.jpg",
+                "img": "../static/img/imgpersos/Kaido.jpg",
                 "specs": {
                     "fullName": "Le Roi des Bêtes Kaido",
                     "age": 59,
@@ -354,7 +354,7 @@
             {
                 "id": "Persos/BigMom",
                 "name": "BigMom",
-                "img": "../static/img/BigMom.jpg",
+                "img": "../static/img/imgpersos/BigMom.jpg",
                 "specs": {
                     "fullName": "Charlotte Linlin, surnommée Big Mom",
                     "age": 68,
@@ -374,7 +374,7 @@
             {
                 "id": "Persos/Shanks Le Roux",
                 "name": "Shanks",
-                "img": "../static/img/Shanks.jpg",
+                "img": "../static/img/imgpersos/Shanks.jpg",
                 "specs": {
                     "fullName": "Shanks Le Roux",
                     "age": 39,
@@ -394,7 +394,7 @@
             {
                 "id": "Persos/Marshall Teach Barbe Noire",
                 "name": "Barbe Noire",
-                "img": "../static/img/BarbeNoire.jpg",
+                "img": "../static/img/imgpersos/BarbeNoire.jpg",
                 "specs": {
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
                     "age": 40,
@@ -413,7 +413,7 @@
             {
                 "id": "Persos/Dracule_Mihawk",
                 "name": "Dracule Mihawk",
-                "img": "../static/img/Mihawk.jpg",
+                "img": "../static/img/imgpersos/Mihawk.jpg",
                 "specs": {
                   "fullName": "Dracule Mihawk",
                   "aPropos": {
@@ -428,7 +428,7 @@
               {
                 "id": "Persos/Edward_Newgate",
                 "name": "Edward Newgate",
-                "img": "../static/img/EdwardNewgate.jpg",
+                "img": "../static/img/imgpersos/EdwardNewgate.jpg",
                 "specs": {
                   "fullName": "Edward Newgate",
                   "aPropos": {
