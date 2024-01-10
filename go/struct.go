@@ -66,7 +66,7 @@ type Event struct {
 type Categories struct {
 	Persos []Character `json:"Persos"`
 	Arc    []Arc       `json:"Arcs"`
-	Events []Event     `json:"Events"`
+	Events []Event     `json:"EventsOnePiece"`
 }
 
 type ResponseData struct {

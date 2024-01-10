@@ -75,14 +75,14 @@ func GetArcs() []Arc {
 	var arc []Arc
 	// Display information about each arcs
 	for _, Arcs := range arcs.Arc {
-		fmt.Printf("Arcs ID: %s\n", Arcs.ID)
-		if Arcs.Img != "" {
-			fmt.Printf("Image URL: %s\n", Arcs.Img)
-		}
-		fmt.Printf("Name: %s\n", Arcs.Name)
-		fmt.Printf("Description: %s\n", Arcs.Description)
+		// fmt.Printf("Arcs ID: %s\n", Arcs.ID)
+		// if Arcs.Img != "" {
+		// 	fmt.Printf("Image URL: %s\n", Arcs.Img)
+		// }
+		// fmt.Printf("Name: %s\n", Arcs.Name)
+		// fmt.Printf("Description: %s\n", Arcs.Description)
+		// fmt.Println("-------------")
 
-		fmt.Println("-------------")
 		var newArcs Arc
 		newArcs.ID = Arcs.ID
 		newArcs.Name = Arcs.Name
@@ -124,14 +124,14 @@ func GetEvents() []Event {
 	var event []Event
 	// Display information about each event
 	for _, Events := range events.Events {
-		fmt.Printf("Event ID: %s\n", Events.ID)
-		if Events.Img != "" {
-			fmt.Printf("Image URL: %s\n", Events.Img)
-		}
-		fmt.Printf("Name: %s\n", Events.Name)
-		fmt.Printf("Description: %s\n", Events.Description)
+		// fmt.Printf("Event ID: %s\n", Events.ID)
+		// if Events.Img != "" {
+		// 	fmt.Printf("Image URL: %s\n", Events.Img)
+		// }
+		// fmt.Printf("Name: %s\n", Events.Name)
+		// fmt.Printf("Description: %s\n", Events.Description)
+		// fmt.Println("-------------")
 
-		fmt.Println("-------------")
 		var newEvent Event
 		newEvent.ID = Events.ID
 		newEvent.Name = Events.Name
@@ -161,7 +161,7 @@ func GetArcByID(arcs []Arc, id string) (Arc, error) {
 			return arc, nil // Return the character if the ID matches
 		}
 	}
-	return Arc{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
+	return Arc{}, fmt.Errorf("arc with ID %s not found", id) // Return an error if the ID is not found
 }
 
 func GetEventByID(events []Event, id string) (Event, error) {
@@ -170,5 +170,5 @@ func GetEventByID(events []Event, id string) (Event, error) {
 			return event, nil // Return the character if the ID matches
 		}
 	}
-	return Event{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
+	return Event{}, fmt.Errorf("event with ID %s not found", id) // Return an error if the ID is not found
 }

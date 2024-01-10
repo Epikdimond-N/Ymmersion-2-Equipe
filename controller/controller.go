@@ -160,7 +160,7 @@ func DisplayPerso(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
 }
 func DisplayArc(w http.ResponseWriter, r *http.Request) {
-	// Retrieve the character ID from the URL query parameter
+	// Retrieve the arc ID from the URL query parameter
 	arcID := r.URL.Query().Get("id")
 
 	// Check if the ID is empty or not provided
@@ -171,21 +171,30 @@ func DisplayArc(w http.ResponseWriter, r *http.Request) {
 	data := One.GetArcs()
 	ToSend, err := One.GetArcByID(data, arcID)
 	if err != nil {
-		// Handle error (e.g., character not found)
+		// Handle error (e.g., arc not found)
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
 	initTemplate.Temp.ExecuteTemplate(w, "arc", ToSend)
 }
 func DisplayEvent(w http.ResponseWriter, r *http.Request) {
-	data := One.GetChar()
-	ToSend, err := One.GetCharacterByID(data, "1")
+	// Retrieve the event ID from the URL query parameter
+	eventID := r.URL.Query().Get("id")
+
+	// Check if the ID is empty or not provided
+	if eventID == "" {
+		http.Error(w, "Event ID is required", http.StatusBadRequest)
+		return
+	}
+	data := One.GetEvents()
+	ToSend, err := One.GetEventByID(data, eventID)
 	if err != nil {
-		// Handle error (e.g., character not found)
+		// Handle error (e.g., event not found)
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
+	fmt.Println(ToSend)
+	initTemplate.Temp.ExecuteTemplate(w, "event", ToSend)
 }
 
 // <<<<
