@@ -5,6 +5,7 @@
                 "id": "Persos/Monkey D. Luffy",
                 "name": "Luffy",
                 "img": "../static/img/Luffy.jpg",
+                "affiche": "../static/img/affiches-persos/affiche-luffy.png",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
                     "age": 17,

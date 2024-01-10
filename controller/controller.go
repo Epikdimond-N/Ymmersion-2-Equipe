@@ -146,7 +146,7 @@ func DisplayPersos(w http.ResponseWriter, r *http.Request) {
 	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
 	// 	return
 	// }
-	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
+	initTemplate.Temp.ExecuteTemplate(w, "selectchar", nil)
 }
 
 func DisplayArcs(w http.ResponseWriter, r *http.Request) {
