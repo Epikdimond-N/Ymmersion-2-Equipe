@@ -180,11 +180,24 @@ func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 }
 
 func DisplayPersos(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "selectchar", nil)
+	file, err := os.Open("data.json")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+
+	// Decode JSON data into a Data struct
+	var data One.DataHome
+	DataPerso := data.Categories["Persos"]
+
+	err = json.NewDecoder(file).Decode(&data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	// Pass the selected data to the template for rendering
+	initTemplate.Temp.ExecuteTemplate(w, "selectchar", DataPerso)
 }
 
 func DisplayArcs(w http.ResponseWriter, r *http.Request) {
