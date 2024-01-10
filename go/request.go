@@ -176,3 +176,21 @@ func GetCharacterByID(characters []Character, id string) (Character, error) {
 	}
 	return Character{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
 }
+
+func GetArcByID(arcs []Arc, id string) (Arc, error) {
+	for _, arc := range arcs {
+		if arc.ID == id {
+			return arc, nil // Return the character if the ID matches
+		}
+	}
+	return Arc{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
+}
+
+func GetEventByID(events []Event, id string) (Event, error) {
+	for _, event := range events {
+		if event.ID == id {
+			return event, nil // Return the character if the ID matches
+		}
+	}
+	return Event{}, fmt.Errorf("character with ID %s not found", id) // Return an error if the ID is not found
+}

@@ -71,7 +71,7 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	http.Redirect(w, r, "/", http.StatusFound)
+	http.Redirect(w, r, "/Home", http.StatusFound)
 }
 
 func NewArcHandler(w http.ResponseWriter, r *http.Request) {
@@ -85,7 +85,7 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 
 func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 
-	http.Redirect(w, r, "/", http.StatusFound)
+	http.Redirect(w, r, "/Home", http.StatusFound)
 }
 
 func NewEventHandler(w http.ResponseWriter, r *http.Request) {
@@ -99,7 +99,7 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 
 func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 
-	http.Redirect(w, r, "/", http.StatusFound)
+	http.Redirect(w, r, "/Home", http.StatusFound)
 }
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
@@ -139,7 +139,8 @@ func DisplayHome(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "index", selectedData)
 }
 
-func DisplayChar(w http.ResponseWriter, r *http.Request) {
+// show only one by ID >>
+func DisplayPerso(w http.ResponseWriter, r *http.Request) {
 	// Retrieve the character ID from the URL query parameter
 	charID := r.URL.Query().Get("id")
 
@@ -159,14 +160,22 @@ func DisplayChar(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
 }
 func DisplayArc(w http.ResponseWriter, r *http.Request) {
-	data := One.GetChar()
-	ToSend, err := One.GetCharacterByID(data, "1")
+	// Retrieve the character ID from the URL query parameter
+	arcID := r.URL.Query().Get("id")
+
+	// Check if the ID is empty or not provided
+	if arcID == "" {
+		http.Error(w, "Arc ID is required", http.StatusBadRequest)
+		return
+	}
+	data := One.GetArcs()
+	ToSend, err := One.GetArcByID(data, arcID)
 	if err != nil {
 		// Handle error (e.g., character not found)
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
+	initTemplate.Temp.ExecuteTemplate(w, "arc", ToSend)
 }
 func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 	data := One.GetChar()
@@ -179,6 +188,9 @@ func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
 }
 
+// <<<<
+
+// show multiple by categorie >>
 func DisplayPersos(w http.ResponseWriter, r *http.Request) {
 	file, err := os.Open("data.json")
 	if err != nil {
@@ -204,32 +216,28 @@ func DisplayPersos(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Pass the selected data to the template for rendering
-	err = initTemplate.Temp.ExecuteTemplate(w, "selectchar", persosData)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
+	initTemplate.Temp.ExecuteTemplate(w, "selectchar", persosData)
 }
-
 func DisplayArcs(w http.ResponseWriter, r *http.Request) {
 	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	// 	return
+	// }
+	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
+}
+func DisplayEvents(w http.ResponseWriter, r *http.Request) {
+	// if !logged {
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
 	// 	return
 	// }
 	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
 }
 
-func DisplayEvents(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "article", nil)
-}
+// <<<<
 
 func DisplayCategories(w http.ResponseWriter, r *http.Request) {
 	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
 	// 	return
 	// }
 	initTemplate.Temp.ExecuteTemplate(w, "categories", nil)
@@ -237,7 +245,11 @@ func DisplayCategories(w http.ResponseWriter, r *http.Request) {
 
 func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	// 	return
+	// }
+	// if !admin {
+	// 	http.Redirect(w, r, "/Home", http.StatusSeeOther)
 	// 	return
 	// }
 	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
@@ -271,7 +283,7 @@ func RegisterHandler(w http.ResponseWriter, r *http.Request) {
 
 func ConfirmRegisterHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
 		return
 	}
 	username := r.FormValue("username")
@@ -317,7 +329,7 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
 func SuccessLoginHandler(w http.ResponseWriter, r *http.Request) {
 
 	if r.Method != http.MethodPost {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
 		return
 	}
 
@@ -336,17 +348,17 @@ func SuccessLoginHandler(w http.ResponseWriter, r *http.Request) {
 	logged = true
 	// Successfully logged in
 	// Handle further operations (e.g., setting session, redirecting, etc.)
-	http.Redirect(w, r, "/", http.StatusSeeOther)
+	http.Redirect(w, r, "/Home", http.StatusSeeOther)
 }
 
 func LogoutHandler(w http.ResponseWriter, r *http.Request) {
 	ResetUserValue()
-	http.Redirect(w, r, "/", http.StatusSeeOther)
+	http.Redirect(w, r, "/Home", http.StatusSeeOther)
 }
 
 func ChangeLoginHandler(w http.ResponseWriter, r *http.Request) {
 	if !logged {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
 		return
 	}
 	oldpassword := r.FormValue("oldpassword")
@@ -358,7 +370,7 @@ func ChangeLoginHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Println("Password updated successfully.")
 	ResetUserValue()
-	http.Redirect(w, r, "/", http.StatusSeeOther)
+	http.Redirect(w, r, "/Home", http.StatusSeeOther)
 }
 
 //Login part , warning <<
