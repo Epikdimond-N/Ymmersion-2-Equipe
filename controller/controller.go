@@ -20,7 +20,7 @@ func NewCharHandler(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "newPersos", nil)
 }
 
-func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
+func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	// Parse the multipart form data with a maximum upload size of 10MB
 	r.ParseMultipartForm(10 << 20)
 
@@ -70,9 +70,9 @@ func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Optionally, redirect the user to a success page
 	http.Redirect(w, r, "/", http.StatusFound)
 }
+
 func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 	//if !logged {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -81,6 +81,12 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 
 	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
 }
+
+func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
+
+	http.Redirect(w, r, "/", http.StatusFound)
+}
+
 func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//if !logged {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -88,6 +94,11 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//}
 
 	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
+}
+
+func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
+
+	http.Redirect(w, r, "/", http.StatusFound)
 }
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
@@ -100,6 +111,26 @@ func DisplayHome(w http.ResponseWriter, r *http.Request) {
 }
 
 func DisplayChar(w http.ResponseWriter, r *http.Request) {
+	data := One.GetChar()
+	ToSend, err := One.GetCharacterByID(data, "1")
+	if err != nil {
+		// Handle error (e.g., character not found)
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
+}
+func DisplayArc(w http.ResponseWriter, r *http.Request) {
+	data := One.GetChar()
+	ToSend, err := One.GetCharacterByID(data, "1")
+	if err != nil {
+		// Handle error (e.g., character not found)
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
+}
+func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 	data := One.GetChar()
 	ToSend, err := One.GetCharacterByID(data, "1")
 	if err != nil {
@@ -148,14 +179,6 @@ func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 	// 	return
 	// }
 	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
-}
-
-func DisplayAddArticle(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "addarticle", nil)
 }
 
 func Display404(w http.ResponseWriter, r *http.Request) {
