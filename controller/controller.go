@@ -20,7 +20,7 @@ func NewCharHandler(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "newPersos", nil)
 }
 
-func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
+func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	// Parse the multipart form data with a maximum upload size of 10MB
 	r.ParseMultipartForm(10 << 20)
 
@@ -70,9 +70,9 @@ func NewPersosHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Optionally, redirect the user to a success page
 	http.Redirect(w, r, "/", http.StatusFound)
 }
+
 func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 	//if !logged {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -81,6 +81,11 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 
 	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
 }
+func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
+
+	http.Redirect(w, r, "/", http.StatusFound)
+}
+
 func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//if !logged {
 	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -88,6 +93,11 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//}
 
 	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
+}
+
+func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
+
+	http.Redirect(w, r, "/", http.StatusFound)
 }
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
