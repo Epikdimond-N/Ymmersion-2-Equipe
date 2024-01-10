@@ -8,7 +8,7 @@
                 "affiche": "../static/img/affiches-persos/affiche-luffy.png",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
-                    "age": 17,
+                    "prime": "3.000.000.000",
                     "aPropos":{
                     "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
                     "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line.",
@@ -25,11 +25,11 @@
             {
                 "id": "Persos/Roronoa Zoro",
                 "name": "Zoro",
-                "img": "../static/img/Zoro.jpg",
+                "img": "../static/img/imgpersos/Zoro.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-zoro.png",
                 "specs": {
                     "fullName": "Roronoa Zoro",
-                    "age": 19,
+                    "prime": "1.111.000.000",
                     "aPropos":{
                     "description": " Zoro, avec ses trois cicatrices sur l'œil gauche, évoque la prestance d'un puissant épéiste. Son regard sérieux et son attitude calme cachent une détermination féroce.",
                     "role": "Premier épéiste et bras droit de Luffy dans les Pirates du Chapeau de Paille, Zoro cherche à devenir le plus grand épéiste du monde.",
@@ -46,11 +46,11 @@
             {
                 "id": "Persos/Vinsmoke Sanji",
                 "name": "Sanjii",
-                "img": "../static/img/Sanji.jpg",
+                "img": "../static/img/imgpersos/Sanji.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sanji.png",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
-                    "age": 19,
+                    "prime": "1.032.000.000",
                     "aPropos":{
                     "description": "Sanji, le cuistot passionné, est reconnaissable à sa jambe droite cachée et à sa coiffure unique. Son style est un mélange de classe et de combativité.",
                     "role": "Cuisinier et combattant des Pirates du Chapeau de Paille, Sanji poursuit son rêve de découvrir l'All Blue.",
@@ -67,11 +67,11 @@
             {
                 "id": "Persos/Nami",
                 "name": "Nami",
-                "img": "../static/img/Nami.jpg",
+                "img": "../static/img/imgpersos/Nami.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-nami.png",
                 "specs": {
                     "fullName": "Nami",
-                    "age": 18,
+                    "prime": "366.000.000",
                     "aPropos":{
                     "description": "Nami est une navigatrice talentueuse et stratégique, souvent vêtue de tenues pratiques pour la navigation. Ses tatouages en forme de mandarines symbolisent son village natal, Cocoyashi.",
                     "role": "Navigatrice des Pirates du Chapeau de Paille, Nami aspire à cartographier le monde et à dessiner une carte complète.",
@@ -88,11 +88,11 @@
             {
                 "id": "Persos/Usoop",
                 "name": "Usoop",
-                "img": "../static/img/Usoop.jpg",
+                "img": "../static/img/imgpersos/Usoop.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-usopp.png",
                 "specs": {
                     "fullName": "Usopp",
-                    "age": 17,
+                    "prime": "500.000.000",
                     "aPropos":{
                     "description": " Usopp est un menteur invétéré, souvent portant un chapeau unique et une écharpe. Ses vêtements colorés reflètent son esprit fantasque.",
                     "role": "Tireur d'élite des Pirates du Chapeau de Paille, Usopp aspire à devenir un valeureux guerrier des mers.",
@@ -109,11 +109,11 @@
             {
                 "id": "Persos/Nico Robin",
                 "name": "Robin",
-                "img": "../static/img/Robin.jpg",
+                "img": "../static/img/imgpersos/Robin.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-robin.png",
                 "specs": {
                     "fullName": "Nico Robin",
-                    "age": 28,
+                    "prime": "930.000.000",
                     "aPropos":{
                     "description": "Robin arbore une aura calme, souvent vêtue de manière élégante. Son symbole distinctif est le tatouage du Démon à Cent Fleurs sur son bras gauche.",
                     "role": "Archéologue des Pirates du Chapeau de Paille, Robin recherche des informations sur le Siècle Manquant et l'histoire ancienne.",
@@ -130,11 +130,11 @@
             {
                 "id": "Persos/Tony_Tony_Chopper",
                 "name": "Chopper",
-                "img": "../static/img/Chopper.jpg",
+                "img": "../static/img/imgpersos/Chopper.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-chopper.png",
                 "specs": {
                     "fullName": "Tony Tony Chopper",
-                    "age": 17,
+                    "prime": "1.000",
                     "aPropos": {
                         "description": "Chopper, le médecin de l'équipage, est un renne avec la capacité de se transformer en différentes formes humaines. Il porte généralement une grande casquette et est doté d'une personnalité innocente et compatissante.",
                         "role": "Médecin des Pirates du Chapeau de Paille, Chopper utilise ses compétences médicales et ses transformations pour aider l'équipage.",
@@ -150,11 +150,11 @@
             {
                 "id": "Persos/Brook",
                 "name": "Brook",
-                "img": "../static/img/Brook.jpg",
+                "img": "../static/img/imgpersos/Brook.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-brook.png",
                 "specs": {
                     "fullName": "Brook",
-                    "age": 90,
+                    "prime": "383.000.000",
                     "aPropos": {
                         "description": "Brook est un squelette musicien avec une personnalité joyeuse. Il est souvent vu portant un chapeau et jouant du violon. Après avoir mangé le Yomi Yomi no Mi, il a été ressuscité.",
                         "role": "Musicien des Pirates du Chapeau de Paille, Brook apporte une touche musicale à l'équipage.",
@@ -170,11 +170,11 @@
             {
                 "id": "Persos/Franky",
                 "name": "Franky",
-                "img": "../static/img/Franky.jpg",
+                "img": "../static/img/imgpersos/Franky.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-franky.png",
                 "specs": {
                     "fullName": "Franky",
-                    "age": 36,
+                    "prime": "394.000.000",
                     "aPropos": {
                         "description": "Franky est un cyborg constructeur de bateaux avec une personnalité exubérante. Il a des bras puissants et peut se transformer en différentes formes.",
                         "role": "Charpentier naval des Pirates du Chapeau de Paille, Franky est responsable de la construction et de l'entretien du Thousand Sunny.",
@@ -190,11 +190,11 @@
             {
                 "id": "Persos/Jinbe",
                 "name": "Jinbe",
-                "img": "../static/img/Jinbe.jpg",
+                "img": "../static/img/imgpersos/Jinbe.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-jinbe.png",
                 "specs": {
                     "fullName": "Jinbe",
-                    "age": 46,
+                    "prime": "1.100.000.000",
                     "aPropos": {
                         "description": "Jinbe est un homme-poisson puissant avec une peau bleue et des marques caractéristiques sur son visage. Il a une personnalité calme et sage.",
                         "role": "Timonier des Pirates du Chapeau de Paille, Jinbe est un expert en arts martiaux et possède une grande sagesse.",
@@ -210,11 +210,11 @@
             {
                 "id": "Persos/Portgas_D_Ace",
                 "name": "Ace",
-                "img": "../static/img/Ace.jpg",
+                "img": "../static/img/imgpersos/Ace.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-ace.png",
                 "specs": {
                     "fullName": "Portgas D. Ace",
-                    "age": 20,
+                    "prime": "550.000.000",
                     "aPropos": {
                         "description": "Ace était le frère adoptif de Luffy et un utilisateur du Mera Mera no Mi, lui conférant des pouvoirs liés au feu.",
                         "role": "Ancien commandant de la 2e division de l'équipage de Barbe Blanche.",
@@ -230,11 +230,11 @@
             {
                 "id": "Persos/Crocodile",
                 "name": "Crocodile",
-                "img": "../static/img/Crocodile.jpg",
+                "img": "../static/img/imgpersos/Crocodile.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-crocodile.png",
                 "specs": {
                     "fullName": "Sir Crocodile",
-                    "age": 44,
+                    "prime": "1.965.000.000",
                     "aPropos": {
                         "description": "Crocodile est un ancien Capitaine Corsaire et utilisateur du Suna Suna no Mi, lui permettant de manipuler le sable.",
                         "role": "Ancien président de Baroque Works et antagoniste principal de l'Arc Alabasta.",
@@ -250,11 +250,11 @@
             {
                 "id": "Persos/Eustass_Kidd",
                 "name": "Kidd",
-                "img": "../static/img/Kidd.jpg",
+                "img": "../static/img/imgpersos/Kidd.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-kid.png",
                 "specs": {
                     "fullName": "Eustass Kidd",
-                    "age": 27,
+                    "prime": "3.000.000.000",
                     "aPropos": {
                         "description": "Kidd est un pirate au physique imposant avec de nombreux tatouages et des cicatrices. Il a une personnalité violente et ambitieuse.",
                         "role": "Capitaine des Kidd Pirates, Kidd est l'un des Onze Supernovas et un supernova notoire.",
@@ -270,11 +270,11 @@
             {
                 "id": "Persos/Trafalgar_D_Water_Law",
                 "name": "Law",
-                "img": "../static/img/Law.jpg",
+                "img": "../static/img/imgpersos/Law.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-law.png",
                 "specs": {
                     "fullName": "Trafalgar D. Water Law",
-                    "age": 26,
+                    "prime": "3.000.000.000",
                     "aPropos": {
                         "description": "Law est un pirate avec une silhouette élancée, des tatouages et une expression souvent calme. Il est le capitaine des Heart Pirates.",
                         "role": "Capitaine des Heart Pirates, Law est un membre clé de l'Alliance des Pirates de Chapeau de Paille et l'un des Onze Supernovas.",
@@ -290,11 +290,11 @@
             {
                 "id": "Persos/Charlotte_Katakuri",
                 "name": "Katakuri",
-                "img": "../static/img/Katakuri.jpg",
+                "img": "../static/img/imgpersos/Katakuri.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-katakuri.png",
                 "specs": {
                     "fullName": "Charlotte Katakuri",
-                    "age": 48,
+                    "prime": "1.057.000.000",
                     "aPropos": {
                         "description": "Katakuri est un homme au physique imposant, avec une peau brune et des cicatrices. Il porte généralement un foulard sur la bouche.",
                         "role": "Commandant sucré de la Big Mom Pirates, Katakuri est l'un des Three Sweet Commanders et l'un des fils de Big Mom.",
@@ -310,11 +310,11 @@
             {
                 "id": "Persos/Sabo",
                 "name": "Sabo",
-                "img": "../static/img/Sabo.jpg",
+                "img": "../static/img/imgpersos/Sabo.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sabo.png",
                 "specs": {
                     "fullName": "Sabo",
-                    "age": 24,
+                    "prime": "602.000.000",
                     "aPropos": {
                         "description": "Sabo est le frère adoptif de Luffy et Ace, et il est le chef en second de l'Armée Révolutionnaire. Il porte souvent des lunettes et un chapeau.",
                         "role": "Chef en second de l'Armée Révolutionnaire et membre clé de l'équipage de Dragon.",
@@ -330,11 +330,11 @@
             {
                 "id": "Persos/Baggy",
                 "name": "Baggy",
-                "img": "../static/img/Baggy.jpg",
+                "img": "../static/img/imgpersos/Baggy.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-baggy.png",
                 "specs": {
                     "fullName": "Baggy le Clown",
-                    "age": 39,
+                    "prime": "3.189.000.000",
                     "aPropos": {
                         "description": "Baggy est un pirate avec une apparence clownesque et la capacité de séparer son corps en morceaux grâce à une balle Bara Bara no Mi.",
                         "role": "Capitaine des Baggy Pirates et ancien membre de l'équipage de Roger.",
@@ -350,11 +350,11 @@
             {
                 "id": "Persos/Kaido",
                 "name": "Kaido",
-                "img": "../static/img/Kaido.jpg",
+                "img": "../static/img/imgpersos/Kaido.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-kaido.png",
                 "specs": {
                     "fullName": "Le Roi des Bêtes Kaido",
-                    "age": 59,
+                    "prime": "4.611.100.000",
                     "aPropos":{
                     "description": "Kaido est immense, avec une stature imposante et des tatouages tribaux sur le corps. Il porte souvent un manteau noir et a une expression sévère.",
                     "role": "Kaido est le capitaine des Beast Pirates et l'un des Empereurs de la Mer. Il cherche constamment à défier la mort et à créer le plus grand conflit mondial.",
@@ -371,11 +371,11 @@
             {
                 "id": "Persos/BigMom",
                 "name": "BigMom",
-                "img": "../static/img/BigMom.jpg",
+                "img": "../static/img/imgpersos/BigMom.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-big-mom.png",
                 "specs": {
                     "fullName": "Charlotte Linlin, surnommée Big Mom",
-                    "age": 68,
+                    "prime": "4.388.000.000",
                     "aPropos":{
                     "description": "Big Mom est une femme massive avec une peau rose, un chapeau extravagant et une expression souvent souriante, mais dérangeante.",
                     "role": "Big Mom est la capitaine des Big Mom Pirates et fait partie des Quatre Empereurs. Elle cherche à créer un monde où toutes les races coexistent pacifiquement.",
@@ -392,11 +392,11 @@
             {
                 "id": "Persos/Shanks Le Roux",
                 "name": "Shanks",
-                "img": "../static/img/Shanks.jpg",
+                "img": "../static/img/imgpersos/Shanks.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-shanks.png",
                 "specs": {
                     "fullName": "Shanks Le Roux",
-                    "age": 39,
+                    "prime": "4.048.900.000",
                     "aPropos":{
                     "description": "Shanks a des cheveux roux, une barbe et une cicatrice sur son œil gauche, témoignant d'un événement mystérieux. Il porte souvent un manteau rouge.",
                     "role": "Capitaine des Red-Haired Pirates, Shanks est un ancien membre de l'équipage de Gol D. Roger et l'un des Quatre Empereurs.",
@@ -413,11 +413,11 @@
             {
                 "id": "Persos/Marshall Teach Barbe Noire",
                 "name": "Barbe Noire",
-                "img": "../static/img/BarbeNoire.jpg",
+                "img": "../static/img/imgpersos/BarbeNoire.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-barbe-noire.png",
                 "specs": {
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
-                    "age": 40,
+                    "prime": "3.996.000.000",
                     "aPropos":{
                     "description": "Barbe Noire a une allure imposante avec une barbe noire et un chapeau de pirate caractéristique. Sa silhouette massive dissimule des ambitions obscures.",
                     "role": "Ancien membre de l'équipage de Barbe Blanche, Teach devient capitaine des Pirates de Barbe Noire et cherche à devenir le nouvel empereur.",
@@ -433,11 +433,11 @@
             {
                 "id": "Persos/Dracule_Mihawk",
                 "name": "Dracule Mihawk",
-                "img": "../static/img/Mihawk.jpg",
+                "img": "../static/img/imgpersos/Mihawk.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-mihawk.png",
                 "specs": {
                   "fullName": "Dracule Mihawk",
-                  "age": 43,
+                  "prime": "3.590.000.000",
                   "aPropos": {
                     "description": "Dracule Mihawk, également connu sous le nom d'Hawkeye Mihawk, est un personnage énigmatique et redoutable dans l'univers de One Piece. Il est réputé comme le meilleur bretteur du monde.",
                     "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur.",
@@ -450,11 +450,11 @@
               {
                 "id": "Persos/Edward_Newgate",
                 "name": "Edward Newgate",
-                "img": "../static/img/EdwardNewgate.jpg",
+                "img": "../static/img/imgpersos/EdwardNewgate.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-barbe-blanche.png",
                 "specs": {
                   "fullName": "Edward Newgate",
-                  "age": 74,
+                  "prime": "5.046.000.000",
                   "aPropos": {
                     "description": "Edward Newgate, plus connu sous le nom de Barbe Blanche, était l'un des pirates les plus puissants et respectés de son époque. Il a été le capitaine de l'Équipage de Barbe Blanche.",
                     "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage.",

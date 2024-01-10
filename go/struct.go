@@ -36,7 +36,7 @@ type APropos struct {
 
 type Specs struct {
 	FullName string  `json:"fullName"`
-	Age      int     `json:"age"`
+	Prime    string  `json:"prime"`
 	Apropos  APropos `json:"aPropos"`
 }
 type Character struct {

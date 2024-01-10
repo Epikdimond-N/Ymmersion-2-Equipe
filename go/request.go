@@ -35,7 +35,7 @@ func GetChar() []Character {
 			newChar.Img = character.Img
 		}
 		newChar.Specs.FullName = character.Specs.FullName
-		newChar.Specs.Age = character.Specs.Age
+		newChar.Specs.Prime = character.Specs.Prime
 		newChar.Specs.Apropos.Description = character.Specs.Apropos.Description
 		newChar.Specs.Apropos.Role = character.Specs.Apropos.Role
 		newChar.Specs.Apropos.Fruit = character.Specs.Apropos.Fruit
