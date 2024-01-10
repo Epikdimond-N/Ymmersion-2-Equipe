@@ -181,7 +181,7 @@ func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
 }
 
-func Display404(w http.ResponseWriter, r *http.Request) {
+func NotFoundHandler(w http.ResponseWriter, r *http.Request) {
 	initTemplate.Temp.ExecuteTemplate(w, "404", nil)
 }
 

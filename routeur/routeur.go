@@ -8,7 +8,8 @@ import (
 )
 
 func InitServe() {
-	http.HandleFunc("/", controller.DisplayHome)                                  // display root / page d'acceuil << a metre a jour pour qu'elle contienne 10 article random
+	http.HandleFunc("/", controller.NotFoundHandler)                              // catch-all route for any unspecified paths and page 404
+	http.HandleFunc("/Home", controller.DisplayHome)                              // display root / page d'acceuil << a metre a jour pour qu'elle contienne 10 article random
 	http.HandleFunc("/char", controller.DisplayChar)                              // display given char ID << need update
 	http.HandleFunc("/arc", controller.DisplayArc)                                // display given arc ID << need update
 	http.HandleFunc("/event", controller.DisplayEvent)                            // display given event ID << need update
@@ -18,7 +19,6 @@ func InitServe() {
 	http.HandleFunc("/events/article", controller.DisplayEvents)                  // display all events article << need update
 	http.HandleFunc("/categories", controller.DisplayCategories)                  // display categorie choice page << need update
 	http.HandleFunc("/admin", controller.DisplayAdmin)                            // display admin page << working
-	http.HandleFunc("/error404", controller.Display404)                           // gestion of error404 << need update
 	http.HandleFunc("/register", controller.RegisterHandler)                      // creation de compte << working
 	http.HandleFunc("/confirmRegister", controller.ConfirmRegisterHandler)        // ecrit dans le json user.json  // gestion de creation de compte << working
 	http.HandleFunc("/login", controller.LoginHandler)                            // possibilité de se log, page de redirection si logged = false << working
@@ -35,6 +35,6 @@ func InitServe() {
 	rootDoc, _ := os.Getwd()
 	fileserver := http.FileServer(http.Dir(rootDoc + "/assets"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
-	fmt.Println("\nLien vers le site : http://localhost:8080 (CTRL+CLICK)")
+	fmt.Println("\nLien vers le site : http://localhost:8080/Home (CTRL+CLICK)")
 	http.ListenAndServe("localhost:8080", nil)
 }
