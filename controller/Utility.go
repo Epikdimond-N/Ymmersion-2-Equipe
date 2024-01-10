@@ -487,3 +487,22 @@ func GetRandomItems(items []map[string]interface{}, count int) []map[string]inte
 	}
 	return items[:count]
 }
+
+func findByID(data One.CategoryData, id string) interface{} {
+	for _, character := range data.Categories["Persos"] {
+		if character.ID == id {
+			return character
+		}
+	}
+	for _, arc := range data.Categories["Arcs"] {
+		if arc.ID == id {
+			return arc
+		}
+	}
+	for _, event := range data.Categories["EventsOnePiece"] {
+		if event.ID == id {
+			return event
+		}
+	}
+	return nil // If the ID is not found
+}

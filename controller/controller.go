@@ -94,7 +94,7 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 	//	return
 	//}
 
-	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
+	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
 }
 
 func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
@@ -262,6 +262,54 @@ func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 	// 	return
 	// }
 	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
+}
+
+func DisplayAdminDelete(w http.ResponseWriter, r *http.Request) {
+	// if !logged {
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	// 	return
+	// }
+	// if !admin {
+	// 	http.Redirect(w, r, "/Home", http.StatusSeeOther)
+	// 	return
+	// }
+	initTemplate.Temp.ExecuteTemplate(w, "adminDelete", nil)
+}
+
+func DisplayAdminDeleteConf(w http.ResponseWriter, r *http.Request) {
+	// if !logged {
+	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
+	// 	return
+	// }
+	// if !admin {
+	// 	http.Redirect(w, r, "/Home", http.StatusSeeOther)
+	// 	return
+	// }
+	ID := r.URL.Query().Get("id")
+	filePath := "data.json"
+
+	// Read the JSON file
+	jsonData, err := os.ReadFile(filePath)
+	if err != nil {
+		fmt.Println("Error reading JSON file:", err)
+		return
+	}
+
+	// Unmarshal the JSON data into the appropriate struct
+	var data One.CategoryData
+	if err := json.Unmarshal(jsonData, &data); err != nil {
+		fmt.Println("Error parsing JSON data:", err)
+		return
+	}
+
+	result := findByID(data, ID)
+	if result != nil {
+		fmt.Printf("Data found for ID '%s': %+v\n", ID, result)
+	} else {
+		fmt.Printf("No data found for ID '%s'\n", ID)
+	}
+
+	initTemplate.Temp.ExecuteTemplate(w, "adminDeleteConf", result)
 }
 
 func NotFoundHandler(w http.ResponseWriter, r *http.Request) {
