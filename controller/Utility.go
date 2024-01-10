@@ -295,7 +295,7 @@ func UpdateArc(name string, img string, episode string, chapitre string, desc st
 		return fmt.Errorf("error writing to file: %w", err)
 	}
 
-	fmt.Println("Successfully added a new perso and updated data.json")
+	fmt.Println("Successfully added a new arc and updated data.json")
 	return nil
 }
 
@@ -348,7 +348,7 @@ func UpdateEvent(name string, desc string) error {
 		return fmt.Errorf("error writing to file: %w", err)
 	}
 
-	fmt.Println("Successfully added a new perso and updated data.json")
+	fmt.Println("Successfully added a new event and updated data.json")
 	return nil
 }
 
