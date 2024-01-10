@@ -25,7 +25,7 @@
             {
                 "id": "Persos/Roronoa Zoro",
                 "name": "Zoro",
-                "img": "../static/img/Zoro.jpg",
+                "img": "../static/img/imgpersos/Zoro.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-zoro.png",
                 "specs": {
                     "fullName": "Roronoa Zoro",
@@ -46,7 +46,7 @@
             {
                 "id": "Persos/Vinsmoke Sanji",
                 "name": "Sanjii",
-                "img": "../static/img/Sanji.jpg",
+                "img": "../static/img/imgpersos/Sanji.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sanji.png",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
@@ -67,7 +67,7 @@
             {
                 "id": "Persos/Nami",
                 "name": "Nami",
-                "img": "../static/img/Nami.jpg",
+                "img": "../static/img/imgpersos/Nami.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-nami.png",
                 "specs": {
                     "fullName": "Nami",
@@ -86,9 +86,9 @@
             },
 
             {
-                "id": "Persos/Usoop",
-                "name": "Usoop",
-                "img": "../static/img/Usoop.jpg",
+                "id": "Persos/Usopp",
+                "name": "Usopp",
+                "img": "../static/img/imgperso/Usopp.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-usopp.png",
                 "specs": {
                     "fullName": "Usopp",
