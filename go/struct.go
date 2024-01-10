@@ -51,6 +51,7 @@ type Arc struct {
 	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img"`
+	Affiche     string `json:"affiche"`
 	Episode     string `json:"épisodes"`
 	Chapitre    string `json:"chapitre"`
 	Description string `json:"description"`
@@ -60,6 +61,7 @@ type Event struct {
 	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img"`
+	Affiche     string `json:"affiche"`
 	Description string `json:"description"`
 }
 
