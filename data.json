@@ -416,6 +416,7 @@
                 "img": "../static/img/imgpersos/Mihawk.jpg",
                 "specs": {
                   "fullName": "Dracule Mihawk",
+                  "age": 43,
                   "aPropos": {
                     "description": "Dracule Mihawk, également connu sous le nom d'Hawkeye Mihawk, est un personnage énigmatique et redoutable dans l'univers de One Piece. Il est réputé comme le meilleur bretteur du monde.",
                     "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur.",
@@ -431,6 +432,7 @@
                 "img": "../static/img/imgpersos/EdwardNewgate.jpg",
                 "specs": {
                   "fullName": "Edward Newgate",
+                  "age": 74,
                   "aPropos": {
                     "description": "Edward Newgate, plus connu sous le nom de Barbe Blanche, était l'un des pirates les plus puissants et respectés de son époque. Il a été le capitaine de l'Équipage de Barbe Blanche.",
                     "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage.",
