@@ -1,15 +1,16 @@
 {{define "Register"}}
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/statics/fav.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/statics/fav.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/css/categories.css" />
     <title>Register</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <div class="contentall">
+      <header>
         <div class="menu">
           <div class="cont">
             <a class="h-link" href="/Home">
@@ -28,7 +29,11 @@
             </a>
           </div>
           <a class="h-link" href="/admin">
-            <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+            <img
+              class="admin"
+              src="../static/img/index/admin.png"
+              alt="Admin"
+            />
           </a>
         </div>
         <img
@@ -36,7 +41,7 @@
           src="../static/img/index/logo.png"
           alt="Logo One Piece"
         />
-  
+
         <div class="menu">
           <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
           <form action="/search" method="get">
@@ -59,15 +64,21 @@
           </div>
         </div>
       </header>
-    <h1>Register</h1>
-    <form action="/confirmRegister" method="post">
+      <h1>Register</h1>
+      <form action="/confirmRegister" method="post">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
+        <input type="text" id="username" name="username" required /><br /><br />
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Register">
-    </form>
-    <footer></footer>
-</body>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+        <input type="submit" value="Register" />
+      </form>
+      <footer></footer>
+    </div>
+  </body>
 </html>
 {{end}}

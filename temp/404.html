@@ -9,41 +9,46 @@
     <title>Admin</title>
   </head>
   <body>
-    <header>
-      <div class="menu">
-        <div class="cont">
-          <a class="h-link" href="/Home">
-            <img class="home" src="../static/img/index/home.png" alt="Home" />
-            <p>ACCUEIL</p>
-          </a>
-        </div>
-        <div class="cont">
-          <a class="h-link" href="/categories">
+    <div class="contentall">
+      <header>
+        <div class="menu">
+          <div class="cont">
+            <a class="h-link" href="/Home">
+              <img class="home" src="../static/img/index/home.png" alt="Home" />
+              <p>ACCUEIL</p>
+            </a>
+          </div>
+          <div class="cont">
+            <a class="h-link" href="/categories">
+              <img
+                class="categories"
+                src="../static/img/index/categories.png"
+                alt="Categories"
+              />
+              <p>CATEGORIES</p>
+            </a>
+          </div>
+          <a class="h-link" href="/admin">
             <img
-              class="categories"
-              src="../static/img/index/categories.png"
-              alt="Categories"
+              class="admin"
+              src="../static/img/index/admin.png"
+              alt="Admin"
             />
-            <p>CATEGORIES</p>
           </a>
         </div>
-        <a class="h-link" href="/admin">
-          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
-        </a>
-      </div>
-      <img
-        class="logo"
-        src="../static/img/index/logo.png"
-        alt="Logo One Piece"
-      />
+        <img
+          class="logo"
+          src="../static/img/index/logo.png"
+          alt="Logo One Piece"
+        />
 
       <div class="menu">
         <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-        <form action="" method="">
+        <form action="/search" method="get">
           <input
             type="text"
             id="search"
-            name="q"
+            name="name"
             placeholder="Cherchez le One Piece !"
           />
         </form>
@@ -66,14 +71,14 @@
           <p>LOGIN</p></a>
         {{end}}
         </div>
-      </div>
-    </header>
-    <section>
+      </header>
+      <section>
         <h1>404 - Page Not Found</h1>
         <p>The page you are looking for does not exist.</p>
         <p>And no , we aren't hidding the One Piece here.</p>
       </section>
-    <footer></footer>
+      <footer></footer>
+    </div>
   </body>
 </html>
 {{end}}

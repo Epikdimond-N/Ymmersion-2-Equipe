@@ -9,7 +9,8 @@
     <title>Admin</title>
   </head>
   <body>
-    <header>
+    <div class="contentall">
+      <header>
       <div class="menu">
         <div class="cont">
           <a class="h-link" href="/Home">
@@ -39,11 +40,11 @@
 
       <div class="menu">
         <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-        <form action="" method="">
+        <form action="/search" method="get">
           <input
             type="text"
             id="search"
-            name="q"
+            name="name"
             placeholder="Cherchez le One Piece !"
           />
         </form>
@@ -78,6 +79,8 @@
        {{end}}
   </section>
     <footer></footer>
+    </div>
+    
   </body>
 </html>
 {{end}}

@@ -33,8 +33,13 @@
 
       <div class="menu">
         <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-        <form action="" method="">
-          <input type="text" id="search" name="q" placeholder="Cherchez le One Piece !" />
+        <form action="/search" method="get">
+          <input
+            type="text"
+            id="search"
+            name="name"
+            placeholder="Cherchez le One Piece !"
+          />
         </form>
         <div class="cont">
           {{if .Logged}} 
