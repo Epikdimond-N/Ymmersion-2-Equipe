@@ -54,6 +54,7 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Once the file is saved, retrieve other form data and call the function to update the character
 	name := r.FormValue("PersosName")
+
 	fullname := r.FormValue("PersosFullName")
 	age, _ := strconv.Atoi(r.FormValue("PersosAge"))
 	desc := r.FormValue("PersosDescription")
@@ -63,15 +64,15 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	apparence := r.FormValue("PersosApparence")
 	capacites := r.FormValue("PersosCapacités")
 	histoire := r.FormValue("PersosHistoires")
-
+	ImgPath := "../static/img/imgpersos/" + fullname
 	// Call the function to update character passing the file path as img
-	if err := UpdateChar(name, filePath, fullname, age, desc, role, fruit, persona, apparence, capacites, histoire); err != nil {
+	if err := UpdateChar(name, ImgPath, fullname, age, desc, role, fruit, persona, apparence, capacites, histoire); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
 	}
 
-	http.Redirect(w, r, "/Home", http.StatusFound)
+	http.Redirect(w, r, "/Persos?id=Persos/"+fullname, http.StatusFound)
 }
 
 func NewArcHandler(w http.ResponseWriter, r *http.Request) {
@@ -80,7 +81,7 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 	//	return
 	//}
 
-	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
+	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
 }
 
 func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
@@ -91,6 +92,7 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 	file, handler, err := r.FormFile("arcImage")
 	if err != nil {
 		// Handle error
+		fmt.Println("Error retrieving the arcImage:", err)
 		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
 		return
 	}
@@ -116,18 +118,19 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Once the file is saved, retrieve other form data and call the function to update the character
 	name := r.FormValue("arcName")
+	ImgPath := "../static/img/photoarcs/" + name
 	episode := r.FormValue("arcEpisodeAnime")
 	chapitre := r.FormValue("arcChapitreManga")
-	desc := r.FormValue("PersosDescription")
+	desc := r.FormValue("arcDescription")
 
 	// Call the function to update arc passing the file path as img
-	if err := UpdateArc(name, filePath, episode, chapitre, desc); err != nil {
+	if err := UpdateArc(name, ImgPath, episode, chapitre, desc); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
 	}
 
-	http.Redirect(w, r, "/Home", http.StatusFound)
+	http.Redirect(w, r, "/Arcs?id=Arcs/"+name, http.StatusFound)
 }
 
 func NewEventHandler(w http.ResponseWriter, r *http.Request) {
@@ -149,7 +152,7 @@ func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
 	}
-	http.Redirect(w, r, "/Home", http.StatusFound)
+	http.Redirect(w, r, "/Events?idEvents/="+name, http.StatusFound)
 }
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
@@ -243,7 +246,6 @@ func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	fmt.Println(ToSend)
 	initTemplate.Temp.ExecuteTemplate(w, "event", ToSend)
 }
 
