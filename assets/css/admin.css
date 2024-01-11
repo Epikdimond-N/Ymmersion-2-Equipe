@@ -60,3 +60,42 @@ input{
     padding: 10px;
 
 }
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+a button {
+    display: flex;
+    border: none;
+    text-decoration: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 10px 10px 10px;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+a button.nouveau-personnage {
+    background-image: url('/static/img/button.jpg');
+}
+
+a button.nouvelle-arc {
+    background-image: url('/static/img/button.jpg');
+}
+
+a button.nouvelle-event {
+    background-image: url('/static/img/button.jpg');
+}
+
+a button.supprimer-article {
+    background-image: url('/static/img/button.jpg');
+}
+
+a button.modifier-compte {
+    background-image: url('/static/img/button.jpg');
+}

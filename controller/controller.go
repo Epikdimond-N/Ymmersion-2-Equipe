@@ -56,7 +56,6 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Once the file is saved, retrieve other form data and call the function to update the character
 	name := r.FormValue("PersosName")
-
 	age, _ := strconv.Atoi(r.FormValue("PersosAge"))
 	desc := r.FormValue("PersosDescription")
 	role := r.FormValue("PersosRole")
@@ -156,7 +155,7 @@ func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
 	}
-	http.Redirect(w, r, "/Events?idEvents/="+name, http.StatusFound)
+	http.Redirect(w, r, "/Events?id=Events/"+name, http.StatusFound)
 }
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
@@ -180,10 +179,10 @@ func DisplayHome(w http.ResponseWriter, r *http.Request) {
 	randomCharacters := GetRandomItems(data.Categories["Persos"], 4)
 
 	// Select 2 random arcs
-	randomArcs := GetRandomItems(data.Categories["Arcs"], 3)
+	randomArcs := GetRandomItems(data.Categories["Arcs"], 4)
 
 	// Select 2 random events
-	randomEvents := GetRandomItems(data.Categories["EventsOnePiece"], 3)
+	randomEvents := GetRandomItems(data.Categories["EventsOnePiece"], 4)
 
 	// Create a map to pass selected data to the template
 	selectedData := map[string]interface{}{
@@ -403,7 +402,7 @@ func DisplayAdminDeleteConf(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Unmarshal the JSON data into the appropriate struct
-	var data One.CategoryData
+	var data One.Data
 	if err := json.Unmarshal(jsonData, &data); err != nil {
 		fmt.Println("Error parsing JSON data:", err)
 		return
@@ -411,12 +410,35 @@ func DisplayAdminDeleteConf(w http.ResponseWriter, r *http.Request) {
 
 	result := findByID(data, ID)
 	if result != nil {
-		fmt.Printf("Data found for ID '%s': %+v\n", ID, result)
+		fmt.Printf("Data found for ID '%s'\n", ID)
 	} else {
 		fmt.Printf("No data found for ID '%s'\n", ID)
 	}
+	Cat := getCategorieByID(ID)
+	combinedData := One.CombinedData{
+		Result: result,
+		Cat:    Cat,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "adminConf", combinedData)
+}
 
-	initTemplate.Temp.ExecuteTemplate(w, "adminDeleteConf", result)
+func DeleteHandler(w http.ResponseWriter, r *http.Request) {
+	ID := r.URL.Query().Get("id")
+	filePath := "data.json"
+	jsonData, err := os.ReadFile(filePath)
+	if err != nil {
+		fmt.Println("Error reading JSON file:", err)
+		return
+	}
+	var data map[string]interface{}
+	if err := json.Unmarshal(jsonData, &data); err != nil {
+		fmt.Println("Error parsing JSON data:", err)
+		return
+	}
+	postType := getCategorieByID(ID)
+	DeletePost(data, postType, ID)
+
+	http.Redirect(w, r, "/Home", http.StatusFound)
 }
 
 func NotFoundHandler(w http.ResponseWriter, r *http.Request) {

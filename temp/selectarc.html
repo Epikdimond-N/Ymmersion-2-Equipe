@@ -48,7 +48,8 @@
       <div>
         <div>
           {{range .}}
-            <img class="selectchar" src="{{.affiche}}" alt="affiche perso" />
+          <a href="/Arcs?id={{.id}}">
+            <img class="selectchar" src="{{.affiche}}" alt="affiche perso" /></a>
           {{end}}
       </div>
     </section>

@@ -1,14 +1,16 @@
 {{define "adminConf"}}
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/admin.css" />
-    <link rel="stylesheet" href="../static/css/categories.css" />
-    <title>Admin</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../static/css/char.css" />
+  <title>Admin</title>
+</head>
+
+<body>
+  <div class="contentall">
     <header>
       <div class="menu">
         <div class="cont">
@@ -19,11 +21,7 @@
         </div>
         <div class="cont">
           <a class="h-link" href="/categories">
-            <img
-              class="categories"
-              src="../static/img/index/categories.png"
-              alt="Categories"
-            />
+            <img class="categories" src="../static/img/index/categories.png" alt="Categories" />
             <p>CATEGORIES</p>
           </a>
         </div>
@@ -31,104 +29,84 @@
           <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
         </a>
       </div>
-      <img
-        class="logo"
-        src="../static/img/index/logo.png"
-        alt="Logo One Piece"
-      />
+      <img class="logo" src="../static/img/index/logo.png" alt="Logo One Piece" />
 
       <div class="menu">
         <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
         <form action="" method="">
-          <input
-            type="text"
-            id="search"
-            name="q"
-            placeholder="Cherchez le One Piece !"
-          />
+          <input type="text" id="search" name="q" placeholder="Cherchez le One Piece !" />
         </form>
         <div class="cont">
           <a class="h-link" href="/login">
-            <img
-              class="login"
-              src="../static/img/index/login.png"
-              alt="Login"
-            />
+            <img class="login" src="../static/img/index/login.png" alt="Login" />
             <p>LOGIN</p>
           </a>
         </div>
       </div>
     </header>
     <section>
-      <div class="container">
-        {{ if .Persos }}
-        <h1>Character Presentation</h1>
-        <div class="character-info">
-            <h2>Character Details</h2>
-            <div class="info-item">
-                <span class="info-label">Name: {{.Name}}</span>
-            </div>
-            <div class="info-item">
-                <img class="info-label" src="{{.Img}}" alt="affiche perso" />
-            </div>
-            <div class="info-item">
-                <span class="info-label">Full Name: {{.Specs.FullName}}</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">Age: {{.Specs.Age}}</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">Role: {{.Specs.Apropos.Role}}</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">Demon Fruit: {{.Specs.Apropos.Fruit}}</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">Personality: {{.Specs.Apropos.Personalité}}</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">Appearance: {{.Specs.Apropos.Apparence}}</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">Abilities: {{.Specs.Apropos.Capacités}}</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">History: {{.Specs.Apropos.Histoire}}</span>
-            </div>
-            {{end}}
-    
-            {{ if .Arcs }}
-            <h2>Arcs</h2>
-            <div class="arc-info">
-                {{ range .Arcs }}
-                <div class="info-item">
-                    <span class="info-label">Arc: {{.Name}}</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Description: {{.Description}}</span>
-                </div>
-                {{ end }}
-            </div>
-            {{ end }}
-    
-            {{ if .EventsOnePiece }}
-            <h2>Events</h2>
-            <div class="events-info">
-                {{ range .EventsOnePiece }}
-                <div class="info-item">
-                    <span class="info-label">Event: {{.Name}}</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">Description: {{.Description}}</span>
-                </div>
-                {{ end }}
-            </div>
-            {{ end }}
+      {{ if eq .Cat "Persos" }}
+      <div class="infos">
+        <p>
+          ROLE : {{.Result.Specs.Apropos.Role}}<br /><br />
+          FRUIT DU DEMON : {{.Result.Specs.Apropos.Fruit}}<br /><br />
+          PERSONALITE : {{.Result.Specs.Apropos.Personalité}}<br /><br />
+          APPARENCE : {{.Result.Specs.Apropos.Apparence}}<br /><br />
+          CAPACITES : {{.Result.Specs.Apropos.Capacités}}<br /><br />
+          HISTOIRE : {{.Result.Specs.Apropos.Histoire}}<br /><br />
+        </p>
+      </div>
+      <div class="perso">
+        <img class="imgperso" src="{{.Result.Img}}" alt="Image {{.Result.Name}}" />
+        <div class="nomprime">
+          <p>
+            <br />
+            {{.Result.Specs.FullName}}<br /><br />
+          </p>
+          <p>{{.Result.Specs.Prime}} Berrys<br /></p>
         </div>
-    </div>
+        <p>Supprimer ?</p>
+        <a href="/admin/delete/gestion?id=Persos/{{.Result.Specs.FullName}}"><button>Oui</button></a>
+        <a href="/Home"><button>Non</button></a>
+      </div>
+      {{end}}
 
-    </section>
-    <footer></footer>
-  </body>
+      {{ if eq .Cat "Arcs" }}
+      <h2>Arcs</h2>
+      <div class="arc-info">
+        <div class="info-item">
+          <span class="info-label">Arc: {{.Result.Name}}</span>
+        </div>
+        <div class="info-item">
+          <img class="info-label" src="{{.Result.Img}}" alt="image arc" />
+        </div>
+        <div class="info-item">
+          <span class="info-label">Description: {{.Result.Description}}</span>
+        </div>
+        <p>Supprimer ?</p>
+        <a href="/admin/delete/gestion?id=Arcs/{{.Result.Name}}"><button>Oui</button></a>
+        <a href="/Home"><button>Non</button></a>
+        {{ end }}
+      </div>
+
+      {{ if eq .Cat "EventsOnePiece" }}
+      <h2>Events</h2>
+      <div class="events-info">
+        <div class="info-item">
+          <span class="info-label">Event: {{.Result.Name}}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Description: {{.Result.Description}}</span>
+        </div>
+        <p>Supprimer ?</p>
+        <a href="/admin/delete/gestion?id=Events/{{.Result.Name}}"><button>Oui</button></a>
+        <a href="/Home"><button>Non</button></a>
+        {{ end }}
+      </div>
+  </div>
+  </section>
+  <footer></footer>
+</body>
+
 </html>
 {{end}}

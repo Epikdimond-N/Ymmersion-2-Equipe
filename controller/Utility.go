@@ -359,6 +359,33 @@ func UpdateEvent(name string, desc string) error {
 	return nil
 }
 
+func DeletePost(data map[string]interface{}, postType, postID string) error {
+	if categories, ok := data["categories"].(map[string]interface{}); ok {
+		if posts, ok := categories[postType].([]interface{}); ok {
+			for i, post := range posts {
+				if postMap, ok := post.(map[string]interface{}); ok {
+					if postMap["id"] == postID {
+						// Delete the post from the slice
+						copy(posts[i:], posts[i+1:])
+						data["categories"].(map[string]interface{})[postType] = posts[:len(posts)-1]
+						updatedData, err := json.MarshalIndent(data, "", "    ")
+						if err != nil {
+							return fmt.Errorf("error marshaling JSON: %w", err)
+						}
+
+						// Write the updated JSON data back to the file
+						if err := os.WriteFile("data.json", updatedData, 0644); err != nil {
+							return fmt.Errorf("error writing to file: %w", err)
+						}
+
+					}
+				}
+			}
+		}
+	}
+	return nil
+}
+
 // Function to find unique IDs, images, and descriptions based on entity name
 func FindInfoByName(search string) []One.SearchResult {
 	jsonData, err := os.ReadFile("data.json")
@@ -496,18 +523,18 @@ func GetRandomItems(items []map[string]interface{}, count int) []map[string]inte
 	return items[:count]
 }
 
-func findByID(data One.CategoryData, id string) interface{} {
-	for _, character := range data.Categories["Persos"] {
+func findByID(data One.Data, id string) interface{} {
+	for _, character := range data.Categories.Persos {
 		if character.ID == id {
 			return character
 		}
 	}
-	for _, arc := range data.Categories["Arcs"] {
+	for _, arc := range data.Categories.Arcs {
 		if arc.ID == id {
 			return arc
 		}
 	}
-	for _, event := range data.Categories["EventsOnePiece"] {
+	for _, event := range data.Categories.EventsOnePiece {
 		if event.ID == id {
 			return event
 		}
@@ -538,17 +565,20 @@ func getCategorieByID(ID string) string {
 
 	// Check the arc category
 	for _, arc := range data.Categories.Arcs {
+
 		if arc.ID == ID {
+
 			return "Arcs"
 		}
 	}
 
 	// Check the event category
 	for _, event := range data.Categories.EventsOnePiece {
+
 		if event.ID == ID {
 			return "EventsOnePiece"
 		}
 	}
 
-	return ""
+	return "aya"
 }
