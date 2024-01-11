@@ -36,6 +36,7 @@ func GetChar() []Character {
 		}
 		newChar.Specs.FullName = character.Specs.FullName
 		newChar.Specs.Prime = character.Specs.Prime
+		newChar.Specs.Drapeau = character.Specs.Drapeau
 		newChar.Specs.Apropos.Description = character.Specs.Apropos.Description
 		newChar.Specs.Apropos.Role = character.Specs.Apropos.Role
 		newChar.Specs.Apropos.Fruit = character.Specs.Apropos.Fruit
