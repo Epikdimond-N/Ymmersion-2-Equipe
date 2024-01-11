@@ -12,17 +12,58 @@ import (
 	"net/http"
 	One "onepiece/go"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 )
 
 var (
-	logged   bool
-	users    = make(map[string]One.User) // Map to store users
-	username string
-	password string
-	IsAdmin  bool
+	logged       bool
+	users        = make(map[string]One.User) // Map to store users
+	username     string
+	password     string
+	IsAdmin      bool
+	newFieldname string
 )
+
+func retrieveAndProcessImage(w http.ResponseWriter, r *http.Request, fieldName string, fullname string) (string, error) {
+	file, handler, err := r.FormFile(fieldName)
+	if err != nil {
+		http.Error(w, "Error retrieving the "+fieldName, http.StatusInternalServerError)
+		return "", err
+	}
+	defer file.Close()
+	ext := filepath.Ext(handler.Filename)
+
+	if fieldName == "PersosImage" {
+		newFieldname = "imgpersos"
+	}
+	if fieldName == "PersosAffiche" {
+		newFieldname = "affiches-persos"
+	}
+	if fieldName == "PersosDrapeau" {
+		newFieldname = "drapeaux"
+	}
+	newFileName := fullname + ext
+	path := "/assets/img/" + newFieldname + "/" + newFileName
+	path2 := "/static/img" + newFieldname + "/" + newFileName
+	// Save the file with the new filename
+	dst, err := os.Create(path)
+	if err != nil {
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return "", err
+	}
+	defer dst.Close()
+
+	// Copy the file to the destination directory
+	_, err = io.Copy(dst, file)
+	if err != nil {
+		http.Error(w, "Error copying the file", http.StatusInternalServerError)
+		return "", err
+	}
+
+	return path2, nil
+}
 
 func UpdateAdminByUsername(users []One.User, filename string, username string, newAdminValue string) error {
 	for i, user := range users {
@@ -284,7 +325,7 @@ func idExists(data map[string]interface{}, id string) bool {
 	}
 	return false
 }
-func UpdateChar(name string, img string, fullname string, age int, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
+func UpdateChar(name string, img string, affiche string, drapeau string, fullname string, prime string, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
 	// Read JSON data from file
 	fileData, err := os.ReadFile("data.json")
 	if err != nil {
@@ -304,12 +345,14 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 	}
 
 	newPerso := map[string]interface{}{
-		"id":   newID,
-		"name": name,
-		"img":  img,
+		"id":      newID,
+		"name":    name,
+		"img":     img,
+		"affiche": affiche,
 		"specs": map[string]interface{}{
 			"fullName": fullname,
-			"age":      age,
+			"prime":    prime,
+			"drapeau":  drapeau,
 			"aPropos": map[string]string{
 				"description": desc,
 				"role":        role,
