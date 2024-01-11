@@ -1,93 +1,78 @@
 {{define "index"}}
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/index.css" />
-    <link rel="stylesheet" href="../static/css/categories.css" />
-    <title>Accueil</title>
-  </head>
-  <body>
-    <header>
-      <div class="menu">
-        <div class="cont">
-          <a class="h-link" href="/Home">
-            <img class="home" src="../static/img/index/home.png" alt="Home" />
-            <p>ACCUEIL</p>
-          </a>
-        </div>
-        <div class="cont">
-          <a class="h-link" href="/categories">
-            <img
-              class="categories"
-              src="../static/img/index/categories.png"
-              alt="Categories"
-            />
-            <p>CATEGORIES</p>
-          </a>
-        </div>
-        <a class="h-link" href="/admin">
-          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/static/css/index.css" />
+  <title>Accueil</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div class="cont">
+        <a class="h-link" href="/Home">
+          <img class="home" src="../static/img/index/home.png" alt="Home" />
+          <p>ACCUEIL</p>
         </a>
       </div>
-      <img
-        class="logo"
-        src="../static/img/index/logo.png"
-        alt="Logo One Piece"
-      />
-
-      <div class="menu">
-        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-        <form action="/search" method="get">
-          <input
-            type="text"
-            id="search"
-            name="name"
-            placeholder="Cherchez le One Piece !"
-          />
-        </form>
-        <div class="cont">
-          <a class="h-link" href="/login">
-            <img
-              class="login"
-              src="../static/img/index/login.png"
-              alt="Login"
-            />
-            <p>LOGIN</p>
-          </a>
-        </div>
+      <div class="cont">
+        <a class="h-link" href="/categories">
+          <img class="categories" src="../static/img/index/categories.png" alt="Categories" />
+          <p>CATEGORIES</p>
+        </a>
       </div>
-    </header>
-    <section>
-<h2>Random Characters</h2>
-{{range .RandomCharacters}}
-  <div><a href="/Persos?id={{.id}}">
-    <h3>Name: {{.name}}</a></h3>
-    <p>Description: {{.specs.aPropos.description}}</p></a>
-  </div>
-{{end}}
+      <a class="h-link" href="/admin">
+        <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+      </a>
+    </div>
+    <img class="logo" src="../static/img/index/logo.png" alt="Logo One Piece" />
 
-<h2>Random Arcs</h2>
-{{range .RandomArcs}}
-  <div>
-    <h3><a href="/Arcs?id={{.id}}">Name: {{.name}}</a></h3>
-    <p>Description: {{.description}}</p>
-  
-  </div>
-{{end}}
+    <div class="menu">
+      <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+      <form action="/search" method="get">
+        <input type="text" id="search" name="name" placeholder="Cherchez le One Piece !" />
+      </form>
+      <div class="cont">
+        <a class="h-link" href="/login">
+          <img class="login" src="../static/img/index/login.png" alt="Login" />
+          <p>LOGIN</p>
+        </a>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="all-item">
+      <div class="Persos">
+        {{range .RandomCharacters}}
+        <div>
+          <a href="/Persos?id={{.id}}">
+            <img class="affiche" src="{{.affiche}}" alt="affiche perso" /></a>
+        </div>
+        {{end}}
+      </div>
+      <div class="Arcs">
+        {{range .RandomArcs}}
+        <div>
+          <a href="/Arcs?id={{.id}}">
+            <img class="affiche" src="{{.affiche}}" alt="affiche perso" /></a>
+        </div>
+        {{end}}
+      </div>
+      <div class="Events">
+        {{range .RandomEvents}}
+        <div>
+          <a href="/EventsOnePiece?id={{.id}}">
+            <img class="affiche" src="{{.affiche}}" alt="affiche perso" /></a>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+</body>
 
-
-<h2>Random Events</h2>
-{{range .RandomEvents}}
-  <div>
-    <h3><a href="/EventsOnePiece?id={{.id}}">Name: {{.name}}</a></h3>
-    <p>Description: {{.description}}</p>
-   
-  </div>
-{{end}}
-    </section>
-    <footer></footer>
-  </body>
 </html>
 {{end}}

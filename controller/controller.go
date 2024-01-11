@@ -179,10 +179,10 @@ func DisplayHome(w http.ResponseWriter, r *http.Request) {
 	randomCharacters := GetRandomItems(data.Categories["Persos"], 4)
 
 	// Select 2 random arcs
-	randomArcs := GetRandomItems(data.Categories["Arcs"], 3)
+	randomArcs := GetRandomItems(data.Categories["Arcs"], 4)
 
 	// Select 2 random events
-	randomEvents := GetRandomItems(data.Categories["EventsOnePiece"], 3)
+	randomEvents := GetRandomItems(data.Categories["EventsOnePiece"], 4)
 
 	// Create a map to pass selected data to the template
 	selectedData := map[string]interface{}{
