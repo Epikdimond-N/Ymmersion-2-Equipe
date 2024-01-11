@@ -280,8 +280,10 @@
                     },
                     "fullName": "Monkey D. Luffy",
                     "prime": "3.000.000.000"
-                }
-            },
+                    }
+                    
+                },
+            
             {
                 "affiche": "../static/img/affiches-persos/affiche-zoro.png",
                 "id": "Persos/Roronoa Zoro",
