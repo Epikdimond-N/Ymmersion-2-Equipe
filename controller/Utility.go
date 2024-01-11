@@ -9,6 +9,7 @@ import (
 	"io"
 	"log"
 	"math/rand"
+	"net/http"
 	One "onepiece/go"
 	"os"
 	"strings"
@@ -22,6 +23,12 @@ var (
 	password string
 	IsAdmin  bool
 )
+
+func ChargeImage() {
+	rootDoc, _ := os.Getwd()
+	fileserver := http.FileServer(http.Dir(rootDoc + "/assets"))
+	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
+}
 
 func ResetUserValue() {
 	logged = false

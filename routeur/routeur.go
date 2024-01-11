@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 	controller "onepiece/controller"
-	"os"
 )
 
 func InitServe() {
@@ -34,9 +33,7 @@ func InitServe() {
 	http.HandleFunc("/admin/newArc/gestion", controller.GestionNewArcHandler)     //system de gestion d'ajout arc << need update
 	http.HandleFunc("/admin/newEvent/gestion", controller.GestionNewEventHandler) //system de gestion d'ajout event << need update
 
-	rootDoc, _ := os.Getwd()
-	fileserver := http.FileServer(http.Dir(rootDoc + "/assets"))
-	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
+	controller.ChargeImage()
 	fmt.Println("\nLien vers le site : http://localhost:8080/Home (CTRL+CLICK)")
 	http.ListenAndServe("localhost:8080", nil)
 }
