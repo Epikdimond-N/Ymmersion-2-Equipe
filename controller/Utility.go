@@ -12,18 +12,115 @@ import (
 	"net/http"
 	One "onepiece/go"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 )
 
 var (
-	logged   bool
-	users    = make(map[string]One.User) // Map to store users
-	username string
-	password string
-	IsAdmin  bool
+	logged       bool
+	users        = make(map[string]One.User) // Map to store users
+	username     string
+	password     string
+	IsAdmin      bool
+	newFieldname string
 )
 
+func retrieveAndProcessImage(w http.ResponseWriter, r *http.Request, fieldName string, fullname string) (string, error) {
+	file, handler, err := r.FormFile(fieldName)
+	if err != nil {
+		http.Error(w, "Error retrieving the "+fieldName, http.StatusInternalServerError)
+		return "", err
+	}
+	defer file.Close()
+	ext := filepath.Ext(handler.Filename)
+
+	if fieldName == "PersosImage" {
+		newFieldname = "imgpersos"
+	}
+	if fieldName == "PersosAffiche" {
+		newFieldname = "affiches-persos"
+	}
+	if fieldName == "PersosDrapeau" {
+		newFieldname = "drapeaux"
+	}
+	newFileName := fullname + ext
+	path := "/assets/img/" + newFieldname + "/" + newFileName
+	path2 := "/static/img" + newFieldname + "/" + newFileName
+	// Save the file with the new filename
+	dst, err := os.Create(path)
+	if err != nil {
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return "", err
+	}
+	defer dst.Close()
+
+	// Copy the file to the destination directory
+	_, err = io.Copy(dst, file)
+	if err != nil {
+		http.Error(w, "Error copying the file", http.StatusInternalServerError)
+		return "", err
+	}
+
+	return path2, nil
+}
+
+func UpdateAdminByUsername(users []One.User, filename string, username string, newAdminValue string) error {
+	for i, user := range users {
+		if user.Username == username {
+			users[i].IsAdmin = newAdminValue
+
+			// Save the updated user data back to the file
+			err := SaveUserData(users, filename)
+			if err != nil {
+				return fmt.Errorf("error saving user data: %v", err)
+			}
+
+			return nil
+		}
+	}
+	return fmt.Errorf("user with username %s not found", username)
+}
+
+func RetrieveUserData(filename string) ([]One.User, error) {
+	data, err := os.ReadFile(filename)
+	if err != nil {
+		return nil, err
+	}
+
+	var users map[string]One.User
+	err = json.Unmarshal(data, &users)
+	if err != nil {
+		return nil, err
+	}
+
+	var userList []One.User
+	for _, user := range users {
+		userList = append(userList, user)
+	}
+
+	return userList, nil
+}
+
+func searchUser(username string) (One.User, error) {
+	// Read the content of the users.json file
+	fileContent, err := os.ReadFile("users.json")
+	if err != nil {
+		return One.User{}, fmt.Errorf("error reading %s: %v", "users.json", err)
+	}
+
+	var userMap map[string]One.User
+	err = json.Unmarshal(fileContent, &userMap)
+	if err != nil {
+		return One.User{}, fmt.Errorf("error decoding JSON: %v", err)
+	}
+
+	if userData, ok := userMap[username]; ok {
+		return userData, nil
+	}
+
+	return One.User{}, nil // No error, but user not found
+}
 func checkAdmin(usernameToCheck string) bool {
 	// Read JSON file
 	file, err := os.ReadFile("users.json")
@@ -41,8 +138,7 @@ func checkAdmin(usernameToCheck string) bool {
 	}
 
 	// Check if the username exists and has admin privileges
-	user, exists := users[usernameToCheck]
-	fmt.Println(user)
+	_, exists := users[usernameToCheck]
 	if !exists {
 		fmt.Println(" Username not found")
 		return false
@@ -160,6 +256,24 @@ func UpdateUserCredentials(name, oldPassword, newPassword string) error {
 
 	return nil
 }
+func SaveUserData(users []One.User, filename string) error {
+	userMap := make(map[string]One.User)
+	for _, user := range users {
+		userMap[user.Username] = user
+	}
+
+	data, err := json.MarshalIndent(userMap, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	err = os.WriteFile(filename, data, 0644)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
 
 // Function to save users to a file for register func
 func saveUsersToFile(filename string) error {
@@ -211,7 +325,7 @@ func idExists(data map[string]interface{}, id string) bool {
 	}
 	return false
 }
-func UpdateChar(name string, img string, fullname string, age int, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
+func UpdateChar(name string, img string, affiche string, drapeau string, fullname string, prime string, desc string, role string, fruit string, persona string, apparence string, capacite string, histoire string) error {
 	// Read JSON data from file
 	fileData, err := os.ReadFile("data.json")
 	if err != nil {
@@ -231,12 +345,14 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 	}
 
 	newPerso := map[string]interface{}{
-		"id":   newID,
-		"name": name,
-		"img":  img,
+		"id":      newID,
+		"name":    name,
+		"img":     img,
+		"affiche": affiche,
 		"specs": map[string]interface{}{
 			"fullName": fullname,
-			"age":      age,
+			"prime":    prime,
+			"drapeau":  drapeau,
 			"aPropos": map[string]string{
 				"description": desc,
 				"role":        role,
@@ -277,7 +393,7 @@ func UpdateChar(name string, img string, fullname string, age int, desc string, 
 	return nil
 }
 
-func UpdateArc(name string, img string, episode string, chapitre string, desc string) error {
+func UpdateArc(name string, intro string, img string, affiche string, episode string, chapitre string, desc string) error {
 	// Read JSON data from file
 	fileData, err := os.ReadFile("data.json")
 	if err != nil {
@@ -299,7 +415,9 @@ func UpdateArc(name string, img string, episode string, chapitre string, desc st
 	newArc := map[string]interface{}{
 		"id":             newID,
 		"name":           name,
+		"intro":          intro,
 		"img":            img,
+		"affiche":        affiche,
 		"épisodesAnimé":  episode,
 		"chapitresManga": chapitre,
 		"description":    desc,

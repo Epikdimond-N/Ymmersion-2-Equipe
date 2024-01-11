@@ -1,4 +1,4 @@
-{{define "admin"}}
+{{define "adminchoix"}}
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -9,8 +9,7 @@
     <title>Admin</title>
   </head>
   <body>
-    <div class="contentall">
-      <header>
+    <header>
       <div class="menu">
         <div class="cont">
           <a class="h-link" href="/Home">
@@ -40,11 +39,11 @@
 
       <div class="menu">
         <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-        <form action="/search" method="get">
+        <form action="" method="">
           <input
             type="text"
             id="search"
-            name="name"
+            name="q"
             placeholder="Cherchez le One Piece !"
           />
         </form>
@@ -70,17 +69,17 @@
       </div>
     </header>
     <section>
-      <a href="/admin/newChar"><button class="nouveau-personnage">Nouveau personnage</button></a>
-      <a href="/admin/newArc"><button class="nouvelle-arc">Nouvelle Arc</button></a>
-      <a href="/admin/newEvent"><button class="nouvelle-event">Nouvelle Event</button></a>
-       {{if .Admin}} 
-      <a href="/admin/delete"><button class="supprimer-article">Supprimer un article</button></a>
-      <a href="/admin/admin"><button class="modifier-compte">Modifier un compte</button></a>
-       {{end}}
+      <p>Nom d'utilisateur :{{.Result.Username}}</p><br>
+<p> Admin :{{.Result.IsAdmin}}</p><br>
+<p>+ admin type 'yes'</p>
+<p>- admin type 'no' or leave empty or type anything else than 'yes'</p>
+<form action="/admin/GestionSelectionAdmin" method="get">
+  <input type="text" id="username" name="username" value="{{.Result.Username}}">
+  <input type="text" id="admin" name="admin"/>
+  <button type="submit" class="transitionButton">Confirm</button>
+</form>
   </section>
     <footer></footer>
-    </div>
-    
   </body>
 </html>
 {{end}}

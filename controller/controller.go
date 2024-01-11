@@ -9,7 +9,6 @@ import (
 	initTemplate "onepiece/temp"
 	"os"
 	"path/filepath"
-	"strconv"
 )
 
 func NewCharHandler(w http.ResponseWriter, r *http.Request) {
@@ -28,38 +27,24 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	// Parse the multipart form data with a maximum upload size of 10MB
 	r.ParseMultipartForm(10 << 20)
 
-	// Retrieve the file from the form
-	file, handler, err := r.FormFile("PersosImage")
-	if err != nil {
-		// Handle error
-		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
-		return
-	}
-	defer file.Close()
 	fullname := r.FormValue("PersosFullName")
-	ext := filepath.Ext(handler.Filename)
-	newFileName := fullname + ext
-	// Create the file in the destination directory
-	// Change the file path as per your directory structure
-	filePath := filepath.Join("assets", "img", "imgpersos", newFileName)
-	dst, err := os.Create(filePath)
+	ImgPath, err := retrieveAndProcessImage(w, r, "PersosImage", fullname)
 	if err != nil {
-		// Handle error
-		http.Error(w, "Error creating the file", http.StatusInternalServerError)
-		return
-	}
-	defer dst.Close()
-
-	// Copy the file to the destination directory
-	if _, err = io.Copy(dst, file); err != nil {
-		// Handle error
-		http.Error(w, "Error copying the file", http.StatusInternalServerError)
 		return
 	}
 
+	AffichePath, err := retrieveAndProcessImage(w, r, "PersosAffiche", fullname)
+	if err != nil {
+		return
+	}
+
+	DrapeauPath, err := retrieveAndProcessImage(w, r, "PersosDrapeau", fullname)
+	if err != nil {
+		return
+	}
 	// Once the file is saved, retrieve other form data and call the function to update the character
 	name := r.FormValue("PersosName")
-	age, _ := strconv.Atoi(r.FormValue("PersosAge"))
+	prime := r.FormValue("PersosPrime")
 	desc := r.FormValue("PersosDescription")
 	role := r.FormValue("PersosRole")
 	fruit := r.FormValue("PersosFruit")
@@ -67,9 +52,8 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	apparence := r.FormValue("PersosApparence")
 	capacites := r.FormValue("PersosCapacités")
 	histoire := r.FormValue("PersosHistoires")
-	ImgPath := "/static/img/imgpersos/" + newFileName
 	// Call the function to update character passing the file path as img
-	if err := UpdateChar(name, ImgPath, fullname, age, desc, role, fruit, persona, apparence, capacites, histoire); err != nil {
+	if err := UpdateChar(name, ImgPath, AffichePath, DrapeauPath, fullname, prime, desc, role, fruit, persona, apparence, capacites, histoire); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
@@ -107,8 +91,6 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 	name := r.FormValue("arcName")
 	ext := filepath.Ext(handler.Filename)
 	newFileName := name + ext
-	// Create the file in the destination directory
-	// Change the file path as per your directory structure
 	filePath := filepath.Join("assets", "img", "photoarcs", newFileName)
 	dst, err := os.Create(filePath)
 	if err != nil {
@@ -124,16 +106,42 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error copying the file", http.StatusInternalServerError)
 		return
 	}
+	file, handler, err = r.FormFile("arcAffiche")
+	if err != nil {
+		// Handle error
+		fmt.Println("Error retrieving the arcImage:", err)
+		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+	nameAffiche := r.FormValue("arcAffiche")
+	ext = filepath.Ext(handler.Filename)
+	newFileNameAffiche := nameAffiche + ext
+	filePath = filepath.Join("assets", "img", "affiches-arcs", newFileNameAffiche)
+	dst, err = os.Create(filePath)
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return
+	}
+	defer dst.Close()
 
+	// Copy the file to the destination directory
+	if _, err = io.Copy(dst, file); err != nil {
+		// Handle error
+		http.Error(w, "Error copying the file", http.StatusInternalServerError)
+		return
+	}
 	// Once the file is saved, retrieve other form data and call the function to update the character
-
+	intro := r.FormValue("arcIntro")
 	ImgPath := "/static/img/photoarcs/" + newFileName
+	AffichePatch := "/static/img/affiches-arcs/" + newFileNameAffiche
 	episode := r.FormValue("arcEpisodeAnime")
 	chapitre := r.FormValue("arcChapitreManga")
 	desc := r.FormValue("arcDescription")
 
 	// Call the function to update arc passing the file path as img
-	if err := UpdateArc(name, ImgPath, episode, chapitre, desc); err != nil {
+	if err := UpdateArc(name, intro, AffichePatch, ImgPath, episode, chapitre, desc); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
@@ -404,10 +412,91 @@ func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 		Logged: logged,
 		Admin:  IsAdmin,
 	}
-	fmt.Println(IsAdmin)
 	initTemplate.Temp.ExecuteTemplate(w, "admin", data)
 }
 
+func DisplayAdminAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	if !IsAdmin {
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
+		return
+	}
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "adminadmin", data)
+}
+
+func DisplayGestionAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	if !IsAdmin {
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
+		return
+	}
+	user := r.FormValue("username")
+	userData, err := searchUser(user)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	data := One.CombinedData{
+		Result: userData,
+		Cat:    username,
+		Logged: logged,
+	}
+	err = initTemplate.Temp.ExecuteTemplate(w, "adminchoix", data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+}
+
+func DisplaySelectionAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+		Admin:  IsAdmin,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "adminadmin", data)
+}
+func DisplayGestionSelectionAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	if !IsAdmin {
+		http.Redirect(w, r, "/Home", http.StatusFound)
+	}
+	user := r.FormValue("username")
+	admin := r.FormValue("admin")
+	filename := "users.json"
+	users, err := RetrieveUserData(filename)
+	if err != nil {
+		fmt.Println("Error retrieving user data:", err)
+		return
+	}
+
+	err = UpdateAdminByUsername(users, filename, user, admin)
+	if err != nil {
+		fmt.Println("Error updating admin value:", err)
+		return
+	}
+
+	fmt.Println("Admin value updated and data saved successfully.")
+
+	http.Redirect(w, r, "/Home", http.StatusFound)
+}
 func DisplayAdminDelete(w http.ResponseWriter, r *http.Request) {
 	if !logged {
 		http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -501,7 +590,6 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	searchResults := FindInfoByName(search)
-	fmt.Println(searchResults)
 	data := One.CombinedData{
 		Result: searchResults,
 		Cat:    username,

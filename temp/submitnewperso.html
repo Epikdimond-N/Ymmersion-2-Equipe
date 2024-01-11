@@ -79,15 +79,16 @@
       <section>
         <h1>Register Persos</h1>
         <form action="/admin/newChar/gestions" method="post">
-          <label for="PersosName">Persos Name:</label>
+          <label for="PersosName">Nom du personnage :</label>
           <input
             type="text"
             id="PersosName"
             name="PersosName"
+            placeholder="Luffy"
             required
           /><br /><br />
 
-          <label for="PersosImage">Image (must be under 10MB):</label>
+          <label for="PersosImage">Image du perosnnage (must be under 10MB):</label>
           <input
             type="file"
             id="PersosImage"
@@ -95,15 +96,32 @@
             required
           /><br /><br />
 
-          <label for="PersosFullName">Nom complet :</label>
+          <label for="PersosAffiche">Affiche du personnage (must be under 10MB):</label>
+          <input
+            type="file"
+            id="PersosImage"
+            name="PersosImage"
+            required
+          /><br /><br />
+
+          <label for="PersosDrapeau"> Drapeau du personnage (must be under 10MB):</label>
+          <input
+            type="file"
+            id="PersosImage"
+            name="PersosImage"
+            required
+          /><br /><br />
+          
+          <label for="PersosFullName">Nom complet, si aucun metre le nom :</label>
           <input
             type="text"
             id="PersosFullName"
             name="PersosFullName"
+            placeholder="Monky D. Luffy"
             required
           /><br /><br />
 
-          <label for="PersosAge">Age du personnage:</label>
+          <label for="PersosPrime">Prime du personnage:</label>
           <input
             type="text"
             id="PersosAge"
@@ -127,9 +145,7 @@
             required
           /><br /><br />
 
-          <label for="PersosFruit"
-            >Le Fruit du demon (si il n'en a pas, preciser):</label
-          >
+          <label for="PersosFruit">Le Fruit du demon (si il n'en a pas, preciser):</label>
           <input
             type="text"
             id="PersosFruit"
