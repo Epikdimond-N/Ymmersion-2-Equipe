@@ -24,6 +24,33 @@ var (
 	IsAdmin  bool
 )
 
+func checkAdmin(usernameToCheck string) bool {
+	// Read JSON file
+	file, err := os.ReadFile("users.json")
+	if err != nil {
+		fmt.Println("can't read file")
+		return false
+	}
+
+	// Unmarshal JSON data
+	var users map[string]One.User
+	err = json.Unmarshal(file, &users)
+	if err != nil {
+		fmt.Println("can't unmarshal")
+		return false
+	}
+
+	// Check if the username exists and has admin privileges
+	user, exists := users[usernameToCheck]
+	fmt.Println(user)
+	if !exists {
+		fmt.Println(" Username not found")
+		return false
+	}
+
+	return true
+}
+
 func ChargeImage() {
 	rootDoc, _ := os.Getwd()
 	fileserver := http.FileServer(http.Dir(rootDoc + "/assets"))

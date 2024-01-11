@@ -3,6 +3,7 @@ package request
 type CombinedData struct {
 	Result interface{}
 	Cat    string
+	Cat2   string
 	Logged bool
 	Admin  bool
 }

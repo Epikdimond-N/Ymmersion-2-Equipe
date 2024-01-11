@@ -36,9 +36,23 @@
         <input type="text" id="search" name="name" placeholder="Cherchez le One Piece !" />
       </form>
       <div class="cont">
-        <a class="h-link" href="/login">
-          <img class="login" src="../static/img/index/login.png" alt="Login" />
-          <p>LOGIN</p>
+        {{if .Logged}} 
+        <a class="h-link" href="/logout">
+        <img
+        class="login"
+        src="../static/img/index/login.png"
+        alt="Login"
+      />
+        <p>{{.Cat}}</p></a>
+      {{else}}
+      <a class="h-link" href="/login">
+      <img
+      class="login"
+      src="../static/img/index/login.png"
+      alt="Login"
+    />
+        <p>LOGIN</p></a>
+      {{end}}
         </a>
       </div>
     </div>
@@ -46,7 +60,7 @@
   <section>
     <div class="all-item">
       <div class="Persos">
-        {{range .RandomCharacters}}
+        {{range .Result.RandomCharacters}}
         <div>
           <a href="/Persos?id={{.id}}">
             <img class="affiche" src="{{.affiche}}" alt="affiche perso" /></a>
@@ -54,7 +68,7 @@
         {{end}}
       </div>
       <div class="Arcs">
-        {{range .RandomArcs}}
+        {{range .Result.RandomArcs}}
         <div>
           <a href="/Arcs?id={{.id}}">
             <img class="affiche" src="{{.affiche}}" alt="affiche perso" /></a>
@@ -62,7 +76,7 @@
         {{end}}
       </div>
       <div class="Events">
-        {{range .RandomEvents}}
+        {{range .Result.RandomEvents}}
         <div>
           <a href="/EventsOnePiece?id={{.id}}">
             <img class="affiche" src="{{.affiche}}" alt="affiche perso" /></a>

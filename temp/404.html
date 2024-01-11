@@ -48,14 +48,23 @@
           />
         </form>
         <div class="cont">
-          <a class="h-link" href="/login">
-            <img
-              class="login"
-              src="../static/img/index/login.png"
-              alt="Login"
-            />
-            <p>LOGIN</p>
-          </a>
+          {{if .Logged}} 
+          <a class="h-link" href="/logout">
+          <img
+          class="login"
+          src="../static/img/index/login.png"
+          alt="Login"
+        />
+          <p>{{.Cat}}</p></a>
+        {{else}}
+        <a class="h-link" href="/login">
+        <img
+        class="login"
+        src="../static/img/index/login.png"
+        alt="Login"
+      />
+          <p>LOGIN</p></a>
+        {{end}}
         </div>
       </div>
     </header>

@@ -47,28 +47,37 @@
           />
         </form>
         <div class="cont">
-          <a class="h-link" href="/login">
-            <img
-              class="login"
-              src="../static/img/index/login.png"
-              alt="Login"
-            />
-            <p>LOGIN</p>
-          </a>
+          {{if .Logged}} 
+          <a class="h-link" href="/logout">
+          <img
+          class="login"
+          src="../static/img/index/login.png"
+          alt="Login"
+        />
+          <p>{{.Cat}}</p></a>
+        {{else}}
+        <a class="h-link" href="/login">
+        <img
+        class="login"
+        src="../static/img/index/login.png"
+        alt="Login"
+      />
+          <p>LOGIN</p></a>
+        {{end}}
         </div>
       </div>
     </header>
     <section>
       <div class="infos">
-        <p>{{.Intro}}<br /><br />{{.Description}}</p>
+        <p>{{.Result.Intro}}<br /><br />{{.Result.Description}}</p>
         <p></p>
       </div>
       <div class="arc">
         <p>
-          {{.Name}} <br /><br />
-          <img src="{{.Img}}" alt="Image {{.Name}}" /> <br /><br />
-          {{.Episode}} <br /><br />
-          {{.Chapitre}}
+          {{.Result.Name}} <br /><br />
+          <img src="{{.Result.Img}}" alt="Image {{.Result.Name}}" /> <br /><br />
+          {{.Result.Episode}} <br /><br />
+          {{.Result.Chapitre}}
         </p>
       </div>
     </section>
