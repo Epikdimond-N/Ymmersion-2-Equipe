@@ -160,11 +160,40 @@ func NewEventHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
-	name := r.FormValue("EventName")
-	desc := r.FormValue("EventDescription")
+	// Parse the multipart form data with a maximum upload size of 10MB
+	r.ParseMultipartForm(10 << 20)
 
+	// Retrieve the file from the form
+	file, handler, err := r.FormFile("EventAffiche")
+	if err != nil {
+		// Handle error
+		fmt.Println("Error retrieving the arcImage:", err)
+		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+	name := r.FormValue("EventName")
+	ext := filepath.Ext(handler.Filename)
+	newFileName := formatString(name) + ext
+	filePath := filepath.Join("assets", "img", "affiches-events", newFileName)
+	dst, err := os.Create(filePath)
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return
+	}
+	defer dst.Close()
+
+	// Copy the file to the destination directory
+	if _, err = io.Copy(dst, file); err != nil {
+		// Handle error
+		http.Error(w, "Error copying the file", http.StatusInternalServerError)
+		return
+	}
+	desc := r.FormValue("EventDescription")
+	affichePath := filepath.Join("static", "img", "affiches-events", newFileName)
 	// Call the function to update event passing the file path as img
-	if err := UpdateEvent(name, desc); err != nil {
+	if err := UpdateEvent(name, affichePath, desc); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return

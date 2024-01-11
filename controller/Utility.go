@@ -13,6 +13,7 @@ import (
 	One "onepiece/go"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"time"
 )
@@ -25,6 +26,24 @@ var (
 	IsAdmin      bool
 	newFieldname string
 )
+
+func formatString(input string) string {
+	// Remove special characters using regular expression
+	regExp := regexp.MustCompile("[^a-zA-Z0-9 ]+")
+	processedString := string(regExp.ReplaceAll([]byte(input), []byte("")))
+
+	// Replace spaces with hyphens
+	formattedString := strings.ReplaceAll(processedString, " ", "-")
+
+	// Remove common articles like "Le" or "La"
+	formattedString = strings.TrimPrefix(formattedString, "le-")
+	formattedString = strings.TrimPrefix(formattedString, "la-")
+
+	// Convert to lowercase
+	formattedString = strings.ToLower(formattedString)
+
+	return formattedString
+}
 
 func retrieveAndProcessImage(w http.ResponseWriter, r *http.Request, fieldName string, fullname string) (string, error) {
 	file, handler, err := r.FormFile(fieldName)
@@ -451,7 +470,7 @@ func UpdateArc(name string, intro string, img string, affiche string, episode st
 	return nil
 }
 
-func UpdateEvent(name string, desc string) error {
+func UpdateEvent(name string, affiche string, desc string) error {
 	// Read JSON data from file
 	fileData, err := os.ReadFile("data.json")
 	if err != nil {
@@ -473,6 +492,7 @@ func UpdateEvent(name string, desc string) error {
 	newEvent := map[string]interface{}{
 		"id":          newID,
 		"name":        name,
+		"affiche":     affiche,
 		"description": desc,
 	}
 
