@@ -1,70 +1,127 @@
 {{define "char"}}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Character Presentation</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .character-info {
-      margin-top: 20px;
-    }
-    .info-item {
-      margin-bottom: 10px;
-    }
-    .info-label {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Character Presentation</h1>
-    <div class="character-info">
-      <h2>Character Details</h2>
-      <div class="info-item">
-        <span class="info-label">Name: {{.Name}}</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/char.css" />
+    <title>Character Presentation</title>
+  </head>
+  <body>
+    <div class="contentall">
+      <header>
+        <div class="menu">
+          <div class="cont">
+            <a class="h-link" href="/Home">
+              <img class="home" src="../static/img/index/home.png" alt="Home" />
+              <p>ACCUEIL</p>
+            </a>
+          </div>
+          <div class="cont">
+            <a class="h-link" href="/categories">
+              <img
+                class="categories"
+                src="../static/img/index/categories.png"
+                alt="Categories"
+              />
+              <p>CATEGORIES</p>
+            </a>
+          </div>
+          <a class="h-link" href="/admin">
+            <img
+              class="admin"
+              src="../static/img/index/admin.png"
+              alt="Admin"
+            />
+          </a>
+        </div>
+        <img
+          class="logo"
+          src="../static/img/index/logo.png"
+          alt="Logo One Piece"
+        />
+
+        <div class="menu">
+          <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+          <form action="/search" method="get">
+            <input
+              type="text"
+              id="search"
+              name="name"
+              placeholder="Cherchez le One Piece !"
+            />
+          </form>
+          <div class="cont">
+            <a class="h-link" href="/login">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>LOGIN</p>
+            </a>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="infos">
+          <p>
+            ROLE : {{.Specs.Apropos.Role}}<br /><br />
+            FRUIT DU DEMON : {{.Specs.Apropos.Fruit}}<br /><br />
+            PERSONALITE : {{.Specs.Apropos.Personalité}}<br /><br />
+            APPARENCE : {{.Specs.Apropos.Apparence}}<br /><br />
+            CAPACITES : {{.Specs.Apropos.Capacités}}<br /><br />
+            HISTOIRE : {{.Specs.Apropos.Histoire}}<br /><br />
+          </p>
+        </div>
+        <div class="perso">
+          <img class="imgperso" src="{{.Img}}" alt="Image {{.Name}}" />
+          <div class="nomprime">
+            <p>
+              <br />
+              {{.Specs.FullName}}<br /><br />
+            </p>
+            <p>{{.Specs.Prime}} Berrys<br /></p>
+          </div>
+        </div>
+      </section>
+      <footer></footer>
+      <!-- <div class="container">
+      <div class="character-info">
+        <h2>Character Details</h2>
+        <div class="info-item">
+          <span class="info-label">Name: {{.Name}}</span>
+        </div>
+        <div class="info-item">
+          <img class="info-label" src="{{.Img}}" alt="affiche perso" />
+        </div>
+        <div class="info-item">
+          <span class="info-label">Full Name: {{.Specs.FullName}}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Age: {{.Specs.Age}}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Role: {{.Specs.Apropos.Role}}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Demon Fruit: {{.Specs.Apropos.Fruit}}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Personality: {{.Specs.Apropos.Personalité}}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Appearance: {{.Specs.Apropos.Apparence}}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Abilities: {{.Specs.Apropos.Capacités}}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">History: {{.Specs.Apropos.Histoire}}</span>
+        </div>
       </div>
-      <div class="info-item">
-        <img class="info-label" src="{{.Img}}" alt="affiche perso" />
-      </div>
-      <div class="info-item">
-        <span class="info-label">Full Name: {{.Specs.FullName}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Age: {{.Specs.Age}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Role: {{.Specs.Apropos.Role}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Demon Fruit: {{.Specs.Apropos.Fruit}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Personality: {{.Specs.Apropos.Personalité}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Appearance: {{.Specs.Apropos.Apparence}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">Abilities: {{.Specs.Apropos.Capacités}}</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">History: {{.Specs.Apropos.Histoire}}</span>
-      </div>
+    </div> -->
     </div>
-  </div>
-</body>
+  </body>
 </html>
 {{end}}

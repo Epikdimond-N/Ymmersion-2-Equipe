@@ -8,7 +8,7 @@
                 "affiche": "../static/img/affiches-persos/affiche-luffy.png",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
-                    "age": 17,
+                    "prime": 17,
                     "aPropos":{
                     "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
                     "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line.",

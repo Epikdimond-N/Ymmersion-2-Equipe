@@ -12,6 +12,7 @@ type Data struct {
 	} `json:"categories"`
 }
 type SearchResult struct {
+	Categorie   string
 	ID          string
 	Image       string
 	Description string
@@ -36,7 +37,7 @@ type APropos struct {
 
 type Specs struct {
 	FullName string  `json:"fullName"`
-	Age      int     `json:"age"`
+	Prime    string  `json:"prime"`
 	Apropos  APropos `json:"aPropos"`
 }
 type Character struct {
@@ -51,6 +52,7 @@ type Arc struct {
 	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img"`
+	Affiche     string `json:"affiche"`
 	Episode     string `json:"épisodes"`
 	Chapitre    string `json:"chapitre"`
 	Description string `json:"description"`
@@ -60,13 +62,14 @@ type Event struct {
 	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Img         string `json:"img"`
+	Affiche     string `json:"affiche"`
 	Description string `json:"description"`
 }
 
 type Categories struct {
 	Persos []Character `json:"Persos"`
 	Arc    []Arc       `json:"Arcs"`
-	Events []Event     `json:"Events"`
+	Events []Event     `json:"EventsOnePiece"`
 }
 
 type ResponseData struct {

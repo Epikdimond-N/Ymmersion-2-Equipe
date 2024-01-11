@@ -1,10 +1,11 @@
-{{define "char"}}
+{{define "event"}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Character Presentation</title>
+  <link rel="stylesheet" href="../static/css/categories.css" />
+  <title>Event Presentation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -28,11 +29,61 @@
     }
   </style>
 </head>
+<header>
+  <div class="menu">
+    <div class="cont">
+      <a class="h-link" href="/Home">
+        <img class="home" src="../static/img/index/home.png" alt="Home" />
+        <p>ACCUEIL</p>
+      </a>
+    </div>
+    <div class="cont">
+      <a class="h-link" href="/categories">
+        <img
+          class="categories"
+          src="../static/img/index/categories.png"
+          alt="Categories"
+        />
+        <p>CATEGORIES</p>
+      </a>
+    </div>
+    <a class="h-link" href="/admin">
+      <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+    </a>
+  </div>
+  <img
+    class="logo"
+    src="../static/img/index/logo.png"
+    alt="Logo One Piece"
+  />
+
+  <div class="menu">
+    <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+    <form action="/search" method="get">
+      <input
+        type="text"
+        id="search"
+        name="name"
+        placeholder="Cherchez le One Piece !"
+      />
+    </form>
+    <div class="cont">
+      <a class="h-link" href="/login">
+        <img
+          class="login"
+          src="../static/img/index/login.png"
+          alt="Login"
+        />
+        <p>LOGIN</p>
+      </a>
+    </div>
+  </div>
+</header>
 <body>
   <div class="container">
-    <h1>Character Presentation</h1>
+    <h1>Event Presentation</h1>
     <div class="character-info">
-      <h2>Character Details</h2>
+      <h2>Event Details</h2>
       <div class="info-item">
         <span class="info-label">Name: {{.Name}}</span>
       </div>
@@ -46,5 +97,6 @@
     </div>
   </div>
 </body>
+<footer></footer>
 </html>
 {{end}}
