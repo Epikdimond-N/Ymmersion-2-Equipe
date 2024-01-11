@@ -97,35 +97,23 @@ input{
 
 section{
     background-image: url("/static/img/background-old.jpg");
-    width: 60vw;
+    width: 55vw;
     display: flex;
     margin-top:100px;
     margin-bottom: 60px;
 }
-
-.imgperso{
-    width: 210px;
-}
-
-.nomprime{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.drapeaux{
-    width: 200px;
-}
-
-.perso{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px
+.arc{
+    padding: 30px;
+    text-align: center;
 }
 
 .infos{
+    width: 70%;
     padding: 30px;
+}
+
+.illu{
+    width: 250px;
 }
 
 footer{
