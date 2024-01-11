@@ -37,6 +37,8 @@ func GetChar() []Character {
 		newChar.Specs.FullName = character.Specs.FullName
 		newChar.Specs.Prime = character.Specs.Prime
 		newChar.Specs.Drapeau = character.Specs.Drapeau
+		newChar.Specs.DDC = character.Specs.DDC
+		newChar.Specs.Auteur = character.Specs.Auteur
 		newChar.Specs.Apropos.Description = character.Specs.Apropos.Description
 		newChar.Specs.Apropos.Role = character.Specs.Apropos.Role
 		newChar.Specs.Apropos.Fruit = character.Specs.Apropos.Fruit
@@ -94,6 +96,8 @@ func GetArcs() []Arc {
 		newArcs.Chapitre = Arcs.Chapitre
 		newArcs.Description = Arcs.Description
 		newArcs.Intro = Arcs.Intro
+		newArcs.DDC = Arcs.DDC
+		newArcs.Auteur = Arcs.Auteur
 		arc = append(arc, newArcs)
 	}
 
@@ -140,7 +144,8 @@ func GetEvents() []Event {
 			newEvent.Img = Events.Img
 		}
 		newEvent.Description = Events.Description
-
+		newEvent.DDC = Events.DDC
+		newEvent.Auteur = Events.Auteur
 		event = append(event, newEvent)
 	}
 

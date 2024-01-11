@@ -116,6 +116,10 @@ section{
     width: 250px;
 }
 
+.auteurdate{
+    text-align: end;
+}
+
 footer{
     height: 30vh;
     width: 100vw;
