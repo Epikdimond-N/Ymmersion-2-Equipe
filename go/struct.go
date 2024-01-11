@@ -78,6 +78,7 @@ type Event struct {
 	Name        string `json:"name"`
 	Img         string `json:"img"`
 	Affiche     string `json:"affiche"`
+	Intro       string `json:"intro"`
 	Description string `json:"description"`
 	DDC         string `json:"ddc"`
 	Auteur      string `json:"auteur"`

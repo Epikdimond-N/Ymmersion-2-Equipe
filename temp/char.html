@@ -52,23 +52,25 @@
             />
           </form>
           <div class="cont">
-            {{if .Logged}} 
+            {{if .Logged}}
             <a class="h-link" href="/logout">
-            <img
-            class="login"
-            src="../static/img/index/login.png"
-            alt="Login"
-          />
-            <p>{{.Cat}}</p></a>
-          {{else}}
-          <a class="h-link" href="/login">
-          <img
-          class="login"
-          src="../static/img/index/login.png"
-          alt="Login"
-        />
-            <p>LOGIN</p></a>
-          {{end}}
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>{{.Cat}}</p></a
+            >
+            {{else}}
+            <a class="h-link" href="/login">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>LOGIN</p></a
+            >
+            {{end}}
           </div>
         </div>
       </header>
@@ -82,9 +84,16 @@
             CAPACITES : {{.Result.Specs.Apropos.Capacités}}<br /><br />
             HISTOIRE : {{.Result.Specs.Apropos.Histoire}}<br /><br />
           </p>
+          <p class="auteur-ddc">
+            {{.Result.Specs.Auteur}} {{.Result.Specs.DDC}}
+          </p>
         </div>
         <div class="perso">
-          <img class="imgperso" src="{{.Result.Img}}" alt="Image {{.Result.Name}}" />
+          <img
+            class="imgperso"
+            src="{{.Result.Img}}"
+            alt="Image {{.Result.Name}}"
+          />
           <div class="nomprime">
             <p>
               <br />
@@ -101,7 +110,6 @@
         </div>
       </section>
       <footer></footer>
-      
     </div>
   </body>
 </html>
