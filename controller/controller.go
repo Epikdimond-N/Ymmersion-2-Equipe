@@ -33,10 +33,12 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	defer file.Close()
-
+	fullname := r.FormValue("PersosFullName")
+	ext := filepath.Ext(handler.Filename)
+	newFileName := fullname + ext
 	// Create the file in the destination directory
 	// Change the file path as per your directory structure
-	filePath := filepath.Join("assets", "img", "imgpersos", handler.Filename)
+	filePath := filepath.Join("assets", "img", "imgpersos", newFileName)
 	dst, err := os.Create(filePath)
 	if err != nil {
 		// Handle error
@@ -55,7 +57,6 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	// Once the file is saved, retrieve other form data and call the function to update the character
 	name := r.FormValue("PersosName")
 
-	fullname := r.FormValue("PersosFullName")
 	age, _ := strconv.Atoi(r.FormValue("PersosAge"))
 	desc := r.FormValue("PersosDescription")
 	role := r.FormValue("PersosRole")
@@ -64,7 +65,7 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	apparence := r.FormValue("PersosApparence")
 	capacites := r.FormValue("PersosCapacités")
 	histoire := r.FormValue("PersosHistoires")
-	ImgPath := "../static/img/imgpersos/" + fullname
+	ImgPath := "/static/img/imgpersos/" + newFileName
 	// Call the function to update character passing the file path as img
 	if err := UpdateChar(name, ImgPath, fullname, age, desc, role, fruit, persona, apparence, capacites, histoire); err != nil {
 		// Handle error
@@ -85,6 +86,7 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
+
 	// Parse the multipart form data with a maximum upload size of 10MB
 	r.ParseMultipartForm(10 << 20)
 
@@ -97,10 +99,12 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	defer file.Close()
-
+	name := r.FormValue("arcName")
+	ext := filepath.Ext(handler.Filename)
+	newFileName := name + ext
 	// Create the file in the destination directory
 	// Change the file path as per your directory structure
-	filePath := filepath.Join("assets", "img", "photoarcs", handler.Filename)
+	filePath := filepath.Join("assets", "img", "photoarcs", newFileName)
 	dst, err := os.Create(filePath)
 	if err != nil {
 		// Handle error
@@ -117,8 +121,8 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Once the file is saved, retrieve other form data and call the function to update the character
-	name := r.FormValue("arcName")
-	ImgPath := "../static/img/photoarcs/" + name
+
+	ImgPath := "/static/img/photoarcs/" + newFileName
 	episode := r.FormValue("arcEpisodeAnime")
 	chapitre := r.FormValue("arcChapitreManga")
 	desc := r.FormValue("arcDescription")
