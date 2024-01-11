@@ -116,6 +116,12 @@ section {
     align-items: center;
     width: 80vw;
 }
+
+.all-item{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
 .affiche{
     width: 250px;
     margin:15px;
