@@ -3,6 +3,8 @@ package request
 type CombinedData struct {
 	Result interface{}
 	Cat    string
+	Logged bool
+	Admin  bool
 }
 type DataHome struct {
 	Categories map[string][]map[string]interface{} `json:"categories"`
@@ -16,6 +18,7 @@ type Data struct {
 	} `json:"categories"`
 }
 type SearchResult struct {
+	Log         User
 	Categorie   string
 	ID          string
 	Image       string
@@ -46,6 +49,7 @@ type Specs struct {
 	Apropos  APropos `json:"aPropos"`
 }
 type Character struct {
+	Log     User
 	ID      string `json:"id"`
 	Name    string `json:"name"`
 	Img     string `json:"img"`
