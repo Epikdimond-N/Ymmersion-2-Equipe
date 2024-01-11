@@ -58,8 +58,8 @@ type Arc struct {
 	Name        string `json:"name"`
 	Img         string `json:"img"`
 	Affiche     string `json:"affiche"`
-	Episode     string `json:"épisodes"`
-	Chapitre    string `json:"chapitre"`
+	Episode     string `json:"épisodesAnime"`
+	Chapitre    string `json:"chapitresManga"`
 	Intro       string `json:"intro"`
 	Description string `json:"description"`
 }
