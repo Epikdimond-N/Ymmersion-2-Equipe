@@ -24,6 +24,62 @@ var (
 	IsAdmin  bool
 )
 
+func UpdateAdminByUsername(users []One.User, filename string, username string, newAdminValue string) error {
+	for i, user := range users {
+		if user.Username == username {
+			users[i].IsAdmin = newAdminValue
+
+			// Save the updated user data back to the file
+			err := SaveUserData(users, filename)
+			if err != nil {
+				return fmt.Errorf("error saving user data: %v", err)
+			}
+
+			return nil
+		}
+	}
+	return fmt.Errorf("user with username %s not found", username)
+}
+
+func RetrieveUserData(filename string) ([]One.User, error) {
+	data, err := os.ReadFile(filename)
+	if err != nil {
+		return nil, err
+	}
+
+	var users map[string]One.User
+	err = json.Unmarshal(data, &users)
+	if err != nil {
+		return nil, err
+	}
+
+	var userList []One.User
+	for _, user := range users {
+		userList = append(userList, user)
+	}
+
+	return userList, nil
+}
+
+func searchUser(username string) (One.User, error) {
+	// Read the content of the users.json file
+	fileContent, err := os.ReadFile("users.json")
+	if err != nil {
+		return One.User{}, fmt.Errorf("error reading %s: %v", "users.json", err)
+	}
+
+	var userMap map[string]One.User
+	err = json.Unmarshal(fileContent, &userMap)
+	if err != nil {
+		return One.User{}, fmt.Errorf("error decoding JSON: %v", err)
+	}
+
+	if userData, ok := userMap[username]; ok {
+		return userData, nil
+	}
+
+	return One.User{}, nil // No error, but user not found
+}
 func checkAdmin(usernameToCheck string) bool {
 	// Read JSON file
 	file, err := os.ReadFile("users.json")
@@ -41,8 +97,7 @@ func checkAdmin(usernameToCheck string) bool {
 	}
 
 	// Check if the username exists and has admin privileges
-	user, exists := users[usernameToCheck]
-	fmt.Println(user)
+	_, exists := users[usernameToCheck]
 	if !exists {
 		fmt.Println(" Username not found")
 		return false
@@ -156,6 +211,24 @@ func UpdateUserCredentials(name, oldPassword, newPassword string) error {
 		if err != nil {
 			return err
 		}
+	}
+
+	return nil
+}
+func SaveUserData(users []One.User, filename string) error {
+	userMap := make(map[string]One.User)
+	for _, user := range users {
+		userMap[user.Username] = user
+	}
+
+	data, err := json.MarshalIndent(userMap, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	err = os.WriteFile(filename, data, 0644)
+	if err != nil {
+		return err
 	}
 
 	return nil

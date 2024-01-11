@@ -404,10 +404,91 @@ func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 		Logged: logged,
 		Admin:  IsAdmin,
 	}
-	fmt.Println(IsAdmin)
 	initTemplate.Temp.ExecuteTemplate(w, "admin", data)
 }
 
+func DisplayAdminAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	if !IsAdmin {
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
+		return
+	}
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "adminadmin", data)
+}
+
+func DisplayGestionAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	if !IsAdmin {
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
+		return
+	}
+	user := r.FormValue("username")
+	userData, err := searchUser(user)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	data := One.CombinedData{
+		Result: userData,
+		Cat:    username,
+		Logged: logged,
+	}
+	err = initTemplate.Temp.ExecuteTemplate(w, "adminchoix", data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+}
+
+func DisplaySelectionAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+		Admin:  IsAdmin,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "adminadmin", data)
+}
+func DisplayGestionSelectionAdmin(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	if !IsAdmin {
+		http.Redirect(w, r, "/Home", http.StatusFound)
+	}
+	user := r.FormValue("username")
+	admin := r.FormValue("admin")
+	filename := "users.json"
+	users, err := RetrieveUserData(filename)
+	if err != nil {
+		fmt.Println("Error retrieving user data:", err)
+		return
+	}
+
+	err = UpdateAdminByUsername(users, filename, user, admin)
+	if err != nil {
+		fmt.Println("Error updating admin value:", err)
+		return
+	}
+
+	fmt.Println("Admin value updated and data saved successfully.")
+
+	http.Redirect(w, r, "/Home", http.StatusFound)
+}
 func DisplayAdminDelete(w http.ResponseWriter, r *http.Request) {
 	if !logged {
 		http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -501,7 +582,6 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	searchResults := FindInfoByName(search)
-	fmt.Println(searchResults)
 	data := One.CombinedData{
 		Result: searchResults,
 		Cat:    username,

@@ -1,4 +1,4 @@
-{{define "admin"}}
+{{define "adminadmin"}}
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -69,13 +69,11 @@
       </div>
     </header>
     <section>
-      <a href="/admin/newChar"><button class="nouveau-personnage">Nouveau personnage</button></a>
-      <a href="/admin/newArc"><button class="nouvelle-arc">Nouvelle Arc</button></a>
-      <a href="/admin/newEvent"><button class="nouvelle-event">Nouvelle Event</button></a>
-       {{if .Admin}} 
-      <a href="/admin/delete"><button class="supprimer-article">Supprimer un article</button></a>
-      <a href="/admin/admin"><button class="modifier-compte">Modifier un compte</button></a>
-       {{end}}
+        <form action="/admin/GestionAdmin" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit" class="transitionButton">Search</button>
+          </form>
   </section>
     <footer></footer>
   </body>
