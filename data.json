@@ -232,9 +232,10 @@
         ],
         "Persos": [
             {
-                "affiche": "../static/img/affiches-persos/affiche-luffy.png",
                 "id": "Persos/Monkey D. Luffy",
                 "img": "../static/img/imgpersos/Luffy.jpg",
+                "affiche": "../static/img/affiches-persos/affiche-luffy.png",
+                "drapeau": "",
                 "name": "Luffy",
                 "specs": {
                     "fullName": "Monkey D. Luffy",
@@ -256,6 +257,7 @@
                 "name": "Zoro",
                 "img": "../static/img/imgpersos/Zoro.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-zoro.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Roronoa Zoro",
                     "prime": "1.111.000.000",
@@ -276,6 +278,7 @@
                 "name": "Sanji",
                 "img": "../static/img/imgpersos/Sanji.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sanji.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Vinsmoke Sanji",
                     "prime": "1.032.000.000",
@@ -296,6 +299,7 @@
                 "name": "Nami",
                 "img": "../static/img/imgpersos/Nami.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-nami.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Nami",
                     "prime": "366.000.000",
@@ -316,6 +320,7 @@
                 "name": "Usopp",
                 "img": "../static/img/imgpersos/Usopp.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-usopp.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Usopp",
                     "prime": "500.000.000",
@@ -336,6 +341,7 @@
                 "name": "Robin",
                 "img": "../static/img/imgpersos/Robin.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-robin.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Nico Robin",
                     "prime": "930.000.000",
@@ -356,6 +362,7 @@
                 "name": "Chopper",
                 "img": "../static/img/imgpersos/Chopper.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-chopper.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Tony Tony Chopper",
                     "prime": "1.000",
@@ -367,8 +374,8 @@
                         "histoire": "Originaire de Drum Island, Chopper a mangé le Fruit du Démon Hito Hito no Mi, modèle Renne. Après avoir rejoint l'équipage de Luffy, il a développé ses compétences médicales et a joué un rôle crucial dans de nombreuses aventures. Son rêve est de devenir un médecin accompli et d'explorer le monde médical pour aider les autres.",
                         "personalité": "Chopper a une personnalité innocente et compatissante.",
                         "role": "Médecin des Pirates du Chapeau de Paille, Chopper utilise ses compétences médicales et ses transformations pour aider l'équipage."
-                    },
-                    "age": 17
+                    }
+
                 }
             },
             {
@@ -376,6 +383,7 @@
                 "name": "Brook",
                 "img": "../static/img/imgpersos/Brook.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-brook.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Brook",
                     "prime": "383.000.000",
@@ -387,8 +395,7 @@
                         "histoire": "Autrefois un pirate qui a mangé le Fruit du Démon Yomi Yomi no Mi, Brook est maintenant le musicien joyeux de l'équipage de Luffy. Il a rejoint l'équipage après que Luffy l'a aidé à récupérer son ombre et à retrouver sa forme physique. Brook a également joué un rôle clé lors de l'incident à Thriller Bark et a continué à divertir l'équipage avec sa musique.",
                         "personalité": "Brook a une personnalité joyeuse malgré sa nature de squelette.",
                         "role": "Musicien des Pirates du Chapeau de Paille, Brook apporte une touche musicale à l'équipage."
-                    },
-                    "age": 90
+                    }
                 }
             },
             {
@@ -396,6 +403,7 @@
                 "name": "Franky",
                 "img": "../static/img/imgpersos/Franky.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-franky.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Franky",
                     "prime": "394.000.000",
@@ -407,8 +415,7 @@
                         "histoire": "Autrefois connu sous le nom de Cutty Flam, Franky a modifié son propre corps pour devenir un cyborg. Il est devenu le charpentier naval des Pirates du Chapeau de Paille et a contribué à la construction du Thousand Sunny. Franky a joué un rôle crucial dans de nombreuses batailles, utilisant ses capacités mécaniques et son arsenal d'attaques pour défendre l'équipage.",
                         "personalité": "Franky a une personnalité exubérante et est passionné par la construction navale.",
                         "role": "Charpentier naval des Pirates du Chapeau de Paille, Franky est responsable de la construction et de l'entretien du Thousand Sunny."
-                    },
-                    "age": 36
+                    }
                 }
             },
             {
@@ -416,6 +423,7 @@
                 "name": "Jinbe",
                 "img": "../static/img/imgpersos/Jinbe.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-jinbe.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Jinbe",
                     "prime": "1.100.000.000",
@@ -427,8 +435,7 @@
                         "histoire": "Ancien capitaine des Pirates du Soleil, Jinbe a rejoint les Pirates du Chapeau de Paille en tant que timonier. Il est un expert en arts martiaux, utilisant le Karaté des Hommes-Poissons, et a joué un rôle crucial dans de nombreuses batailles. Jinbe est également connu pour sa loyauté envers Luffy et son équipage.",
                         "personalité": "Jinbe a une personnalité calme et sage, et il est connu pour son honnêteté et sa loyauté.",
                         "role": "Timonier des Pirates du Chapeau de Paille, Jinbe est un expert en arts martiaux et possède une grande sagesse."
-                    },
-                    "age": 46
+                    }
                 }
             },
             {
@@ -436,6 +443,7 @@
                 "name": "Ace",
                 "img": "../static/img/imgpersos/Ace.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-ace.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Portgas D. Ace",
                     "prime": "550.000.000",
@@ -447,8 +455,7 @@
                         "histoire": "Frère adoptif de Luffy et fils de Gol D. Roger, Ace a poursuivi son propre chemin en tant que pirate. Il a rejoint l'équipage de Barbe Blanche et est devenu l'un des commandants. Son histoire tragique s'est terminée lors de la guerre à Marineford, où il a sacrifié sa vie pour protéger Luffy.",
                         "personalité": "Ace avait une personnalité énergique et une grande détermination.",
                         "role": "Ancien commandant de la 2e division de l'équipage de Barbe Blanche."
-                    },
-                    "age": 20
+                    }
                 }
             },
             {
@@ -456,6 +463,7 @@
                 "name": "Crocodile",
                 "img": "../static/img/imgpersos/Crocodile.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-crocodile.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Sir Crocodile",
                     "prime": "1.965.000.000",
@@ -467,8 +475,7 @@
                         "histoire": "Crocodile a été le président secret de Baroque Works et a manipulé l'île d'Alabasta. Il a été vaincu par Luffy lors de l'Arc Alabasta. Plus tard, il a été révélé comme un ancien Capitaine Corsaire et a continué à jouer un rôle dans l'ombre.",
                         "personalité": "Crocodile est impitoyable, manipulateur et assoiffé de pouvoir.",
                         "role": "Ancien président de Baroque Works et antagoniste principal de l'Arc Alabasta."
-                    },
-                    "age": 44
+                    }
                 }
             },
             {
@@ -476,6 +483,7 @@
                 "name": "Kidd",
                 "img": "../static/img/imgpersos/Kidd.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-kid.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Eustass Kidd",
                     "prime": "3.000.000.000",
@@ -487,8 +495,7 @@
                         "histoire": "Kidd est le capitaine des Kidd Pirates et est devenu célèbre pour sa violence et son ambition. Il est l'un des Onze Supernovas qui ont émergé lors de l'ellipse après le saut temporel. Kidd a défendu son indépendance et a eu des affrontements notables avec d'autres pirates et la Marine.",
                         "personalité": "Kidd est connu pour sa personnalité violente, son ambition dévorante et son refus de s'incliner devant d'autres pirates.",
                         "role": "Capitaine des Kidd Pirates, Kidd est l'un des Onze Supernovas et un supernova notoire."
-                    },
-                    "age": 27
+                    }
                 }
             },
             {
@@ -496,6 +503,7 @@
                 "name": "Law",
                 "img": "../static/img/imgpersos/Law.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-law.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Trafalgar D. Water Law",
                     "prime": "3.000.000.000",
@@ -507,8 +515,7 @@
                         "histoire": "Law a émergé comme l'un des Onze Supernovas après le saut temporel. Il est devenu un membre clé de l'Alliance des Pirates de Chapeau de Paille et a joué un rôle majeur dans l'intrigue de Punk Hazard et Dressrosa. Law a des motivations complexes liées à son Fruit du Démon et à son passé mystérieux.",
                         "personalité": "Law a une personnalité calme et stratégique, mais peut être impitoyable envers ses ennemis. Il a un profond sens de l'honneur.",
                         "role": "Capitaine des Heart Pirates, Law est un membre clé de l'Alliance des Pirates de Chapeau de Paille et l'un des Onze Supernovas."
-                    },
-                    "age": 26
+                    }
                 }
             },
             {
@@ -516,6 +523,7 @@
                 "name": "Chaelotte",
                 "img": "../static/img/imgpersos/Katakuri.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-katakuri.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Charlotte Katakuri",
                     "prime": "1.057.000.000",
@@ -527,8 +535,7 @@
                         "histoire": "Katakuri est l'un des fils de Big Mom et est l'un des commandants les plus puissants de l'équipage. Il a combattu Luffy à Whole Cake Island, montrant une force exceptionnelle. Malgré son image imperturbable, Katakuri a des aspects de sa personnalité qui le rendent plus complexe et humain.",
                         "personalité": "Katakuri est calme, imperturbable et perfectionniste, mais cache son visage en raison de son complexe d'infériorité lié à sa bouche.",
                         "role": "Commandant sucré de la Big Mom Pirates, Katakuri est l'un des Three Sweet Commanders et l'un des fils de Big Mom."
-                    },
-                    "age": 48
+                    }
                 }
             },
             {
@@ -536,6 +543,7 @@
                 "name": "Sabo",
                 "img": "../static/img/imgpersos/Sabo.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sabo.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Sabo",
                     "prime": "602.000.000",
@@ -547,8 +555,7 @@
                         "histoire": "Ami d'enfance de Luffy et Ace, Sabo a été présumé mort pendant de nombreuses années. Cependant, il a survécu et a rejoint l'Armée Révolutionnaire. Après la mort d'Ace, Sabo a mangé le Mera Mera no Mi et est devenu un membre clé de l'équipage de Dragon.",
                         "personalité": "Sabo est intelligent, stratégique et dévoué à la cause de la Révolution. Il a une forte détermination à protéger ses proches.",
                         "role": "Chef en second de l'Armée Révolutionnaire et membre clé de l'équipage de Dragon."
-                    },
-                    "age": 24
+                    }
                 }
             },
             {
@@ -556,6 +563,7 @@
                 "name": "Baggy",
                 "img": "../static/img/imgpersos/Baggy.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-baggy.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Baggy le Clown",
                     "prime": "3.189.000.000",
@@ -567,8 +575,7 @@
                         "histoire": "Baggy était autrefois membre de l'équipage de Gol D. Roger. Il a acquis le Bara Bara no Mi et est devenu le capitaine des Baggy Pirates. Bien qu'il ait initialement été présenté comme un adversaire comique pour Luffy, Baggy a continué à jouer un rôle dans plusieurs arcs de l'histoire.",
                         "personalité": "Baggy est excentrique, opportuniste et aime être au centre de l'attention. Il a une histoire passée avec Shanks le Roux.",
                         "role": "Capitaine des Baggy Pirates et ancien membre de l'équipage de Roger."
-                    },
-                    "age": 39
+                    }
                 }
             },
             {
@@ -576,6 +583,7 @@
                 "name": "Kaido",
                 "img": "../static/img/imgpersos/Kaido.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-kaido.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Le Roi des Bêtes Kaido",
                     "prime": "4.611.100.000",
@@ -596,6 +604,7 @@
                 "name": "Big Mom",
                 "img": "../static/img/imgpersos/BigMom.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-big-mom.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Charlotte Linlin, surnommée Big Mom",
                     "prime": "4.388.000.000",
@@ -616,6 +625,7 @@
                 "name": "Shanks",
                 "img": "../static/img/imgpersos/Shanks.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-shanks.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Shanks Le Roux",
                     "prime": "4.048.900.000",
@@ -636,6 +646,7 @@
                 "name": "Teach",
                 "img": "../static/img/imgpersos/BarbeNoire.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-barbe-noire.png",
+                "drapeau": "",
                 "specs": {
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
                     "prime": "3.996.000.000",
@@ -656,6 +667,7 @@
                 "name": "Mihawk",
                 "img": "../static/img/imgpersos/Mihawk.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-mihawk.png",
+                "drapeau": "",
                 "specs": {
                   "fullName": "Dracule Mihawk",
                   "prime": "3.590.000.000",
@@ -673,6 +685,7 @@
                 "name":"Barbe Blanche" ,
                 "img": "../static/img/imgpersos/EdwardNewgate.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-barbe-blanche.png",
+                "drapeau": "",
                 "specs": {
                   "fullName": "Edward Newgate",
                   "prime": "5.046.000.000",
