@@ -393,7 +393,7 @@ func UpdateChar(name string, img string, affiche string, drapeau string, fullnam
 	return nil
 }
 
-func UpdateArc(name string, img string, episode string, chapitre string, desc string) error {
+func UpdateArc(name string, intro string, img string, affiche string, episode string, chapitre string, desc string) error {
 	// Read JSON data from file
 	fileData, err := os.ReadFile("data.json")
 	if err != nil {
@@ -415,7 +415,9 @@ func UpdateArc(name string, img string, episode string, chapitre string, desc st
 	newArc := map[string]interface{}{
 		"id":             newID,
 		"name":           name,
+		"intro":          intro,
 		"img":            img,
+		"affiche":        affiche,
 		"épisodesAnimé":  episode,
 		"chapitresManga": chapitre,
 		"description":    desc,

@@ -91,8 +91,6 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 	name := r.FormValue("arcName")
 	ext := filepath.Ext(handler.Filename)
 	newFileName := name + ext
-	// Create the file in the destination directory
-	// Change the file path as per your directory structure
 	filePath := filepath.Join("assets", "img", "photoarcs", newFileName)
 	dst, err := os.Create(filePath)
 	if err != nil {
@@ -108,16 +106,42 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error copying the file", http.StatusInternalServerError)
 		return
 	}
+	file, handler, err = r.FormFile("arcAffiche")
+	if err != nil {
+		// Handle error
+		fmt.Println("Error retrieving the arcImage:", err)
+		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+	nameAffiche := r.FormValue("arcAffiche")
+	ext = filepath.Ext(handler.Filename)
+	newFileNameAffiche := nameAffiche + ext
+	filePath = filepath.Join("assets", "img", "affiches-arcs", newFileNameAffiche)
+	dst, err = os.Create(filePath)
+	if err != nil {
+		// Handle error
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return
+	}
+	defer dst.Close()
 
+	// Copy the file to the destination directory
+	if _, err = io.Copy(dst, file); err != nil {
+		// Handle error
+		http.Error(w, "Error copying the file", http.StatusInternalServerError)
+		return
+	}
 	// Once the file is saved, retrieve other form data and call the function to update the character
-
+	intro := r.FormValue("arcIntro")
 	ImgPath := "/static/img/photoarcs/" + newFileName
+	AffichePatch := "/static/img/affiches-arcs/" + newFileNameAffiche
 	episode := r.FormValue("arcEpisodeAnime")
 	chapitre := r.FormValue("arcChapitreManga")
 	desc := r.FormValue("arcDescription")
 
 	// Call the function to update arc passing the file path as img
-	if err := UpdateArc(name, ImgPath, episode, chapitre, desc); err != nil {
+	if err := UpdateArc(name, intro, AffichePatch, ImgPath, episode, chapitre, desc); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
