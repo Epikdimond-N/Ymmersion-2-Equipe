@@ -440,8 +440,8 @@ func FindInfoByName(search string) []One.SearchResult {
 					categorie := getCategorieByID(character.ID)
 					image := getImageByID(character.ID)
 					description := getDescriptionByID(character.ID)
-
 					searchResult := One.SearchResult{
+						Affiche:     character.Affiche,
 						Categorie:   categorie,
 						ID:          character.ID,
 						Image:       image,

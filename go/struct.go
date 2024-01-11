@@ -19,7 +19,7 @@ type Data struct {
 	} `json:"categories"`
 }
 type SearchResult struct {
-	Log         User
+	Affiche     string
 	Categorie   string
 	ID          string
 	Image       string
