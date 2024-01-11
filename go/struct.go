@@ -1,5 +1,9 @@
 package request
 
+type CombinedData struct {
+	Result interface{}
+	Cat    string
+}
 type DataHome struct {
 	Categories map[string][]map[string]interface{} `json:"categories"`
 }

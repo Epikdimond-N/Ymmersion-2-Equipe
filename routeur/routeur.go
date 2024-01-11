@@ -19,6 +19,7 @@ func InitServe() {
 	http.HandleFunc("/categories", controller.DisplayCategories)                  // display categorie choice page << working
 	http.HandleFunc("/admin", controller.DisplayAdmin)                            // display admin page << working
 	http.HandleFunc("/admin/delete", controller.DisplayAdminDelete)               // display the form for delete << working
+	http.HandleFunc("/admin/delete/gestion", controller.DeleteHandler)            // delete the selecte post
 	http.HandleFunc("/admin/deleteThis", controller.DisplayAdminDeleteConf)       // display the article for confirmation for deleting << need update
 	http.HandleFunc("/register", controller.RegisterHandler)                      // creation de compte << working
 	http.HandleFunc("/confirmRegister", controller.ConfirmRegisterHandler)        // ecrit dans le json user.json  // gestion de creation de compte << working
