@@ -1,7 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-}
 
 @keyframes zoom {
     0%{
@@ -20,6 +16,18 @@
         transform: scale(1)
     }
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contentall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .h-link{
     text-decoration: none;
     color: #fff;
@@ -94,7 +102,7 @@ footer{
     /* background-image: url("/static/img/categories/back-footer.png"); */
     background-image: url("/static/img/categories/back-bateaux2.png");
     background-position: top;
-    background-size: 2500px;
+    background-size: 3000px;
 }
 
 a{

@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+.contentall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .h-link{
     text-decoration: none;
     color: #fff;
@@ -98,4 +104,11 @@ a button.supprimer-article {
 
 a button.modifier-compte {
     background-image: url('/static/img/button.jpg');
+}
+footer{
+    height: 30vh;
+    width: 100vw;
+    background-image: url("/static/img/categories/back-bateaux2.png");
+    background-position: top;
+    background-size: 3000px;
 }
