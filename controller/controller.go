@@ -214,11 +214,10 @@ func DisplayPerso(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	fmt.Println(ToSend.Specs.Drapeau)
-	fmt.Println(ToSend.Specs)
-
 	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
 }
+
+
 func DisplayArc(w http.ResponseWriter, r *http.Request) {
 	// Retrieve the arc ID from the URL query parameter
 	arcID := r.URL.Query().Get("id")
@@ -237,6 +236,8 @@ func DisplayArc(w http.ResponseWriter, r *http.Request) {
 	}
 	initTemplate.Temp.ExecuteTemplate(w, "arc", ToSend)
 }
+
+
 func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 	// Retrieve the event ID from the URL query parameter
 	eventID := r.URL.Query().Get("id")

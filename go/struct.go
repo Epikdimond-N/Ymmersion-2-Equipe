@@ -56,6 +56,7 @@ type Arc struct {
 	Affiche     string `json:"affiche"`
 	Episode     string `json:"épisodes"`
 	Chapitre    string `json:"chapitre"`
+	Intro       string `json:"intro"`
 	Description string `json:"description"`
 }
 
