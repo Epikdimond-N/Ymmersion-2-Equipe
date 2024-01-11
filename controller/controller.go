@@ -13,12 +13,15 @@ import (
 )
 
 func NewCharHandler(w http.ResponseWriter, r *http.Request) {
-	//if !logged {
-	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	//	return
-	//}
-
-	initTemplate.Temp.ExecuteTemplate(w, "newPersos", nil)
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "newPersos", data)
 }
 
 func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
@@ -76,12 +79,15 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func NewArcHandler(w http.ResponseWriter, r *http.Request) {
-	//if !logged {
-	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	//	return
-	//}
-
-	initTemplate.Temp.ExecuteTemplate(w, "newArc", nil)
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "newArc", data)
 }
 
 func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
@@ -453,8 +459,13 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 
 	searchResults := FindInfoByName(search)
 
+	data := One.CombinedData{
+		Result: searchResults,
+		Cat:    username,
+		Logged: logged,
+	}
 	// Execute the template with searchResults
-	err := initTemplate.Temp.ExecuteTemplate(w, "search", searchResults)
+	err := initTemplate.Temp.ExecuteTemplate(w, "search", data)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
