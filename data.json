@@ -18,7 +18,7 @@
                     },
                     "fullName": "Monkey D. Luffy",
                     "prime": "3.000.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                     }
                     
                 },
@@ -40,7 +40,7 @@
                     },
                     "fullName": "Roronoa Zoro",
                     "prime": "1.111.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -60,7 +60,7 @@
                     },
                     "fullName": "Vinsmoke Sanji",
                     "prime": "1.032.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -80,7 +80,7 @@
                     },
                     "fullName": "Nami",
                     "prime": "366.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -100,7 +100,7 @@
                     },
                     "fullName": "Usopp",
                     "prime": "500.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -120,7 +120,7 @@
                     },
                     "fullName": "Nico Robin",
                     "prime": "930.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -141,7 +141,7 @@
                     "age": 17,
                     "fullName": "Tony Tony Chopper",
                     "prime": "1.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -162,7 +162,7 @@
                     "age": 90,
                     "fullName": "Brook",
                     "prime": "383.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -183,7 +183,7 @@
                     "age": 36,
                     "fullName": "Franky",
                     "prime": "394.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -204,7 +204,7 @@
                     "age": 46,
                     "fullName": "Jinbe",
                     "prime": "1.100.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
                 }
             },
             {
@@ -225,7 +225,7 @@
                     "age": 20,
                     "fullName": "Portgas D. Ace",
                     "prime": "550.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/ace.jpg"
                 }
             },
             {
@@ -246,7 +246,7 @@
                     "age": 44,
                     "fullName": "Sir Crocodile",
                     "prime": "1.965.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/baroque-works.jpg"
                 }
             },
             {
@@ -267,7 +267,7 @@
                     "age": 27,
                     "fullName": "Eustass Kidd",
                     "prime": "3.000.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/kidd.jpg"
                 }
             },
             {
@@ -288,7 +288,7 @@
                     "age": 26,
                     "fullName": "Trafalgar D. Water Law",
                     "prime": "3.000.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/law.jpg"
                 }
             },
             {
@@ -309,7 +309,7 @@
                     "age": 48,
                     "fullName": "Charlotte Katakuri",
                     "prime": "1.057.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/big-mom.jpg"
                 }
             },
             {
@@ -330,7 +330,7 @@
                     "age": 24,
                     "fullName": "Sabo",
                     "prime": "602.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/sabo.jpg"
                 }
             },
             {
@@ -351,7 +351,7 @@
                     "age": 39,
                     "fullName": "Baggy le Clown",
                     "prime": "3.189.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/baggy.jpg"
                 }
             },
             {
@@ -371,7 +371,7 @@
                     },
                     "fullName": "Le Roi des Bêtes Kaido",
                     "prime": "4.611.100.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/kaido.jpg"
                 }
             },
             {
@@ -391,7 +391,7 @@
                     },
                     "fullName": "Charlotte Linlin, surnommée Big Mom",
                     "prime": "4.388.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/big-mom.jpg"
                 }
             },
             {
@@ -411,7 +411,7 @@
                     },
                     "fullName": "Shanks Le Roux",
                     "prime": "4.048.900.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/shanks.png"
                 }
             },
             {
@@ -431,7 +431,7 @@
                     },
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
                     "prime": "3.996.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/barbe-noire.jpg"
                 }
             },
             {
@@ -449,7 +449,7 @@
                     },
                     "fullName": "Dracule Mihawk",
                     "prime": "3.590.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/mihawk.png"
                 }
             },
             {
@@ -467,7 +467,7 @@
                     },
                     "fullName": "Edward Newgate",
                     "prime": "5.046.000.000",
-                    "drapeau" : ""
+                    "drapeau" : "/static/img/drapeaux/shiro-hige.jpg"
                 }
               }
               

@@ -39,6 +39,7 @@ type Specs struct {
 	FullName string  `json:"fullName"`
 	Prime    string  `json:"prime"`
 	Apropos  APropos `json:"aPropos"`
+	Drapeau  string  `json:"drapeau"`
 }
 type Character struct {
 	ID      string `json:"id"`
