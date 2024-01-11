@@ -1,101 +1,78 @@
 {{define "arc"}}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../static/css/categories.css" />
-  <title>Arc Presentation</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .character-info {
-      margin-top: 20px;
-    }
-    .info-item {
-      margin-bottom: 10px;
-    }
-    .info-label {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="menu">
-      <div class="cont">
-        <a class="h-link" href="/Home">
-          <img class="home" src="../static/img/index/home.png" alt="Home" />
-          <p>ACCUEIL</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/arc.css" />
+    <title>Arc Presentation</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="cont">
+          <a class="h-link" href="/Home">
+            <img class="home" src="../static/img/index/home.png" alt="Home" />
+            <p>ACCUEIL</p>
+          </a>
+        </div>
+        <div class="cont">
+          <a class="h-link" href="/categories">
+            <img
+              class="categories"
+              src="../static/img/index/categories.png"
+              alt="Categories"
+            />
+            <p>CATEGORIES</p>
+          </a>
+        </div>
+        <a class="h-link" href="/admin">
+          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
         </a>
       </div>
-      <div class="cont">
-        <a class="h-link" href="/categories">
-          <img
-            class="categories"
-            src="../static/img/index/categories.png"
-            alt="Categories"
-          />
-          <p>CATEGORIES</p>
-        </a>
-      </div>
-      <a class="h-link" href="/admin">
-        <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
-      </a>
-    </div>
-    <img
-      class="logo"
-      src="../static/img/index/logo.png"
-      alt="Logo One Piece"
-    />
+      <img
+        class="logo"
+        src="../static/img/index/logo.png"
+        alt="Logo One Piece"
+      />
 
-    <div class="menu">
-      <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-      <form action="/search" method="get">
-        <input
-          type="text"
-          id="search"
-          name="name"
-          placeholder="Cherchez le One Piece !"
-        />
-      </form>
-      <div class="cont">
-        <a class="h-link" href="/login">
-          <img
-            class="login"
-            src="../static/img/index/login.png"
-            alt="Login"
+      <div class="menu">
+        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+        <form action="/search" method="get">
+          <input
+            type="text"
+            id="search"
+            name="name"
+            placeholder="Cherchez le One Piece !"
           />
-          <p>LOGIN</p>
-        </a>
+        </form>
+        <div class="cont">
+          <a class="h-link" href="/login">
+            <img
+              class="login"
+              src="../static/img/index/login.png"
+              alt="Login"
+            />
+            <p>LOGIN</p>
+          </a>
+        </div>
       </div>
-    </div>
-  </header>
-  <div class="container">
-    <h1>Arc Presentation</h1>
-    <div class="character-info">
-      <h2>Arc Details</h2>
-      <div class="info-item">
-        <span class="info-label">Name: {{.Name}}</span>
+    </header>
+    <section>
+      <div class="infos">
+        <p>{{.Intro}}<br /><br />{{.Description}}</p>
+        <p></p>
       </div>
-      <div class="info-item">
-        <img class="info-label" src="{{.Img}}" alt="affiche arc" />
+      <div class="arc">
+        <p>
+          {{.Name}} <br /><br />
+          <img src="{{.Img}}" alt="Image {{.Name}}" /> <br /><br />
+          {{.Episode}} <br /><br />
+          {{.Chapitre}}
+        </p>
       </div>
-      <div class="info-item">
-        <span class="info-label">Description: {{.Description}}</span>
-      </div>
-    </div>
-  </div>
-  <footer></footer>
-</body>
+    </section>
+    <footer></footer>
+  </body>
 </html>
 {{end}}

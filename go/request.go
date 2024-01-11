@@ -93,7 +93,7 @@ func GetArcs() []Arc {
 		newArcs.Episode = Arcs.Episode
 		newArcs.Chapitre = Arcs.Chapitre
 		newArcs.Description = Arcs.Description
-
+		newArcs.Intro = Arcs.Intro
 		arc = append(arc, newArcs)
 	}
 
