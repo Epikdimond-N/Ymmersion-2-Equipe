@@ -1,5 +1,267 @@
 {
     "categories": {
+        "Arcs": [
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-romance-dawn.png",
+                "chapitresManga": "1-8",
+                "description": "Cet arc introduit Monkey D. Luffy et son rêve de devenir le Roi des Pirates. Il obtient ses pouvoirs de Fruit du Démon et commence son voyage.",
+                "id": "Arcs/Arc romance Dawn",
+                "img": "../static/img/ArcRomanceDawn.jpg",
+                "name": "Arc Romance Dawn",
+                "épisodesAnimé": "1-3"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-orange-town.png",
+                "chapitresManga": "8-21",
+                "description": "L'équipage affronte le Capitaine Baggy à Orange Town, renforçant leur amitié naissante.",
+                "id": "Arcs/Arc Orange Town",
+                "img": "../static/img/ArcOrangeTown.jpg",
+                "name": "Arc Orange Town",
+                "épisodesAnime": "4-8"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-syrup-village.png",
+                "chapitresManga": "22-41",
+                "description": "L'équipage aide Usopp à affronter les mensonges de Kuro à Syrup Village, renforçant leur détermination.",
+                "id": "Arcs/Arc Syrup Village",
+                "img": "../static/img/ArcSyrupVillage.jpg",
+                "name": "Arc Syrup Village",
+                "épisodesAnime": "9-18"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-baratie.png",
+                "chapitresManga": "42-68",
+                "description": "L'équipage rejoint le restaurant flottant Baratie, où ils font face à Don Krieg. Cet arc présente Sanji, le futur cuisinier de l'équipage.",
+                "id": "Arcs/Arc Baratie",
+                "img": "../static/img/ArcBaratie.jpg",
+                "name": "Arc Baratie",
+                "épisodesAnime": "19-30"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-arlong-park.png",
+                "chapitresManga": "69-95",
+                "description": "Les Pirates du Chapeau de Paille s'allient à Nami pour libérer son village natal d'Arlong. Cet arc aborde des thèmes de l'amitié et de la liberté.",
+                "id": "Arcs/Arc Arlong Park",
+                "img": "../static/img/ArcArlongPark.jpg",
+                "name": "Arc Arlong Park",
+                "épisodesAnime": "31-44"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-logue-town.png",
+                "chapitresManga": "96-100",
+                "description": "L'équipage atteint Loguetown, où Luffy a son premier affrontement avec l'Amiral Smoker. Des éléments du passé de Luffy sont révélés.",
+                "id": "Arcs/Arc Loguetown",
+                "img": "../static/img/ArcLoguetown.jpg",
+                "name": "Arc Loguetown",
+                "épisodesAnime": "45-48"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-drum.png",
+                "chapitresManga": "101-142",
+                "description": "L'équipage atteint Drum Island et rencontre le Docteur Hiluluk et son apprenti Chopper. Cet arc met en lumière la recherche d'un médecin pour l'équipage.",
+                "id": "Arcs/Arc Ile de Drum",
+                "img": "../static/img/ArcIleDeDrum.jpg",
+                "name": "Arc Île de Drum (Drum Island)",
+                "épisodesAnime": "78-91"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-alabasta.png",
+                "chapitresManga": "155-217",
+                "description": "Luffy et son équipage se rendent à Alabasta pour arrêter Crocodile et sauver le royaume du sable. L'arc explore des thèmes de conspiration politique et de loyauté.",
+                "id": "Arcs/Arc Alabasta",
+                "img": "../static/img/ArcAlabasta.jpg",
+                "name": "Arc Alabasta",
+                "épisodesAnime": "92-130"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-jaya.png",
+                "chapitresManga": "218-236",
+                "description": "L'équipage découvre des informations sur Skypiea et rencontre les Bellamy Pirates à Jaya. Cet arc prépare le terrain pour les aventures à venir.",
+                "id": "Arcs/Arc Jaya",
+                "img": "../static/img/ArcJaya.jpg",
+                "name": "Arc Jaya",
+                "épisodesAnime": "144-152"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-skypiea.png",
+                "chapitresManga": "237-302",
+                "description": "Luffy et son équipage atteignent Skypiea, une île céleste, et affrontent Ener, un homme avec des pouvoirs de Fruit du Démon. Cet arc explore la recherche du trésor de Skypiea.",
+                "id": "Arcs/Arc Skypiea",
+                "img": "../static/img/ArcSkypiea.jpg",
+                "name": "Arc Skypiea",
+                "épisodesAnime": "153-195"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-water-seven.png",
+                "chapitresManga": "303-441",
+                "description": " L'équipage arrive à Water Seven, où des tensions émergent, conduisant à la tragédie du Merry Go et à la confrontation avec le CP9. Cet arc explore les sacrifices nécessaires pour réaliser les rêves.",
+                "id": "Arcs/Arc Water Seven",
+                "img": "../static/img/ArcWaterSeven.jpg",
+                "name": "Arc Water Seven",
+                "épisodesAnime": "207-263"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-enies-lobby.png",
+                "chapitresManga": "442-490",
+                "description": "L'équipage continue sa lutte à Enies Lobby pour sauver Nico Robin. Les liens d'amitié sont mis à l'épreuve, et des moments épiques se déroulent.",
+                "id": "Arcs/Arc Enies Lobby",
+                "img": "../static/img/ArcEniesLobby.jpg",
+                "name": "Arc Enies Lobby",
+                "épisodesAnime": "264-312"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-thriller-bark.png",
+                "chapitresManga": "490-541",
+                "description": "L'équipage atterrit sur l'île effrayante de Thriller Bark, où ils rencontrent Gecko Moria et son armée de zombies. Cet arc mêle horreur et comédie.",
+                "id": "Arcs/Arc Thriller Bark",
+                "img": "../static/img/ArcThrillerBark.jpg",
+                "name": "Arc Thriller Bark",
+                "épisodesAnime": "337-381"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-sabaody.png",
+                "chapitresManga": "490-513",
+                "description": "L'équipage atteint l'archipel Sabaody, où les tensions montent avec les Nobles Mondiaux, culminant avec l'incident de l'Amiral Kizaru. L'arc explore les thèmes de la discrimination et de l'injustice.",
+                "id": "Arcs/Arc Archipel Sabaody",
+                "img": "../static/img/ArcArchipelSabaody.jpg",
+                "name": "Arc Archipel Sabaody",
+                "épisodesAnime": "385-405"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-ile-des-hommes-poissons.png",
+                "chapitresManga": "603-653",
+                "description": "L'équipage explore Fish-Man Island, où des conflits entre humains et hommes-poissons éclatent. L'arc aborde des thèmes de racisme et d'acceptation.",
+                "id": "Arcs/Arc Ile des Hommes-Poissons",
+                "img": "../static/img/ArcIleDesHommesPoissons.jpg",
+                "name": "Arc Île des Hommes-Poissons (Fish-Man Island)",
+                "épisodesAnime": "517-574"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-punk-hazard.png",
+                "chapitresManga": "654-699",
+                "description": "L'équipage atteint Punk Hazard, une île dévastée par les expériences du scientifique fou Caesar Clown. Les mystères du passé et du Gouvernement Mondial sont révélés.",
+                "id": "Arcs/Arc Punk Hazard",
+                "img": "../static/img/ArcPunkHazard.jpg",
+                "name": "Arc Punk Hazard",
+                "épisodesAnime": "579-625"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-dressrosa.png",
+                "chapitresManga": "700-801",
+                "description": "L'équipage se retrouve à Dressrosa, où ils affrontent le cruel Doflamingo. Les liens familiaux, les conflits politiques, et la puissance des Fruits du Démon sont au cœur de cet arc.",
+                "id": "Arcs/Arc Dressrosa",
+                "img": "../static/img/ArcDressrosa.jpg",
+                "name": "Arc Dressrosa",
+                "épisodesAnime": "629-746"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-zou.png",
+                "chapitresManga": "802-824",
+                "description": "L'équipage découvre l'île de Zou, portant les cicatrices de la guerre. Ils se lancent dans une quête pour atteindre Wano Kuni et sauver Sanji.",
+                "id": "Arcs/Arc Zou",
+                "img": "../static/img/ArcZou.jpg",
+                "name": "Arc Zou",
+                "épisodesAnime": "751-779"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-whole-cake-island.png",
+                "chapitresManga": "825-902",
+                "description": "L'équipage s'infiltre dans l'île de Whole Cake, dirigée par Big Mom, pour sauver Sanji. Les alliances sont forgées, et des batailles épiques se déroulent.",
+                "id": "Arcs/Arc Whole Cake Island",
+                "img": "../static/img/ArcWholeCakeIsland.jpg",
+                "name": "Arc Whole Cake Island",
+                "épisodesAnime": "783-877"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-levely.png",
+                "chapitresManga": "903-908",
+                "description": "La Levely,Rêverie ou Conseil des Rois (littéralement traduit par Conseil Mondial) est un conseil formé par le Gouvernement Mondial composé des plus grands dirigeants des différents royaumes du monde qui ont rejoint le Gouvernement Mondial qui se réunissent tous les 4 ans pour 7 jours.",
+                "id": "Arcs/Arc Levely",
+                "img": "../static/img/ArcLevely.jpg",
+                "name": "Arc Levely",
+                "épisodesAnime": ""
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-wano-kuni.png",
+                "chapitresManga": "909-1057",
+                "description": "Le Pays des Wa (Wa no Kuni), ou Pays de l'Harmonie, aussi appelé « Pays Doré » est un pays peuplé essentiellement de samouraïs et de ninja",
+                "id": "Arcs/Arc Wano Kuni",
+                "img": "../static/img/ArcWanoKuni.jpg",
+                "name": "Arc Wano Kuni",
+                "épisodesAnime": "890-1085"
+            },
+            {
+                "affiche": "../static/img/affiches-arcs/affiche-egg-head.png",
+                "chapitresManga": "1058",
+                "description": "L'Arc Île d'Egg Head , également nommé Arc Île du Futur est le 32ème arc de la série One Piece et le premier arc de la Saga Finale.",
+                "id": "Arcs/Arc Egg Head",
+                "img": "../static/img/ArcEggHead.jpg",
+                "name": "Arc Egg Head",
+                "épisodesAnime": "1086"
+            }
+        ],
+        "EventsOnePiece": [
+            {
+                "affiche": "../static/img/affiches-events/affiche-execution-gol-d-roger.png",
+                "description": "L'exécution du Roi des Pirates, Gol D. Roger, marque le début de l'ère des pirates et inspire de nombreux aventuriers à chercher le One Piece.",
+                "id": "Events/L'exécution de Gol D. Roger",
+                "name": "L'exécution de Gol D. Roger"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-rencontre-whiskey-peak.png",
+                "description": "L'équipage de Luffy arrive à Whisky Peak, où ils rencontrent les agents de Baroque Works et découvrent la vérité derrière l'organisation.",
+                "id": "Events/La rencontre à Whisky Peak",
+                "name": "La rencontre à Whisky Peak"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-revelation-cp-9.png",
+                "description": "L'arc Water Seven/Enies Lobby se déploie comme une saga épique, riche en émotions et en tournants dramatiques. Du poignant duel entre Luffy et Usopp à la lutte désespérée pour sauver Nico Robin à Enies Lobby, cet arc explore les profondeurs des liens au sein de l'équipage. Les révélations sur le CP9 et les enjeux liés au gouvernement mondial ajoutent des couches complexes à l'intrigue, témoignant de la nature impitoyable du monde. Cet arc emblématique devient le théâtre d'une bataille qui va au-delà de la simple confrontation physique, symbolisant la détermination inébranlable de l'équipage à défendre les leurs.",
+                "id": "Events/L'arc Water Seven/Enies Lobby",
+                "name": "L'arc Water Seven/Enies Lobby"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-incident-sabaody.png",
+                "description": " L'archipel Sabaody devient le lieu d'un tournant crucial pour l'équipage de Chapeau de Paille. L'incident des Pacifistas et la révélation sur les esclaves humains soulignent la cruauté du Nouveau Monde. La séparation forcée des membres de l'équipage et l'introduction des Amiraux montrent la montée abrupte des enjeux. Cet épisode laissera une marque indélébile, exposant la réalité brutale de Grand Line et préparant l'équipage à une compréhension plus profonde des défis qui les attendent.",
+                "id": "Events/L'incident de l'archipel Sabaody",
+                "name": "L'incident de l'archipel Sabaody"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-marine-ford.png",
+                "description": " La guerre au sommet à Marineford se profile comme un moment tragique et épique de One Piece. Le conflit monumental entre la Marine, l'équipage de Barbe Blanche et d'autres forces majeures dépeint un tableau de chaos et de sacrifice. La mort de Barbe Blanche et l'intervention de Shanks marquent la fin d'une ère et le début d'une nouvelle phase dans l'histoire des pirates. Cette guerre spectaculaire met en lumière les intrications complexes des relations entre les personnages majeurs et les conséquences dévastatrices des conflits qui secouent Grand Line.",
+                "id": "Events/La guerre au sommet à Marineford",
+                "name": "La guerre au sommet à Marineford"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-revelation-histoire-ancienne.png",
+                "description": "Lorsque Nico Robin dévoile l'histoire ancienne à l'équipage, les pièces du puzzle de One Piece commencent à s'assembler. Les Ponéglyphes, le siècle manquant, et l'importance de l'île de Raftel prennent un sens profond. Cette révélation plonge l'équipage dans un océan de connaissances occultes, ajoutant une dimension mystique à leur quête. La compréhension de l'histoire ancienne élargit la perspective de l'équipage, les liant inexorablement à un destin intimement connecté aux mystères du monde.",
+                "id": "Events/La révélation de l'histoire ancienne",
+                "name": "La révélation de l'histoire ancienne"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-rencontre-yonkos.png",
+                "description": "L'équipage affronte Big Mom à Whole Cake Island, plongeant dans les méandres des dynamiques complexes entre les Yonko. Cette rencontre met en lumière la puissance colossale des Empereurs et les intrications politiques dans le Nouveau Monde. La mission pour sauver Sanji dévoile également des facettes inattendues des personnages clés, ajoutant des couches de complexité à l'histoire. Whole Cake Island devient ainsi le terrain d'une bataille intense, mais aussi le lieu où les fondements des grandes puissances du monde sont exposés.",
+                "id": "Events/La rencontre avec les Yonko à Whole Cake Island",
+                "name": "La rencontre avec les Yonko à Whole Cake Island"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-reverie.png",
+                "description": " L'arc Reverie prend une tournure diplomatique, réunissant les dirigeants mondiaux à Levely pour discuter de questions cruciales. Cette réunion aborde des sujets liés à Luffy et à son équipage, dévoilant les ramifications de leurs actions à l'échelle mondiale. L'arc Reverie devient une fenêtre intrigante sur les rouages politiques du monde de One Piece, montrant comment les actions d'une poignée de pirates peuvent influencer les cours des nations.",
+                "id": "Events/L'arc Reverie",
+                "name": "L'arc Reverie"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-kaido-wano.png",
+                "description": "L'arrivée de Kaido à Wano Kuni est un moment pivot qui change la donne dans l'histoire de One Piece. La puissance écrasante de Kaido, l'un des Empereurs, met en lumière les défis insurmontables auxquels l'équipage sera confronté. L'arc de Wano Kuni devient le théâtre d'une bataille épiquement complexe, impliquant des alliances improbables, des révélations surprenantes, et des enjeux qui transcendent les frontières de l'île isolée.",
+                "id": "Events/L'attaque de Kaido à Wano Kuni",
+                "name": "L'attaque de Kaido à Wano Kuni"
+            },
+            {
+                "affiche": "../static/img/affiches-events/affiche-joy-boy.png",
+                "description": "Les révélations sur Joy Boy et l'importance de la volonté des D. commencent à éclaircir les mystères entourant le One Piece. Cette découverte projette l'équipage au cœur des intrigues cosmiques qui façonnent le monde. Joy Boy devient une figure centrale, liée au destin de Luffy et à la quête du One Piece. Les implications de cette révélation transcendent le simple trésor matériel, plongeant l'équipage dans un voyage spirituel et métaphysique à travers les arcanes du monde.",
+                "id": "Events/La découverte de l'identité de Joy Boy",
+                "name": "La découverte de l'identité de Joy Boy"
+            }
+        ],
         "Persos": [
             {
                 "affiche": "../static/img/affiches-persos/affiche-luffy.png",
@@ -18,10 +280,8 @@
                     },
                     "fullName": "Monkey D. Luffy",
                     "prime": "3.000.000.000"
-                    }
-                    
-                },
-            
+                }
+            },
             {
                 "affiche": "../static/img/affiches-persos/affiche-zoro.png",
                 "id": "Persos/Roronoa Zoro",
@@ -446,288 +706,6 @@
                     "fullName": "Edward Newgate",
                     "prime": "5.046.000.000"
                 }
-              }
-              
-        ],
-
-        "Arcs": [
-            {
-                "id": "Arcs/Arc romance Dawn",
-                "name": "Arc Romance Dawn",
-                "img": "../static/img/ArcRomanceDawn.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-romance-dawn.png",
-                "épisodesAnimé": "1-3",
-                "chapitresManga": "1-8",
-                "description": "Cet arc introduit Monkey D. Luffy et son rêve de devenir le Roi des Pirates. Il obtient ses pouvoirs de Fruit du Démon et commence son voyage."
-            },
-
-            {
-                "id": "Arcs/Arc Orange Town",
-                "name": "Arc Orange Town",
-                "img": "../static/img/ArcOrangeTown.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-orange-town.png",
-                "épisodesAnime": "4-8",
-                "chapitresManga": "8-21",
-                "description": "L'équipage affronte le Capitaine Baggy à Orange Town, renforçant leur amitié naissante."
-            },
-
-            {
-                "id": "Arcs/Arc Syrup Village",
-                "name": "Arc Syrup Village",
-                "img": "../static/img/ArcSyrupVillage.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-syrup-village.png",
-                "épisodesAnime": "9-18",
-                "chapitresManga": "22-41",
-                "description": "L'équipage aide Usopp à affronter les mensonges de Kuro à Syrup Village, renforçant leur détermination."
-            },
-
-            {
-                "id": "Arcs/Arc Baratie",
-                "name": "Arc Baratie",
-                "img": "../static/img/ArcBaratie.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-baratie.png",
-                "épisodesAnime": "19-30",
-                "chapitresManga": "42-68",
-                "description": "L'équipage rejoint le restaurant flottant Baratie, où ils font face à Don Krieg. Cet arc présente Sanji, le futur cuisinier de l'équipage."
-            },
-
-            {
-                "id": "Arcs/Arc Arlong Park",
-                "name": "Arc Arlong Park",
-                "img": "../static/img/ArcArlongPark.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-arlong-park.png",
-                "épisodesAnime": "31-44",
-                "chapitresManga": "69-95",
-                "description": "Les Pirates du Chapeau de Paille s'allient à Nami pour libérer son village natal d'Arlong. Cet arc aborde des thèmes de l'amitié et de la liberté."
-            },
-
-            {
-                "id": "Arcs/Arc Loguetown",
-                "name": "Arc Loguetown",
-                "img": "../static/img/ArcLoguetown.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-logue-town.png",
-                "épisodesAnime": "45-48",
-                "chapitresManga": "96-100",
-                "description": "L'équipage atteint Loguetown, où Luffy a son premier affrontement avec l'Amiral Smoker. Des éléments du passé de Luffy sont révélés."
-            },
-
-            {
-                "id": "Arcs/Arc Ile de Drum",
-                "name": "Arc Île de Drum (Drum Island)",
-                "img": "../static/img/ArcIleDeDrum.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-drum.png",
-                "épisodesAnime": "78-91",
-                "chapitresManga": "101-142",
-                "description": "L'équipage atteint Drum Island et rencontre le Docteur Hiluluk et son apprenti Chopper. Cet arc met en lumière la recherche d'un médecin pour l'équipage."
-            },
-            
-            {
-                "id": "Arcs/Arc Alabasta",
-                "name": "Arc Alabasta",
-                "img": "../static/img/ArcAlabasta.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-alabasta.png",
-                "épisodesAnime": "92-130",
-                "chapitresManga": "155-217",
-                "description": "Luffy et son équipage se rendent à Alabasta pour arrêter Crocodile et sauver le royaume du sable. L'arc explore des thèmes de conspiration politique et de loyauté."
-            },
-
-            {
-                "id": "Arcs/Arc Jaya",
-                "name": "Arc Jaya",
-                "img": "../static/img/ArcJaya.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-jaya.png",
-                "épisodesAnime": "144-152",
-                "chapitresManga": "218-236",
-                "description": "L'équipage découvre des informations sur Skypiea et rencontre les Bellamy Pirates à Jaya. Cet arc prépare le terrain pour les aventures à venir."
-            },
-
-            {
-                "id": "Arcs/Arc Skypiea",
-                "name": "Arc Skypiea",
-                "img": "../static/img/ArcSkypiea.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-skypiea.png",
-                "épisodesAnime": "153-195",
-                "chapitresManga": "237-302",
-                "description": "Luffy et son équipage atteignent Skypiea, une île céleste, et affrontent Ener, un homme avec des pouvoirs de Fruit du Démon. Cet arc explore la recherche du trésor de Skypiea."
-            },
-            {
-                "id": "Arcs/Arc Water Seven",
-                "name": "Arc Water Seven",
-                "img": "../static/img/ArcWaterSeven.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-water-seven.png",
-                "épisodesAnime": "207-263",
-                "chapitresManga": "303-441",
-                "description": " L'équipage arrive à Water Seven, où des tensions émergent, conduisant à la tragédie du Merry Go et à la confrontation avec le CP9. Cet arc explore les sacrifices nécessaires pour réaliser les rêves."
-            },
-
-            {
-                "id": "Arcs/Arc Enies Lobby",
-                "name": "Arc Enies Lobby",
-                "img": "../static/img/ArcEniesLobby.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-enies-lobby.png",
-                "épisodesAnime": "264-312",
-                "chapitresManga": "442-490",
-                "description": "L'équipage continue sa lutte à Enies Lobby pour sauver Nico Robin. Les liens d'amitié sont mis à l'épreuve, et des moments épiques se déroulent."
-            },
-            {
-                "id": "Arcs/Arc Thriller Bark",
-                "name": "Arc Thriller Bark",
-                "img": "../static/img/ArcThrillerBark.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-thriller-bark.png",
-                "épisodesAnime": "337-381",
-                "chapitresManga": "490-541",
-                "description": "L'équipage atterrit sur l'île effrayante de Thriller Bark, où ils rencontrent Gecko Moria et son armée de zombies. Cet arc mêle horreur et comédie."
-            },
-
-            {
-                "id": "Arcs/Arc Archipel Sabaody",
-                "name": "Arc Archipel Sabaody",
-                "img": "../static/img/ArcArchipelSabaody.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-sabaody.png",
-                "épisodesAnime": "385-405",
-                "chapitresManga": "490-513",
-                "description": "L'équipage atteint l'archipel Sabaody, où les tensions montent avec les Nobles Mondiaux, culminant avec l'incident de l'Amiral Kizaru. L'arc explore les thèmes de la discrimination et de l'injustice."
-            },
-
-            {
-                "id": "Arcs/Arc Ile des Hommes-Poissons",
-                "name": "Arc Île des Hommes-Poissons (Fish-Man Island)",
-                "img": "../static/img/ArcIleDesHommesPoissons.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-ile-des-hommes-poissons.png",
-                "épisodesAnime": "517-574",
-                "chapitresManga": "603-653",
-                "description": "L'équipage explore Fish-Man Island, où des conflits entre humains et hommes-poissons éclatent. L'arc aborde des thèmes de racisme et d'acceptation."
-            },
-            {
-                "id": "Arcs/Arc Punk Hazard",
-                "name": "Arc Punk Hazard",
-                "img": "../static/img/ArcPunkHazard.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-punk-hazard.png",
-                "épisodesAnime": "579-625",
-                "chapitresManga": "654-699",
-                "description": "L'équipage atteint Punk Hazard, une île dévastée par les expériences du scientifique fou Caesar Clown. Les mystères du passé et du Gouvernement Mondial sont révélés."
-            },
-
-            {
-                "id": "Arcs/Arc Dressrosa",
-                "name": "Arc Dressrosa",
-                "img": "../static/img/ArcDressrosa.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-dressrosa.png",
-                "épisodesAnime": "629-746",
-                "chapitresManga": "700-801",
-                "description": "L'équipage se retrouve à Dressrosa, où ils affrontent le cruel Doflamingo. Les liens familiaux, les conflits politiques, et la puissance des Fruits du Démon sont au cœur de cet arc."
-            },
-
-            {
-                "id": "Arcs/Arc Zou",
-                "name": "Arc Zou",
-                "img": "../static/img/ArcZou.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-zou.png",
-                "épisodesAnime": "751-779",
-                "chapitresManga": "802-824",
-                "description": "L'équipage découvre l'île de Zou, portant les cicatrices de la guerre. Ils se lancent dans une quête pour atteindre Wano Kuni et sauver Sanji."
-            },
-            {
-                "id": "Arcs/Arc Whole Cake Island",
-                "name": "Arc Whole Cake Island",
-                "img": "../static/img/ArcWholeCakeIsland.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-whole-cake-island.png",
-                "épisodesAnime": "783-877",
-                "chapitresManga": "825-902",
-                "description": "L'équipage s'infiltre dans l'île de Whole Cake, dirigée par Big Mom, pour sauver Sanji. Les alliances sont forgées, et des batailles épiques se déroulent."
-            },
-
-            {
-                "id": "Arcs/Arc Levely",
-                "name": "Arc Levely",
-                "img": "../static/img/ArcLevely.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-levely.png",
-                "épisodesAnime": "",
-                "chapitresManga": "903-908",
-                "description": "La Levely,Rêverie ou Conseil des Rois (littéralement traduit par Conseil Mondial) est un conseil formé par le Gouvernement Mondial composé des plus grands dirigeants des différents royaumes du monde qui ont rejoint le Gouvernement Mondial qui se réunissent tous les 4 ans pour 7 jours."
-            },
-
-            {
-                "id": "Arcs/Arc Wano Kuni",
-                "name": "Arc Wano Kuni",
-                "img": "../static/img/ArcWanoKuni.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-wano-kuni.png",
-                "épisodesAnime": "890-1085",
-                "chapitresManga": "909-1057",
-                "description": "Le Pays des Wa (Wa no Kuni), ou Pays de l'Harmonie, aussi appelé « Pays Doré » est un pays peuplé essentiellement de samouraïs et de ninja"
-            },
-
-            {
-                "id": "Arcs/Arc Egg Head",
-                "name": "Arc Egg Head",
-                "img": "../static/img/ArcEggHead.jpg",
-                "affiche":"../static/img/affiches-arcs/affiche-egg-head.png",
-                "épisodesAnime": "1086",
-                "chapitresManga": "1058",
-                "description": "L'Arc Île d'Egg Head , également nommé Arc Île du Futur est le 32ème arc de la série One Piece et le premier arc de la Saga Finale."
-            }
-
-        ],
-        "EventsOnePiece": [
-            {
-                "id": "Events/L'exécution de Gol D. Roger",
-                "affiche":"../static/img/affiches-events/affiche-execution-gol-d-roger.png",
-                "name": "L'exécution de Gol D. Roger",
-                "description": "L'exécution du Roi des Pirates, Gol D. Roger, marque le début de l'ère des pirates et inspire de nombreux aventuriers à chercher le One Piece."
-            },
-            {
-                "id": "Events/La rencontre à Whisky Peak",
-                "affiche":"../static/img/affiches-events/affiche-rencontre-whiskey-peak.png",
-                "name": "La rencontre à Whisky Peak",
-                "description": "L'équipage de Luffy arrive à Whisky Peak, où ils rencontrent les agents de Baroque Works et découvrent la vérité derrière l'organisation."
-            },
-            {
-                "id": "Events/L'arc Water Seven/Enies Lobby",
-                "affiche":"../static/img/affiches-events/affiche-revelation-cp-9.png",
-                "name": "L'arc Water Seven/Enies Lobby",
-                "description": "L'arc Water Seven/Enies Lobby se déploie comme une saga épique, riche en émotions et en tournants dramatiques. Du poignant duel entre Luffy et Usopp à la lutte désespérée pour sauver Nico Robin à Enies Lobby, cet arc explore les profondeurs des liens au sein de l'équipage. Les révélations sur le CP9 et les enjeux liés au gouvernement mondial ajoutent des couches complexes à l'intrigue, témoignant de la nature impitoyable du monde. Cet arc emblématique devient le théâtre d'une bataille qui va au-delà de la simple confrontation physique, symbolisant la détermination inébranlable de l'équipage à défendre les leurs."
-            },
-            {
-                "id": "Events/L'incident de l'archipel Sabaody",
-                "affiche":"../static/img/affiches-events/affiche-incident-sabaody.png",
-                "name": "L'incident de l'archipel Sabaody",
-                "description": " L'archipel Sabaody devient le lieu d'un tournant crucial pour l'équipage de Chapeau de Paille. L'incident des Pacifistas et la révélation sur les esclaves humains soulignent la cruauté du Nouveau Monde. La séparation forcée des membres de l'équipage et l'introduction des Amiraux montrent la montée abrupte des enjeux. Cet épisode laissera une marque indélébile, exposant la réalité brutale de Grand Line et préparant l'équipage à une compréhension plus profonde des défis qui les attendent."
-            },
-            {
-                "id": "Events/La guerre au sommet à Marineford",
-                "affiche":"../static/img/affiches-events/affiche-marine-ford.png",
-                "name": "La guerre au sommet à Marineford",
-                "description": " La guerre au sommet à Marineford se profile comme un moment tragique et épique de One Piece. Le conflit monumental entre la Marine, l'équipage de Barbe Blanche et d'autres forces majeures dépeint un tableau de chaos et de sacrifice. La mort de Barbe Blanche et l'intervention de Shanks marquent la fin d'une ère et le début d'une nouvelle phase dans l'histoire des pirates. Cette guerre spectaculaire met en lumière les intrications complexes des relations entre les personnages majeurs et les conséquences dévastatrices des conflits qui secouent Grand Line."
-            },
-            {
-                "id": "Events/La révélation de l'histoire ancienne",
-                "affiche":"../static/img/affiches-events/affiche-revelation-histoire-ancienne.png",
-                "name": "La révélation de l'histoire ancienne",
-                "description": "Lorsque Nico Robin dévoile l'histoire ancienne à l'équipage, les pièces du puzzle de One Piece commencent à s'assembler. Les Ponéglyphes, le siècle manquant, et l'importance de l'île de Raftel prennent un sens profond. Cette révélation plonge l'équipage dans un océan de connaissances occultes, ajoutant une dimension mystique à leur quête. La compréhension de l'histoire ancienne élargit la perspective de l'équipage, les liant inexorablement à un destin intimement connecté aux mystères du monde."
-            },
-            {
-                "id": "Events/La rencontre avec les Yonko à Whole Cake Island",
-                "affiche":"../static/img/affiches-events/affiche-rencontre-yonkos.png",
-                "name": "La rencontre avec les Yonko à Whole Cake Island",
-                "description": "L'équipage affronte Big Mom à Whole Cake Island, plongeant dans les méandres des dynamiques complexes entre les Yonko. Cette rencontre met en lumière la puissance colossale des Empereurs et les intrications politiques dans le Nouveau Monde. La mission pour sauver Sanji dévoile également des facettes inattendues des personnages clés, ajoutant des couches de complexité à l'histoire. Whole Cake Island devient ainsi le terrain d'une bataille intense, mais aussi le lieu où les fondements des grandes puissances du monde sont exposés."
-            },
-            {
-                "id": "Events/L'arc Reverie",
-                "affiche":"../static/img/affiches-events/affiche-reverie.png",
-                "name": "L'arc Reverie",
-                "description": " L'arc Reverie prend une tournure diplomatique, réunissant les dirigeants mondiaux à Levely pour discuter de questions cruciales. Cette réunion aborde des sujets liés à Luffy et à son équipage, dévoilant les ramifications de leurs actions à l'échelle mondiale. L'arc Reverie devient une fenêtre intrigante sur les rouages politiques du monde de One Piece, montrant comment les actions d'une poignée de pirates peuvent influencer les cours des nations."
-            },
-            {
-                "id": "Events/L'attaque de Kaido à Wano Kuni",
-                "affiche":"../static/img/affiches-events/affiche-kaido-wano.png",
-                "name": "L'attaque de Kaido à Wano Kuni",
-                "description": "L'arrivée de Kaido à Wano Kuni est un moment pivot qui change la donne dans l'histoire de One Piece. La puissance écrasante de Kaido, l'un des Empereurs, met en lumière les défis insurmontables auxquels l'équipage sera confronté. L'arc de Wano Kuni devient le théâtre d'une bataille épiquement complexe, impliquant des alliances improbables, des révélations surprenantes, et des enjeux qui transcendent les frontières de l'île isolée."
-            },
-            {
-                "id": "Events/La découverte de l'identité de Joy Boy",
-                "affiche":"../static/img/affiches-events/affiche-joy-boy.png",
-                "name": "La découverte de l'identité de Joy Boy",
-                "description": "Les révélations sur Joy Boy et l'importance de la volonté des D. commencent à éclaircir les mystères entourant le One Piece. Cette découverte projette l'équipage au cœur des intrigues cosmiques qui façonnent le monde. Joy Boy devient une figure centrale, liée au destin de Luffy et à la quête du One Piece. Les implications de cette révélation transcendent le simple trésor matériel, plongeant l'équipage dans un voyage spirituel et métaphysique à travers les arcanes du monde."
             }
         ]
     }
