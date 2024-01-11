@@ -196,9 +196,13 @@ func DisplayHome(w http.ResponseWriter, r *http.Request) {
 		"RandomArcs":       randomArcs,
 		"RandomEvents":     randomEvents,
 	}
-
+	dataS := One.CombinedData{
+		Result: selectedData,
+		Cat:    username,
+		Logged: logged,
+	}
 	// Pass the selected data to the template for rendering
-	initTemplate.Temp.ExecuteTemplate(w, "index", selectedData)
+	initTemplate.Temp.ExecuteTemplate(w, "index", dataS)
 }
 
 // show only one by ID >>
@@ -219,9 +223,13 @@ func DisplayPerso(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
+	dataS := One.CombinedData{
+		Result: ToSend,
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "char", dataS)
 }
-
 
 func DisplayArc(w http.ResponseWriter, r *http.Request) {
 	// Retrieve the arc ID from the URL query parameter
@@ -239,9 +247,13 @@ func DisplayArc(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	initTemplate.Temp.ExecuteTemplate(w, "arc", ToSend)
+	dataS := One.CombinedData{
+		Result: ToSend,
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "arc", dataS)
 }
-
 
 func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 	// Retrieve the event ID from the URL query parameter
@@ -259,7 +271,13 @@ func DisplayEvent(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	initTemplate.Temp.ExecuteTemplate(w, "event", ToSend)
+
+	dataS := One.CombinedData{
+		Result: ToSend,
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "event", dataS)
 }
 
 // <<<<
@@ -288,9 +306,13 @@ func DisplayPersos(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Persos data not found", http.StatusInternalServerError)
 		return
 	}
-
+	dataS := One.CombinedData{
+		Result: persosData,
+		Cat:    username,
+		Logged: logged,
+	}
 	// Pass the selected data to the template for rendering
-	initTemplate.Temp.ExecuteTemplate(w, "selectchar", persosData)
+	initTemplate.Temp.ExecuteTemplate(w, "selectchar", dataS)
 }
 func DisplayArcs(w http.ResponseWriter, r *http.Request) {
 	file, err := os.Open("data.json")
@@ -315,9 +337,13 @@ func DisplayArcs(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Arcs data not found", http.StatusInternalServerError)
 		return
 	}
-
+	dataS := One.CombinedData{
+		Result: persosData,
+		Cat:    username,
+		Logged: logged,
+	}
 	// Pass the selected data to the template for rendering
-	err = initTemplate.Temp.ExecuteTemplate(w, "selectarc", persosData)
+	err = initTemplate.Temp.ExecuteTemplate(w, "selectarc", dataS)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
@@ -347,9 +373,13 @@ func DisplayEvents(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Events data not found", http.StatusInternalServerError)
 		return
 	}
-
+	dataS := One.CombinedData{
+		Result: persosData,
+		Cat:    username,
+		Logged: logged,
+	}
 	// Pass the selected data to the template for rendering
-	err = initTemplate.Temp.ExecuteTemplate(w, "selectevent", persosData)
+	err = initTemplate.Temp.ExecuteTemplate(w, "selectevent", dataS)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
@@ -357,46 +387,52 @@ func DisplayEvents(w http.ResponseWriter, r *http.Request) {
 }
 
 func DisplayCategories(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "categories", nil)
+	dataS := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "categories", dataS)
 }
 
 func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	// 	return
-	// }
-	// if !admin {
-	// 	http.Redirect(w, r, "/Home", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "admin", nil)
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+		Admin:  IsAdmin,
+	}
+	fmt.Println(IsAdmin)
+	initTemplate.Temp.ExecuteTemplate(w, "admin", data)
 }
 
 func DisplayAdminDelete(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	// 	return
-	// }
-	// if !admin {
-	// 	http.Redirect(w, r, "/Home", http.StatusSeeOther)
-	// 	return
-	// }
-	initTemplate.Temp.ExecuteTemplate(w, "adminDelete", nil)
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	if !IsAdmin {
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
+		return
+	}
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "adminDelete", data)
 }
 
 func DisplayAdminDeleteConf(w http.ResponseWriter, r *http.Request) {
-	// if !logged {
-	// 	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	// 	return
-	// }
-	// if !admin {
-	// 	http.Redirect(w, r, "/Home", http.StatusSeeOther)
-	// 	return
-	// }
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	if !IsAdmin {
+		http.Redirect(w, r, "/Home", http.StatusSeeOther)
+		return
+	}
 	ID := r.URL.Query().Get("id")
 	filePath := "data.json"
 
@@ -424,6 +460,8 @@ func DisplayAdminDeleteConf(w http.ResponseWriter, r *http.Request) {
 	combinedData := One.CombinedData{
 		Result: result,
 		Cat:    Cat,
+		Cat2:   username,
+		Logged: logged,
 	}
 	initTemplate.Temp.ExecuteTemplate(w, "adminConf", combinedData)
 }
@@ -448,7 +486,11 @@ func DeleteHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func NotFoundHandler(w http.ResponseWriter, r *http.Request) {
-	initTemplate.Temp.ExecuteTemplate(w, "404", nil)
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "404", data)
 }
 
 func HandleSearch(w http.ResponseWriter, r *http.Request) {
@@ -532,14 +574,13 @@ func SuccessLoginHandler(w http.ResponseWriter, r *http.Request) {
 
 	username = r.FormValue("username")
 	password = r.FormValue("password")
-	admin := r.FormValue("admin")
+	admin := checkAdmin(username)
 	user, exists := users[username]
 	if !exists || !CheckPasswordHash(password, user.Password) {
 		http.Redirect(w, r, "/login?invalid=true", http.StatusSeeOther)
 		return
 	}
-
-	if admin == "yes" {
+	if admin {
 		IsAdmin = true
 	}
 	logged = true

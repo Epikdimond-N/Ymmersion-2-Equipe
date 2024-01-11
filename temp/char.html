@@ -52,41 +52,50 @@
             />
           </form>
           <div class="cont">
-            <a class="h-link" href="/login">
-              <img
-                class="login"
-                src="../static/img/index/login.png"
-                alt="Login"
-              />
-              <p>LOGIN</p>
-            </a>
+            {{if .Logged}} 
+            <a class="h-link" href="/logout">
+            <img
+            class="login"
+            src="../static/img/index/login.png"
+            alt="Login"
+          />
+            <p>{{.Cat}}</p></a>
+          {{else}}
+          <a class="h-link" href="/login">
+          <img
+          class="login"
+          src="../static/img/index/login.png"
+          alt="Login"
+        />
+            <p>LOGIN</p></a>
+          {{end}}
           </div>
         </div>
       </header>
       <section>
         <div class="infos">
           <p>
-            ROLE : {{.Specs.Apropos.Role}}<br /><br />
-            FRUIT DU DEMON : {{.Specs.Apropos.Fruit}}<br /><br />
-            PERSONALITE : {{.Specs.Apropos.Personalité}}<br /><br />
-            APPARENCE : {{.Specs.Apropos.Apparence}}<br /><br />
-            CAPACITES : {{.Specs.Apropos.Capacités}}<br /><br />
-            HISTOIRE : {{.Specs.Apropos.Histoire}}<br /><br />
+            ROLE : {{.Result.Specs.Apropos.Role}}<br /><br />
+            FRUIT DU DEMON : {{.Result.Specs.Apropos.Fruit}}<br /><br />
+            PERSONALITE : {{.Result.Specs.Apropos.Personalité}}<br /><br />
+            APPARENCE : {{.Result.Specs.Apropos.Apparence}}<br /><br />
+            CAPACITES : {{.Result.Specs.Apropos.Capacités}}<br /><br />
+            HISTOIRE : {{.Result.Specs.Apropos.Histoire}}<br /><br />
           </p>
         </div>
         <div class="perso">
-          <img class="imgperso" src="{{.Img}}" alt="Image {{.Name}}" />
+          <img class="imgperso" src="{{.Result.Img}}" alt="Image {{.Result.Name}}" />
           <div class="nomprime">
             <p>
               <br />
-              {{.Specs.FullName}}<br /><br />
+              {{.Result.Specs.FullName}}<br /><br />
             </p>
-            <p>{{.Specs.Prime}} Berrys<br /><br /></p>
+            <p>{{.Result.Specs.Prime}} Berrys<br /><br /></p>
             <p>Drapeau d'equipage :<br /><br /></p>
             <img
               class="drapeaux"
-              src="{{.Specs.Drapeau}}"
-              alt="drapeaux {{.Name}}"
+              src="{{.Result.Specs.Drapeau}}"
+              alt="drapeaux {{.Result.Name}}"
             />
           </div>
         </div>

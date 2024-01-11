@@ -26,7 +26,7 @@ func InitServe() {
 	http.HandleFunc("/login", controller.LoginHandler)                            // possibilité de se log, page de redirection si logged = false << working
 	http.HandleFunc("/successLogin", controller.SuccessLoginHandler)              // verifé les donnés entrée et les comparer au data du json user.json << working
 	http.HandleFunc("/logout", controller.LogoutHandler)                          // reset les variable login / username / password / admin << need update
-	http.HandleFunc("/changeLogin", controller.ChangeLoginHandler)                // ouvre la possibilité de changer de username << need update
+	http.HandleFunc("/changeLogin/gestion", controller.ChangeLoginHandler)        // ouvre la possibilité de changer de username << need update
 	http.HandleFunc("/admin/newChar", controller.NewCharHandler)                  // page admin d'ajout de char << img of 10mb is ok ? << need update
 	http.HandleFunc("/admin/newArc", controller.NewArcHandler)                    // page admin d'ajout d'arc << need update
 	http.HandleFunc("/admin/newEvent", controller.NewEventHandler)                // page admin d'ajout d'event << working

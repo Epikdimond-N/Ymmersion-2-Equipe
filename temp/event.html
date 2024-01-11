@@ -8,70 +8,78 @@
   <title>Event Presentation</title>
 
 </head>
-<body>
-  <div class="contentall">
-    <header>
-  <div class="menu">
-    <div class="cont">
-      <a class="h-link" href="/Home">
-        <img class="home" src="../static/img/index/home.png" alt="Home" />
-        <p>ACCUEIL</p>
-      </a>
-    </div>
-    <div class="cont">
-      <a class="h-link" href="/categories">
-        <img
-          class="categories"
-          src="../static/img/index/categories.png"
-          alt="Categories"
-        />
-        <p>CATEGORIES</p>
-      </a>
-    </div>
-    <a class="h-link" href="/admin">
-      <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
-    </a>
-  </div>
-  <img
-    class="logo"
-    src="../static/img/index/logo.png"
-    alt="Logo One Piece"
-  />
-
-  <div class="menu">
-    <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-    <form action="/search" method="get">
-      <input
-        type="text"
-        id="search"
-        name="name"
-        placeholder="Cherchez le One Piece !"
+ <header>
+      <div class="menu">
+        <div class="cont">
+          <a class="h-link" href="/Home">
+            <img class="home" src="../static/img/index/home.png" alt="Home" />
+            <p>ACCUEIL</p>
+          </a>
+        </div>
+        <div class="cont">
+          <a class="h-link" href="/categories">
+            <img
+              class="categories"
+              src="../static/img/index/categories.png"
+              alt="Categories"
+            />
+            <p>CATEGORIES</p>
+          </a>
+        </div>
+        <a class="h-link" href="/admin">
+          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+        </a>
+      </div>
+      <img
+        class="logo"
+        src="../static/img/index/logo.png"
+        alt="Logo One Piece"
       />
-    </form>
-    <div class="cont">
-      <a class="h-link" href="/login">
-        <img
+
+      <div class="menu">
+        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+        <form action="/search" method="get">
+          <input
+            type="text"
+            id="search"
+            name="name"
+            placeholder="Cherchez le One Piece !"
+          />
+        </form>
+        <div class="cont">
+          {{if .Logged}} 
+          <a class="h-link" href="/logout">
+          <img
           class="login"
           src="../static/img/index/login.png"
           alt="Login"
         />
-        <p>LOGIN</p>
-      </a>
-    </div>
-  </div>
-</header>
-<div class="container">
+          <p>{{.Cat}}</p></a>
+        {{else}}
+        <a class="h-link" href="/login">
+        <img
+        class="login"
+        src="../static/img/index/login.png"
+        alt="Login"
+      />
+          <p>LOGIN</p></a>
+        {{end}}
+        </div>
+      </div>
+    </header>
+<body>
+  <div class="container">
     <h1>Event Presentation</h1>
     <div class="character-info">
       <h2>Event Details</h2>
       <div class="info-item">
-        <span class="info-label">Name: {{.Name}}</span>
+        <span class="info-label">Name: {{.Result.Name}}</span>
       </div>
       <div class="info-item">
-        <img class="info-label" src="{{.Img}}" alt="affiche perso" />
+        <img class="info-label" src="{{.Result.Img}}" alt="affiche perso" />
       </div>
       <div class="info-item">
-        <span class="info-label">Description: {{.Description}}</span>
+        <span class="info-label">Description: {{.Result.Description}}</span>
       </div>
       </div>
     </div>

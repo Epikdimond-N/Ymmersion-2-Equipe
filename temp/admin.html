@@ -49,14 +49,23 @@
           />
         </form>
         <div class="cont">
-          <a class="h-link" href="/login">
-            <img
-              class="login"
-              src="../static/img/index/login.png"
-              alt="Login"
-            />
-            <p>LOGIN</p>
-          </a>
+          {{if .Logged}} 
+          <a class="h-link" href="/logout">
+          <img
+          class="login"
+          src="../static/img/index/login.png"
+          alt="Login"
+        />
+          <p>{{.Cat}}</p></a>
+        {{else}}
+        <a class="h-link" href="/login">
+        <img
+        class="login"
+        src="../static/img/index/login.png"
+        alt="Login"
+      />
+          <p>LOGIN</p></a>
+        {{end}}
         </div>
       </div>
     </header>
@@ -64,8 +73,10 @@
       <a href="/admin/newChar"><button class="nouveau-personnage">Nouveau personnage</button></a>
       <a href="/admin/newArc"><button class="nouvelle-arc">Nouvelle Arc</button></a>
       <a href="/admin/newEvent"><button class="nouvelle-event">Nouvelle Event</button></a>
+       {{if .Admin}} 
       <a href="/admin/delete"><button class="supprimer-article">Supprimer un article</button></a>
       <a href="/admin/account"><button class="modifier-compte">Modifier un compte</button></a>
+       {{end}}
   </section>
     <footer></footer>
     </div>
