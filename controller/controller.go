@@ -501,7 +501,7 @@ func HandleSearch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	searchResults := FindInfoByName(search)
-
+	fmt.Println(searchResults)
 	data := One.CombinedData{
 		Result: searchResults,
 		Cat:    username,
