@@ -42,6 +42,7 @@ type APropos struct {
 type Specs struct {
 	FullName string  `json:"fullName"`
 	Prime    string  `json:"prime"`
+	Drapeau  string  `json:"drapeau"`
 	Apropos  APropos `json:"aPropos"`
 }
 type Character struct {
