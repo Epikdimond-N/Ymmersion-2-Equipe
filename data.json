@@ -17,7 +17,8 @@
                         "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line."
                     },
                     "fullName": "Monkey D. Luffy",
-                    "prime": "3.000.000.000"
+                    "prime": "3.000.000.000",
+                    "drapeau" : ""
                     }
                     
                 },
@@ -38,7 +39,8 @@
                         "role": "Premier épéiste et bras droit de Luffy dans les Pirates du Chapeau de Paille, Zoro cherche à devenir le plus grand épéiste du monde."
                     },
                     "fullName": "Roronoa Zoro",
-                    "prime": "1.111.000.000"
+                    "prime": "1.111.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -57,7 +59,8 @@
                         "role": "Cuisinier et combattant des Pirates du Chapeau de Paille, Sanji poursuit son rêve de découvrir l'All Blue."
                     },
                     "fullName": "Vinsmoke Sanji",
-                    "prime": "1.032.000.000"
+                    "prime": "1.032.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -76,7 +79,8 @@
                         "role": "Navigatrice des Pirates du Chapeau de Paille, Nami aspire à cartographier le monde et à dessiner une carte complète."
                     },
                     "fullName": "Nami",
-                    "prime": "366.000.000"
+                    "prime": "366.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -95,7 +99,8 @@
                         "role": "Tireur d'élite des Pirates du Chapeau de Paille, Usopp aspire à devenir un valeureux guerrier des mers."
                     },
                     "fullName": "Usopp",
-                    "prime": "500.000.000"
+                    "prime": "500.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -114,7 +119,8 @@
                         "role": "Archéologue des Pirates du Chapeau de Paille, Robin recherche des informations sur le Siècle Manquant et l'histoire ancienne."
                     },
                     "fullName": "Nico Robin",
-                    "prime": "930.000.000"
+                    "prime": "930.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -134,7 +140,8 @@
                     },
                     "age": 17,
                     "fullName": "Tony Tony Chopper",
-                    "prime": "1.000"
+                    "prime": "1.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -154,7 +161,8 @@
                     },
                     "age": 90,
                     "fullName": "Brook",
-                    "prime": "383.000.000"
+                    "prime": "383.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -174,7 +182,8 @@
                     },
                     "age": 36,
                     "fullName": "Franky",
-                    "prime": "394.000.000"
+                    "prime": "394.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -194,7 +203,8 @@
                     },
                     "age": 46,
                     "fullName": "Jinbe",
-                    "prime": "1.100.000.000"
+                    "prime": "1.100.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -214,7 +224,8 @@
                     },
                     "age": 20,
                     "fullName": "Portgas D. Ace",
-                    "prime": "550.000.000"
+                    "prime": "550.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -234,7 +245,8 @@
                     },
                     "age": 44,
                     "fullName": "Sir Crocodile",
-                    "prime": "1.965.000.000"
+                    "prime": "1.965.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -254,7 +266,8 @@
                     },
                     "age": 27,
                     "fullName": "Eustass Kidd",
-                    "prime": "3.000.000.000"
+                    "prime": "3.000.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -274,7 +287,8 @@
                     },
                     "age": 26,
                     "fullName": "Trafalgar D. Water Law",
-                    "prime": "3.000.000.000"
+                    "prime": "3.000.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -294,7 +308,8 @@
                     },
                     "age": 48,
                     "fullName": "Charlotte Katakuri",
-                    "prime": "1.057.000.000"
+                    "prime": "1.057.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -314,7 +329,8 @@
                     },
                     "age": 24,
                     "fullName": "Sabo",
-                    "prime": "602.000.000"
+                    "prime": "602.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -334,7 +350,8 @@
                     },
                     "age": 39,
                     "fullName": "Baggy le Clown",
-                    "prime": "3.189.000.000"
+                    "prime": "3.189.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -353,7 +370,8 @@
                         "role": "Kaido est le capitaine des Beast Pirates et l'un des Empereurs de la Mer. Il cherche constamment à défier la mort et à créer le plus grand conflit mondial."
                     },
                     "fullName": "Le Roi des Bêtes Kaido",
-                    "prime": "4.611.100.000"
+                    "prime": "4.611.100.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -372,7 +390,8 @@
                         "role": "Big Mom est la capitaine des Big Mom Pirates et fait partie des Quatre Empereurs. Elle cherche à créer un monde où toutes les races coexistent pacifiquement."
                     },
                     "fullName": "Charlotte Linlin, surnommée Big Mom",
-                    "prime": "4.388.000.000"
+                    "prime": "4.388.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -391,7 +410,8 @@
                         "role": "Capitaine des Red-Haired Pirates, Shanks est un ancien membre de l'équipage de Gol D. Roger et l'un des Quatre Empereurs."
                     },
                     "fullName": "Shanks Le Roux",
-                    "prime": "4.048.900.000"
+                    "prime": "4.048.900.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -410,7 +430,8 @@
                         "role": "Ancien membre de l'équipage de Barbe Blanche, Teach devient capitaine des Pirates de Barbe Noire et cherche à devenir le nouvel empereur."
                     },
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
-                    "prime": "3.996.000.000"
+                    "prime": "3.996.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -427,7 +448,8 @@
                         "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur."
                     },
                     "fullName": "Dracule Mihawk",
-                    "prime": "3.590.000.000"
+                    "prime": "3.590.000.000",
+                    "drapeau" : ""
                 }
             },
             {
@@ -444,7 +466,8 @@
                         "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage."
                     },
                     "fullName": "Edward Newgate",
-                    "prime": "5.046.000.000"
+                    "prime": "5.046.000.000",
+                    "drapeau" : ""
                 }
               }
               
