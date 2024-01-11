@@ -47,6 +47,8 @@ type Specs struct {
 	FullName string  `json:"fullName"`
 	Prime    string  `json:"prime"`
 	Drapeau  string  `json:"drapeau"`
+	DDC      string  `json:"ddc"`
+	Auteur   string  `json:"auteur"`
 	Apropos  APropos `json:"aPropos"`
 }
 type Character struct {
@@ -67,6 +69,8 @@ type Arc struct {
 	Chapitre    string `json:"chapitresManga"`
 	Intro       string `json:"intro"`
 	Description string `json:"description"`
+	DDC         string `json:"ddc"`
+	Auteur      string `json:"auteur"`
 }
 
 type Event struct {
@@ -74,7 +78,10 @@ type Event struct {
 	Name        string `json:"name"`
 	Img         string `json:"img"`
 	Affiche     string `json:"affiche"`
+	Intro       string `json:"intro"`
 	Description string `json:"description"`
+	DDC         string `json:"ddc"`
+	Auteur      string `json:"auteur"`
 }
 
 type Categories struct {

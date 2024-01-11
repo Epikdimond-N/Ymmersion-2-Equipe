@@ -116,6 +116,11 @@ section{
     width: 250px;
 }
 
+.auteur-ddc{
+    display:flex;
+    justify-content: flex-end;
+}
+
 footer{
     height: 30vh;
     width: 100vw;
