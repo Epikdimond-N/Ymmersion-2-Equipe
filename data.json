@@ -176,6 +176,38 @@
                 "img": "../static/img/ArcEggHead.jpg",
                 "name": "Arc Egg Head",
                 "épisodesAnime": "1086"
+            },
+            {
+                "chapitresManga": "debut-fin",
+                "description": "le debut de la fin",
+                "id": "Arcs/Le code",
+                "img": "../static/img/photoarcs/Le code",
+                "name": "Le code",
+                "épisodesAnimé": "debut-fin"
+            },
+            {
+                "chapitresManga": "debut-fin",
+                "description": "le debut de la fin",
+                "id": "Arcs/Le code",
+                "img": "../static/img/photoarcs/Le code",
+                "name": "Le code",
+                "épisodesAnimé": "debut-fin"
+            },
+            {
+                "chapitresManga": "debut-fin",
+                "description": "le debut de la fin",
+                "id": "Arcs/Le code",
+                "img": "../static/img/photoarcs/Le code",
+                "name": "Le code",
+                "épisodesAnimé": "debut-fin"
+            },
+            {
+                "chapitresManga": "debut-fin",
+                "description": "le debut de la fin",
+                "id": "Arcs/Le code",
+                "img": "../static/img/photoarcs/Le code",
+                "name": "Le code",
+                "épisodesAnimé": "debut-fin"
             }
         ],
         "EventsOnePiece": [
@@ -237,128 +269,122 @@
                 "img": "../static/img/imgpersos/Luffy.jpg",
                 "name": "Luffy",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Vêtu de son chapeau de paille emblématique, Luffy porte une tenue caractéristique et arbore une cicatrice sous son œil gauche, résultat des épreuves sur son chemin.",
+                        "capacités": "Maîtrisant le Haki, Luffy développe le puissant Haki des Rois, capable d'intimider voire d'assommer ceux de volonté plus faible. Sa force surhumaine, associée à sa physiologie caoutchouteuse, lui permet d'étirer ses membres et d'exécuter des attaques dévastatrices.",
+                        "demonFruit": "Gomu Gomu no Mi, une Fruits du Démon de type Paramecia, a transformé son corps en caoutchouc. Cette capacité offre une souplesse extraordinaire et une immunité aux attaques contondantes, tout en le rendant vulnérable aux attaques tranchantes.",
+                        "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
+                        "histoire": "Né dans l'East Blue, Luffy embarque pour son aventure après avoir mangé le Gomu Gomu no Mi par inadvertance. Capable de repousser ses limites, il s'efforce de devenir le Roi des Pirates, faisant face à des adversités impensables et formant des liens durables avec son équipage. Sa quête du One Piece dévoile une histoire épique de bravoure et de camaraderie.",
+                        "personalité": "Déterminé et optimiste, Luffy fait preuve d'une loyauté inébranlable envers ses amis, considérant son équipage comme sa famille. Sa personnalité franche et directe reflète un courage authentique, et son enthousiasme contagieux motive ceux qui l'entourent.",
+                        "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line."
+                    },
                     "fullName": "Monkey D. Luffy",
-                    "prime": "3.000.000.000",
-                    "aPropos":{
-                    "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
-                    "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line.",
-                    "demonFruit": "Gomu Gomu no Mi, une Fruits du Démon de type Paramecia, a transformé son corps en caoutchouc. Cette capacité offre une souplesse extraordinaire et une immunité aux attaques contondantes, tout en le rendant vulnérable aux attaques tranchantes.",
-                    "personalité": "Déterminé et optimiste, Luffy fait preuve d'une loyauté inébranlable envers ses amis, considérant son équipage comme sa famille. Sa personnalité franche et directe reflète un courage authentique, et son enthousiasme contagieux motive ceux qui l'entourent.", 
-                    "apparence": "Vêtu de son chapeau de paille emblématique, Luffy porte une tenue caractéristique et arbore une cicatrice sous son œil gauche, résultat des épreuves sur son chemin.",
-                    "capacités": "Maîtrisant le Haki, Luffy développe le puissant Haki des Rois, capable d'intimider voire d'assommer ceux de volonté plus faible. Sa force surhumaine, associée à sa physiologie caoutchouteuse, lui permet d'étirer ses membres et d'exécuter des attaques dévastatrices.",
-                    "histoire": "Monkey D. Luffy, le protagoniste de One Piece, a une histoire fascinante. Il a grandi dans le village de Fuschia, rêvant de devenir le Roi des Pirates. Son destin a basculé lorsqu'il a accidentellement mangé le fruit du démon Gomu Gomu, lui donnant des pouvoirs élastiques mais l'empêchant de nager. Inspiré par son idole, Shanks le Roux, Luffy part à la recherche du trésor légendaire, le One Piece. Il fonde alors l'équipage des Chapeaux de Paille, composé de membres dévoués et puissants. Luffy a affronté de redoutables ennemis, dont des Grands Corsaires et des Empereurs de la mer, pour atteindre son objectif ultime. Son courage, sa détermination et son amour pour ses amis en font un personnage emblématique et charismatique au cœur de l'épopée de One Piece."
+                    "prime": "3.000.000.000"
                     }
                     
-                }
-            },
+                },
+            
             {
-                "id": "Persos/Roronoa Zoro",
-                "name": "Zoro",
-                "img": "../static/img/imgpersos/Zoro.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-zoro.png",
+                "id": "Persos/Roronoa Zoro",
+                "img": "../static/img/imgpersos/Zoro.jpg",
+                "name": "Zoro",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Portant souvent un bandana et ses trois sabres, Zoro a une allure musclée et intimidante.",
+                        "capacités": "Expert dans le maniement du sabre, Zoro est un épéiste de classe mondiale. Il peut utiliser des techniques puissantes telles que le Santoryu (Trois sabres).",
+                        "demonFruit": "Aucun. Zoro est un maître épéiste, maniant trois sabres simultanément.",
+                        "description": " Zoro, avec ses trois cicatrices sur l'œil gauche, évoque la prestance d'un puissant épéiste. Son regard sérieux et son attitude calme cachent une détermination féroce.",
+                        "histoire": "Originaire du Village de Shimotsuki, Zoro se joint à Luffy pour réaliser son rêve de devenir le plus grand épéiste. Il accumule des cicatrices en chemin, témoins de son parcours ardu.",
+                        "personalité": "Sérieux et loyal, Zoro incarne la discipline et le calme. Sa fidélité envers Luffy et son équipage est inébranlable, et il poursuit son rêve avec une détermination sans faille.",
+                        "role": "Premier épéiste et bras droit de Luffy dans les Pirates du Chapeau de Paille, Zoro cherche à devenir le plus grand épéiste du monde."
+                    },
                     "fullName": "Roronoa Zoro",
-                    "prime": "1.111.000.000",
-                    "aPropos":{
-                    "description": " Zoro, avec ses trois cicatrices sur l'œil gauche, évoque la prestance d'un puissant épéiste. Son regard sérieux et son attitude calme cachent une détermination féroce.",
-                    "role": "Premier épéiste et bras droit de Luffy dans les Pirates du Chapeau de Paille, Zoro cherche à devenir le plus grand épéiste du monde.",
-                    "demonFruit": "Aucun. Zoro est un maître épéiste, maniant trois sabres simultanément.",
-                    "personalité": "Sérieux et loyal, Zoro incarne la discipline et le calme. Sa fidélité envers Luffy et son équipage est inébranlable, et il poursuit son rêve avec une détermination sans faille.", 
-                    "apparence": "Portant souvent un bandana et ses trois sabres, Zoro a une allure musclée et intimidante.",
-                    "capacités": "Expert dans le maniement du sabre, Zoro est un épéiste de classe mondiale. Il peut utiliser des techniques puissantes telles que le Santoryu (Trois sabres).",
-                    "histoire": "Originaire du Village de Shimotsuki, Zoro se joint à Luffy pour réaliser son rêve de devenir le plus grand épéiste. Il accumule des cicatrices en chemin, témoins de son parcours ardu."
-                    }
-                    
+                    "prime": "1.111.000.000"
                 }
             },
             {
-                "id": "Persos/Vinsmoke Sanji",
-                "name": "Sanji",
-                "img": "../static/img/imgpersos/Sanji.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sanji.png",
+                "id": "Persos/Vinsmoke Sanji",
+                "img": "../static/img/imgpersos/Sanji.jpg",
+                "name": "Sanji",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Vêtu d'un costume noir et arborant une jambe droite souvent dissimulée, Sanji a une allure raffinée.",
+                        "capacités": "Maître du Black Leg Style, Sanji excelle dans le combat au corps à corps. Sa Diable Jambe lui permet d'enchâsser ses pieds en feu pour augmenter la puissance de ses coups.",
+                        "demonFruit": "Jambe noire, une version améliorée du Germa 66 permettant à Sanji d'utiliser le Diable Jambe.",
+                        "description": "Sanji, le cuistot passionné, est reconnaissable à sa jambe droite cachée et à sa coiffure unique. Son style est un mélange de classe et de combativité.",
+                        "histoire": "Originaire du North Blue, Sanji s'est libéré des liens de la famille Vinsmoke pour poursuivre son propre chemin. Son amour pour la cuisine et son code d'honneur font de lui un membre essentiel de l'équipage.",
+                        "personalité": "Sanji est élégant, charmeur et passionné par la cuisine. Sa politesse envers les femmes et son sens de l'honneur ajoutent une couche de complexité à sa personnalité.",
+                        "role": "Cuisinier et combattant des Pirates du Chapeau de Paille, Sanji poursuit son rêve de découvrir l'All Blue."
+                    },
                     "fullName": "Vinsmoke Sanji",
-                    "prime": "1.032.000.000",
-                    "aPropos":{
-                    "description": "Sanji, le cuistot passionné, est reconnaissable à sa jambe droite cachée et à sa coiffure unique. Son style est un mélange de classe et de combativité.",
-                    "role": "Cuisinier et combattant des Pirates du Chapeau de Paille, Sanji poursuit son rêve de découvrir l'All Blue.",
-                    "demonFruit": "Jambe noire, une version améliorée du Germa 66 permettant à Sanji d'utiliser le Diable Jambe.",
-                    "personalité": "Sanji est élégant, charmeur et passionné par la cuisine. Sa politesse envers les femmes et son sens de l'honneur ajoutent une couche de complexité à sa personnalité.", 
-                    "apparence": "Vêtu d'un costume noir et arborant une jambe droite souvent dissimulée, Sanji a une allure raffinée.",
-                    "capacités": "Maître du Black Leg Style, Sanji excelle dans le combat au corps à corps. Sa Diable Jambe lui permet d'enchâsser ses pieds en feu pour augmenter la puissance de ses coups.",
-                    "histoire": "Originaire du North Blue, Sanji s'est libéré des liens de la famille Vinsmoke pour poursuivre son propre chemin. Son amour pour la cuisine et son code d'honneur font de lui un membre essentiel de l'équipage."
-                    }
-                    
+                    "prime": "1.032.000.000"
                 }
             },
             {
-                "id": "Persos/Nami",
-                "name": "Nami",
-                "img": "../static/img/imgpersos/Nami.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-nami.png",
+                "id": "Persos/Nami",
+                "img": "../static/img/imgpersos/Nami.jpg",
+                "name": "Nami",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Avec une longue chevelure rousse et des tatouages distinctifs, Nami a une allure aventurière.",
+                        "capacités": "Maîtrisant la navigation et la cartographie, Nami est une tacticienne habile. Son Climat-Tact lui confère des capacités météorologiques puissantes.",
+                        "demonFruit": "Climat-Tact, un bâton spécial qui utilise le pouvoir du Fruit de la Climatologie, permettant de manipuler le climat.",
+                        "description": "Nami est une navigatrice talentueuse et stratégique, souvent vêtue de tenues pratiques pour la navigation. Ses tatouages en forme de mandarines symbolisent son village natal, Cocoyashi.",
+                        "histoire": "Originaire de Cocoyashi Village, Nami rejoint l'équipage après l'Arc Arlong Park, où elle se libère du joug d'Arlong et poursuit son rêve de cartographier le monde.",
+                        "personalité": "Intelligente et pragmatique, Nami est également attentionnée envers ses compagnons d'équipage. Son obsession pour les cartes cache une profonde loyauté envers Luffy et les autres.",
+                        "role": "Navigatrice des Pirates du Chapeau de Paille, Nami aspire à cartographier le monde et à dessiner une carte complète."
+                    },
                     "fullName": "Nami",
-                    "prime": "366.000.000",
-                    "aPropos":{
-                    "description": "Nami est une navigatrice talentueuse et stratégique, souvent vêtue de tenues pratiques pour la navigation. Ses tatouages en forme de mandarines symbolisent son village natal, Cocoyashi.",
-                    "role": "Navigatrice des Pirates du Chapeau de Paille, Nami aspire à cartographier le monde et à dessiner une carte complète.",
-                    "demonFruit": "Climat-Tact, un bâton spécial qui utilise le pouvoir du Fruit de la Climatologie, permettant de manipuler le climat.",
-                    "personalité": "Intelligente et pragmatique, Nami est également attentionnée envers ses compagnons d'équipage. Son obsession pour les cartes cache une profonde loyauté envers Luffy et les autres.", 
-                    "apparence": "Avec une longue chevelure rousse et des tatouages distinctifs, Nami a une allure aventurière.",
-                    "capacités": "Maîtrisant la navigation et la cartographie, Nami est une tacticienne habile. Son Climat-Tact lui confère des capacités météorologiques puissantes.",
-                    "histoire": "Originaire de Cocoyashi Village, Nami rejoint l'équipage après l'Arc Arlong Park, où elle se libère du joug d'Arlong et poursuit son rêve de cartographier le monde."
-                    }
-                    
+                    "prime": "366.000.000"
                 }
             },
             {
-                "id": "Persos/Usopp",
-                "name": "Usopp",
-                "img": "../static/img/imgpersos/Usopp.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-usopp.png",
+                "id": "Persos/Usopp",
+                "img": "../static/img/imgpersos/Usopp.jpg",
+                "name": "Usopp",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Usopp est reconnaissable avec son nez long et fin, et il porte souvent des vêtements aux couleurs vives.",
+                        "capacités": "Expert au lance-pierre et à la fabrication d'inventions, Usopp est un tireur d'élite capable de manœuvres astucieuses.",
+                        "demonFruit": "Aucun. Usopp se distingue par sa maîtrise du tir au lance-pierre et des inventions étonnantes.",
+                        "description": " Usopp est un menteur invétéré, souvent portant un chapeau unique et une écharpe. Ses vêtements colorés reflètent son esprit fantasque.",
+                        "histoire": "Originaire du Village de Syrup, Usopp rejoint les Pirates du Chapeau de Paille à Syrup Village, emmené par son rêve de devenir un brave guerrier des mers.",
+                        "personalité": "Imagination débordante et rêveur, Usopp apporte une touche d'humour à l'équipage. Malgré ses mensonges, il montre un grand courage lorsque la situation l'exige.",
+                        "role": "Tireur d'élite des Pirates du Chapeau de Paille, Usopp aspire à devenir un valeureux guerrier des mers."
+                    },
                     "fullName": "Usopp",
-                    "prime": "500.000.000",
-                    "aPropos":{
-                    "description": " Usopp est un menteur invétéré, souvent portant un chapeau unique et une écharpe. Ses vêtements colorés reflètent son esprit fantasque.",
-                    "role": "Tireur d'élite des Pirates du Chapeau de Paille, Usopp aspire à devenir un valeureux guerrier des mers.",
-                    "demonFruit": "Aucun. Usopp se distingue par sa maîtrise du tir au lance-pierre et des inventions étonnantes.",
-                    "personalité": "Imagination débordante et rêveur, Usopp apporte une touche d'humour à l'équipage. Malgré ses mensonges, il montre un grand courage lorsque la situation l'exige.", 
-                    "apparence": "Usopp est reconnaissable avec son nez long et fin, et il porte souvent des vêtements aux couleurs vives.",
-                    "capacités": "Expert au lance-pierre et à la fabrication d'inventions, Usopp est un tireur d'élite capable de manœuvres astucieuses.",
-                    "histoire": "Originaire du Village de Syrup, Usopp rejoint les Pirates du Chapeau de Paille à Syrup Village, emmené par son rêve de devenir un brave guerrier des mers."
-                    }
-                    
+                    "prime": "500.000.000"
                 }
             },
             {
-                "id": "Persos/Nico Robin",
-                "name": "Robin",
-                "img": "../static/img/imgpersos/Robin.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-robin.png",
+                "id": "Persos/Nico Robin",
+                "img": "../static/img/imgpersos/Robin.jpg",
+                "name": "Robin",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Avec des cheveux noirs longs et lisses, Robin a une apparence élégante et mature.",
+                        "capacités": "La maîtrise du Hana Hana no Mi permet à Robin de créer des bras supplémentaires pour des attaques variées et des manœuvres complexes.",
+                        "demonFruit": "Hana Hana no Mi, un Fruit de la Flore qui permet à Robin de créer des parties de son corps sur n'importe quelle surface.",
+                        "description": "Robin arbore une aura calme, souvent vêtue de manière élégante. Son symbole distinctif est le tatouage du Démon à Cent Fleurs sur son bras gauche.",
+                        "histoire": "Originaire de l'Île d'Ohara, Robin a survécu à l'incident d'Ohara et rejoint les Pirates du Chapeau de Paille après l'Arc Alabasta.",
+                        "personalité": "Calme et intellectuelle, Robin a une perspective réaliste et une compréhension profonde de l'histoire du monde. Elle est un pilier de sagesse au sein de l'équipage.",
+                        "role": "Archéologue des Pirates du Chapeau de Paille, Robin recherche des informations sur le Siècle Manquant et l'histoire ancienne."
+                    },
                     "fullName": "Nico Robin",
-                    "prime": "930.000.000",
-                    "aPropos":{
-                    "description": "Robin arbore une aura calme, souvent vêtue de manière élégante. Son symbole distinctif est le tatouage du Démon à Cent Fleurs sur son bras gauche.",
-                    "role": "Archéologue des Pirates du Chapeau de Paille, Robin recherche des informations sur le Siècle Manquant et l'histoire ancienne.",
-                    "demonFruit": "Hana Hana no Mi, un Fruit de la Flore qui permet à Robin de créer des parties de son corps sur n'importe quelle surface.",
-                    "personalité": "Calme et intellectuelle, Robin a une perspective réaliste et une compréhension profonde de l'histoire du monde. Elle est un pilier de sagesse au sein de l'équipage.", 
-                    "apparence": "Avec des cheveux noirs longs et lisses, Robin a une apparence élégante et mature.",
-                    "capacités": "La maîtrise du Hana Hana no Mi permet à Robin de créer des bras supplémentaires pour des attaques variées et des manœuvres complexes.",
-                    "histoire": "Originaire de l'Île d'Ohara, Robin a survécu à l'incident d'Ohara et rejoint les Pirates du Chapeau de Paille après l'Arc Alabasta."
-                    }
-                    
+                    "prime": "930.000.000"
                 }
             },
             {
-                "id": "Persos/Tony Tony Chopper",
-                "name": "Chopper",
-                "img": "../static/img/imgpersos/Chopper.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-chopper.png",
+                "id": "Persos/Tony Tony Chopper",
+                "img": "../static/img/imgpersos/Chopper.jpg",
+                "name": "Chopper",
                 "specs": {
-                    "fullName": "Tony Tony Chopper",
-                    "prime": "1.000",
                     "aPropos": {
                         "apparence": "Souvent vu avec une grande casquette, Chopper peut prendre différentes formes humaines.",
                         "capacités": "Chopper a des compétences médicales exceptionnelles et peut se transformer en différentes formes.",
@@ -368,17 +394,17 @@
                         "personalité": "Chopper a une personnalité innocente et compatissante.",
                         "role": "Médecin des Pirates du Chapeau de Paille, Chopper utilise ses compétences médicales et ses transformations pour aider l'équipage."
                     },
-                    "age": 17
+                    "age": 17,
+                    "fullName": "Tony Tony Chopper",
+                    "prime": "1.000"
                 }
             },
             {
-                "id": "Persos/Brook",
-                "name": "Brook",
-                "img": "../static/img/imgpersos/Brook.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-brook.png",
+                "id": "Persos/Brook",
+                "img": "../static/img/imgpersos/Brook.jpg",
+                "name": "Brook",
                 "specs": {
-                    "fullName": "Brook",
-                    "prime": "383.000.000",
                     "aPropos": {
                         "apparence": "Portant souvent un chapeau, Brook est un squelette musicien.",
                         "capacités": "Après avoir mangé le Yomi Yomi no Mi, Brook a obtenu une seconde chance à la vie et peut utiliser ses compétences musicales pour diverses situations.",
@@ -388,17 +414,17 @@
                         "personalité": "Brook a une personnalité joyeuse malgré sa nature de squelette.",
                         "role": "Musicien des Pirates du Chapeau de Paille, Brook apporte une touche musicale à l'équipage."
                     },
-                    "age": 90
+                    "age": 90,
+                    "fullName": "Brook",
+                    "prime": "383.000.000"
                 }
             },
             {
-                "id": "Persos/Franky",
-                "name": "Franky",
-                "img": "../static/img/imgpersos/Franky.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-franky.png",
+                "id": "Persos/Franky",
+                "img": "../static/img/imgpersos/Franky.jpg",
+                "name": "Franky",
                 "specs": {
-                    "fullName": "Franky",
-                    "prime": "394.000.000",
                     "aPropos": {
                         "apparence": "Franky porte souvent des lunettes de soleil et a un corps mécanique impressionnant.",
                         "capacités": "En tant que cyborg, Franky a une force physique surhumaine et est un expert en construction navale.",
@@ -408,17 +434,17 @@
                         "personalité": "Franky a une personnalité exubérante et est passionné par la construction navale.",
                         "role": "Charpentier naval des Pirates du Chapeau de Paille, Franky est responsable de la construction et de l'entretien du Thousand Sunny."
                     },
-                    "age": 36
+                    "age": 36,
+                    "fullName": "Franky",
+                    "prime": "394.000.000"
                 }
             },
             {
-                "id": "Persos/Jinbe",
-                "name": "Jinbe",
-                "img": "../static/img/imgpersos/Jinbe.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-jinbe.png",
+                "id": "Persos/Jinbe",
+                "img": "../static/img/imgpersos/Jinbe.jpg",
+                "name": "Jinbe",
                 "specs": {
-                    "fullName": "Jinbe",
-                    "prime": "1.100.000.000",
                     "aPropos": {
                         "apparence": "Avec une peau bleue et des marques faciales distinctives, Jinbe a une présence imposante.",
                         "capacités": "Jinbe est un maître des arts martiaux, utilisant le Karaté des Hommes-Poissons. Il possède une force physique considérable et une grande maîtrise du Haki.",
@@ -428,17 +454,17 @@
                         "personalité": "Jinbe a une personnalité calme et sage, et il est connu pour son honnêteté et sa loyauté.",
                         "role": "Timonier des Pirates du Chapeau de Paille, Jinbe est un expert en arts martiaux et possède une grande sagesse."
                     },
-                    "age": 46
+                    "age": 46,
+                    "fullName": "Jinbe",
+                    "prime": "1.100.000.000"
                 }
             },
             {
-                "id": "Persos/Portgas D Ace",
-                "name": "Ace",
-                "img": "../static/img/imgpersos/Ace.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-ace.png",
+                "id": "Persos/Portgas D Ace",
+                "img": "../static/img/imgpersos/Ace.jpg",
+                "name": "Ace",
                 "specs": {
-                    "fullName": "Portgas D. Ace",
-                    "prime": "550.000.000",
                     "aPropos": {
                         "apparence": "Avec une marque distinctive sous son œil gauche, Ace avait une apparence frappante.",
                         "capacités": "Ace possédait des pouvoirs liés au feu grâce au Mera Mera no Mi, et il était un combattant redoutable.",
@@ -448,17 +474,17 @@
                         "personalité": "Ace avait une personnalité énergique et une grande détermination.",
                         "role": "Ancien commandant de la 2e division de l'équipage de Barbe Blanche."
                     },
-                    "age": 20
+                    "age": 20,
+                    "fullName": "Portgas D. Ace",
+                    "prime": "550.000.000"
                 }
             },
             {
-                "id": "Persos/Crocodile",
-                "name": "Crocodile",
-                "img": "../static/img/imgpersos/Crocodile.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-crocodile.png",
+                "id": "Persos/Crocodile",
+                "img": "../static/img/imgpersos/Crocodile.jpg",
+                "name": "Crocodile",
                 "specs": {
-                    "fullName": "Sir Crocodile",
-                    "prime": "1.965.000.000",
                     "aPropos": {
                         "apparence": "Avec son manteau et son crochet doré, Crocodile a une apparence charismatique et menaçante.",
                         "capacités": "Grâce au Suna Suna no Mi, Crocodile peut créer, contrôler et devenir du sable. Il est également un épéiste habile.",
@@ -468,17 +494,17 @@
                         "personalité": "Crocodile est impitoyable, manipulateur et assoiffé de pouvoir.",
                         "role": "Ancien président de Baroque Works et antagoniste principal de l'Arc Alabasta."
                     },
-                    "age": 44
+                    "age": 44,
+                    "fullName": "Sir Crocodile",
+                    "prime": "1.965.000.000"
                 }
             },
             {
-                "id": "Persos/Eustass Kidd",
-                "name": "Kidd",
-                "img": "../static/img/imgpersos/Kidd.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-kid.png",
+                "id": "Persos/Eustass Kidd",
+                "img": "../static/img/imgpersos/Kidd.jpg",
+                "name": "Kidd",
                 "specs": {
-                    "fullName": "Eustass Kidd",
-                    "prime": "3.000.000.000",
                     "aPropos": {
                         "apparence": "Avec de nombreux tatouages, des cicatrices et un bras métallique, Kidd a une apparence intimidante.",
                         "capacités": "Kidd est un utilisateur du Haki et est extrêmement habile dans l'utilisation de son bras métallique en combat.",
@@ -488,17 +514,17 @@
                         "personalité": "Kidd est connu pour sa personnalité violente, son ambition dévorante et son refus de s'incliner devant d'autres pirates.",
                         "role": "Capitaine des Kidd Pirates, Kidd est l'un des Onze Supernovas et un supernova notoire."
                     },
-                    "age": 27
+                    "age": 27,
+                    "fullName": "Eustass Kidd",
+                    "prime": "3.000.000.000"
                 }
             },
             {
-                "id": "Persos/Trafalgar D. WaterLaw",
-                "name": "Law",
-                "img": "../static/img/imgpersos/Law.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-law.png",
+                "id": "Persos/Trafalgar D. WaterLaw",
+                "img": "../static/img/imgpersos/Law.jpg",
+                "name": "Law",
                 "specs": {
-                    "fullName": "Trafalgar D. Water Law",
-                    "prime": "3.000.000.000",
                     "aPropos": {
                         "apparence": "Avec des tatouages et une expression calme, Law a une présence imposante.",
                         "capacités": "Law est un utilisateur du Haki et possède le Ope Ope no Mi, lui permettant de manipuler les objets à l'intérieur d'une sphère d'influence.",
@@ -508,17 +534,17 @@
                         "personalité": "Law a une personnalité calme et stratégique, mais peut être impitoyable envers ses ennemis. Il a un profond sens de l'honneur.",
                         "role": "Capitaine des Heart Pirates, Law est un membre clé de l'Alliance des Pirates de Chapeau de Paille et l'un des Onze Supernovas."
                     },
-                    "age": 26
+                    "age": 26,
+                    "fullName": "Trafalgar D. Water Law",
+                    "prime": "3.000.000.000"
                 }
             },
             {
-                "id": "Persos/Charlotte Katakuri",
-                "name": "Chaelotte",
-                "img": "../static/img/imgpersos/Katakuri.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-katakuri.png",
+                "id": "Persos/Charlotte Katakuri",
+                "img": "../static/img/imgpersos/Katakuri.jpg",
+                "name": "Chaelotte",
                 "specs": {
-                    "fullName": "Charlotte Katakuri",
-                    "prime": "1.057.000.000",
                     "aPropos": {
                         "apparence": "Avec une stature imposante et un foulard sur la bouche, Katakuri a une présence intimidante.",
                         "capacités": "Katakuri est un utilisateur du Haki et possède le Mochi Mochi no Mi, lui permettant de créer, manipuler et devenir du mochi.",
@@ -528,17 +554,17 @@
                         "personalité": "Katakuri est calme, imperturbable et perfectionniste, mais cache son visage en raison de son complexe d'infériorité lié à sa bouche.",
                         "role": "Commandant sucré de la Big Mom Pirates, Katakuri est l'un des Three Sweet Commanders et l'un des fils de Big Mom."
                     },
-                    "age": 48
+                    "age": 48,
+                    "fullName": "Charlotte Katakuri",
+                    "prime": "1.057.000.000"
                 }
             },
             {
-                "id": "Persos/Sabo",
-                "name": "Sabo",
-                "img": "../static/img/imgpersos/Sabo.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-sabo.png",
+                "id": "Persos/Sabo",
+                "img": "../static/img/imgpersos/Sabo.jpg",
+                "name": "Sabo",
                 "specs": {
-                    "fullName": "Sabo",
-                    "prime": "602.000.000",
                     "aPropos": {
                         "apparence": "Avec des lunettes et un chapeau, Sabo a une apparence distinguée.",
                         "capacités": "Sabo est un expert en arts martiaux et a obtenu les pouvoirs du Mera Mera no Mi après la mort d'Ace.",
@@ -548,17 +574,17 @@
                         "personalité": "Sabo est intelligent, stratégique et dévoué à la cause de la Révolution. Il a une forte détermination à protéger ses proches.",
                         "role": "Chef en second de l'Armée Révolutionnaire et membre clé de l'équipage de Dragon."
                     },
-                    "age": 24
+                    "age": 24,
+                    "fullName": "Sabo",
+                    "prime": "602.000.000"
                 }
             },
             {
-                "id": "Persos/Baggy le Clown",
-                "name": "Baggy",
-                "img": "../static/img/imgpersos/Baggy.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-baggy.png",
+                "id": "Persos/Baggy le Clown",
+                "img": "../static/img/imgpersos/Baggy.jpg",
+                "name": "Baggy",
                 "specs": {
-                    "fullName": "Baggy le Clown",
-                    "prime": "3.189.000.000",
                     "aPropos": {
                         "apparence": "Avec un nez rouge, un chapeau de clown et une tenue extravagante, Baggy a une apparence de clown distincte.",
                         "capacités": "Baggy est immunisé contre les attaques tranchantes grâce à son pouvoir de Fruit du Démon, mais sa force physique est normale.",
@@ -568,121 +594,119 @@
                         "personalité": "Baggy est excentrique, opportuniste et aime être au centre de l'attention. Il a une histoire passée avec Shanks le Roux.",
                         "role": "Capitaine des Baggy Pirates et ancien membre de l'équipage de Roger."
                     },
-                    "age": 39
+                    "age": 39,
+                    "fullName": "Baggy le Clown",
+                    "prime": "3.189.000.000"
                 }
             },
             {
-                "id": "Persos/Le Roi des Bêtes Kaido",
-                "name": "Kaido",
-                "img": "../static/img/imgpersos/Kaido.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-kaido.png",
+                "id": "Persos/Le Roi des Bêtes Kaido",
+                "img": "../static/img/imgpersos/Kaido.jpg",
+                "name": "Kaido",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Kaido a des cheveux bleus, une barbe fournie et des cicatrices sur le visage. Sa présence émet une aura intimidante.",
+                        "capacités": "Possédant une force incroyable, Kaido est pratiquement invincible. Son Fruit du Démon lui permet de se transformer en un dragon massif, ajoutant à sa puissance dévastatrice.",
+                        "demonFruit": "Uo Uo no Mi, modèle Seiryu (Fruit du Dragon) - Mythique, une variante rare du Zoan Mythique lui permettant de se transformer en dragon.",
+                        "description": "Kaido est immense, avec une stature imposante et des tatouages tribaux sur le corps. Il porte souvent un manteau noir et a une expression sévère.",
+                        "histoire": " Les détails de l'histoire de Kaido sont en grande partie inconnus. Il est réputé pour avoir survécu à d'innombrables batailles et exécutions, renforçant sa réputation d'être indestructible.",
+                        "personalité": "Kaido est connu pour sa quête obsessionnelle de trouver un moyen de mourir. Il est impitoyable, adore les défis et cherche à instaurer un règne de chaos et de terreur.",
+                        "role": "Kaido est le capitaine des Beast Pirates et l'un des Empereurs de la Mer. Il cherche constamment à défier la mort et à créer le plus grand conflit mondial."
+                    },
                     "fullName": "Le Roi des Bêtes Kaido",
-                    "prime": "4.611.100.000",
-                    "aPropos":{
-                    "description": "Kaido est immense, avec une stature imposante et des tatouages tribaux sur le corps. Il porte souvent un manteau noir et a une expression sévère.",
-                    "role": "Kaido est le capitaine des Beast Pirates et l'un des Empereurs de la Mer. Il cherche constamment à défier la mort et à créer le plus grand conflit mondial.",
-                    "demonFruit": "Uo Uo no Mi, modèle Seiryu (Fruit du Dragon) - Mythique, une variante rare du Zoan Mythique lui permettant de se transformer en dragon.",
-                    "personalité": "Kaido est connu pour sa quête obsessionnelle de trouver un moyen de mourir. Il est impitoyable, adore les défis et cherche à instaurer un règne de chaos et de terreur.", 
-                    "apparence": "Kaido a des cheveux bleus, une barbe fournie et des cicatrices sur le visage. Sa présence émet une aura intimidante.",
-                    "capacités": "Possédant une force incroyable, Kaido est pratiquement invincible. Son Fruit du Démon lui permet de se transformer en un dragon massif, ajoutant à sa puissance dévastatrice.",
-                    "histoire": " Les détails de l'histoire de Kaido sont en grande partie inconnus. Il est réputé pour avoir survécu à d'innombrables batailles et exécutions, renforçant sa réputation d'être indestructible."
-                    }
-                    
+                    "prime": "4.611.100.000"
                 }
             },
             {
-                "id": "Persos/Charlotte Linlin, surnommée Big Mom",
-                "name": "Big Mom",
-                "img": "../static/img/imgpersos/BigMom.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-big-mom.png",
+                "id": "Persos/Charlotte Linlin, surnommée Big Mom",
+                "img": "../static/img/imgpersos/BigMom.jpg",
+                "name": "Big Mom",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Avec son énorme taille, sa robe colorée et son chapeau élaboré, Big Mom a une apparence extravagante.",
+                        "capacités": "La Soru Soru no Mi lui permet de manipuler les âmes, influençant la force vitale des individus. Elle est également redoutable au combat physique.",
+                        "demonFruit": "Soru Soru no Mi, un Fruit Paramecia lui permettant de manipuler les âmes.",
+                        "description": "Big Mom est une femme massive avec une peau rose, un chapeau extravagant et une expression souvent souriante, mais dérangeante.",
+                        "histoire": "Issue de la Famille Charlotte, Big Mom a construit un empire basé sur la puissance et la loyauté. Son objectif de créer un monde harmonieux est motivé par des expériences passées.",
+                        "personalité": " Big Mom est instable émotionnellement, passant du sourire à la colère en un instant. Sa quête pour créer un monde idéal est basée sur une vision utopique.",
+                        "role": "Big Mom est la capitaine des Big Mom Pirates et fait partie des Quatre Empereurs. Elle cherche à créer un monde où toutes les races coexistent pacifiquement."
+                    },
                     "fullName": "Charlotte Linlin, surnommée Big Mom",
-                    "prime": "4.388.000.000",
-                    "aPropos":{
-                    "description": "Big Mom est une femme massive avec une peau rose, un chapeau extravagant et une expression souvent souriante, mais dérangeante.",
-                    "role": "Big Mom est la capitaine des Big Mom Pirates et fait partie des Quatre Empereurs. Elle cherche à créer un monde où toutes les races coexistent pacifiquement.",
-                    "demonFruit": "Soru Soru no Mi, un Fruit Paramecia lui permettant de manipuler les âmes.",
-                    "personalité": " Big Mom est instable émotionnellement, passant du sourire à la colère en un instant. Sa quête pour créer un monde idéal est basée sur une vision utopique.", 
-                    "apparence": "Avec son énorme taille, sa robe colorée et son chapeau élaboré, Big Mom a une apparence extravagante.",
-                    "capacités": "La Soru Soru no Mi lui permet de manipuler les âmes, influençant la force vitale des individus. Elle est également redoutable au combat physique.",
-                    "histoire": "Charlotte Linlin, alias Big Mom, émerge dans le monde de One Piece en tant que membre de la redoutable Famille Charlotte. Son enfance est marquée par un appétit insatiable et un accident tragique où elle mange involontairement ses propres frères et sœurs. Traumatisée, elle développe le rêve de créer la Terre Promise, un monde utopique où toutes les races vivraient en harmonie. Pour réaliser cette vision, Big Mom fonde les Big Mom Pirates et obtient le pouvoir du Soru Soru no Mi, lui permettant de manipuler les âmes. Sa quête impitoyable de puissance et de ressources la conduit à forger des alliances dangereuses et à devenir l'un des Quatre Empereurs de la Mer. Son empire, basé sur la puissance et la loyauté, devient un acteur clé dans les événements majeurs du Nouveau Monde."
-                    }
-                    
+                    "prime": "4.388.000.000"
                 }
             },
             {
-                "id": "Persos/Shanks Le Roux",
-                "name": "Shanks",
-                "img": "../static/img/imgpersos/Shanks.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-shanks.png",
+                "id": "Persos/Shanks Le Roux",
+                "img": "../static/img/imgpersos/Shanks.jpg",
+                "name": "Shanks",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Avec son manteau rouge et son attitude décontractée, Shanks a une présence imposante.",
+                        "capacités": "Shanks est un épéiste talentueux et un redoutable utilisateur du Haki. Sa maîtrise de l'épée est reconnue même par Mihawk, le plus grand épéiste du monde.",
+                        "demonFruit": "Aucun (Shanks ne possède pas de Fruit du Démon).",
+                        "description": "Shanks a des cheveux roux, une barbe et une cicatrice sur son œil gauche, témoignant d'un événement mystérieux. Il porte souvent un manteau rouge.",
+                        "histoire": "Shanks est connu pour avoir sauvé la vie de Luffy dans son enfance en perdant son bras contre un monstre marin. Son implication dans la première partie de l'histoire reste enveloppée de mystère.",
+                        "personalité": "Shanks est calme, charismatique et a le respect des autres pirates. Il est prêt à prendre des risques pour protéger ceux qu'il chérit.",
+                        "role": "Capitaine des Red-Haired Pirates, Shanks est un ancien membre de l'équipage de Gol D. Roger et l'un des Quatre Empereurs."
+                    },
                     "fullName": "Shanks Le Roux",
-                    "prime": "4.048.900.000",
-                    "aPropos":{
-                    "description": "Shanks a des cheveux roux, une barbe et une cicatrice sur son œil gauche, témoignant d'un événement mystérieux. Il porte souvent un manteau rouge.",
-                    "role": "Capitaine des Red-Haired Pirates, Shanks est un ancien membre de l'équipage de Gol D. Roger et l'un des Quatre Empereurs.",
-                    "demonFruit": "Aucun (Shanks ne possède pas de Fruit du Démon).",
-                    "personalité": "Shanks est calme, charismatique et a le respect des autres pirates. Il est prêt à prendre des risques pour protéger ceux qu'il chérit.", 
-                    "apparence": "Avec son manteau rouge et son attitude décontractée, Shanks a une présence imposante.",
-                    "capacités": "Shanks est un épéiste talentueux et un redoutable utilisateur du Haki. Sa maîtrise de l'épée est reconnue même par Mihawk, le plus grand épéiste du monde.",
-                    "histoire": "Shanks est connu pour avoir sauvé la vie de Luffy dans son enfance en perdant son bras contre un monstre marin. Son implication dans la première partie de l'histoire reste enveloppée de mystère."
-                    }
-                    
+                    "prime": "4.048.900.000"
                 }
             },
             {
-                "id": "Persos/Marshall D. Teach, Surnommé Barbe Noire",
-                "name": "Teach",
-                "img": "../static/img/imgpersos/BarbeNoire.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-barbe-noire.png",
+                "id": "Persos/Marshall D. Teach, Surnommé Barbe Noire",
+                "img": "../static/img/imgpersos/BarbeNoire.jpg",
+                "name": "Teach",
                 "specs": {
+                    "aPropos": {
+                        "apparence": "Avec sa barbe noire et son manteau sombre, Barbe Noire a une présence menaçante.",
+                        "capacités": "Le Yami Yami no Mi lui confère des pouvoirs liés aux ténèbres, le rendant invulnérable à de nombreux types d'attaques. Il peut également annihiler la capacité des autres Fruits du Démon au contact.",
+                        "demonFruit": "Yami Yami no Mi (Fruit des Ténèbres), une Logia qui lui permet de créer, contrôler et devenir les ténèbres.",
+                        "description": "Barbe Noire a une allure imposante avec une barbe noire et un chapeau de pirate caractéristique. Sa silhouette massive dissimule des ambitions obscures.",
+                        "histoire": "Ancien commandant de Barbe Blanche, Teach s'est retourné contre son ancien capitaine pour s'emparer du pouvoir du Gura Gura no Mi. Ses actions sont motivées par une quête insatiable de pouvoir et de notoriété.",
+                        "personalité": "Barbe Noire est calculateur, impitoyable et cherche constamment à accroître sa puissance. Il est prêt à sacrifier quiconque pour atteindre ses objectifs.",
+                        "role": "Ancien membre de l'équipage de Barbe Blanche, Teach devient capitaine des Pirates de Barbe Noire et cherche à devenir le nouvel empereur."
+                    },
                     "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
-                    "prime": "3.996.000.000",
-                    "aPropos":{
-                    "description": "Barbe Noire a une allure imposante avec une barbe noire et un chapeau de pirate caractéristique. Sa silhouette massive dissimule des ambitions obscures.",
-                    "role": "Ancien membre de l'équipage de Barbe Blanche, Teach devient capitaine des Pirates de Barbe Noire et cherche à devenir le nouvel empereur.",
-                    "demonFruit": "Yami Yami no Mi (Fruit des Ténèbres), une Logia qui lui permet de créer, contrôler et devenir les ténèbres.",
-                    "personalité": "Barbe Noire est calculateur, impitoyable et cherche constamment à accroître sa puissance. Il est prêt à sacrifier quiconque pour atteindre ses objectifs.", 
-                    "apparence": "Avec sa barbe noire et son manteau sombre, Barbe Noire a une présence menaçante.",
-                    "capacités": "Le Yami Yami no Mi lui confère des pouvoirs liés aux ténèbres, le rendant invulnérable à de nombreux types d'attaques. Il peut également annihiler la capacité des autres Fruits du Démon au contact.",
-                    "histoire": "Ancien commandant de Barbe Blanche, Teach s'est retourné contre son ancien capitaine pour s'emparer du pouvoir du Gura Gura no Mi. Ses actions sont motivées par une quête insatiable de pouvoir et de notoriété."
-                    }
-                    
+                    "prime": "3.996.000.000"
                 }
             },
             {
-                "id": "Persos/Dracule Mihawk",
-                "name": "Mihawk",
-                "img": "../static/img/imgpersos/Mihawk.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-mihawk.png",
+                "id": "Persos/Dracule Mihawk",
+                "img": "../static/img/imgpersos/Mihawk.jpg",
+                "name": "Mihawk",
                 "specs": {
-                  "fullName": "Dracule Mihawk",
-                  "prime": "3.590.000.000",
-                  "aPropos": {
-                    "description": "Dracule Mihawk, également connu sous le nom d'Hawkeye Mihawk, est un personnage énigmatique et redoutable dans l'univers de One Piece. Il est réputé comme le meilleur bretteur du monde.",
-                    "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur.",
-                    "apparence": "Mihawk est un homme grand et mince avec des cheveux noirs et une barbe fine. Il est souvent vu portant des vêtements élégants et tenant son épée emblématique, Kokuto Yoru.",
-                    "capacités": "Maître du sabre, Mihawk est célèbre pour sa maîtrise exceptionnelle de l'épée. Son épée principale, Kokuto Yoru, est une lame noire redoutable. Il peut exécuter des attaques puissantes avec une précision mortelle.",
-                    "histoire": "Peu d'informations sont connues sur le passé de Mihawk. Cependant, il est reconnu comme le rival de Shanks le Roux, un autre Grand Corsaire. Mihawk joue un rôle important dans l'histoire de One Piece en tant que personnage mystérieux et puissant."
-                  }
+                    "aPropos": {
+                        "apparence": "Mihawk est un homme grand et mince avec des cheveux noirs et une barbe fine. Il est souvent vu portant des vêtements élégants et tenant son épée emblématique, Kokuto Yoru.",
+                        "capacités": "Maître du sabre, Mihawk est célèbre pour sa maîtrise exceptionnelle de l'épée. Son épée principale, Kokuto Yoru, est une lame noire redoutable. Il peut exécuter des attaques puissantes avec une précision mortelle.",
+                        "description": "Dracule Mihawk, également connu sous le nom d'Hawkeye Mihawk, est un personnage énigmatique et redoutable dans l'univers de One Piece. Il est réputé comme le meilleur bretteur du monde.",
+                        "histoire": "Peu d'informations sont connues sur le passé de Mihawk. Cependant, il est reconnu comme le rival de Shanks le Roux, un autre Grand Corsaire. Mihawk joue un rôle important dans l'histoire de One Piece en tant que personnage mystérieux et puissant.",
+                        "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur."
+                    },
+                    "fullName": "Dracule Mihawk",
+                    "prime": "3.590.000.000"
                 }
             },
             {
-                "id": "Persos/Edward Newgate",
-                "name":"Barbe Blanche" ,
-                "img": "../static/img/imgpersos/EdwardNewgate.jpg",
                 "affiche": "../static/img/affiches-persos/affiche-barbe-blanche.png",
+                "id": "Persos/Edward Newgate",
+                "img": "../static/img/imgpersos/EdwardNewgate.jpg",
+                "name": "Barbe Blanche",
                 "specs": {
-                  "fullName": "Edward Newgate",
-                  "prime": "5.046.000.000",
-                  "aPropos": {
-                    "description": "Edward Newgate, plus connu sous le nom de Barbe Blanche, était l'un des pirates les plus puissants et respectés de son époque. Il a été le capitaine de l'Équipage de Barbe Blanche.",
-                    "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage.",
-                    "apparence": "Barbe Blanche était un homme colossal avec une barbe blanche épaisse et une immense cicatrice sur son torse. Il portait un manteau d'amiral et détenait le Gura Gura no Mi, un Fruits du Démon de type Paramecia.",
-                    "capacités": "Avec le Gura Gura no Mi, Barbe Blanche pouvait créer des séismes dévastateurs, le qualifiant de Homme le plus proche du One Piece. Il était également extrêmement robuste et résistant aux attaques.",
-                    "histoire": "La vie de Barbe Blanche a été marquée par des aventures tumultueuses. Il a joué un rôle clé lors de la bataille de Marineford, où il a combattu pour son équipage et a finalement perdu la vie. Malgré sa mort, l'héritage de Barbe Blanche perdure dans le monde de One Piece."
-                  }
+                    "aPropos": {
+                        "apparence": "Barbe Blanche était un homme colossal avec une barbe blanche épaisse et une immense cicatrice sur son torse. Il portait un manteau d'amiral et détenait le Gura Gura no Mi, un Fruits du Démon de type Paramecia.",
+                        "capacités": "Avec le Gura Gura no Mi, Barbe Blanche pouvait créer des séismes dévastateurs, le qualifiant de Homme le plus proche du One Piece. Il était également extrêmement robuste et résistant aux attaques.",
+                        "description": "Edward Newgate, plus connu sous le nom de Barbe Blanche, était l'un des pirates les plus puissants et respectés de son époque. Il a été le capitaine de l'Équipage de Barbe Blanche.",
+                        "histoire": "La vie de Barbe Blanche a été marquée par des aventures tumultueuses. Il a joué un rôle clé lors de la bataille de Marineford, où il a combattu pour son équipage et a finalement perdu la vie. Malgré sa mort, l'héritage de Barbe Blanche perdure dans le monde de One Piece.",
+                        "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage."
+                    },
+                    "fullName": "Edward Newgate",
+                    "prime": "5.046.000.000"
                 }
               }
               
