@@ -41,33 +41,67 @@
           alt="Logo One Piece"
         />
 
-      <div class="menu">
-        <form action="/search" method="get">
-          <input
-            type="text"
-            id="search"
-            name="name"
-            placeholder="Cherchez le One Piece !"
-          />
-        </form>
-        <div class="cont">
-          {{if .Logged}} 
-          <a class="h-link" href="/logout">
-          <img
-          class="login"
-          src="../static/img/index/login.png"
-          alt="Login"
-        />
-          <p>{{.Cat}}</p></a>
-        {{else}}
-        <a class="h-link" href="/login">
-        <img
-        class="login"
-        src="../static/img/index/login.png"
-        alt="Login"
-      />
-          <p>LOGIN</p></a>
-        {{end}}
+        <div class="menu">
+          <form action="/search" method="get">
+            <input
+              type="text"
+              id="search"
+              name="name"
+              placeholder="Cherchez le One Piece !"
+            />
+          </form>
+          <div class="cont">
+            {{if .Logged}}
+            <a class="h-link" href="/logout">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>{{.Cat}}</p></a
+            >
+            {{else}}
+            <a class="h-link" href="/login">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>LOGIN</p></a
+            >
+            {{end}}
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <a href="/persos/article">
+            <div class="cat-choice">
+              <img
+                class="affiche"
+                src="../static/img/categories/affiche-persos.png"
+                alt="Persos"
+              />
+            </div>
+          </a>
+          <a href="/arcs/article">
+            <div class="cat-choice">
+              <img
+                class="affiche"
+                src="../static/img/categories/affiche-arcs.png"
+                alt="Arcs"
+              />
+            </div>
+          </a>
+          <a href="/events/article">
+            <div class="cat-choice">
+              <img
+                class="affiche"
+                src="../static/img/categories/affiche-events.png"
+                alt="Events"
+              />
+            </div>
+          </a>
         </div>
       </section>
       <footer></footer>
