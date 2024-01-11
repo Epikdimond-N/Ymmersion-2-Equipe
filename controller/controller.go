@@ -214,7 +214,9 @@ func DisplayPerso(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
-	fmt.Println(ToSend)
+	fmt.Println(ToSend.Specs.Drapeau)
+	fmt.Println(ToSend.Specs)
+
 	initTemplate.Temp.ExecuteTemplate(w, "char", ToSend)
 }
 func DisplayArc(w http.ResponseWriter, r *http.Request) {

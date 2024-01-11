@@ -1,732 +1,731 @@
 {
-    "categories": {
-        "Arcs": [
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-romance-dawn.png",
-                "chapitresManga": "1-8",
-                "description": "Cet arc introduit Monkey D. Luffy et son rêve de devenir le Roi des Pirates. Il obtient ses pouvoirs de Fruit du Démon et commence son voyage.",
-                "id": "Arcs/Arc romance Dawn",
-                "img": "/static/img/ArcRomanceDawn.jpg",
-                "name": "Arc Romance Dawn",
-                "épisodesAnimé": "1-3"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-orange-town.png",
-                "chapitresManga": "8-21",
-                "description": "L'équipage affronte le Capitaine Baggy à Orange Town, renforçant leur amitié naissante.",
-                "id": "Arcs/Arc Orange Town",
-                "img": "/static/img/ArcOrangeTown.jpg",
-                "name": "Arc Orange Town",
-                "épisodesAnime": "4-8"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-syrup-village.png",
-                "chapitresManga": "22-41",
-                "description": "L'équipage aide Usopp à affronter les mensonges de Kuro à Syrup Village, renforçant leur détermination.",
-                "id": "Arcs/Arc Syrup Village",
-                "img": "/static/img/ArcSyrupVillage.jpg",
-                "name": "Arc Syrup Village",
-                "épisodesAnime": "9-18"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-baratie.png",
-                "chapitresManga": "42-68",
-                "description": "L'équipage rejoint le restaurant flottant Baratie, où ils font face à Don Krieg. Cet arc présente Sanji, le futur cuisinier de l'équipage.",
-                "id": "Arcs/Arc Baratie",
-                "img": "/static/img/ArcBaratie.jpg",
-                "name": "Arc Baratie",
-                "épisodesAnime": "19-30"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-arlong-park.png",
-                "chapitresManga": "69-95",
-                "description": "Les Pirates du Chapeau de Paille s'allient à Nami pour libérer son village natal d'Arlong. Cet arc aborde des thèmes de l'amitié et de la liberté.",
-                "id": "Arcs/Arc Arlong Park",
-                "img": "/static/img/ArcArlongPark.jpg",
-                "name": "Arc Arlong Park",
-                "épisodesAnime": "31-44"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-logue-town.png",
-                "chapitresManga": "96-100",
-                "description": "L'équipage atteint Loguetown, où Luffy a son premier affrontement avec l'Amiral Smoker. Des éléments du passé de Luffy sont révélés.",
-                "id": "Arcs/Arc Loguetown",
-                "img": "/static/img/ArcLoguetown.jpg",
-                "name": "Arc Loguetown",
-                "épisodesAnime": "45-48"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-drum.png",
-                "chapitresManga": "101-142",
-                "description": "L'équipage atteint Drum Island et rencontre le Docteur Hiluluk et son apprenti Chopper. Cet arc met en lumière la recherche d'un médecin pour l'équipage.",
-                "id": "Arcs/Arc Ile de Drum",
-                "img": "/static/img/ArcIleDeDrum.jpg",
-                "name": "Arc Île de Drum (Drum Island)",
-                "épisodesAnime": "78-91"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-alabasta.png",
-                "chapitresManga": "155-217",
-                "description": "Luffy et son équipage se rendent à Alabasta pour arrêter Crocodile et sauver le royaume du sable. L'arc explore des thèmes de conspiration politique et de loyauté.",
-                "id": "Arcs/Arc Alabasta",
-                "img": "/static/img/ArcAlabasta.jpg",
-                "name": "Arc Alabasta",
-                "épisodesAnime": "92-130"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-jaya.png",
-                "chapitresManga": "218-236",
-                "description": "L'équipage découvre des informations sur Skypiea et rencontre les Bellamy Pirates à Jaya. Cet arc prépare le terrain pour les aventures à venir.",
-                "id": "Arcs/Arc Jaya",
-                "img": "/static/img/ArcJaya.jpg",
-                "name": "Arc Jaya",
-                "épisodesAnime": "144-152"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-skypiea.png",
-                "chapitresManga": "237-302",
-                "description": "Luffy et son équipage atteignent Skypiea, une île céleste, et affrontent Ener, un homme avec des pouvoirs de Fruit du Démon. Cet arc explore la recherche du trésor de Skypiea.",
-                "id": "Arcs/Arc Skypiea",
-                "img": "/static/img/ArcSkypiea.jpg",
-                "name": "Arc Skypiea",
-                "épisodesAnime": "153-195"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-water-seven.png",
-                "chapitresManga": "303-441",
-                "description": " L'équipage arrive à Water Seven, où des tensions émergent, conduisant à la tragédie du Merry Go et à la confrontation avec le CP9. Cet arc explore les sacrifices nécessaires pour réaliser les rêves.",
-                "id": "Arcs/Arc Water Seven",
-                "img": "/static/img/ArcWaterSeven.jpg",
-                "name": "Arc Water Seven",
-                "épisodesAnime": "207-263"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-enies-lobby.png",
-                "chapitresManga": "442-490",
-                "description": "L'équipage continue sa lutte à Enies Lobby pour sauver Nico Robin. Les liens d'amitié sont mis à l'épreuve, et des moments épiques se déroulent.",
-                "id": "Arcs/Arc Enies Lobby",
-                "img": "/static/img/ArcEniesLobby.jpg",
-                "name": "Arc Enies Lobby",
-                "épisodesAnime": "264-312"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-thriller-bark.png",
-                "chapitresManga": "490-541",
-                "description": "L'équipage atterrit sur l'île effrayante de Thriller Bark, où ils rencontrent Gecko Moria et son armée de zombies. Cet arc mêle horreur et comédie.",
-                "id": "Arcs/Arc Thriller Bark",
-                "img": "/static/img/ArcThrillerBark.jpg",
-                "name": "Arc Thriller Bark",
-                "épisodesAnime": "337-381"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-sabaody.png",
-                "chapitresManga": "490-513",
-                "description": "L'équipage atteint l'archipel Sabaody, où les tensions montent avec les Nobles Mondiaux, culminant avec l'incident de l'Amiral Kizaru. L'arc explore les thèmes de la discrimination et de l'injustice.",
-                "id": "Arcs/Arc Archipel Sabaody",
-                "img": "/static/img/ArcArchipelSabaody.jpg",
-                "name": "Arc Archipel Sabaody",
-                "épisodesAnime": "385-405"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-ile-des-hommes-poissons.png",
-                "chapitresManga": "603-653",
-                "description": "L'équipage explore Fish-Man Island, où des conflits entre humains et hommes-poissons éclatent. L'arc aborde des thèmes de racisme et d'acceptation.",
-                "id": "Arcs/Arc Ile des Hommes-Poissons",
-                "img": "/static/img/ArcIleDesHommesPoissons.jpg",
-                "name": "Arc Île des Hommes-Poissons (Fish-Man Island)",
-                "épisodesAnime": "517-574"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-punk-hazard.png",
-                "chapitresManga": "654-699",
-                "description": "L'équipage atteint Punk Hazard, une île dévastée par les expériences du scientifique fou Caesar Clown. Les mystères du passé et du Gouvernement Mondial sont révélés.",
-                "id": "Arcs/Arc Punk Hazard",
-                "img": "/static/img/ArcPunkHazard.jpg",
-                "name": "Arc Punk Hazard",
-                "épisodesAnime": "579-625"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-dressrosa.png",
-                "chapitresManga": "700-801",
-                "description": "L'équipage se retrouve à Dressrosa, où ils affrontent le cruel Doflamingo. Les liens familiaux, les conflits politiques, et la puissance des Fruits du Démon sont au cœur de cet arc.",
-                "id": "Arcs/Arc Dressrosa",
-                "img": "/static/img/ArcDressrosa.jpg",
-                "name": "Arc Dressrosa",
-                "épisodesAnime": "629-746"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-zou.png",
-                "chapitresManga": "802-824",
-                "description": "L'équipage découvre l'île de Zou, portant les cicatrices de la guerre. Ils se lancent dans une quête pour atteindre Wano Kuni et sauver Sanji.",
-                "id": "Arcs/Arc Zou",
-                "img": "/static/img/ArcZou.jpg",
-                "name": "Arc Zou",
-                "épisodesAnime": "751-779"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-whole-cake-island.png",
-                "chapitresManga": "825-902",
-                "description": "L'équipage s'infiltre dans l'île de Whole Cake, dirigée par Big Mom, pour sauver Sanji. Les alliances sont forgées, et des batailles épiques se déroulent.",
-                "id": "Arcs/Arc Whole Cake Island",
-                "img": "/static/img/ArcWholeCakeIsland.jpg",
-                "name": "Arc Whole Cake Island",
-                "épisodesAnime": "783-877"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-levely.png",
-                "chapitresManga": "903-908",
-                "description": "La Levely,Rêverie ou Conseil des Rois (littéralement traduit par Conseil Mondial) est un conseil formé par le Gouvernement Mondial composé des plus grands dirigeants des différents royaumes du monde qui ont rejoint le Gouvernement Mondial qui se réunissent tous les 4 ans pour 7 jours.",
-                "id": "Arcs/Arc Levely",
-                "img": "/static/img/ArcLevely.jpg",
-                "name": "Arc Levely",
-                "épisodesAnime": ""
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-wano-kuni.png",
-                "chapitresManga": "909-1057",
-                "description": "Le Pays des Wa (Wa no Kuni), ou Pays de l'Harmonie, aussi appelé « Pays Doré » est un pays peuplé essentiellement de samouraïs et de ninja",
-                "id": "Arcs/Arc Wano Kuni",
-                "img": "/static/img/ArcWanoKuni.jpg",
-                "name": "Arc Wano Kuni",
-                "épisodesAnime": "890-1085"
-            },
-            {
-                "affiche": "/static/img/affiches-arcs/affiche-egg-head.png",
-                "chapitresManga": "1058",
-                "description": "L'Arc Île d'Egg Head , également nommé Arc Île du Futur est le 32ème arc de la série One Piece et le premier arc de la Saga Finale.",
-                "id": "Arcs/Arc Egg Head",
-                "img": "/static/img/ArcEggHead.jpg",
-                "name": "Arc Egg Head",
-                "épisodesAnime": "1086"
-            }
-        ],
-        "EventsOnePiece": [
-            {
-                "affiche": "/static/img/affiches-events/affiche-execution-gol-d-roger.png",
-                "description": "L'exécution du Roi des Pirates, Gol D. Roger, marque le début de l'ère des pirates et inspire de nombreux aventuriers à chercher le One Piece.",
-                "id": "Events/L'exécution de Gol D. Roger",
-                "name": "L'exécution de Gol D. Roger"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-rencontre-whiskey-peak.png",
-                "description": "L'équipage de Luffy arrive à Whisky Peak, où ils rencontrent les agents de Baroque Works et découvrent la vérité derrière l'organisation.",
-                "id": "Events/La rencontre à Whisky Peak",
-                "name": "La rencontre à Whisky Peak"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-revelation-cp-9.png",
-                "description": "L'arc Water Seven/Enies Lobby se déploie comme une saga épique, riche en émotions et en tournants dramatiques. Du poignant duel entre Luffy et Usopp à la lutte désespérée pour sauver Nico Robin à Enies Lobby, cet arc explore les profondeurs des liens au sein de l'équipage. Les révélations sur le CP9 et les enjeux liés au gouvernement mondial ajoutent des couches complexes à l'intrigue, témoignant de la nature impitoyable du monde. Cet arc emblématique devient le théâtre d'une bataille qui va au-delà de la simple confrontation physique, symbolisant la détermination inébranlable de l'équipage à défendre les leurs.",
-                "id": "Events/L'arc Water Seven/Enies Lobby",
-                "name": "L'arc Water Seven/Enies Lobby"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-incident-sabaody.png",
-                "description": " L'archipel Sabaody devient le lieu d'un tournant crucial pour l'équipage de Chapeau de Paille. L'incident des Pacifistas et la révélation sur les esclaves humains soulignent la cruauté du Nouveau Monde. La séparation forcée des membres de l'équipage et l'introduction des Amiraux montrent la montée abrupte des enjeux. Cet épisode laissera une marque indélébile, exposant la réalité brutale de Grand Line et préparant l'équipage à une compréhension plus profonde des défis qui les attendent.",
-                "id": "Events/L'incident de l'archipel Sabaody",
-                "name": "L'incident de l'archipel Sabaody"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-marine-ford.png",
-                "description": " La guerre au sommet à Marineford se profile comme un moment tragique et épique de One Piece. Le conflit monumental entre la Marine, l'équipage de Barbe Blanche et d'autres forces majeures dépeint un tableau de chaos et de sacrifice. La mort de Barbe Blanche et l'intervention de Shanks marquent la fin d'une ère et le début d'une nouvelle phase dans l'histoire des pirates. Cette guerre spectaculaire met en lumière les intrications complexes des relations entre les personnages majeurs et les conséquences dévastatrices des conflits qui secouent Grand Line.",
-                "id": "Events/La guerre au sommet à Marineford",
-                "name": "La guerre au sommet à Marineford"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-revelation-histoire-ancienne.png",
-                "description": "Lorsque Nico Robin dévoile l'histoire ancienne à l'équipage, les pièces du puzzle de One Piece commencent à s'assembler. Les Ponéglyphes, le siècle manquant, et l'importance de l'île de Raftel prennent un sens profond. Cette révélation plonge l'équipage dans un océan de connaissances occultes, ajoutant une dimension mystique à leur quête. La compréhension de l'histoire ancienne élargit la perspective de l'équipage, les liant inexorablement à un destin intimement connecté aux mystères du monde.",
-                "id": "Events/La révélation de l'histoire ancienne",
-                "name": "La révélation de l'histoire ancienne"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-rencontre-yonkos.png",
-                "description": "L'équipage affronte Big Mom à Whole Cake Island, plongeant dans les méandres des dynamiques complexes entre les Yonko. Cette rencontre met en lumière la puissance colossale des Empereurs et les intrications politiques dans le Nouveau Monde. La mission pour sauver Sanji dévoile également des facettes inattendues des personnages clés, ajoutant des couches de complexité à l'histoire. Whole Cake Island devient ainsi le terrain d'une bataille intense, mais aussi le lieu où les fondements des grandes puissances du monde sont exposés.",
-                "id": "Events/La rencontre avec les Yonko à Whole Cake Island",
-                "name": "La rencontre avec les Yonko à Whole Cake Island"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-reverie.png",
-                "description": " L'arc Reverie prend une tournure diplomatique, réunissant les dirigeants mondiaux à Levely pour discuter de questions cruciales. Cette réunion aborde des sujets liés à Luffy et à son équipage, dévoilant les ramifications de leurs actions à l'échelle mondiale. L'arc Reverie devient une fenêtre intrigante sur les rouages politiques du monde de One Piece, montrant comment les actions d'une poignée de pirates peuvent influencer les cours des nations.",
-                "id": "Events/L'arc Reverie",
-                "name": "L'arc Reverie"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-kaido-wano.png",
-                "description": "L'arrivée de Kaido à Wano Kuni est un moment pivot qui change la donne dans l'histoire de One Piece. La puissance écrasante de Kaido, l'un des Empereurs, met en lumière les défis insurmontables auxquels l'équipage sera confronté. L'arc de Wano Kuni devient le théâtre d'une bataille épiquement complexe, impliquant des alliances improbables, des révélations surprenantes, et des enjeux qui transcendent les frontières de l'île isolée.",
-                "id": "Events/L'attaque de Kaido à Wano Kuni",
-                "name": "L'attaque de Kaido à Wano Kuni"
-            },
-            {
-                "affiche": "/static/img/affiches-events/affiche-joy-boy.png",
-                "description": "Les révélations sur Joy Boy et l'importance de la volonté des D. commencent à éclaircir les mystères entourant le One Piece. Cette découverte projette l'équipage au cœur des intrigues cosmiques qui façonnent le monde. Joy Boy devient une figure centrale, liée au destin de Luffy et à la quête du One Piece. Les implications de cette révélation transcendent le simple trésor matériel, plongeant l'équipage dans un voyage spirituel et métaphysique à travers les arcanes du monde.",
-                "id": "Events/La découverte de l'identité de Joy Boy",
-                "name": "La découverte de l'identité de Joy Boy"
-            }
-        ],
-        "Persos": [
-            {
-                "affiche": "/static/img/affiches-persos/affiche-luffy.png",
-                "id": "Persos/Monkey D. Luffy",
-                "img": "/static/img/imgpersos/Luffy.jpg",
-                "name": "Luffy",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Vêtu de son chapeau de paille emblématique, Luffy porte une tenue caractéristique et arbore une cicatrice sous son œil gauche, résultat des épreuves sur son chemin.",
-                        "capacités": "Maîtrisant le Haki, Luffy développe le puissant Haki des Rois, capable d'intimider voire d'assommer ceux de volonté plus faible. Sa force surhumaine, associée à sa physiologie caoutchouteuse, lui permet d'étirer ses membres et d'exécuter des attaques dévastatrices.",
-                        "demonFruit": "Gomu Gomu no Mi, une Fruits du Démon de type Paramecia, a transformé son corps en caoutchouc. Cette capacité offre une souplesse extraordinaire et une immunité aux attaques contondantes, tout en le rendant vulnérable aux attaques tranchantes.",
-                        "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
-                        "histoire": "Monkey D. Luffy, le protagoniste de One Piece, a une histoire fascinante. Il a grandi dans le village de Fuschia, rêvant de devenir le Roi des Pirates. Son destin a basculé lorsqu'il a accidentellement mangé le fruit du démon Gomu Gomu, lui donnant des pouvoirs élastiques mais l'empêchant de nager. Inspiré par son idole, Shanks le Roux, Luffy part à la recherche du trésor légendaire, le One Piece. Il fonde alors l'équipage des Chapeaux de Paille, composé de membres dévoués et puissants. Luffy a affronté de redoutables ennemis, dont des Grands Corsaires et des Empereurs de la mer, pour atteindre son objectif ultime. Son courage, sa détermination et son amour pour ses amis en font un personnage emblématique et charismatique au cœur de l'épopée de One Piece.",
-                        "personalité": "Déterminé et optimiste, Luffy fait preuve d'une loyauté inébranlable envers ses amis, considérant son équipage comme sa famille. Sa personnalité franche et directe reflète un courage authentique, et son enthousiasme contagieux motive ceux qui l'entourent.",
-                        "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line."
-                    },
-                    "fullName": "Monkey D. Luffy",
-                    "prime": "3.000.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                    }
-                    
-                },
-            
-            {
-                "affiche": "/static/img/affiches-persos/affiche-zoro.png",
-                "id": "Persos/Roronoa Zoro",
-                "img": "/static/img/imgpersos/Zoro.jpg",
-                "name": "Zoro",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Portant souvent un bandana et ses trois sabres, Zoro a une allure musclée et intimidante.",
-                        "capacités": "Expert dans le maniement du sabre, Zoro est un épéiste de classe mondiale. Il peut utiliser des techniques puissantes telles que le Santoryu (Trois sabres).",
-                        "demonFruit": "Aucun. Zoro est un maître épéiste, maniant trois sabres simultanément.",
-                        "description": " Zoro, avec ses trois cicatrices sur l'œil gauche, évoque la prestance d'un puissant épéiste. Son regard sérieux et son attitude calme cachent une détermination féroce.",
-                        "histoire": "Roronoa Zoro, le bras droit de Luffy dans l'équipage des Chapeaux de Paille, a une histoire impressionnante. Originaire du village de Shimotsuki sur l'île de Kuraigana, Zoro a développé une passion précoce pour l'art du sabre. Son rêve est de devenir le plus grand bretteur du monde. Après une rencontre avec Luffy, il rejoint l'équipage en tant que maître d'armes. Zoro manie trois sabres avec une habileté extraordinaire, une technique appelée Santoryu. Il a également adopté le code du bushido et est prêt à sacrifier sa vie pour protéger ses amis. Son parcours est marqué par des défis épiques, des combats intenses et sa quête constante d'amélioration. Zoro demeure un personnage charismatique et respecté au sein de l'univers captivant de One Piece.",
-                        "personalité": "Sérieux et loyal, Zoro incarne la discipline et le calme. Sa fidélité envers Luffy et son équipage est inébranlable, et il poursuit son rêve avec une détermination sans faille.",
-                        "role": "Premier épéiste et bras droit de Luffy dans les Pirates du Chapeau de Paille, Zoro cherche à devenir le plus grand épéiste du monde."
-                    },
-                    "fullName": "Roronoa Zoro",
-                    "prime": "1.111.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-sanji.png",
-                "id": "Persos/Vinsmoke Sanji",
-                "img": "/static/img/imgpersos/Sanji.jpg",
-                "name": "Sanji",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Vêtu d'un costume noir et arborant une jambe droite souvent dissimulée, Sanji a une allure raffinée.",
-                        "capacités": "Maître du Black Leg Style, Sanji excelle dans le combat au corps à corps. Sa Diable Jambe lui permet d'enchâsser ses pieds en feu pour augmenter la puissance de ses coups.",
-                        "demonFruit": "Jambe noire, une version améliorée du Germa 66 permettant à Sanji d'utiliser le Diable Jambe.",
-                        "description": "Sanji, le cuistot passionné, est reconnaissable à sa jambe droite cachée et à sa coiffure unique. Son style est un mélange de classe et de combativité.",
-                        "histoire": " Sanji, le cuisinier talentueux des Chapeaux de Paille dans One Piece, a une histoire tout aussi intrigante. Né dans la famille Vinsmoke, une lignée de puissants assassins, Sanji a rejeté la voie du combat pour suivre sa passion pour la cuisine. Il a été élevé dans le Baratie, un restaurant flottant, où il a perfectionné ses compétences culinaires. Sa rencontre avec Luffy a marqué le début de son aventure en tant que pirate. Sanji est également un maître du style de combat Black Leg, utilisant ses puissantes jambes pour des attaques rapides et dévastatrices. Son rêve est de découvrir le légendaire All Blue, un océan où coexistent toutes les espèces marines, offrant une variété infinie d'ingrédients pour la cuisine. Malgré son attitude cool et son amour pour la nourriture, Sanji est un membre précieux de l'équipage, apportant non seulement des compétences culinaires exceptionnelles, mais aussi une force et une loyauté indéfectibles.",
-                        "personalité": "Sanji est élégant, charmeur et passionné par la cuisine. Sa politesse envers les femmes et son sens de l'honneur ajoutent une couche de complexité à sa personnalité.",
-                        "role": "Cuisinier et combattant des Pirates du Chapeau de Paille, Sanji poursuit son rêve de découvrir l'All Blue."
-                    },
-                    "fullName": "Vinsmoke Sanji",
-                    "prime": "1.032.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-nami.png",
-                "id": "Persos/Nami",
-                "img": "/static/img/imgpersos/Nami.jpg",
-                "name": "Nami",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec une longue chevelure rousse et des tatouages distinctifs, Nami a une allure aventurière.",
-                        "capacités": "Maîtrisant la navigation et la cartographie, Nami est une tacticienne habile. Son Climat-Tact lui confère des capacités météorologiques puissantes.",
-                        "demonFruit": "Climat-Tact, un bâton spécial qui utilise le pouvoir du Fruit de la Climatologie, permettant de manipuler le climat.",
-                        "description": "Nami est une navigatrice talentueuse et stratégique, souvent vêtue de tenues pratiques pour la navigation. Ses tatouages en forme de mandarines symbolisent son village natal, Cocoyashi.",
-                        "histoire": "Nami, la navigatrice habile des Chapeaux de Paille dans One Piece, a une histoire tout aussi intrigante. Originaire du village d'Orange, elle a connu la tragédie de la perte de sa famille à cause d'une pirate nommée Arlong. Contrainte de travailler comme navigatrice pour Arlong, Nami a développé une grande expertise en cartographie et navigation. Son objectif initial était de rassembler une somme d'argent suffisante pour acheter la libération de son village. Cependant, sa rencontre avec Monkey D. Luffy a marqué un tournant dans sa vie. Nami a rejoint l'équipage des Chapeaux de Paille, devenant une navigatrice précieuse et déterminée. Son rêve est de cartographier le monde entier, en particulier la mystérieuse île de Laugh Tale, qui détient les secrets du One Piece. Nami apporte non seulement ses compétences en navigation, mais aussi sa détermination et son intelligence stratégique à l'équipage, en faisant un membre indispensable de l'équipage de Luffy.",
-                        "personalité": "Intelligente et pragmatique, Nami est également attentionnée envers ses compagnons d'équipage. Son obsession pour les cartes cache une profonde loyauté envers Luffy et les autres.",
-                        "role": "Navigatrice des Pirates du Chapeau de Paille, Nami aspire à cartographier le monde et à dessiner une carte complète."
-                    },
-                    "fullName": "Nami",
-                    "prime": "366.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-usopp.png",
-                "id": "Persos/Usopp",
-                "img": "/static/img/imgpersos/Usopp.jpg",
-                "name": "Usopp",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Usopp est reconnaissable avec son nez long et fin, et il porte souvent des vêtements aux couleurs vives.",
-                        "capacités": "Expert au lance-pierre et à la fabrication d'inventions, Usopp est un tireur d'élite capable de manœuvres astucieuses.",
-                        "demonFruit": "Aucun. Usopp se distingue par sa maîtrise du tir au lance-pierre et des inventions étonnantes.",
-                        "description": " Usopp est un menteur invétéré, souvent portant un chapeau unique et une écharpe. Ses vêtements colorés reflètent son esprit fantasque.",
-                        "histoire": "Usoop, le tireur d'élite et conteur exceptionnel des Chapeaux de Paille dans One Piece, a une histoire pleine d'imagination et de bravoure. Originaire du village de Syrup sur l'île de Gecko, Usoop a grandi en racontant des histoires fantastiques pour échapper à la réalité. Bien que ses histoires soient souvent exagérées, son courage réel s'est révélé lorsqu'il a rejoint l'équipage de Luffy pour poursuivre ses rêves. Usoop est également un tireur d'élite habile, utilisant son fidèle lance-pierre et ses munitions spéciales dans les batailles. Son rêve est de devenir un brave guerrier de la mer, à la hauteur des légendes racontées dans ses histoires. Malgré son penchant pour l'exagération, Usoop apporte une dose de comédie, d'intelligence tactique et de bravoure inattendue à l'équipage, faisant de lui un membre précieux des Chapeaux de Paille.",
-                        "personalité": "Imagination débordante et rêveur, Usopp apporte une touche d'humour à l'équipage. Malgré ses mensonges, il montre un grand courage lorsque la situation l'exige.",
-                        "role": "Tireur d'élite des Pirates du Chapeau de Paille, Usopp aspire à devenir un valeureux guerrier des mers."
-                    },
-                    "fullName": "Usopp",
-                    "prime": "500.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-robin.png",
-                "id": "Persos/Nico Robin",
-                "img": "/static/img/imgpersos/Robin.jpg",
-                "name": "Robin",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec des cheveux noirs longs et lisses, Robin a une apparence élégante et mature.",
-                        "capacités": "La maîtrise du Hana Hana no Mi permet à Robin de créer des bras supplémentaires pour des attaques variées et des manœuvres complexes.",
-                        "demonFruit": "Hana Hana no Mi, un Fruit de la Flore qui permet à Robin de créer des parties de son corps sur n'importe quelle surface.",
-                        "description": "Robin arbore une aura calme, souvent vêtue de manière élégante. Son symbole distinctif est le tatouage du Démon à Cent Fleurs sur son bras gauche.",
-                        "histoire": "Nico Robin, l'archéologue érudite des Chapeaux de Paille dans One Piece, a une histoire empreinte de mystère et d'intrigue. Née sur l'île d'Ohara, elle était la seule survivante du Buster Call qui a détruit sa patrie en raison de son passé d'archéologue. Robin a passé une grande partie de sa vie fugitive, cherchant à comprendre les mystères du monde antique et les Poneglyphes, des pierres inscrites renfermant des informations cruciales sur le siècle manquant. Son chemin croise celui de Monkey D. Luffy et de son équipage, et elle rejoint finalement les Chapeaux de Paille. Robin apporte une expertise unique à l'équipage en tant qu'archéologue exceptionnelle et maîtrise le pouvoir du fruit du démon Hana Hana no Mi, lui permettant de créer des parties supplémentaires de son corps. Son rêve est de dévoiler les secrets du siècle manquant et de percer les mystères du One Piece. Malgré son attitude calme et réservée, Nico Robin joue un rôle crucial dans la quête de Luffy et apporte une profondeur intellectuelle à l'équipage.",
-                        "personalité": "Calme et intellectuelle, Robin a une perspective réaliste et une compréhension profonde de l'histoire du monde. Elle est un pilier de sagesse au sein de l'équipage.",
-                        "role": "Archéologue des Pirates du Chapeau de Paille, Robin recherche des informations sur le Siècle Manquant et l'histoire ancienne."
-                    },
-                    "fullName": "Nico Robin",
-                    "prime": "930.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-chopper.png",
-                "id": "Persos/Tony Tony Chopper",
-                "img": "/static/img/imgpersos/Chopper.jpg",
-                "name": "Chopper",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Souvent vu avec une grande casquette, Chopper peut prendre différentes formes humaines.",
-                        "capacités": "Chopper a des compétences médicales exceptionnelles et peut se transformer en différentes formes.",
-                        "demonFruit": "Hito Hito no Mi, modèle Renne.",
-                        "description": "Chopper, le médecin de l'équipage, est un renne avec la capacité de se transformer en différentes formes humaines. Il porte généralement une grande casquette et est doté d'une personnalité innocente et compatissante.",
-                        "histoire": "Tony Tony Chopper, le médecin renne des Chapeaux de Paille dans One Piece, a une histoire touchante. Né sur l'île de Drum, il a été rejeté en raison de son apparence hybride. Après avoir consommé le fruit du démon Hito Hito no Mi, modèle Cerf, il a obtenu une forme humaine et la capacité de parler. Élevé par le docteur Hiluluk, Chopper a développé une passion pour la médecine. La mort de Hiluluk l'a profondément marqué, inspirant Chopper à devenir médecin. Rejoignant l'équipage de Luffy, il poursuit le rêve de devenir le plus grand médecin du monde. Son pouvoir du fruit du démon et sa transformation Monster Point en font un atout puissant. Chopper, avec son optimisme contagieux, est devenu un membre chéri des Chapeaux de Paille, ajoutant une dose de tendresse et de dévouement à l'équipage et à l'aventure épique à travers les mers tumultueuses.",
-                        "personalité": "Chopper a une personnalité innocente et compatissante.",
-                        "role": "Médecin des Pirates du Chapeau de Paille, Chopper utilise ses compétences médicales et ses transformations pour aider l'équipage."
-                    },
-                    "fullName": "Tony Tony Chopper",
-                    "prime": "1.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-brook.png",
-                "id": "Persos/Brook",
-                "img": "/static/img/imgpersos/Brook.jpg",
-                "name": "Brook",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Portant souvent un chapeau, Brook est un squelette musicien.",
-                        "capacités": "Après avoir mangé le Yomi Yomi no Mi, Brook a obtenu une seconde chance à la vie et peut utiliser ses compétences musicales pour diverses situations.",
-                        "demonFruit": "Yomi Yomi no Mi.",
-                        "description": "Brook est un squelette musicien avec une personnalité joyeuse. Il est souvent vu portant un chapeau et jouant du violon. Après avoir mangé le Yomi Yomi no Mi, il a été ressuscité.",
-                        "histoire": "Brook, le musicien squelette des Chapeaux de Paille dans One Piece, a une histoire captivante. Anciennement capitaine de l'équipage Rumbar, Brook a rencontré la mort, mais son esprit a été ramené dans son propre corps grâce au fruit du démon Revive-Revive. Errant seul pendant des décennies, il a rejoint les Chapeaux de Paille à Thriller Bark. Expert au sabre et joueur de shamisen, Brook ajoute une dimension musicale à l'équipage. Son rêve est de retrouver la mer légendaire abritant l'île des hommes-poissons, Fish-Man Island, et d'y jouer une chanson touchant toutes les créatures marines. Malgré son apparence squelettique, Brook, avec son humour et sa joie de vivre, devient un membre chaleureux et essentiel de l'équipage, contribuant à l'harmonie de leur voyage à travers les mers tumultueuses.",
-                        "personalité": "Brook a une personnalité joyeuse malgré sa nature de squelette.",
-                        "role": "Musicien des Pirates du Chapeau de Paille, Brook apporte une touche musicale à l'équipage."
-                    },
-                    "fullName": "Brook",
-                    "prime": "383.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-franky.png",
-                "id": "Persos/Franky",
-                "img": "/static/img/imgpersos/Franky.jpg",
-                "name": "Franky",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Franky porte souvent des lunettes de soleil et a un corps mécanique impressionnant.",
-                        "capacités": "En tant que cyborg, Franky a une force physique surhumaine et est un expert en construction navale.",
-                        "demonFruit": "Aucun.",
-                        "description": "Franky est un cyborg constructeur de bateaux avec une personnalité exubérante. Il a des bras puissants et peut se transformer en différentes formes.",
-                        "histoire": "Franky, anciennement Cutty Flam, est le charpentier naval cyborg des Chapeaux de Paille dans One Piece. Autrefois disciple de Tom sur l'île de Water 7, il a subi des modifications après des événements tragiques liés au gouvernement mondial. Rejoignant les Chapeaux de Paille, Franky est devenu le charpentier en chef du Thousand Sunny. Son rêve est de construire le légendaire bateau qui fera le tour du monde. Avec son corps cyborg, sa force physique impressionnante, et son talent pour la construction navale, Franky apporte une énergie explosive et une détermination à réaliser ses rêves et ceux de l'équipage.                        ",
-                        "personalité": "Franky a une personnalité exubérante et est passionné par la construction navale.",
-                        "role": "Charpentier naval des Pirates du Chapeau de Paille, Franky est responsable de la construction et de l'entretien du Thousand Sunny."
-                    },
-                    "fullName": "Franky",
-                    "prime": "394.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-jinbe.png",
-                "id": "Persos/Jinbe",
-                "img": "/static/img/imgpersos/Jinbe.jpg",
-                "name": "Jinbe",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec une peau bleue et des marques faciales distinctives, Jinbe a une présence imposante.",
-                        "capacités": "Jinbe est un maître des arts martiaux, utilisant le Karaté des Hommes-Poissons. Il possède une force physique considérable et une grande maîtrise du Haki.",
-                        "demonFruit": "Aucun.",
-                        "description": "Jinbe est un homme-poisson puissant avec une peau bleue et des marques caractéristiques sur son visage. Il a une personnalité calme et sage.",
-                        "histoire": "Jinbe, le puissant timonier et expert en karaté des poissons dans One Piece, a une histoire remarquable. Originaire de l'île des Hommes-Poissons, il a été le capitaine des Corsaires, puis a servi comme timonier de l'équipage de Barbe Blanche. Par la suite, Jinbe est devenu membre des Chapeaux de Paille. Jinbe possède une maîtrise impressionnante du karaté des poissons, une forme de combat sous-marine. Il a également mangé le fruit du démon Gyojin, lui conférant la capacité de contrôler l'eau. Son rêve est de voir l'île des Hommes-Poissons vivre en paix avec les humains en surface. Malgré les obstacles, Jinbe est un allié fiable et un membre essentiel de l'équipage, apportant sa sagesse, sa force et son sens du devoir à chaque étape de l'aventure des Chapeaux de Paille.",
-                        "personalité": "Jinbe a une personnalité calme et sage, et il est connu pour son honnêteté et sa loyauté.",
-                        "role": "Timonier des Pirates du Chapeau de Paille, Jinbe est un expert en arts martiaux et possède une grande sagesse."
-                    },
-                    "fullName": "Jinbe",
-                    "prime": "1.100.000.000",
-                    "drapeau" : "/static/img/drapeaux/mugiwara.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-ace.png",
-                "id": "Persos/Portgas D Ace",
-                "img": "/static/img/imgpersos/Ace.jpg",
-                "name": "Ace",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec une marque distinctive sous son œil gauche, Ace avait une apparence frappante.",
-                        "capacités": "Ace possédait des pouvoirs liés au feu grâce au Mera Mera no Mi, et il était un combattant redoutable.",
-                        "demonFruit": "Mera Mera no Mi.",
-                        "description": "Ace était le frère adoptif de Luffy et un utilisateur du Mera Mera no Mi, lui conférant des pouvoirs liés au feu.",
-                        "histoire": "Portgas D. Ace, le frère adoptif de Monkey D. Luffy dans One Piece, a une histoire captivante. Né à bord du bateau de Gol D. Roger, Ace est le fils de Gol D. Roger et de Portgas D. Rouge. Après la mort de ses parents, il a été recueilli et élevé par Monkey D. Garp. Ace a mangé le fruit du démon Mera Mera no Mi, lui conférant le pouvoir du feu. Devenu pirate et commandant de la deuxième flotte de l'équipage de Barbe Blanche, son rêve était de trouver le One Piece pour prouver que son existence n'était pas maudite. Capturé lors de la guerre au sommet de Marineford, Ace a sacrifié sa vie pour protéger Luffy des attaques d'Akainu. Sa perte a laissé une marque indélébile dans l'histoire de One Piece, affectant profondément Luffy et marquant un moment tragique et mémorable dans la série.",
-                        "personalité": "Ace avait une personnalité énergique et une grande détermination.",
-                        "role": "Ancien commandant de la 2e division de l'équipage de Barbe Blanche."
-                    },
-                   
-                    "fullName": "Portgas D. Ace",
-                    "prime": "550.000.000",
-                    "drapeau" : "/static/img/drapeaux/ace.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-crocodile.png",
-                "id": "Persos/Crocodile",
-                "img": "/static/img/imgpersos/Crocodile.jpg",
-                "name": "Crocodile",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec son manteau et son crochet doré, Crocodile a une apparence charismatique et menaçante.",
-                        "capacités": "Grâce au Suna Suna no Mi, Crocodile peut créer, contrôler et devenir du sable. Il est également un épéiste habile.",
-                        "demonFruit": "Suna Suna no Mi.",
-                        "description": "Crocodile est un ancien Capitaine Corsaire et utilisateur du Suna Suna no Mi, lui permettant de manipuler le sable.",
-                        "histoire": "Sir Crocodile, également connu sous le nom de Crocodile, est un antagoniste majeur dans One Piece. Ancien Corsaire et chef de l'organisation Baroque Works, il a dirigé Alabasta dans le but de s'emparer du royaume. Possédant le fruit du démon Suna Suna no Mi, Crocodile avait le pouvoir de manipuler le sable. Luffy et son équipage, lors de leur aventure à Alabasta, ont découvert les machinations de Crocodile et ont finalement affronté le Shichibukai. Malgré ses tactiques sournoises et son pouvoir redoutable, Luffy a réussi à le vaincre, dévoilant ses véritables intentions de renverser le gouvernement mondial. Plus tard, Crocodile a été emprisonné à Impel Down, mais il s'est avéré être un personnage complexe avec des objectifs plus vastes. Plus tard, il a aidé Luffy pendant la guerre à Marineford, montrant une alliance temporaire entre eux. Crocodile demeure l'un des antagonistes les plus intrigants et nuancés de One Piece.",
-                        "personalité": "Crocodile est impitoyable, manipulateur et assoiffé de pouvoir.",
-                        "role": "Ancien président de Baroque Works et antagoniste principal de l'Arc Alabasta."
-                    },
-                    
-                    "fullName": "Sir Crocodile",
-                    "prime": "1.965.000.000",
-                    "drapeau" : "/static/img/drapeaux/baroque-works.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-kid.png",
-                "id": "Persos/Eustass Kidd",
-                "img": "/static/img/imgpersos/Kidd.jpg",
-                "name": "Kidd",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec de nombreux tatouages, des cicatrices et un bras métallique, Kidd a une apparence intimidante.",
-                        "capacités": "Kidd est un utilisateur du Haki et est extrêmement habile dans l'utilisation de son bras métallique en combat.",
-                        "demonFruit": "Aucun (jusqu'à ma dernière mise à jour en janvier 2022).",
-                        "description": "Kidd est un pirate au physique imposant avec de nombreux tatouages et des cicatrices. Il a une personnalité violente et ambitieuse.",
-                        "histoire": "Eustass Kidd, surnommé le Capitaine Kidd, est un pirate puissant et impitoyable dans One Piece. Originaire de South Blue, il est membre des Onze Supernovae. Possédant le fruit du démon Jiki Jiki no Mi, qui lui confère le pouvoir de manipuler les aimants, Kidd est reconnu pour sa brutalité. Ayant formé son propre équipage, Kidd s'est distingué en défiants ouvertement des Yonko tels que Shanks et Kaido. Son ambition déclarée est de devenir le roi des pirates. Kidd est un personnage complexe, affichant une détermination féroce et une volonté de défier les puissances établies dans le monde de One Piece.",
-                        "personalité": "Kidd est connu pour sa personnalité violente, son ambition dévorante et son refus de s'incliner devant d'autres pirates.",
-                        "role": "Capitaine des Kidd Pirates, Kidd est l'un des Onze Supernovas et un supernova notoire."
-                    },
-                    
-                    "fullName": "Eustass Kidd",
-                    "prime": "3.000.000.000",
-                    "drapeau" : "/static/img/drapeaux/kidd.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-law.png",
-                "id": "Persos/Trafalgar D. WaterLaw",
-                "img": "/static/img/imgpersos/Law.jpg",
-                "name": "Law",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec des tatouages et une expression calme, Law a une présence imposante.",
-                        "capacités": "Law est un utilisateur du Haki et possède le Ope Ope no Mi, lui permettant de manipuler les objets à l'intérieur d'une sphère d'influence.",
-                        "demonFruit": "Ope Ope no Mi, un Fruit du Démon de type Paramecia qui lui permet de manipuler les objets à l'intérieur d'une sphère d'influence.",
-                        "description": "Law est un pirate avec une silhouette élancée, des tatouages et une expression souvent calme. Il est le capitaine des Heart Pirates.",
-                        "histoire": "Law a émergé comme l'un des Onze Supernovas après le saut temporel. Il est devenu un membre clé de l'Alliance des Pirates de Chapeau de Paille et a joué un rôle majeur dans l'intrigue de Punk Hazard et Dressrosa. Law a des motivations complexes liées à son Fruit du Démon et à son passé mystérieux.",
-                        "personalité": "Law a une personnalité calme et stratégique, mais peut être impitoyable envers ses ennemis. Il a un profond sens de l'honneur.",
-                        "role": "Capitaine des Heart Pirates, Law est un membre clé de l'Alliance des Pirates de Chapeau de Paille et l'un des Onze Supernovas."
-                    },
-                    
-                    "fullName": "Trafalgar D. Water Law",
-                    "prime": "3.000.000.000",
-                    "drapeau" : "/static/img/drapeaux/law.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-katakuri.png",
-                "id": "Persos/Charlotte Katakuri",
-                "img": "/static/img/imgpersos/Katakuri.jpg",
-                "name": "Charlotte",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec une stature imposante et un foulard sur la bouche, Katakuri a une présence intimidante.",
-                        "capacités": "Katakuri est un utilisateur du Haki et possède le Mochi Mochi no Mi, lui permettant de créer, manipuler et devenir du mochi.",
-                        "demonFruit": "Mochi Mochi no Mi, un Fruit du Démon de type Paramecia qui lui permet de créer, manipuler et devenir du mochi.",
-                        "description": "Katakuri est un homme au physique imposant, avec une peau brune et des cicatrices. Il porte généralement un foulard sur la bouche.",
-                        "histoire": "Charlotte Katakuri, également connu sous le nom de Dogtooth, est un personnage puissant et respecté dans One Piece. Fils de Big Mom et l'un des Trois Sweet Commanders de l'équipage de Big Mom, Katakuri est réputé pour sa force exceptionnelle et son sens aigu de l'observation. Il a mangé le fruit du démon Mochi Mochi no Mi, lui conférant la capacité de créer, manipuler et transformer son corps en mochi. Katakuri est célèbre pour son attitude calme et réservée, ainsi que pour son sens strict de l'honneur. Il est souvent vu avec son visage dissimulé, car il considère ses dents de mochi comme une imperfection. Lors de l'arc Whole Cake Island, Katakuri a démontré sa loyauté envers sa famille tout en engageant un combat intense contre Monkey D. Luffy, prouvant ainsi sa réputation de l'un des personnages les plus redoutables de l'univers de One Piece.",
-                        "personalité": "Katakuri est calme, imperturbable et perfectionniste, mais cache son visage en raison de son complexe d'infériorité lié à sa bouche.",
-                        "role": "Commandant sucré de la Big Mom Pirates, Katakuri est l'un des Three Sweet Commanders et l'un des fils de Big Mom."
-                    },
-                    
-                    "fullName": "Charlotte Katakuri",
-                    "prime": "1.057.000.000",
-                    "drapeau" : "/static/img/drapeaux/big-mom.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-sabo.png",
-                "id": "Persos/Sabo",
-                "img": "/static/img/imgpersos/Sabo.jpg",
-                "name": "Sabo",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec des lunettes et un chapeau, Sabo a une apparence distinguée.",
-                        "capacités": "Sabo est un expert en arts martiaux et a obtenu les pouvoirs du Mera Mera no Mi après la mort d'Ace.",
-                        "demonFruit": "Mera Mera no Mi (après avoir mangé le Fruit du Démon de Ace).",
-                        "description": "Sabo est le frère adoptif de Luffy et Ace, et il est le chef en second de l'Armée Révolutionnaire. Il porte souvent des lunettes et un chapeau.",
-                        "histoire": "Sabo, le frère adoptif de Monkey D. Luffy dans One Piece, a une histoire remarquable. Originaire du Royaume de Goa, il était le frère de Luffy et Ace. Pensé mort lors de son enfance, Sabo a survécu et perdu la mémoire, finissant par être recueilli par l'Armée Révolutionnaire. Après avoir retrouvé la mémoire, Sabo a mangé le fruit du démon Mera Mera no Mi, précédemment détenu par son frère Ace. Il est devenu le second commandant en chef de l'Armée Révolutionnaire, luttant contre les injustices du Gouvernement Mondial. Son retour inattendu a eu un impact significatif, renforçant les liens entre les frères et jouant un rôle crucial dans l'équilibre des forces à travers les océans.",
-                        "personalité": "Sabo est intelligent, stratégique et dévoué à la cause de la Révolution. Il a une forte détermination à protéger ses proches.",
-                        "role": "Chef en second de l'Armée Révolutionnaire et membre clé de l'équipage de Dragon."
-                    },
-                  
-                    "fullName": "Sabo",
-                    "prime": "602.000.000",
-                    "drapeau" : "/static/img/drapeaux/sabo.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-baggy.png",
-                "id": "Persos/Baggy le Clown",
-                "img": "/static/img/imgpersos/Baggy.jpg",
-                "name": "Baggy",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec un nez rouge, un chapeau de clown et une tenue extravagante, Baggy a une apparence de clown distincte.",
-                        "capacités": "Baggy est immunisé contre les attaques tranchantes grâce à son pouvoir de Fruit du Démon, mais sa force physique est normale.",
-                        "demonFruit": "Bara Bara no Mi, un Fruit du Démon de type Paramecia qui permet à Baggy de séparer son corps en morceaux.",
-                        "description": "Baggy est un pirate avec une apparence clownesque et la capacité de séparer son corps en morceaux grâce à une balle Bara Bara no Mi.",
-                        "histoire": "Baggy le Clown, également connu sous le nom de Baggy le Clown, est un personnage excentrique et comique dans One Piece. Ancien membre de l'équipage de Gol D. Roger, Baggy est devenu un pirate indépendant après la dissolution de l'équipage du Roi des Pirates. Il a mangé le fruit du démon Bara Bara no Mi, ce qui lui permet de séparer son corps en morceaux. Baggy est souvent associé à des situations humoristiques et est un adversaire récurrent de Luffy. Malgré son côté comique, Baggy possède une histoire complexe et des liens avec des personnages importants tels que Shanks et Gol D. Roger. Bien qu'il puisse sembler être un pirate clownesque, Baggy demeure un personnage mémorable et parfois surprenant dans l'univers de One Piece.",
-                        "personalité": "Baggy est excentrique, opportuniste et aime être au centre de l'attention. Il a une histoire passée avec Shanks le Roux.",
-                        "role": "Capitaine des Baggy Pirates et ancien membre de l'équipage de Roger."
-                    },
-                    "fullName": "Baggy le Clown",
-                    "prime": "3.189.000.000",
-                    "drapeau" : "/static/img/drapeaux/baggy.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-kaido.png",
-                "id": "Persos/Le Roi des Bêtes Kaido",
-                "img": "/static/img/imgpersos/Kaido.jpg",
-                "name": "Kaido",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Kaido a des cheveux bleus, une barbe fournie et des cicatrices sur le visage. Sa présence émet une aura intimidante.",
-                        "capacités": "Possédant une force incroyable, Kaido est pratiquement invincible. Son Fruit du Démon lui permet de se transformer en un dragon massif, ajoutant à sa puissance dévastatrice.",
-                        "demonFruit": "Uo Uo no Mi, modèle Seiryu (Fruit du Dragon) - Mythique, une variante rare du Zoan Mythique lui permettant de se transformer en dragon.",
-                        "description": "Kaido est immense, avec une stature imposante et des tatouages tribaux sur le corps. Il porte souvent un manteau noir et a une expression sévère.",
-                        "histoire": "Kaido, également connu sous le nom de Kaido des Bêtes, est un personnage majeur et un antagoniste puissant dans One Piece. Il est l'un des quatre empereurs, les pirates les plus redoutés et les plus puissants du Nouveau Monde. Kaido a mangé le fruit du démon Uo Uo no Mi, modèle: Seiryu, ce qui lui permet de se transformer en un gigantesque dragon oriental. Il est connu pour sa nature indomptable, sa soif de chaos et son désir de créer la plus grande guerre jamais vue. Kaido est le capitaine des Bêtes Pirates et règne sur l'île de Wano en tentant de réaliser ses ambitions destructrices. Sa réputation de ne pouvant pas mourir a renforcé son mystère et en a fait un personnage redoutable et énigmatique dans l'univers de One Piece.",
-                        "personalité": "Kaido est connu pour sa quête obsessionnelle de trouver un moyen de mourir. Il est impitoyable, adore les défis et cherche à instaurer un règne de chaos et de terreur.",
-                        "role": "Kaido est le capitaine des Beast Pirates et l'un des Empereurs de la Mer. Il cherche constamment à défier la mort et à créer le plus grand conflit mondial."
-                    },
-                    "fullName": "Le Roi des Bêtes Kaido",
-                    "prime": "4.611.100.000",
-                    "drapeau" : "/static/img/drapeaux/kaido.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-big-mom.png",
-                "id": "Persos/Charlotte Linlin, surnommée Big Mom",
-                "img": "/static/img/imgpersos/BigMom.jpg",
-                "name": "Big Mom",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec son énorme taille, sa robe colorée et son chapeau élaboré, Big Mom a une apparence extravagante.",
-                        "capacités": "La Soru Soru no Mi lui permet de manipuler les âmes, influençant la force vitale des individus. Elle est également redoutable au combat physique.",
-                        "demonFruit": "Soru Soru no Mi, un Fruit Paramecia lui permettant de manipuler les âmes.",
-                        "description": "Big Mom est une femme massive avec une peau rose, un chapeau extravagant et une expression souvent souriante, mais dérangeante.",
-                        "histoire": "Big Mom, également connue sous le nom de Charlotte Linlin, est un personnage majeur dans One Piece. Elle est l'un des quatre empereurs, les pirates les plus puissants du Nouveau Monde. Capitaine redoutable de l'équipage Big Mom Pirates et matriarche de la famille Charlotte, elle a mangé le fruit du démon Soru Soru no Mi, lui conférant le pouvoir de manipuler les âmes. Son objectif est de créer un monde où les différentes races coexistent sous sa domination. Réputée pour son appétit insatiable, en particulier pour les gâteaux de mariage, Big Mom est une force redoutable grâce à son pouvoir, sa force brute et son statut d'empereur. Son rôle central dans divers arcs de l'histoire en fait une figure incontournable de l'univers de One Piece, contribuant à l'épopée et à la complexité du monde créé par Eiichiro Oda.",
-                        "personalité": " Big Mom est instable émotionnellement, passant du sourire à la colère en un instant. Sa quête pour créer un monde idéal est basée sur une vision utopique.",
-                        "role": "Big Mom est la capitaine des Big Mom Pirates et fait partie des Quatre Empereurs. Elle cherche à créer un monde où toutes les races coexistent pacifiquement."
-                    },
-                    "fullName": "Charlotte Linlin, surnommée Big Mom",
-                    "prime": "4.388.000.000",
-                    "drapeau" : "/static/img/drapeaux/big-mom.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-shanks.png",
-                "id": "Persos/Shanks Le Roux",
-                "img": "/static/img/imgpersos/Shanks.jpg",
-                "name": "Shanks",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec son manteau rouge et son attitude décontractée, Shanks a une présence imposante.",
-                        "capacités": "Shanks est un épéiste talentueux et un redoutable utilisateur du Haki. Sa maîtrise de l'épée est reconnue même par Mihawk, le plus grand épéiste du monde.",
-                        "demonFruit": "Aucun (Shanks ne possède pas de Fruit du Démon).",
-                        "description": "Shanks a des cheveux roux, une barbe et une cicatrice sur son œil gauche, témoignant d'un événement mystérieux. Il porte souvent un manteau rouge.",
-                        "histoire": "Shanks le Roux, ancien membre de l'équipage de Gol D. Roger et actuel capitaine des Pirates Roux, est une figure emblématique dans One Piece. En tant qu'un des quatre empereurs, les pirates les plus puissants du Nouveau Monde, Shanks est connu pour son charisme, sa sagesse et sa bravoure. Il a perdu son bras gauche en sauvant Monkey D. Luffy d'un monstre marin, témoignant de son dévouement envers ses amis. Shanks détient le chapeau de paille légendaire qui a appartenu à Gol D. Roger, un symbole de son respect envers Luffy et de sa conviction en l'avenir. Bien que son rôle ne soit pas toujours central, Shanks demeure une figure influente dans l'histoire, laissant planer un mystère sur ses motivations et son pouvoir. Sa présence continue d'ajouter une couche de complexité à l'univers riche de One Piece.",
-                        "personalité": "Shanks est calme, charismatique et a le respect des autres pirates. Il est prêt à prendre des risques pour protéger ceux qu'il chérit.",
-                        "role": "Capitaine des Red-Haired Pirates, Shanks est un ancien membre de l'équipage de Gol D. Roger et l'un des Quatre Empereurs."
-                    },
-                    "fullName": "Shanks Le Roux",
-                    "prime": "4.048.900.000",
-                    "drapeau" : "/static/img/drapeaux/shanks.png"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-barbe-noire.png",
-                "id": "Persos/Marshall D. Teach, Surnommé Barbe Noire",
-                "img": "/static/img/imgpersos/BarbeNoire.jpg",
-                "name": "Teach",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Avec sa barbe noire et son manteau sombre, Barbe Noire a une présence menaçante.",
-                        "capacités": "Le Yami Yami no Mi lui confère des pouvoirs liés aux ténèbres, le rendant invulnérable à de nombreux types d'attaques. Il peut également annihiler la capacité des autres Fruits du Démon au contact.",
-                        "demonFruit": "Yami Yami no Mi (Fruit des Ténèbres), une Logia qui lui permet de créer, contrôler et devenir les ténèbres.",
-                        "description": "Barbe Noire a une allure imposante avec une barbe noire et un chapeau de pirate caractéristique. Sa silhouette massive dissimule des ambitions obscures.",
-                        "histoire": "Marshall D. Teach, alias Barbe Noire, joue un rôle central dans One Piece. Ancien membre de l'équipage de Barbe Blanche, il est maintenant le capitaine des Pirates de Barbe Noire et l'un des quatre empereurs, les pirates les plus puissants du Nouveau Monde. Sa soif de pouvoir est évidente avec ses deux fruits du démon, le ténèbres Yami Yami no Mi et le tremblement Gura Gura no Mi, ce qui le rend exceptionnellement redoutable. Teach a orchestré la mort de Barbe Blanche, lui permettant de s'emparer du fruit du démon du défunt capitaine. Son objectif affiché est de devenir le roi des pirates, faisant de lui un antagoniste majeur et un rival de Monkey D. Luffy. La nature mystérieuse et calculatrice de Barbe Noire ajoute une dimension sombre et intrigante à l'intrigue de One Piece.",
-                        "personalité": "Barbe Noire est calculateur, impitoyable et cherche constamment à accroître sa puissance. Il est prêt à sacrifier quiconque pour atteindre ses objectifs.",
-                        "role": "Ancien membre de l'équipage de Barbe Blanche, Teach devient capitaine des Pirates de Barbe Noire et cherche à devenir le nouvel empereur."
-                    },
-                    "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
-                    "prime": "3.996.000.000",
-                    "drapeau" : "/static/img/drapeaux/barbe-noire.jpg"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-mihawk.png",
-                "id": "Persos/Dracule Mihawk",
-                "img": "/static/img/imgpersos/Mihawk.jpg",
-                "name": "Mihawk",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Mihawk est un homme grand et mince avec des cheveux noirs et une barbe fine. Il est souvent vu portant des vêtements élégants et tenant son épée emblématique, Kokuto Yoru.",
-                        "capacités": "Maître du sabre, Mihawk est célèbre pour sa maîtrise exceptionnelle de l'épée. Son épée principale, Kokuto Yoru, est une lame noire redoutable. Il peut exécuter des attaques puissantes avec une précision mortelle.",
-                        "description": "Dracule Mihawk, également connu sous le nom d'Hawkeye Mihawk, est un personnage énigmatique et redoutable dans l'univers de One Piece. Il est réputé comme le meilleur bretteur du monde.",
-                        "histoire": "Dracule Mihawk, surnommé Œil de Faucon, est une figure éminente dans One Piece en tant que plus grand escrimeur du monde et membre des Sept Grands Corsaires. Résidant sur l'île de Kuraigana, Mihawk est réputé pour sa maîtrise exceptionnelle du sabre, symbolisée par son arme légendaire, le Yoru. Son duel mémorable avec Shanks le Roux, un autre empereur, est gravé dans l'histoire, mettant en avant la puissance de ces deux personnages éminents. Malgré son caractère solitaire et son attitude détachée, Mihawk est respecté et craint à travers le monde de One Piece. Sa présence ajoute une aura d'élégance, de puissance et de mystère à cet univers captivant.",
-                        "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur."
-                    },
-                    "fullName": "Dracule Mihawk",
-                    "prime": "3.590.000.000",
-                    "drapeau" : "/static/img/drapeaux/mihawk.png"
-                }
-            },
-            {
-                "affiche": "/static/img/affiches-persos/affiche-barbe-blanche.png",
-                "id": "Persos/Edward Newgate",
-                "img": "/static/img/imgpersos/EdwardNewgate.jpg",
-                "name": "Barbe Blanche",
-                "specs": {
-                    "aPropos": {
-                        "apparence": "Barbe Blanche était un homme colossal avec une barbe blanche épaisse et une immense cicatrice sur son torse. Il portait un manteau d'amiral et détenait le Gura Gura no Mi, un Fruits du Démon de type Paramecia.",
-                        "capacités": "Avec le Gura Gura no Mi, Barbe Blanche pouvait créer des séismes dévastateurs, le qualifiant de Homme le plus proche du One Piece. Il était également extrêmement robuste et résistant aux attaques.",
-                        "description": "Edward Newgate, plus connu sous le nom de Barbe Blanche, était l'un des pirates les plus puissants et respectés de son époque. Il a été le capitaine de l'Équipage de Barbe Blanche.",
-                        "histoire": "Edward Newgate, dit Barbe Blanche, était le puissant capitaine de l'équipage éponyme et l'un des quatre empereurs dans One Piece. Sa force colossale était amplifiée par le fruit du démon Gura Gura no Mi, lui conférant le pouvoir de générer des séismes dévastateurs. Cependant, derrière cette image redoutable se cachait un homme au cœur généreux. Barbe Blanche considérait son équipage comme une véritable famille, recrutant des membres d'origines diverses et créant un lien profond avec chacun d'eux. Sa bienveillance paternelle contrastait avec sa réputation de pirate redoutable. Sa mort héroïque lors de la guerre à Marineford a laissé un vide immense, symbolisant la fin d'une ère et le début de nouveaux défis pour le monde des pirates. L'héritage de Barbe Blanche résonne à travers l'histoire de One Piece, rappelant la complexité des personnages et les choix difficiles dans cet univers captivant.",
-                        "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage."
-                    },
-                    "fullName": "Edward Newgate",
-                    "prime": "5.046.000.000",
-                    "drapeau" : "/static/img/drapeaux/shiro-hige.jpg"
-                }
-            }
-        ]
-    }
+  "categories": {
+    "Arcs": [
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-romance-dawn.png",
+        "chapitresManga": "1-8",
+        "description": "Cet arc introduit Monkey D. Luffy et son rêve de devenir le Roi des Pirates. Il obtient ses pouvoirs de Fruit du Démon et commence son voyage.",
+        "id": "Arcs/Arc romance Dawn",
+        "img": "/static/img/ArcRomanceDawn.jpg",
+        "name": "Arc Romance Dawn",
+        "épisodesAnimé": "1-3"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-orange-town.png",
+        "chapitresManga": "8-21",
+        "description": "L'équipage affronte le Capitaine Baggy à Orange Town, renforçant leur amitié naissante.",
+        "id": "Arcs/Arc Orange Town",
+        "img": "/static/img/ArcOrangeTown.jpg",
+        "name": "Arc Orange Town",
+        "épisodesAnime": "4-8"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-syrup-village.png",
+        "chapitresManga": "22-41",
+        "description": "L'équipage aide Usopp à affronter les mensonges de Kuro à Syrup Village, renforçant leur détermination.",
+        "id": "Arcs/Arc Syrup Village",
+        "img": "/static/img/ArcSyrupVillage.jpg",
+        "name": "Arc Syrup Village",
+        "épisodesAnime": "9-18"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-baratie.png",
+        "chapitresManga": "42-68",
+        "description": "L'équipage rejoint le restaurant flottant Baratie, où ils font face à Don Krieg. Cet arc présente Sanji, le futur cuisinier de l'équipage.",
+        "id": "Arcs/Arc Baratie",
+        "img": "/static/img/ArcBaratie.jpg",
+        "name": "Arc Baratie",
+        "épisodesAnime": "19-30"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-arlong-park.png",
+        "chapitresManga": "69-95",
+        "description": "Les Pirates du Chapeau de Paille s'allient à Nami pour libérer son village natal d'Arlong. Cet arc aborde des thèmes de l'amitié et de la liberté.",
+        "id": "Arcs/Arc Arlong Park",
+        "img": "/static/img/ArcArlongPark.jpg",
+        "name": "Arc Arlong Park",
+        "épisodesAnime": "31-44"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-logue-town.png",
+        "chapitresManga": "96-100",
+        "description": "L'équipage atteint Loguetown, où Luffy a son premier affrontement avec l'Amiral Smoker. Des éléments du passé de Luffy sont révélés.",
+        "id": "Arcs/Arc Loguetown",
+        "img": "/static/img/ArcLoguetown.jpg",
+        "name": "Arc Loguetown",
+        "épisodesAnime": "45-48"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-drum.png",
+        "chapitresManga": "101-142",
+        "description": "L'équipage atteint Drum Island et rencontre le Docteur Hiluluk et son apprenti Chopper. Cet arc met en lumière la recherche d'un médecin pour l'équipage.",
+        "id": "Arcs/Arc Ile de Drum",
+        "img": "/static/img/ArcIleDeDrum.jpg",
+        "name": "Arc Île de Drum (Drum Island)",
+        "épisodesAnime": "78-91"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-alabasta.png",
+        "chapitresManga": "155-217",
+        "description": "Luffy et son équipage se rendent à Alabasta pour arrêter Crocodile et sauver le royaume du sable. L'arc explore des thèmes de conspiration politique et de loyauté.",
+        "id": "Arcs/Arc Alabasta",
+        "img": "/static/img/ArcAlabasta.jpg",
+        "name": "Arc Alabasta",
+        "épisodesAnime": "92-130"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-jaya.png",
+        "chapitresManga": "218-236",
+        "description": "L'équipage découvre des informations sur Skypiea et rencontre les Bellamy Pirates à Jaya. Cet arc prépare le terrain pour les aventures à venir.",
+        "id": "Arcs/Arc Jaya",
+        "img": "/static/img/ArcJaya.jpg",
+        "name": "Arc Jaya",
+        "épisodesAnime": "144-152"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-skypiea.png",
+        "chapitresManga": "237-302",
+        "description": "Luffy et son équipage atteignent Skypiea, une île céleste, et affrontent Ener, un homme avec des pouvoirs de Fruit du Démon. Cet arc explore la recherche du trésor de Skypiea.",
+        "id": "Arcs/Arc Skypiea",
+        "img": "/static/img/ArcSkypiea.jpg",
+        "name": "Arc Skypiea",
+        "épisodesAnime": "153-195"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-water-seven.png",
+        "chapitresManga": "303-441",
+        "description": " L'équipage arrive à Water Seven, où des tensions émergent, conduisant à la tragédie du Merry Go et à la confrontation avec le CP9. Cet arc explore les sacrifices nécessaires pour réaliser les rêves.",
+        "id": "Arcs/Arc Water Seven",
+        "img": "/static/img/ArcWaterSeven.jpg",
+        "name": "Arc Water Seven",
+        "épisodesAnime": "207-263"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-enies-lobby.png",
+        "chapitresManga": "442-490",
+        "description": "L'équipage continue sa lutte à Enies Lobby pour sauver Nico Robin. Les liens d'amitié sont mis à l'épreuve, et des moments épiques se déroulent.",
+        "id": "Arcs/Arc Enies Lobby",
+        "img": "/static/img/ArcEniesLobby.jpg",
+        "name": "Arc Enies Lobby",
+        "épisodesAnime": "264-312"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-thriller-bark.png",
+        "chapitresManga": "490-541",
+        "description": "L'équipage atterrit sur l'île effrayante de Thriller Bark, où ils rencontrent Gecko Moria et son armée de zombies. Cet arc mêle horreur et comédie.",
+        "id": "Arcs/Arc Thriller Bark",
+        "img": "/static/img/ArcThrillerBark.jpg",
+        "name": "Arc Thriller Bark",
+        "épisodesAnime": "337-381"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-sabaody.png",
+        "chapitresManga": "490-513",
+        "description": "L'équipage atteint l'archipel Sabaody, où les tensions montent avec les Nobles Mondiaux, culminant avec l'incident de l'Amiral Kizaru. L'arc explore les thèmes de la discrimination et de l'injustice.",
+        "id": "Arcs/Arc Archipel Sabaody",
+        "img": "/static/img/ArcArchipelSabaody.jpg",
+        "name": "Arc Archipel Sabaody",
+        "épisodesAnime": "385-405"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-ile-des-hommes-poissons.png",
+        "chapitresManga": "603-653",
+        "description": "L'équipage explore Fish-Man Island, où des conflits entre humains et hommes-poissons éclatent. L'arc aborde des thèmes de racisme et d'acceptation.",
+        "id": "Arcs/Arc Ile des Hommes-Poissons",
+        "img": "/static/img/ArcIleDesHommesPoissons.jpg",
+        "name": "Arc Île des Hommes-Poissons (Fish-Man Island)",
+        "épisodesAnime": "517-574"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-punk-hazard.png",
+        "chapitresManga": "654-699",
+        "description": "L'équipage atteint Punk Hazard, une île dévastée par les expériences du scientifique fou Caesar Clown. Les mystères du passé et du Gouvernement Mondial sont révélés.",
+        "id": "Arcs/Arc Punk Hazard",
+        "img": "/static/img/ArcPunkHazard.jpg",
+        "name": "Arc Punk Hazard",
+        "épisodesAnime": "579-625"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-dressrosa.png",
+        "chapitresManga": "700-801",
+        "description": "L'équipage se retrouve à Dressrosa, où ils affrontent le cruel Doflamingo. Les liens familiaux, les conflits politiques, et la puissance des Fruits du Démon sont au cœur de cet arc.",
+        "id": "Arcs/Arc Dressrosa",
+        "img": "/static/img/ArcDressrosa.jpg",
+        "name": "Arc Dressrosa",
+        "épisodesAnime": "629-746"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-zou.png",
+        "chapitresManga": "802-824",
+        "description": "L'équipage découvre l'île de Zou, portant les cicatrices de la guerre. Ils se lancent dans une quête pour atteindre Wano Kuni et sauver Sanji.",
+        "id": "Arcs/Arc Zou",
+        "img": "/static/img/ArcZou.jpg",
+        "name": "Arc Zou",
+        "épisodesAnime": "751-779"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-whole-cake-island.png",
+        "chapitresManga": "825-902",
+        "description": "L'équipage s'infiltre dans l'île de Whole Cake, dirigée par Big Mom, pour sauver Sanji. Les alliances sont forgées, et des batailles épiques se déroulent.",
+        "id": "Arcs/Arc Whole Cake Island",
+        "img": "/static/img/ArcWholeCakeIsland.jpg",
+        "name": "Arc Whole Cake Island",
+        "épisodesAnime": "783-877"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-levely.png",
+        "chapitresManga": "903-908",
+        "description": "La Levely,Rêverie ou Conseil des Rois (littéralement traduit par Conseil Mondial) est un conseil formé par le Gouvernement Mondial composé des plus grands dirigeants des différents royaumes du monde qui ont rejoint le Gouvernement Mondial qui se réunissent tous les 4 ans pour 7 jours.",
+        "id": "Arcs/Arc Levely",
+        "img": "/static/img/ArcLevely.jpg",
+        "name": "Arc Levely",
+        "épisodesAnime": ""
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-wano-kuni.png",
+        "chapitresManga": "909-1057",
+        "description": "Le Pays des Wa (Wa no Kuni), ou Pays de l'Harmonie, aussi appelé « Pays Doré » est un pays peuplé essentiellement de samouraïs et de ninja",
+        "id": "Arcs/Arc Wano Kuni",
+        "img": "/static/img/ArcWanoKuni.jpg",
+        "name": "Arc Wano Kuni",
+        "épisodesAnime": "890-1085"
+      },
+      {
+        "affiche": "/static/img/affiches-arcs/affiche-egg-head.png",
+        "chapitresManga": "1058",
+        "description": "L'Arc Île d'Egg Head , également nommé Arc Île du Futur est le 32ème arc de la série One Piece et le premier arc de la Saga Finale.",
+        "id": "Arcs/Arc Egg Head",
+        "img": "/static/img/ArcEggHead.jpg",
+        "name": "Arc Egg Head",
+        "épisodesAnime": "1086"
+      }
+    ],
+    "EventsOnePiece": [
+      {
+        "affiche": "/static/img/affiches-events/affiche-execution-gol-d-roger.png",
+        "description": "L'exécution du Roi des Pirates, Gol D. Roger, marque le début de l'ère des pirates et inspire de nombreux aventuriers à chercher le One Piece.",
+        "id": "Events/L'exécution de Gol D. Roger",
+        "name": "L'exécution de Gol D. Roger"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-rencontre-whiskey-peak.png",
+        "description": "L'équipage de Luffy arrive à Whisky Peak, où ils rencontrent les agents de Baroque Works et découvrent la vérité derrière l'organisation.",
+        "id": "Events/La rencontre à Whisky Peak",
+        "name": "La rencontre à Whisky Peak"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-revelation-cp-9.png",
+        "description": "L'arc Water Seven/Enies Lobby se déploie comme une saga épique, riche en émotions et en tournants dramatiques. Du poignant duel entre Luffy et Usopp à la lutte désespérée pour sauver Nico Robin à Enies Lobby, cet arc explore les profondeurs des liens au sein de l'équipage. Les révélations sur le CP9 et les enjeux liés au gouvernement mondial ajoutent des couches complexes à l'intrigue, témoignant de la nature impitoyable du monde. Cet arc emblématique devient le théâtre d'une bataille qui va au-delà de la simple confrontation physique, symbolisant la détermination inébranlable de l'équipage à défendre les leurs.",
+        "id": "Events/L'arc Water Seven/Enies Lobby",
+        "name": "L'arc Water Seven/Enies Lobby"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-incident-sabaody.png",
+        "description": " L'archipel Sabaody devient le lieu d'un tournant crucial pour l'équipage de Chapeau de Paille. L'incident des Pacifistas et la révélation sur les esclaves humains soulignent la cruauté du Nouveau Monde. La séparation forcée des membres de l'équipage et l'introduction des Amiraux montrent la montée abrupte des enjeux. Cet épisode laissera une marque indélébile, exposant la réalité brutale de Grand Line et préparant l'équipage à une compréhension plus profonde des défis qui les attendent.",
+        "id": "Events/L'incident de l'archipel Sabaody",
+        "name": "L'incident de l'archipel Sabaody"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-marine-ford.png",
+        "description": " La guerre au sommet à Marineford se profile comme un moment tragique et épique de One Piece. Le conflit monumental entre la Marine, l'équipage de Barbe Blanche et d'autres forces majeures dépeint un tableau de chaos et de sacrifice. La mort de Barbe Blanche et l'intervention de Shanks marquent la fin d'une ère et le début d'une nouvelle phase dans l'histoire des pirates. Cette guerre spectaculaire met en lumière les intrications complexes des relations entre les personnages majeurs et les conséquences dévastatrices des conflits qui secouent Grand Line.",
+        "id": "Events/La guerre au sommet à Marineford",
+        "name": "La guerre au sommet à Marineford"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-revelation-histoire-ancienne.png",
+        "description": "Lorsque Nico Robin dévoile l'histoire ancienne à l'équipage, les pièces du puzzle de One Piece commencent à s'assembler. Les Ponéglyphes, le siècle manquant, et l'importance de l'île de Raftel prennent un sens profond. Cette révélation plonge l'équipage dans un océan de connaissances occultes, ajoutant une dimension mystique à leur quête. La compréhension de l'histoire ancienne élargit la perspective de l'équipage, les liant inexorablement à un destin intimement connecté aux mystères du monde.",
+        "id": "Events/La révélation de l'histoire ancienne",
+        "name": "La révélation de l'histoire ancienne"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-rencontre-yonkos.png",
+        "description": "L'équipage affronte Big Mom à Whole Cake Island, plongeant dans les méandres des dynamiques complexes entre les Yonko. Cette rencontre met en lumière la puissance colossale des Empereurs et les intrications politiques dans le Nouveau Monde. La mission pour sauver Sanji dévoile également des facettes inattendues des personnages clés, ajoutant des couches de complexité à l'histoire. Whole Cake Island devient ainsi le terrain d'une bataille intense, mais aussi le lieu où les fondements des grandes puissances du monde sont exposés.",
+        "id": "Events/La rencontre avec les Yonko à Whole Cake Island",
+        "name": "La rencontre avec les Yonko à Whole Cake Island"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-reverie.png",
+        "description": " L'arc Reverie prend une tournure diplomatique, réunissant les dirigeants mondiaux à Levely pour discuter de questions cruciales. Cette réunion aborde des sujets liés à Luffy et à son équipage, dévoilant les ramifications de leurs actions à l'échelle mondiale. L'arc Reverie devient une fenêtre intrigante sur les rouages politiques du monde de One Piece, montrant comment les actions d'une poignée de pirates peuvent influencer les cours des nations.",
+        "id": "Events/L'arc Reverie",
+        "name": "L'arc Reverie"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-kaido-wano.png",
+        "description": "L'arrivée de Kaido à Wano Kuni est un moment pivot qui change la donne dans l'histoire de One Piece. La puissance écrasante de Kaido, l'un des Empereurs, met en lumière les défis insurmontables auxquels l'équipage sera confronté. L'arc de Wano Kuni devient le théâtre d'une bataille épiquement complexe, impliquant des alliances improbables, des révélations surprenantes, et des enjeux qui transcendent les frontières de l'île isolée.",
+        "id": "Events/L'attaque de Kaido à Wano Kuni",
+        "name": "L'attaque de Kaido à Wano Kuni"
+      },
+      {
+        "affiche": "/static/img/affiches-events/affiche-joy-boy.png",
+        "description": "Les révélations sur Joy Boy et l'importance de la volonté des D. commencent à éclaircir les mystères entourant le One Piece. Cette découverte projette l'équipage au cœur des intrigues cosmiques qui façonnent le monde. Joy Boy devient une figure centrale, liée au destin de Luffy et à la quête du One Piece. Les implications de cette révélation transcendent le simple trésor matériel, plongeant l'équipage dans un voyage spirituel et métaphysique à travers les arcanes du monde.",
+        "id": "Events/La découverte de l'identité de Joy Boy",
+        "name": "La découverte de l'identité de Joy Boy"
+      }
+    ],
+    "Persos": [
+      {
+        "affiche": "/static/img/affiches-persos/affiche-luffy.png",
+        "id": "Persos/Monkey D. Luffy",
+        "img": "/static/img/imgpersos/Luffy.jpg",
+        "name": "Luffy",
+        "specs": {
+          "fullName": "Monkey D. Luffy",
+          "prime": "3.000.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg",
+          "aPropos": {
+            "apparence": "Vêtu de son chapeau de paille emblématique, Luffy porte une tenue caractéristique et arbore une cicatrice sous son œil gauche, résultat des épreuves sur son chemin.",
+            "capacités": "Maîtrisant le Haki, Luffy développe le puissant Haki des Rois, capable d'intimider voire d'assommer ceux de volonté plus faible. Sa force surhumaine, associée à sa physiologie caoutchouteuse, lui permet d'étirer ses membres et d'exécuter des attaques dévastatrices.",
+            "demonFruit": "Gomu Gomu no Mi, une Fruits du Démon de type Paramecia, a transformé son corps en caoutchouc. Cette capacité offre une souplesse extraordinaire et une immunité aux attaques contondantes, tout en le rendant vulnérable aux attaques tranchantes.",
+            "description": "Luffy est un jeune homme au regard pétillant, arborant une cicatrice sous son œil gauche. Son sourire confiant et sa détermination sans faille attirent l'attention, dénotant une personnalité intrépide.",
+            "histoire": "Monkey D. Luffy, le protagoniste de One Piece, a une histoire fascinante. Il a grandi dans le village de Fuschia, rêvant de devenir le Roi des Pirates. Son destin a basculé lorsqu'il a accidentellement mangé le fruit du démon Gomu Gomu, lui donnant des pouvoirs élastiques mais l'empêchant de nager. Inspiré par son idole, Shanks le Roux, Luffy part à la recherche du trésor légendaire, le One Piece. Il fonde alors l'équipage des Chapeaux de Paille, composé de membres dévoués et puissants. Luffy a affronté de redoutables ennemis, dont des Grands Corsaires et des Empereurs de la mer, pour atteindre son objectif ultime. Son courage, sa détermination et son amour pour ses amis en font un personnage emblématique et charismatique au cœur de l'épopée de One Piece.",
+            "personalité": "Déterminé et optimiste, Luffy fait preuve d'une loyauté inébranlable envers ses amis, considérant son équipage comme sa famille. Sa personnalité franche et directe reflète un courage authentique, et son enthousiasme contagieux motive ceux qui l'entourent.",
+            "role": "Capitaine des Pirates du Chapeau de Paille, Luffy guide son équipage avec une ambition dévorante de devenir le Roi des Pirates. Sa quête du One Piece le propulse dans des aventures périlleuses à travers la Grand Line."
+          }
+        }
+      },
+
+      {
+        "affiche": "/static/img/affiches-persos/affiche-zoro.png",
+        "id": "Persos/Roronoa Zoro",
+        "img": "/static/img/imgpersos/Zoro.jpg",
+        "name": "Zoro",
+        "specs": {
+          "aPropos": {
+            "apparence": "Portant souvent un bandana et ses trois sabres, Zoro a une allure musclée et intimidante.",
+            "capacités": "Expert dans le maniement du sabre, Zoro est un épéiste de classe mondiale. Il peut utiliser des techniques puissantes telles que le Santoryu (Trois sabres).",
+            "demonFruit": "Aucun. Zoro est un maître épéiste, maniant trois sabres simultanément.",
+            "description": " Zoro, avec ses trois cicatrices sur l'œil gauche, évoque la prestance d'un puissant épéiste. Son regard sérieux et son attitude calme cachent une détermination féroce.",
+            "histoire": "Roronoa Zoro, le bras droit de Luffy dans l'équipage des Chapeaux de Paille, a une histoire impressionnante. Originaire du village de Shimotsuki sur l'île de Kuraigana, Zoro a développé une passion précoce pour l'art du sabre. Son rêve est de devenir le plus grand bretteur du monde. Après une rencontre avec Luffy, il rejoint l'équipage en tant que maître d'armes. Zoro manie trois sabres avec une habileté extraordinaire, une technique appelée Santoryu. Il a également adopté le code du bushido et est prêt à sacrifier sa vie pour protéger ses amis. Son parcours est marqué par des défis épiques, des combats intenses et sa quête constante d'amélioration. Zoro demeure un personnage charismatique et respecté au sein de l'univers captivant de One Piece.",
+            "personalité": "Sérieux et loyal, Zoro incarne la discipline et le calme. Sa fidélité envers Luffy et son équipage est inébranlable, et il poursuit son rêve avec une détermination sans faille.",
+            "role": "Premier épéiste et bras droit de Luffy dans les Pirates du Chapeau de Paille, Zoro cherche à devenir le plus grand épéiste du monde."
+          },
+          "fullName": "Roronoa Zoro",
+          "prime": "1.111.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-sanji.png",
+        "id": "Persos/Vinsmoke Sanji",
+        "img": "/static/img/imgpersos/Sanji.jpg",
+        "name": "Sanji",
+        "specs": {
+          "aPropos": {
+            "apparence": "Vêtu d'un costume noir et arborant une jambe droite souvent dissimulée, Sanji a une allure raffinée.",
+            "capacités": "Maître du Black Leg Style, Sanji excelle dans le combat au corps à corps. Sa Diable Jambe lui permet d'enchâsser ses pieds en feu pour augmenter la puissance de ses coups.",
+            "demonFruit": "Jambe noire, une version améliorée du Germa 66 permettant à Sanji d'utiliser le Diable Jambe.",
+            "description": "Sanji, le cuistot passionné, est reconnaissable à sa jambe droite cachée et à sa coiffure unique. Son style est un mélange de classe et de combativité.",
+            "histoire": " Sanji, le cuisinier talentueux des Chapeaux de Paille dans One Piece, a une histoire tout aussi intrigante. Né dans la famille Vinsmoke, une lignée de puissants assassins, Sanji a rejeté la voie du combat pour suivre sa passion pour la cuisine. Il a été élevé dans le Baratie, un restaurant flottant, où il a perfectionné ses compétences culinaires. Sa rencontre avec Luffy a marqué le début de son aventure en tant que pirate. Sanji est également un maître du style de combat Black Leg, utilisant ses puissantes jambes pour des attaques rapides et dévastatrices. Son rêve est de découvrir le légendaire All Blue, un océan où coexistent toutes les espèces marines, offrant une variété infinie d'ingrédients pour la cuisine. Malgré son attitude cool et son amour pour la nourriture, Sanji est un membre précieux de l'équipage, apportant non seulement des compétences culinaires exceptionnelles, mais aussi une force et une loyauté indéfectibles.",
+            "personalité": "Sanji est élégant, charmeur et passionné par la cuisine. Sa politesse envers les femmes et son sens de l'honneur ajoutent une couche de complexité à sa personnalité.",
+            "role": "Cuisinier et combattant des Pirates du Chapeau de Paille, Sanji poursuit son rêve de découvrir l'All Blue."
+          },
+          "fullName": "Vinsmoke Sanji",
+          "prime": "1.032.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-nami.png",
+        "id": "Persos/Nami",
+        "img": "/static/img/imgpersos/Nami.jpg",
+        "name": "Nami",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec une longue chevelure rousse et des tatouages distinctifs, Nami a une allure aventurière.",
+            "capacités": "Maîtrisant la navigation et la cartographie, Nami est une tacticienne habile. Son Climat-Tact lui confère des capacités météorologiques puissantes.",
+            "demonFruit": "Climat-Tact, un bâton spécial qui utilise le pouvoir du Fruit de la Climatologie, permettant de manipuler le climat.",
+            "description": "Nami est une navigatrice talentueuse et stratégique, souvent vêtue de tenues pratiques pour la navigation. Ses tatouages en forme de mandarines symbolisent son village natal, Cocoyashi.",
+            "histoire": "Nami, la navigatrice habile des Chapeaux de Paille dans One Piece, a une histoire tout aussi intrigante. Originaire du village d'Orange, elle a connu la tragédie de la perte de sa famille à cause d'une pirate nommée Arlong. Contrainte de travailler comme navigatrice pour Arlong, Nami a développé une grande expertise en cartographie et navigation. Son objectif initial était de rassembler une somme d'argent suffisante pour acheter la libération de son village. Cependant, sa rencontre avec Monkey D. Luffy a marqué un tournant dans sa vie. Nami a rejoint l'équipage des Chapeaux de Paille, devenant une navigatrice précieuse et déterminée. Son rêve est de cartographier le monde entier, en particulier la mystérieuse île de Laugh Tale, qui détient les secrets du One Piece. Nami apporte non seulement ses compétences en navigation, mais aussi sa détermination et son intelligence stratégique à l'équipage, en faisant un membre indispensable de l'équipage de Luffy.",
+            "personalité": "Intelligente et pragmatique, Nami est également attentionnée envers ses compagnons d'équipage. Son obsession pour les cartes cache une profonde loyauté envers Luffy et les autres.",
+            "role": "Navigatrice des Pirates du Chapeau de Paille, Nami aspire à cartographier le monde et à dessiner une carte complète."
+          },
+          "fullName": "Nami",
+          "prime": "366.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-usopp.png",
+        "id": "Persos/Usopp",
+        "img": "/static/img/imgpersos/Usopp.jpg",
+        "name": "Usopp",
+        "specs": {
+          "aPropos": {
+            "apparence": "Usopp est reconnaissable avec son nez long et fin, et il porte souvent des vêtements aux couleurs vives.",
+            "capacités": "Expert au lance-pierre et à la fabrication d'inventions, Usopp est un tireur d'élite capable de manœuvres astucieuses.",
+            "demonFruit": "Aucun. Usopp se distingue par sa maîtrise du tir au lance-pierre et des inventions étonnantes.",
+            "description": " Usopp est un menteur invétéré, souvent portant un chapeau unique et une écharpe. Ses vêtements colorés reflètent son esprit fantasque.",
+            "histoire": "Usoop, le tireur d'élite et conteur exceptionnel des Chapeaux de Paille dans One Piece, a une histoire pleine d'imagination et de bravoure. Originaire du village de Syrup sur l'île de Gecko, Usoop a grandi en racontant des histoires fantastiques pour échapper à la réalité. Bien que ses histoires soient souvent exagérées, son courage réel s'est révélé lorsqu'il a rejoint l'équipage de Luffy pour poursuivre ses rêves. Usoop est également un tireur d'élite habile, utilisant son fidèle lance-pierre et ses munitions spéciales dans les batailles. Son rêve est de devenir un brave guerrier de la mer, à la hauteur des légendes racontées dans ses histoires. Malgré son penchant pour l'exagération, Usoop apporte une dose de comédie, d'intelligence tactique et de bravoure inattendue à l'équipage, faisant de lui un membre précieux des Chapeaux de Paille.",
+            "personalité": "Imagination débordante et rêveur, Usopp apporte une touche d'humour à l'équipage. Malgré ses mensonges, il montre un grand courage lorsque la situation l'exige.",
+            "role": "Tireur d'élite des Pirates du Chapeau de Paille, Usopp aspire à devenir un valeureux guerrier des mers."
+          },
+          "fullName": "Usopp",
+          "prime": "500.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-robin.png",
+        "id": "Persos/Nico Robin",
+        "img": "/static/img/imgpersos/Robin.jpg",
+        "name": "Robin",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec des cheveux noirs longs et lisses, Robin a une apparence élégante et mature.",
+            "capacités": "La maîtrise du Hana Hana no Mi permet à Robin de créer des bras supplémentaires pour des attaques variées et des manœuvres complexes.",
+            "demonFruit": "Hana Hana no Mi, un Fruit de la Flore qui permet à Robin de créer des parties de son corps sur n'importe quelle surface.",
+            "description": "Robin arbore une aura calme, souvent vêtue de manière élégante. Son symbole distinctif est le tatouage du Démon à Cent Fleurs sur son bras gauche.",
+            "histoire": "Nico Robin, l'archéologue érudite des Chapeaux de Paille dans One Piece, a une histoire empreinte de mystère et d'intrigue. Née sur l'île d'Ohara, elle était la seule survivante du Buster Call qui a détruit sa patrie en raison de son passé d'archéologue. Robin a passé une grande partie de sa vie fugitive, cherchant à comprendre les mystères du monde antique et les Poneglyphes, des pierres inscrites renfermant des informations cruciales sur le siècle manquant. Son chemin croise celui de Monkey D. Luffy et de son équipage, et elle rejoint finalement les Chapeaux de Paille. Robin apporte une expertise unique à l'équipage en tant qu'archéologue exceptionnelle et maîtrise le pouvoir du fruit du démon Hana Hana no Mi, lui permettant de créer des parties supplémentaires de son corps. Son rêve est de dévoiler les secrets du siècle manquant et de percer les mystères du One Piece. Malgré son attitude calme et réservée, Nico Robin joue un rôle crucial dans la quête de Luffy et apporte une profondeur intellectuelle à l'équipage.",
+            "personalité": "Calme et intellectuelle, Robin a une perspective réaliste et une compréhension profonde de l'histoire du monde. Elle est un pilier de sagesse au sein de l'équipage.",
+            "role": "Archéologue des Pirates du Chapeau de Paille, Robin recherche des informations sur le Siècle Manquant et l'histoire ancienne."
+          },
+          "fullName": "Nico Robin",
+          "prime": "930.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-chopper.png",
+        "id": "Persos/Tony Tony Chopper",
+        "img": "/static/img/imgpersos/Chopper.jpg",
+        "name": "Chopper",
+        "specs": {
+          "aPropos": {
+            "apparence": "Souvent vu avec une grande casquette, Chopper peut prendre différentes formes humaines.",
+            "capacités": "Chopper a des compétences médicales exceptionnelles et peut se transformer en différentes formes.",
+            "demonFruit": "Hito Hito no Mi, modèle Renne.",
+            "description": "Chopper, le médecin de l'équipage, est un renne avec la capacité de se transformer en différentes formes humaines. Il porte généralement une grande casquette et est doté d'une personnalité innocente et compatissante.",
+            "histoire": "Tony Tony Chopper, le médecin renne des Chapeaux de Paille dans One Piece, a une histoire touchante. Né sur l'île de Drum, il a été rejeté en raison de son apparence hybride. Après avoir consommé le fruit du démon Hito Hito no Mi, modèle Cerf, il a obtenu une forme humaine et la capacité de parler. Élevé par le docteur Hiluluk, Chopper a développé une passion pour la médecine. La mort de Hiluluk l'a profondément marqué, inspirant Chopper à devenir médecin. Rejoignant l'équipage de Luffy, il poursuit le rêve de devenir le plus grand médecin du monde. Son pouvoir du fruit du démon et sa transformation Monster Point en font un atout puissant. Chopper, avec son optimisme contagieux, est devenu un membre chéri des Chapeaux de Paille, ajoutant une dose de tendresse et de dévouement à l'équipage et à l'aventure épique à travers les mers tumultueuses.",
+            "personalité": "Chopper a une personnalité innocente et compatissante.",
+            "role": "Médecin des Pirates du Chapeau de Paille, Chopper utilise ses compétences médicales et ses transformations pour aider l'équipage."
+          },
+          "fullName": "Tony Tony Chopper",
+          "prime": "1.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-brook.png",
+        "id": "Persos/Brook",
+        "img": "/static/img/imgpersos/Brook.jpg",
+        "name": "Brook",
+        "specs": {
+          "aPropos": {
+            "apparence": "Portant souvent un chapeau, Brook est un squelette musicien.",
+            "capacités": "Après avoir mangé le Yomi Yomi no Mi, Brook a obtenu une seconde chance à la vie et peut utiliser ses compétences musicales pour diverses situations.",
+            "demonFruit": "Yomi Yomi no Mi.",
+            "description": "Brook est un squelette musicien avec une personnalité joyeuse. Il est souvent vu portant un chapeau et jouant du violon. Après avoir mangé le Yomi Yomi no Mi, il a été ressuscité.",
+            "histoire": "Brook, le musicien squelette des Chapeaux de Paille dans One Piece, a une histoire captivante. Anciennement capitaine de l'équipage Rumbar, Brook a rencontré la mort, mais son esprit a été ramené dans son propre corps grâce au fruit du démon Revive-Revive. Errant seul pendant des décennies, il a rejoint les Chapeaux de Paille à Thriller Bark. Expert au sabre et joueur de shamisen, Brook ajoute une dimension musicale à l'équipage. Son rêve est de retrouver la mer légendaire abritant l'île des hommes-poissons, Fish-Man Island, et d'y jouer une chanson touchant toutes les créatures marines. Malgré son apparence squelettique, Brook, avec son humour et sa joie de vivre, devient un membre chaleureux et essentiel de l'équipage, contribuant à l'harmonie de leur voyage à travers les mers tumultueuses.",
+            "personalité": "Brook a une personnalité joyeuse malgré sa nature de squelette.",
+            "role": "Musicien des Pirates du Chapeau de Paille, Brook apporte une touche musicale à l'équipage."
+          },
+          "fullName": "Brook",
+          "prime": "383.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-franky.png",
+        "id": "Persos/Franky",
+        "img": "/static/img/imgpersos/Franky.jpg",
+        "name": "Franky",
+        "specs": {
+          "aPropos": {
+            "apparence": "Franky porte souvent des lunettes de soleil et a un corps mécanique impressionnant.",
+            "capacités": "En tant que cyborg, Franky a une force physique surhumaine et est un expert en construction navale.",
+            "demonFruit": "Aucun.",
+            "description": "Franky est un cyborg constructeur de bateaux avec une personnalité exubérante. Il a des bras puissants et peut se transformer en différentes formes.",
+            "histoire": "Franky, anciennement Cutty Flam, est le charpentier naval cyborg des Chapeaux de Paille dans One Piece. Autrefois disciple de Tom sur l'île de Water 7, il a subi des modifications après des événements tragiques liés au gouvernement mondial. Rejoignant les Chapeaux de Paille, Franky est devenu le charpentier en chef du Thousand Sunny. Son rêve est de construire le légendaire bateau qui fera le tour du monde. Avec son corps cyborg, sa force physique impressionnante, et son talent pour la construction navale, Franky apporte une énergie explosive et une détermination à réaliser ses rêves et ceux de l'équipage.                        ",
+            "personalité": "Franky a une personnalité exubérante et est passionné par la construction navale.",
+            "role": "Charpentier naval des Pirates du Chapeau de Paille, Franky est responsable de la construction et de l'entretien du Thousand Sunny."
+          },
+          "fullName": "Franky",
+          "prime": "394.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-jinbe.png",
+        "id": "Persos/Jinbe",
+        "img": "/static/img/imgpersos/Jinbe.jpg",
+        "name": "Jinbe",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec une peau bleue et des marques faciales distinctives, Jinbe a une présence imposante.",
+            "capacités": "Jinbe est un maître des arts martiaux, utilisant le Karaté des Hommes-Poissons. Il possède une force physique considérable et une grande maîtrise du Haki.",
+            "demonFruit": "Aucun.",
+            "description": "Jinbe est un homme-poisson puissant avec une peau bleue et des marques caractéristiques sur son visage. Il a une personnalité calme et sage.",
+            "histoire": "Jinbe, le puissant timonier et expert en karaté des poissons dans One Piece, a une histoire remarquable. Originaire de l'île des Hommes-Poissons, il a été le capitaine des Corsaires, puis a servi comme timonier de l'équipage de Barbe Blanche. Par la suite, Jinbe est devenu membre des Chapeaux de Paille. Jinbe possède une maîtrise impressionnante du karaté des poissons, une forme de combat sous-marine. Il a également mangé le fruit du démon Gyojin, lui conférant la capacité de contrôler l'eau. Son rêve est de voir l'île des Hommes-Poissons vivre en paix avec les humains en surface. Malgré les obstacles, Jinbe est un allié fiable et un membre essentiel de l'équipage, apportant sa sagesse, sa force et son sens du devoir à chaque étape de l'aventure des Chapeaux de Paille.",
+            "personalité": "Jinbe a une personnalité calme et sage, et il est connu pour son honnêteté et sa loyauté.",
+            "role": "Timonier des Pirates du Chapeau de Paille, Jinbe est un expert en arts martiaux et possède une grande sagesse."
+          },
+          "fullName": "Jinbe",
+          "prime": "1.100.000.000",
+          "drapeau": "/static/img/drapeaux/mugiwara.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-ace.png",
+        "id": "Persos/Portgas D Ace",
+        "img": "/static/img/imgpersos/Ace.jpg",
+        "name": "Ace",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec une marque distinctive sous son œil gauche, Ace avait une apparence frappante.",
+            "capacités": "Ace possédait des pouvoirs liés au feu grâce au Mera Mera no Mi, et il était un combattant redoutable.",
+            "demonFruit": "Mera Mera no Mi.",
+            "description": "Ace était le frère adoptif de Luffy et un utilisateur du Mera Mera no Mi, lui conférant des pouvoirs liés au feu.",
+            "histoire": "Portgas D. Ace, le frère adoptif de Monkey D. Luffy dans One Piece, a une histoire captivante. Né à bord du bateau de Gol D. Roger, Ace est le fils de Gol D. Roger et de Portgas D. Rouge. Après la mort de ses parents, il a été recueilli et élevé par Monkey D. Garp. Ace a mangé le fruit du démon Mera Mera no Mi, lui conférant le pouvoir du feu. Devenu pirate et commandant de la deuxième flotte de l'équipage de Barbe Blanche, son rêve était de trouver le One Piece pour prouver que son existence n'était pas maudite. Capturé lors de la guerre au sommet de Marineford, Ace a sacrifié sa vie pour protéger Luffy des attaques d'Akainu. Sa perte a laissé une marque indélébile dans l'histoire de One Piece, affectant profondément Luffy et marquant un moment tragique et mémorable dans la série.",
+            "personalité": "Ace avait une personnalité énergique et une grande détermination.",
+            "role": "Ancien commandant de la 2e division de l'équipage de Barbe Blanche."
+          },
+
+          "fullName": "Portgas D. Ace",
+          "prime": "550.000.000",
+          "drapeau": "/static/img/drapeaux/ace.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-crocodile.png",
+        "id": "Persos/Crocodile",
+        "img": "/static/img/imgpersos/Crocodile.jpg",
+        "name": "Crocodile",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec son manteau et son crochet doré, Crocodile a une apparence charismatique et menaçante.",
+            "capacités": "Grâce au Suna Suna no Mi, Crocodile peut créer, contrôler et devenir du sable. Il est également un épéiste habile.",
+            "demonFruit": "Suna Suna no Mi.",
+            "description": "Crocodile est un ancien Capitaine Corsaire et utilisateur du Suna Suna no Mi, lui permettant de manipuler le sable.",
+            "histoire": "Sir Crocodile, également connu sous le nom de Crocodile, est un antagoniste majeur dans One Piece. Ancien Corsaire et chef de l'organisation Baroque Works, il a dirigé Alabasta dans le but de s'emparer du royaume. Possédant le fruit du démon Suna Suna no Mi, Crocodile avait le pouvoir de manipuler le sable. Luffy et son équipage, lors de leur aventure à Alabasta, ont découvert les machinations de Crocodile et ont finalement affronté le Shichibukai. Malgré ses tactiques sournoises et son pouvoir redoutable, Luffy a réussi à le vaincre, dévoilant ses véritables intentions de renverser le gouvernement mondial. Plus tard, Crocodile a été emprisonné à Impel Down, mais il s'est avéré être un personnage complexe avec des objectifs plus vastes. Plus tard, il a aidé Luffy pendant la guerre à Marineford, montrant une alliance temporaire entre eux. Crocodile demeure l'un des antagonistes les plus intrigants et nuancés de One Piece.",
+            "personalité": "Crocodile est impitoyable, manipulateur et assoiffé de pouvoir.",
+            "role": "Ancien président de Baroque Works et antagoniste principal de l'Arc Alabasta."
+          },
+
+          "fullName": "Sir Crocodile",
+          "prime": "1.965.000.000",
+          "drapeau": "/static/img/drapeaux/baroque-works.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-kid.png",
+        "id": "Persos/Eustass Kidd",
+        "img": "/static/img/imgpersos/Kidd.jpg",
+        "name": "Kidd",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec de nombreux tatouages, des cicatrices et un bras métallique, Kidd a une apparence intimidante.",
+            "capacités": "Kidd est un utilisateur du Haki et est extrêmement habile dans l'utilisation de son bras métallique en combat.",
+            "demonFruit": "Aucun (jusqu'à ma dernière mise à jour en janvier 2022).",
+            "description": "Kidd est un pirate au physique imposant avec de nombreux tatouages et des cicatrices. Il a une personnalité violente et ambitieuse.",
+            "histoire": "Eustass Kidd, surnommé le Capitaine Kidd, est un pirate puissant et impitoyable dans One Piece. Originaire de South Blue, il est membre des Onze Supernovae. Possédant le fruit du démon Jiki Jiki no Mi, qui lui confère le pouvoir de manipuler les aimants, Kidd est reconnu pour sa brutalité. Ayant formé son propre équipage, Kidd s'est distingué en défiants ouvertement des Yonko tels que Shanks et Kaido. Son ambition déclarée est de devenir le roi des pirates. Kidd est un personnage complexe, affichant une détermination féroce et une volonté de défier les puissances établies dans le monde de One Piece.",
+            "personalité": "Kidd est connu pour sa personnalité violente, son ambition dévorante et son refus de s'incliner devant d'autres pirates.",
+            "role": "Capitaine des Kidd Pirates, Kidd est l'un des Onze Supernovas et un supernova notoire."
+          },
+
+          "fullName": "Eustass Kidd",
+          "prime": "3.000.000.000",
+          "drapeau": "/static/img/drapeaux/kidd.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-law.png",
+        "id": "Persos/Trafalgar D. WaterLaw",
+        "img": "/static/img/imgpersos/Law.jpg",
+        "name": "Law",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec des tatouages et une expression calme, Law a une présence imposante.",
+            "capacités": "Law est un utilisateur du Haki et possède le Ope Ope no Mi, lui permettant de manipuler les objets à l'intérieur d'une sphère d'influence.",
+            "demonFruit": "Ope Ope no Mi, un Fruit du Démon de type Paramecia qui lui permet de manipuler les objets à l'intérieur d'une sphère d'influence.",
+            "description": "Law est un pirate avec une silhouette élancée, des tatouages et une expression souvent calme. Il est le capitaine des Heart Pirates.",
+            "histoire": "Law a émergé comme l'un des Onze Supernovas après le saut temporel. Il est devenu un membre clé de l'Alliance des Pirates de Chapeau de Paille et a joué un rôle majeur dans l'intrigue de Punk Hazard et Dressrosa. Law a des motivations complexes liées à son Fruit du Démon et à son passé mystérieux.",
+            "personalité": "Law a une personnalité calme et stratégique, mais peut être impitoyable envers ses ennemis. Il a un profond sens de l'honneur.",
+            "role": "Capitaine des Heart Pirates, Law est un membre clé de l'Alliance des Pirates de Chapeau de Paille et l'un des Onze Supernovas."
+          },
+
+          "fullName": "Trafalgar D. Water Law",
+          "prime": "3.000.000.000",
+          "drapeau": "/static/img/drapeaux/law.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-katakuri.png",
+        "id": "Persos/Charlotte Katakuri",
+        "img": "/static/img/imgpersos/Katakuri.jpg",
+        "name": "Charlotte",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec une stature imposante et un foulard sur la bouche, Katakuri a une présence intimidante.",
+            "capacités": "Katakuri est un utilisateur du Haki et possède le Mochi Mochi no Mi, lui permettant de créer, manipuler et devenir du mochi.",
+            "demonFruit": "Mochi Mochi no Mi, un Fruit du Démon de type Paramecia qui lui permet de créer, manipuler et devenir du mochi.",
+            "description": "Katakuri est un homme au physique imposant, avec une peau brune et des cicatrices. Il porte généralement un foulard sur la bouche.",
+            "histoire": "Charlotte Katakuri, également connu sous le nom de Dogtooth, est un personnage puissant et respecté dans One Piece. Fils de Big Mom et l'un des Trois Sweet Commanders de l'équipage de Big Mom, Katakuri est réputé pour sa force exceptionnelle et son sens aigu de l'observation. Il a mangé le fruit du démon Mochi Mochi no Mi, lui conférant la capacité de créer, manipuler et transformer son corps en mochi. Katakuri est célèbre pour son attitude calme et réservée, ainsi que pour son sens strict de l'honneur. Il est souvent vu avec son visage dissimulé, car il considère ses dents de mochi comme une imperfection. Lors de l'arc Whole Cake Island, Katakuri a démontré sa loyauté envers sa famille tout en engageant un combat intense contre Monkey D. Luffy, prouvant ainsi sa réputation de l'un des personnages les plus redoutables de l'univers de One Piece.",
+            "personalité": "Katakuri est calme, imperturbable et perfectionniste, mais cache son visage en raison de son complexe d'infériorité lié à sa bouche.",
+            "role": "Commandant sucré de la Big Mom Pirates, Katakuri est l'un des Three Sweet Commanders et l'un des fils de Big Mom."
+          },
+
+          "fullName": "Charlotte Katakuri",
+          "prime": "1.057.000.000",
+          "drapeau": "/static/img/drapeaux/big-mom.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-sabo.png",
+        "id": "Persos/Sabo",
+        "img": "/static/img/imgpersos/Sabo.jpg",
+        "name": "Sabo",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec des lunettes et un chapeau, Sabo a une apparence distinguée.",
+            "capacités": "Sabo est un expert en arts martiaux et a obtenu les pouvoirs du Mera Mera no Mi après la mort d'Ace.",
+            "demonFruit": "Mera Mera no Mi (après avoir mangé le Fruit du Démon de Ace).",
+            "description": "Sabo est le frère adoptif de Luffy et Ace, et il est le chef en second de l'Armée Révolutionnaire. Il porte souvent des lunettes et un chapeau.",
+            "histoire": "Sabo, le frère adoptif de Monkey D. Luffy dans One Piece, a une histoire remarquable. Originaire du Royaume de Goa, il était le frère de Luffy et Ace. Pensé mort lors de son enfance, Sabo a survécu et perdu la mémoire, finissant par être recueilli par l'Armée Révolutionnaire. Après avoir retrouvé la mémoire, Sabo a mangé le fruit du démon Mera Mera no Mi, précédemment détenu par son frère Ace. Il est devenu le second commandant en chef de l'Armée Révolutionnaire, luttant contre les injustices du Gouvernement Mondial. Son retour inattendu a eu un impact significatif, renforçant les liens entre les frères et jouant un rôle crucial dans l'équilibre des forces à travers les océans.",
+            "personalité": "Sabo est intelligent, stratégique et dévoué à la cause de la Révolution. Il a une forte détermination à protéger ses proches.",
+            "role": "Chef en second de l'Armée Révolutionnaire et membre clé de l'équipage de Dragon."
+          },
+
+          "fullName": "Sabo",
+          "prime": "602.000.000",
+          "drapeau": "/static/img/drapeaux/sabo.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-baggy.png",
+        "id": "Persos/Baggy le Clown",
+        "img": "/static/img/imgpersos/Baggy.jpg",
+        "name": "Baggy",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec un nez rouge, un chapeau de clown et une tenue extravagante, Baggy a une apparence de clown distincte.",
+            "capacités": "Baggy est immunisé contre les attaques tranchantes grâce à son pouvoir de Fruit du Démon, mais sa force physique est normale.",
+            "demonFruit": "Bara Bara no Mi, un Fruit du Démon de type Paramecia qui permet à Baggy de séparer son corps en morceaux.",
+            "description": "Baggy est un pirate avec une apparence clownesque et la capacité de séparer son corps en morceaux grâce à une balle Bara Bara no Mi.",
+            "histoire": "Baggy le Clown, également connu sous le nom de Baggy le Clown, est un personnage excentrique et comique dans One Piece. Ancien membre de l'équipage de Gol D. Roger, Baggy est devenu un pirate indépendant après la dissolution de l'équipage du Roi des Pirates. Il a mangé le fruit du démon Bara Bara no Mi, ce qui lui permet de séparer son corps en morceaux. Baggy est souvent associé à des situations humoristiques et est un adversaire récurrent de Luffy. Malgré son côté comique, Baggy possède une histoire complexe et des liens avec des personnages importants tels que Shanks et Gol D. Roger. Bien qu'il puisse sembler être un pirate clownesque, Baggy demeure un personnage mémorable et parfois surprenant dans l'univers de One Piece.",
+            "personalité": "Baggy est excentrique, opportuniste et aime être au centre de l'attention. Il a une histoire passée avec Shanks le Roux.",
+            "role": "Capitaine des Baggy Pirates et ancien membre de l'équipage de Roger."
+          },
+          "fullName": "Baggy le Clown",
+          "prime": "3.189.000.000",
+          "drapeau": "/static/img/drapeaux/baggy.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-kaido.png",
+        "id": "Persos/Le Roi des Bêtes Kaido",
+        "img": "/static/img/imgpersos/Kaido.jpg",
+        "name": "Kaido",
+        "specs": {
+          "aPropos": {
+            "apparence": "Kaido a des cheveux bleus, une barbe fournie et des cicatrices sur le visage. Sa présence émet une aura intimidante.",
+            "capacités": "Possédant une force incroyable, Kaido est pratiquement invincible. Son Fruit du Démon lui permet de se transformer en un dragon massif, ajoutant à sa puissance dévastatrice.",
+            "demonFruit": "Uo Uo no Mi, modèle Seiryu (Fruit du Dragon) - Mythique, une variante rare du Zoan Mythique lui permettant de se transformer en dragon.",
+            "description": "Kaido est immense, avec une stature imposante et des tatouages tribaux sur le corps. Il porte souvent un manteau noir et a une expression sévère.",
+            "histoire": "Kaido, également connu sous le nom de Kaido des Bêtes, est un personnage majeur et un antagoniste puissant dans One Piece. Il est l'un des quatre empereurs, les pirates les plus redoutés et les plus puissants du Nouveau Monde. Kaido a mangé le fruit du démon Uo Uo no Mi, modèle: Seiryu, ce qui lui permet de se transformer en un gigantesque dragon oriental. Il est connu pour sa nature indomptable, sa soif de chaos et son désir de créer la plus grande guerre jamais vue. Kaido est le capitaine des Bêtes Pirates et règne sur l'île de Wano en tentant de réaliser ses ambitions destructrices. Sa réputation de ne pouvant pas mourir a renforcé son mystère et en a fait un personnage redoutable et énigmatique dans l'univers de One Piece.",
+            "personalité": "Kaido est connu pour sa quête obsessionnelle de trouver un moyen de mourir. Il est impitoyable, adore les défis et cherche à instaurer un règne de chaos et de terreur.",
+            "role": "Kaido est le capitaine des Beast Pirates et l'un des Empereurs de la Mer. Il cherche constamment à défier la mort et à créer le plus grand conflit mondial."
+          },
+          "fullName": "Le Roi des Bêtes Kaido",
+          "prime": "4.611.100.000",
+          "drapeau": "/static/img/drapeaux/kaido.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-big-mom.png",
+        "id": "Persos/Charlotte Linlin, surnommée Big Mom",
+        "img": "/static/img/imgpersos/BigMom.jpg",
+        "name": "Big Mom",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec son énorme taille, sa robe colorée et son chapeau élaboré, Big Mom a une apparence extravagante.",
+            "capacités": "La Soru Soru no Mi lui permet de manipuler les âmes, influençant la force vitale des individus. Elle est également redoutable au combat physique.",
+            "demonFruit": "Soru Soru no Mi, un Fruit Paramecia lui permettant de manipuler les âmes.",
+            "description": "Big Mom est une femme massive avec une peau rose, un chapeau extravagant et une expression souvent souriante, mais dérangeante.",
+            "histoire": "Big Mom, également connue sous le nom de Charlotte Linlin, est un personnage majeur dans One Piece. Elle est l'un des quatre empereurs, les pirates les plus puissants du Nouveau Monde. Capitaine redoutable de l'équipage Big Mom Pirates et matriarche de la famille Charlotte, elle a mangé le fruit du démon Soru Soru no Mi, lui conférant le pouvoir de manipuler les âmes. Son objectif est de créer un monde où les différentes races coexistent sous sa domination. Réputée pour son appétit insatiable, en particulier pour les gâteaux de mariage, Big Mom est une force redoutable grâce à son pouvoir, sa force brute et son statut d'empereur. Son rôle central dans divers arcs de l'histoire en fait une figure incontournable de l'univers de One Piece, contribuant à l'épopée et à la complexité du monde créé par Eiichiro Oda.",
+            "personalité": " Big Mom est instable émotionnellement, passant du sourire à la colère en un instant. Sa quête pour créer un monde idéal est basée sur une vision utopique.",
+            "role": "Big Mom est la capitaine des Big Mom Pirates et fait partie des Quatre Empereurs. Elle cherche à créer un monde où toutes les races coexistent pacifiquement."
+          },
+          "fullName": "Charlotte Linlin, surnommée Big Mom",
+          "prime": "4.388.000.000",
+          "drapeau": "/static/img/drapeaux/big-mom.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-shanks.png",
+        "id": "Persos/Shanks Le Roux",
+        "img": "/static/img/imgpersos/Shanks.jpg",
+        "name": "Shanks",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec son manteau rouge et son attitude décontractée, Shanks a une présence imposante.",
+            "capacités": "Shanks est un épéiste talentueux et un redoutable utilisateur du Haki. Sa maîtrise de l'épée est reconnue même par Mihawk, le plus grand épéiste du monde.",
+            "demonFruit": "Aucun (Shanks ne possède pas de Fruit du Démon).",
+            "description": "Shanks a des cheveux roux, une barbe et une cicatrice sur son œil gauche, témoignant d'un événement mystérieux. Il porte souvent un manteau rouge.",
+            "histoire": "Shanks le Roux, ancien membre de l'équipage de Gol D. Roger et actuel capitaine des Pirates Roux, est une figure emblématique dans One Piece. En tant qu'un des quatre empereurs, les pirates les plus puissants du Nouveau Monde, Shanks est connu pour son charisme, sa sagesse et sa bravoure. Il a perdu son bras gauche en sauvant Monkey D. Luffy d'un monstre marin, témoignant de son dévouement envers ses amis. Shanks détient le chapeau de paille légendaire qui a appartenu à Gol D. Roger, un symbole de son respect envers Luffy et de sa conviction en l'avenir. Bien que son rôle ne soit pas toujours central, Shanks demeure une figure influente dans l'histoire, laissant planer un mystère sur ses motivations et son pouvoir. Sa présence continue d'ajouter une couche de complexité à l'univers riche de One Piece.",
+            "personalité": "Shanks est calme, charismatique et a le respect des autres pirates. Il est prêt à prendre des risques pour protéger ceux qu'il chérit.",
+            "role": "Capitaine des Red-Haired Pirates, Shanks est un ancien membre de l'équipage de Gol D. Roger et l'un des Quatre Empereurs."
+          },
+          "fullName": "Shanks Le Roux",
+          "prime": "4.048.900.000",
+          "drapeau": "/static/img/drapeaux/shanks.png"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-barbe-noire.png",
+        "id": "Persos/Marshall D. Teach, Surnommé Barbe Noire",
+        "img": "/static/img/imgpersos/BarbeNoire.jpg",
+        "name": "Teach",
+        "specs": {
+          "aPropos": {
+            "apparence": "Avec sa barbe noire et son manteau sombre, Barbe Noire a une présence menaçante.",
+            "capacités": "Le Yami Yami no Mi lui confère des pouvoirs liés aux ténèbres, le rendant invulnérable à de nombreux types d'attaques. Il peut également annihiler la capacité des autres Fruits du Démon au contact.",
+            "demonFruit": "Yami Yami no Mi (Fruit des Ténèbres), une Logia qui lui permet de créer, contrôler et devenir les ténèbres.",
+            "description": "Barbe Noire a une allure imposante avec une barbe noire et un chapeau de pirate caractéristique. Sa silhouette massive dissimule des ambitions obscures.",
+            "histoire": "Marshall D. Teach, alias Barbe Noire, joue un rôle central dans One Piece. Ancien membre de l'équipage de Barbe Blanche, il est maintenant le capitaine des Pirates de Barbe Noire et l'un des quatre empereurs, les pirates les plus puissants du Nouveau Monde. Sa soif de pouvoir est évidente avec ses deux fruits du démon, le ténèbres Yami Yami no Mi et le tremblement Gura Gura no Mi, ce qui le rend exceptionnellement redoutable. Teach a orchestré la mort de Barbe Blanche, lui permettant de s'emparer du fruit du démon du défunt capitaine. Son objectif affiché est de devenir le roi des pirates, faisant de lui un antagoniste majeur et un rival de Monkey D. Luffy. La nature mystérieuse et calculatrice de Barbe Noire ajoute une dimension sombre et intrigante à l'intrigue de One Piece.",
+            "personalité": "Barbe Noire est calculateur, impitoyable et cherche constamment à accroître sa puissance. Il est prêt à sacrifier quiconque pour atteindre ses objectifs.",
+            "role": "Ancien membre de l'équipage de Barbe Blanche, Teach devient capitaine des Pirates de Barbe Noire et cherche à devenir le nouvel empereur."
+          },
+          "fullName": "Marshall D. Teach, Surnommé Barbe Noire",
+          "prime": "3.996.000.000",
+          "drapeau": "/static/img/drapeaux/barbe-noire.jpg"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-mihawk.png",
+        "id": "Persos/Dracule Mihawk",
+        "img": "/static/img/imgpersos/Mihawk.jpg",
+        "name": "Mihawk",
+        "specs": {
+          "aPropos": {
+            "apparence": "Mihawk est un homme grand et mince avec des cheveux noirs et une barbe fine. Il est souvent vu portant des vêtements élégants et tenant son épée emblématique, Kokuto Yoru.",
+            "capacités": "Maître du sabre, Mihawk est célèbre pour sa maîtrise exceptionnelle de l'épée. Son épée principale, Kokuto Yoru, est une lame noire redoutable. Il peut exécuter des attaques puissantes avec une précision mortelle.",
+            "description": "Dracule Mihawk, également connu sous le nom d'Hawkeye Mihawk, est un personnage énigmatique et redoutable dans l'univers de One Piece. Il est réputé comme le meilleur bretteur du monde.",
+            "histoire": "Dracule Mihawk, surnommé Œil de Faucon, est une figure éminente dans One Piece en tant que plus grand escrimeur du monde et membre des Sept Grands Corsaires. Résidant sur l'île de Kuraigana, Mihawk est réputé pour sa maîtrise exceptionnelle du sabre, symbolisée par son arme légendaire, le Yoru. Son duel mémorable avec Shanks le Roux, un autre empereur, est gravé dans l'histoire, mettant en avant la puissance de ces deux personnages éminents. Malgré son caractère solitaire et son attitude détachée, Mihawk est respecté et craint à travers le monde de One Piece. Sa présence ajoute une aura d'élégance, de puissance et de mystère à cet univers captivant.",
+            "role": "Mihawk occupe le poste de Grand Corsaire, faisant de lui un allié officiel du Gouvernement Mondial. Sa résidence se trouve sur l'Île de Kuraigana, où il règne en tant que seigneur."
+          },
+          "fullName": "Dracule Mihawk",
+          "prime": "3.590.000.000",
+          "drapeau": "/static/img/drapeaux/mihawk.png"
+        }
+      },
+      {
+        "affiche": "/static/img/affiches-persos/affiche-barbe-blanche.png",
+        "id": "Persos/Edward Newgate",
+        "img": "/static/img/imgpersos/EdwardNewgate.jpg",
+        "name": "Barbe Blanche",
+        "specs": {
+          "aPropos": {
+            "apparence": "Barbe Blanche était un homme colossal avec une barbe blanche épaisse et une immense cicatrice sur son torse. Il portait un manteau d'amiral et détenait le Gura Gura no Mi, un Fruits du Démon de type Paramecia.",
+            "capacités": "Avec le Gura Gura no Mi, Barbe Blanche pouvait créer des séismes dévastateurs, le qualifiant de Homme le plus proche du One Piece. Il était également extrêmement robuste et résistant aux attaques.",
+            "description": "Edward Newgate, plus connu sous le nom de Barbe Blanche, était l'un des pirates les plus puissants et respectés de son époque. Il a été le capitaine de l'Équipage de Barbe Blanche.",
+            "histoire": "Edward Newgate, dit Barbe Blanche, était le puissant capitaine de l'équipage éponyme et l'un des quatre empereurs dans One Piece. Sa force colossale était amplifiée par le fruit du démon Gura Gura no Mi, lui conférant le pouvoir de générer des séismes dévastateurs. Cependant, derrière cette image redoutable se cachait un homme au cœur généreux. Barbe Blanche considérait son équipage comme une véritable famille, recrutant des membres d'origines diverses et créant un lien profond avec chacun d'eux. Sa bienveillance paternelle contrastait avec sa réputation de pirate redoutable. Sa mort héroïque lors de la guerre à Marineford a laissé un vide immense, symbolisant la fin d'une ère et le début de nouveaux défis pour le monde des pirates. L'héritage de Barbe Blanche résonne à travers l'histoire de One Piece, rappelant la complexité des personnages et les choix difficiles dans cet univers captivant.",
+            "role": "Barbe Blanche était l'un des Quatre Empereurs, des pirates extrêmement puissants qui exercent une grande influence sur le Nouveau Monde. Il avait la réputation d'être un homme compatissant envers son équipage."
+          },
+          "fullName": "Edward Newgate",
+          "prime": "5.046.000.000",
+          "drapeau": "/static/img/drapeaux/shiro-hige.jpg"
+        }
+      }
+    ]
+  }
 }
