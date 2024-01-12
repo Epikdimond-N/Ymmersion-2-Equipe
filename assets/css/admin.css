@@ -87,24 +87,35 @@ a button {
 }
 
 a button.nouveau-personnage {
-    background-image: url('/static/img/button.jpg');
+    width: 250px;
+    height:355px;
+    background-image: url('/static/img/photoTemplateVide/affiche-add-perso.png');
 }
 
 a button.nouvelle-arc {
-    background-image: url('/static/img/button.jpg');
+    width: 250px;
+    height:355px;
+    background-image: url('/static/img/photoTemplateVide/affiche-add-arc.png');
 }
 
 a button.nouvelle-event {
-    background-image: url('/static/img/button.jpg');
+    width: 250px;
+    height:355px;
+    background-image: url('/static/img/photoTemplateVide/affiche-add-event.png');
 }
 
 a button.supprimer-article {
-    background-image: url('/static/img/button.jpg');
+    width: 250px;
+    height:355px;
+    background-image: url('/static/img/photoTemplateVide/affiche-delete.png');
 }
 
 a button.modifier-compte {
-    background-image: url('/static/img/button.jpg');
+    width: 250px;
+    height:355px;
+    background-image: url('/static/img/photoTemplateVide/affiche-upgrade.png');
 }
+
 footer{
     height: 30vh;
     width: 100vw;
