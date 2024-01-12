@@ -1,196 +1,105 @@
 {{define "newPersos"}}
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/statics/fav.ico" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/contentCrea.css" />
-    <title>Register</title>
-  </head>
 
-  <body>
-    <div class="contentall">
-      <header>
-        <div class="menu">
-          <div class="cont">
-            <a class="h-link" href="/Home">
-              <img class="home" src="../static/img/index/home.png" alt="Home" />
-              <p>ACCUEIL</p>
-            </a>
-          </div>
-          <div class="cont">
-            <a class="h-link" href="/categories">
-              <img
-                class="categories"
-                src="../static/img/index/categories.png"
-                alt="Categories"
-              />
-              <p>CATEGORIES</p>
-            </a>
-          </div>
-          <a class="h-link" href="/admin">
-            <img
-              class="admin"
-              src="../static/img/index/admin.png"
-              alt="Admin"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/statics/fav.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../static/css/contentCrea.css" />
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="contentall">
+    <header>
+      <div class="menu">
+        <div class="cont">
+          <a class="h-link" href="/Home">
+            <img class="home" src="../static/img/index/home.png" alt="Home" />
+            <p>ACCUEIL</p>
           </a>
         </div>
-        <img
-          class="logo"
-          src="../static/img/index/logo.png"
-          alt="Logo One Piece"
-        />
-
-        <div class="menu">
-          <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-          <form action="/search" method="get">
-            <input
-              type="text"
-              id="search"
-              name="name"
-              placeholder="Cherchez le One Piece !"
-            />
-          </form>
-          <div class="cont">
-            {{if .Logged}}
-            <a class="h-link" href="/logout">
-              <img
-                class="login"
-                src="../static/img/index/login.png"
-                alt="Login"
-              />
-              <p>{{.Cat}}</p></a
-            >
-            {{else}}
-            <a class="h-link" href="/login">
-              <img
-                class="login"
-                src="../static/img/index/login.png"
-                alt="Login"
-              />
-              <p>LOGIN</p></a
-            >
-            {{end}}
-          </div>
+        <div class="cont">
+          <a class="h-link" href="/categories">
+            <img class="categories" src="../static/img/index/categories.png" alt="Categories" />
+            <p>CATEGORIES</p>
+          </a>
         </div>
-      </header>
-      <section>
-        <h1>Register Persos</h1>
-        <form action="/admin/newChar/gestions" method="post">
-          <label for="PersosName">Nom du personnage :</label>
-          <input
-            type="text"
-            id="PersosName"
-            name="PersosName"
-            placeholder="Luffy"
-            required
-          /><br /><br />
+        <a class="h-link" href="/admin">
+          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+        </a>
+      </div>
+      <img class="logo" src="../static/img/index/logo.png" alt="Logo One Piece" />
 
-          <label for="PersosImage">Image du perosnnage (must be under 10MB):</label>
-          <input
-            type="file"
-            id="PersosImage"
-            name="PersosImage"
-            required
-          /><br /><br />
-
-          <label for="PersosAffiche">Affiche du personnage (must be under 10MB):</label>
-          <input
-            type="file"
-            id="PersosImage"
-            name="PersosImage"
-            required
-          /><br /><br />
-
-          <label for="PersosDrapeau"> Drapeau du personnage (must be under 10MB):</label>
-          <input
-            type="file"
-            id="PersosImage"
-            name="PersosImage"
-            required
-          /><br /><br />
-          
-          <label for="PersosFullName">Nom complet, si aucun metre le nom :</label>
-          <input
-            type="text"
-            id="PersosFullName"
-            name="PersosFullName"
-            placeholder="Monky D. Luffy"
-            required
-          /><br /><br />
-
-          <label for="PersosPrime">Prime du personnage:</label>
-          <input
-            type="text"
-            id="PersosAge"
-            name="PersosAge"
-            required
-          />Ans<br /><br />
-
-          <label for="PersosDescription">Description du personnage :</label>
-          <textarea
-            id="PersosDescription"
-            name="PersosDescription"
-            required
-          ></textarea
-          ><br /><br />
-
-          <label for="PersosRole">Role du personnage:</label>
-          <input
-            type="text"
-            id="PersosRole"
-            name="PersosRole"
-            required
-          /><br /><br />
-
-          <label for="PersosFruit">Le Fruit du demon (si il n'en a pas, preciser):</label>
-          <input
-            type="text"
-            id="PersosFruit"
-            name="PersosFruit"
-            required
-          /><br /><br />
-
-          <label for="PersosPersonalite">Personalité du personage:</label>
-          <input
-            type="text"
-            id="PersosPersonalite"
-            name="PersosPersonalite"
-            required
-          /><br /><br />
-
-          <label for="PersosApparence">Apparence du personnage :</label>
-          <input
-            type="text"
-            id="PersosApparence"
-            name="PersosApparence"
-            required
-          /><br /><br />
-
-          <label for="PersosCapacités">Capacité du personnage:</label>
-          <textarea
-            type="text"
-            id="PersosCapacités"
-            name="PersosCapacités"
-            required
-          ></textarea
-          ><br /><br />
-
-          <label for="PersosHistoires">Histoire du personnage:</label>
-          <textarea
-            id="PersosHistoires"
-            name="PersosHistoires"
-            required
-          ></textarea
-          ><br /><br />
-
-          <input type="submit" value="Register" />
+      <div class="menu">
+        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+        <form action="/search" method="get">
+          <input type="text" id="search" name="name" placeholder="Cherchez le One Piece !" />
         </form>
-      </section>
-      <footer></footer>
-    </div>
-  </body>
+        <div class="cont">
+          {{if .Logged}}
+          <a class="h-link" href="/logout"><img class="login" src="../static/img/index/login.png" alt="Login" />
+            <p>{{.Cat}}</p>
+          </a>
+          {{else}}
+          <a class="h-link" href="/login">
+            <img class="login" src="../static/img/index/login.png" alt="Login" />
+            <p>LOGIN</p>
+          </a>
+          {{end}}
+        </div>
+      </div>
+    </header>
+    <section>
+      <h1>Register Persos</h1>
+      <form action="/admin/newChar/gestions" method="post">
+        <label for="PersosName">Nom du personnage :</label>
+        <input type="text" id="PersosName" name="PersosName" placeholder="Luffy" required /><br /><br />
+
+        <label for="PersosImage">Image du perosnnage (must be under 10MB):</label>
+        <input type="file" id="PersosImage" name="PersosImage" required /><br /><br />
+
+        <label for="PersosAffiche">Affiche du personnage (must be under 10MB):</label>
+        <input type="file" id="PersosImage" name="PersosImage" required /><br /><br />
+
+        <label for="PersosDrapeau"> Drapeau du personnage (must be under 10MB):</label>
+        <input type="file" id="PersosImage" name="PersosImage" required /><br /><br />
+
+        <label for="PersosFullName">Nom complet, si aucun metre le nom :</label>
+        <input type="text" id="PersosFullName" name="PersosFullName" placeholder="Monky D. Luffy"
+          required /><br /><br />
+
+        <label for="PersosPrime">Prime du personnage:</label>
+        <input type="text" id="PersosAge" name="PersosAge" required />Ans<br /><br />
+
+        <label for="PersosDescription">Description du personnage :</label>
+        <textarea id="PersosDescription" name="PersosDescription" required></textarea><br /><br />
+
+        <label for="PersosRole">Role du personnage:</label>
+        <input type="text" id="PersosRole" name="PersosRole" required /><br /><br />
+
+        <label for="PersosFruit">Le Fruit du demon (si il n'en a pas, preciser):</label>
+        <input type="text" id="PersosFruit" name="PersosFruit" required /><br /><br />
+
+        <label for="PersosPersonalite">Personalité du personage:</label>
+        <input type="text" id="PersosPersonalite" name="PersosPersonalite" required /><br /><br />
+
+        <label for="PersosApparence">Apparence du personnage :</label>
+        <input type="text" id="PersosApparence" name="PersosApparence" required /><br /><br />
+
+        <label for="PersosCapacités">Capacité du personnage:</label>
+        <textarea type="text" id="PersosCapacités" name="PersosCapacités" required></textarea><br /><br />
+
+        <label for="PersosHistoires">Histoire du personnage:</label>
+        <textarea id="PersosHistoires" name="PersosHistoires" required></textarea><br /><br />
+
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+    <footer></footer>
+  </div>
+</body>
+
 </html>
 {{end}}

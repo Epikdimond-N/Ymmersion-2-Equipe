@@ -436,6 +436,7 @@ func DisplayAdmin(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/login", http.StatusSeeOther)
 		return
 	}
+	fmt.Println(IsAdmin)
 	data := One.CombinedData{
 		Cat:    username,
 		Logged: logged,
@@ -691,13 +692,18 @@ func SuccessLoginHandler(w http.ResponseWriter, r *http.Request) {
 
 	username = r.FormValue("username")
 	password = r.FormValue("password")
-	admin := checkAdmin(username)
+	result, err := checkAdmin(username)
+
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
 	user, exists := users[username]
 	if !exists || !CheckPasswordHash(password, user.Password) {
 		http.Redirect(w, r, "/login?invalid=true", http.StatusSeeOther)
 		return
 	}
-	if admin {
+	if result == "yes" {
 		IsAdmin = true
 	}
 	logged = true

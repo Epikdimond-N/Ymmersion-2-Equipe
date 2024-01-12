@@ -140,30 +140,33 @@ func searchUser(username string) (One.User, error) {
 
 	return One.User{}, nil // No error, but user not found
 }
-func checkAdmin(usernameToCheck string) bool {
+
+func checkAdmin(usernameToCheck string) (string, error) {
 	// Read JSON file
 	file, err := os.ReadFile("users.json")
 	if err != nil {
-		fmt.Println("can't read file")
-		return false
+		return "", fmt.Errorf("can't read file: %v", err)
 	}
 
 	// Unmarshal JSON data
 	var users map[string]One.User
 	err = json.Unmarshal(file, &users)
 	if err != nil {
-		fmt.Println("can't unmarshal")
-		return false
+		return "", fmt.Errorf("can't unmarshal: %v", err)
 	}
 
-	// Check if the username exists and has admin privileges
-	_, exists := users[usernameToCheck]
+	// Check if the username exists
+	user, exists := users[usernameToCheck]
 	if !exists {
-		fmt.Println(" Username not found")
-		return false
+		return "no", nil // Username not found
 	}
 
-	return true
+	// Check if the user has admin privileges
+	if user.IsAdmin == "yes" {
+		return "yes", nil
+	}
+
+	return "no", nil
 }
 
 func ChargeImage() {
