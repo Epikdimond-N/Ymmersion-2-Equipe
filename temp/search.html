@@ -50,14 +50,15 @@
     </div>
   </header>
   <section>
-  <h1>Search Results</h1>
-  {{range .Result}}
-  <div class="affiche">
-    <a href="/{{.Categorie}}?id={{.ID}}"><strong>Image:</strong> <img src="{{.Affiche}}" alt="Image not available"><br>
-      <strong>Description:</strong> {{.Description}}</a><br><br>
-  </div>
-  {{end}}
-</section>
+    <h1>Search Results</h1>
+    {{range .Result}}
+    <div class="affiche">
+      <a href="/{{.Categorie}}?id={{.ID}}"><strong>Image:</strong> <img src="{{.Affiche}}"
+          alt="Image not available"><br>
+        <strong>Description:</strong> {{.Description}}</a><br><br>
+    </div>
+    {{end}}
+  </section>
   <footer></footer>
 </body>
 
