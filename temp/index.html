@@ -1,12 +1,13 @@
 {{define "index"}}
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/index.css" />
-    <title>Accueil</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/static/css/index.css" />
+  <title>Accueil</title>
+</head>
 
 <head>
   <meta charset="UTF-8" />
@@ -42,23 +43,17 @@
         <input type="text" id="search" name="name" placeholder="Cherchez le One Piece !" />
       </form>
       <div class="cont">
-        {{if .Logged}} 
+        {{if .Logged}}
         <a class="h-link" href="/logout">
-        <img
-        class="login"
-        src="../static/img/index/login.png"
-        alt="Login"
-      />
-        <p>{{.Cat}}</p></a>
-      {{else}}
-      <a class="h-link" href="/login">
-      <img
-      class="login"
-      src="../static/img/index/login.png"
-      alt="Login"
-    />
-        <p>LOGIN</p></a>
-      {{end}}
+          <img class="login" src="../static/img/index/login.png" alt="Login" />
+          <p>{{.Cat}}</p>
+        </a>
+        {{else}}
+        <a class="h-link" href="/login">
+          <img class="login" src="../static/img/index/login.png" alt="Login" />
+          <p>LOGIN</p>
+        </a>
+        {{end}}
         </a>
       </div>
     </div>
@@ -97,4 +92,3 @@
 
 </html>
 {{end}}
-

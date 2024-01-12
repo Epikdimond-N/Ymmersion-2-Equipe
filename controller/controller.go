@@ -11,6 +11,22 @@ import (
 	"path/filepath"
 )
 
+func PorjetHandler(w http.ResponseWriter, r *http.Request) {
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "projet", data)
+}
+
+func MentionLegaleHandler(w http.ResponseWriter, r *http.Request) {
+	data := One.CombinedData{
+		Cat:    username,
+		Logged: logged,
+	}
+	initTemplate.Temp.ExecuteTemplate(w, "mention", data)
+}
+
 func NewCharHandler(w http.ResponseWriter, r *http.Request) {
 	if !logged {
 		http.Redirect(w, r, "/login", http.StatusSeeOther)
@@ -458,7 +474,7 @@ func DisplayAdminAdmin(w http.ResponseWriter, r *http.Request) {
 		Cat:    username,
 		Logged: logged,
 	}
-	initTemplate.Temp.ExecuteTemplate(w, "adminadmin", data)
+	initTemplate.Temp.ExecuteTemplate(w, "administration", data)
 }
 
 func DisplayGestionAdmin(w http.ResponseWriter, r *http.Request) {

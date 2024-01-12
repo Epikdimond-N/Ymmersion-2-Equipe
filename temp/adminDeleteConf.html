@@ -34,31 +34,20 @@
       <div class="menu">
         <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
         <form action="/search" method="get">
-          <input
-            type="text"
-            id="search"
-            name="name"
-            placeholder="Cherchez le One Piece !"
-          />
+          <input type="text" id="search" name="name" placeholder="Cherchez le One Piece !" />
         </form>
         <div class="cont">
-          {{if .Logged}} 
+          {{if .Logged}}
           <a class="h-link" href="/logout">
-          <img
-          class="login"
-          src="../static/img/index/login.png"
-          alt="Login"
-        />
-          <p>{{.Cat2}}</p></a>
-        {{else}}
-        <a class="h-link" href="/login">
-        <img
-        class="login"
-        src="../static/img/index/login.png"
-        alt="Login"
-      />
-          <p>LOGIN</p></a>
-        {{end}}
+            <img class="login" src="../static/img/index/login.png" alt="Login" />
+            <p>{{.Cat2}}</p>
+          </a>
+          {{else}}
+          <a class="h-link" href="/login">
+            <img class="login" src="../static/img/index/login.png" alt="Login" />
+            <p>LOGIN</p>
+          </a>
+          {{end}}
         </div>
       </div>
     </header>

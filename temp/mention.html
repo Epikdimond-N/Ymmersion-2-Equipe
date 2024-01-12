@@ -1,4 +1,4 @@
-{{define "Login"}}
+{{define "mention"}}
 <!DOCTYPE html>
 <html>
 
@@ -45,23 +45,21 @@
         </div>
       </div>
     </header>
-    <section>
-      <h1>Login</h1>
-      <form class="formu" action="/successLogin" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required /><br /><br />
-        <button type="submit" class="transitionButton">Login</button>
-      </form>
-      <div class="flex">
-        <div class="invalid">
-          <p>{{.}}</p>
-          <p>Don't have an account?</p>
-        </div>
-        <a href="/register" class="link">Create one</a>
-      </div>
-    </section>
+<section><div id="mention-legale">
+    <h4>Mentions Légales -  One Piece</h4>
+    <p>Ce travail de recherche est publié en ligne par [Votre Nom] dans le cadre d'un blog dédié à l'analyse et à la discussion de l'univers de One Piece.</p>
+
+    <p>Email de contact : [Team@mail.com]</p>
+    <p>Affiliation académique : [YnovCampus]</p>
+
+    <p>One Piece est une œuvre créée par Eiichiro Oda, et les droits d'auteur sont détenus par Toei Animation, Shueisha, Eiichiro Oda, et leurs ayants droit respectifs. Ce travail de recherche respecte ces droits et vise à analyser l'œuvre dans le cadre de la critique et de la discussion académique.</p>
+
+    <p>Ce travail de recherche suit les normes académiques en termes de citations, références, et méthodologie de recherche. Toutes les sources utilisées sont correctement attribuées.</p>
+
+    <p>Les opinions exprimées dans ce travail de recherche sont celles de l'auteur et ne représentent pas nécessairement les points de vue des créateurs de One Piece ou des détenteurs des droits d'auteur.</p>
+
+    <p>&copy; 2024 [La Team]. Tous droits réservés pour le contenu original de ce travail de recherche. Toute utilisation ou reproduction non autorisée est interdite.</p>
+</div></section>
 
     <footer></footer>
   </div>
