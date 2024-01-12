@@ -205,7 +205,7 @@ func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 	file, handler, err := r.FormFile("EventAffiche")
 	if err != nil {
 		// Handle error
-		fmt.Println("Error retrieving the arcImage:", err)
+		fmt.Println("Error retrieving the EventImage:", err)
 		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
 		return
 	}
@@ -213,10 +213,10 @@ func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 	name := r.FormValue("EventName")
 	ext := filepath.Ext(handler.Filename)
 	newFileName := formatString(name) + ext
-	filePath := filepath.Join("assets", "img", "affiches-events", newFileName)
-	dst, err := os.Create(filePath)
+	baseDirpath := "C:/Users/nicol/OneDrive/Bureau/Ymmersion 2/Ymmersion-2-Equipe/assets/img/affiches-events/" + newFileName
+	dst, err := os.Create(baseDirpath)
 	if err != nil {
-		// Handle error
+		fmt.Println("Error creating the file:", err)
 		http.Error(w, "Error creating the file", http.StatusInternalServerError)
 		return
 	}
@@ -229,14 +229,14 @@ func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	desc := r.FormValue("EventDescription")
-	affichePath := filepath.Join("static", "img", "affiches-events", newFileName)
+	affichePath := "/static/img/affiches-events/" + newFileName
 	// Call the function to update event passing the file path as img
 	if err := UpdateEvent(name, affichePath, desc); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
 	}
-	http.Redirect(w, r, "/Events?id=Events/"+name, http.StatusFound)
+	http.Redirect(w, r, "/Events?id=EventsOnePiece/"+name, http.StatusFound)
 }
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
