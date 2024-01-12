@@ -44,21 +44,16 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	r.ParseMultipartForm(10 << 20)
 
 	fullname := r.FormValue("PersosFullName")
-	ImgPath, err := retrieveAndProcessImage(w, r, "PersosImage", fullname)
+
+	// Process all image fields
+	ImgPath, AffichePath, DrapeauPath, err := retrieveAndProcessImages(w, r, fullname)
 	if err != nil {
+		// Handle error
+		http.Error(w, "Error processing images", http.StatusInternalServerError)
 		return
 	}
 
-	AffichePath, err := retrieveAndProcessImage(w, r, "PersosAffiche", fullname)
-	if err != nil {
-		return
-	}
-
-	DrapeauPath, err := retrieveAndProcessImage(w, r, "PersosDrapeau", fullname)
-	if err != nil {
-		return
-	}
-	// Once the file is saved, retrieve other form data and call the function to update the character
+	// Retrieve other form data
 	name := r.FormValue("PersosName")
 	prime := r.FormValue("PersosPrime")
 	desc := r.FormValue("PersosDescription")
@@ -68,7 +63,8 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 	apparence := r.FormValue("PersosApparence")
 	capacites := r.FormValue("PersosCapacités")
 	histoire := r.FormValue("PersosHistoires")
-	// Call the function to update character passing the file path as img
+
+	// Call the function to update character passing the file paths as img
 	if err := UpdateChar(name, ImgPath, AffichePath, DrapeauPath, fullname, prime, desc, role, fruit, persona, apparence, capacites, histoire); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
@@ -77,7 +73,6 @@ func GestionNewPersosHandler(w http.ResponseWriter, r *http.Request) {
 
 	http.Redirect(w, r, "/Persos?id=Persos/"+fullname, http.StatusFound)
 }
-
 func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 	if !logged {
 		http.Redirect(w, r, "/login", http.StatusSeeOther)

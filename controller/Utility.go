@@ -19,12 +19,12 @@ import (
 )
 
 var (
-	logged       bool
-	users        = make(map[string]One.User) // Map to store users
-	username     string
-	password     string
-	IsAdmin      bool
-	newFieldname string
+	logged   bool
+	users    = make(map[string]One.User) // Map to store users
+	username string
+	password string
+	IsAdmin  bool
+	IsPath   string
 )
 
 func formatString(input string) string {
@@ -45,30 +45,49 @@ func formatString(input string) string {
 	return formattedString
 }
 
-func retrieveAndProcessImage(w http.ResponseWriter, r *http.Request, fieldName string, fullname string) (string, error) {
+func retrieveAndProcessImages(w http.ResponseWriter, r *http.Request, fullname string) (string, string, string, error) {
+	ImgPath, err := retrieveAndProcessImage(w, r, "PersosImage", "imgpersos", fullname)
+	if err != nil {
+		return "", "", "", err
+	}
+	AffichePath, err := retrieveAndProcessImage(w, r, "PersosAffiche", "affiches-persos", fullname)
+	if err != nil {
+		return "", "", "", err
+	}
+	DrapeauPath, err := retrieveAndProcessImage(w, r, "PersosDrapeau", "drapeaux", fullname)
+	if err != nil {
+		return "", "", "", err
+	}
+
+	return ImgPath, AffichePath, DrapeauPath, nil
+}
+
+func retrieveAndProcessImage(w http.ResponseWriter, r *http.Request, fieldName, newFieldname, fullname string) (string, error) {
 	file, handler, err := r.FormFile(fieldName)
 	if err != nil {
 		http.Error(w, "Error retrieving the "+fieldName, http.StatusInternalServerError)
 		return "", err
 	}
+	if newFieldname == "PersosImage" {
+		IsPath = "imgpersos"
+	} else if newFieldname == "PersosAffiche" {
+		IsPath = "affiches-persos"
+	} else if newFieldname == "PersosDrapeau" {
+		IsPath = "drapeaux"
+	} else {
+		IsPath = newFieldname
+	}
+	fmt.Println(IsPath)
 	defer file.Close()
+	baseDir := "C:/Users/nicol/OneDrive/Bureau/Ymmersion 2/Ymmersion-2-Equipe/assets/img/"
 	ext := filepath.Ext(handler.Filename)
-
-	if fieldName == "PersosImage" {
-		newFieldname = "imgpersos"
-	}
-	if fieldName == "PersosAffiche" {
-		newFieldname = "affiches-persos"
-	}
-	if fieldName == "PersosDrapeau" {
-		newFieldname = "drapeaux"
-	}
 	newFileName := fullname + ext
-	path := "/assets/img/" + newFieldname + "/" + newFileName
-	path2 := "/static/img" + newFieldname + "/" + newFileName
+	path := baseDir + IsPath + "/" + newFileName
+	path2 := "/static/img/" + IsPath + "/" + newFileName
 	// Save the file with the new filename
 	dst, err := os.Create(path)
 	if err != nil {
+		fmt.Println("Error creating the file:", err)
 		http.Error(w, "Error creating the file", http.StatusInternalServerError)
 		return "", err
 	}
