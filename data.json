@@ -414,12 +414,6 @@
                 "img": "/static/img/imgevent/EventJoyBoy.png",
                 "intro": "Les révélations sur Joy Boy et l'importance de la volonté des D. commencent à éclaircir les mystères entourant le One Piece. Cette découverte projette l'équipage au cœur des intrigues cosmiques qui façonnent le monde. Joy Boy devient une figure centrale, liée au destin de Luffy et à la quête du One Piece. Les implications de cette révélation transcendent le simple trésor matériel, plongeant l'équipage dans un voyage spirituel et métaphysique à travers les arcanes du monde.",
                 "name": "La découverte de l'identité de Joy Boy"
-            },
-            {
-                "affiche": "/static/img/affiches-events/arc-du-code.jpg",
-                "description": "nini",
-                "id": "Events/Arc du code",
-                "name": "Arc du code"
             }
         ],
         "Persos": [
