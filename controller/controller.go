@@ -458,7 +458,7 @@ func DisplayAdminAdmin(w http.ResponseWriter, r *http.Request) {
 		Cat:    username,
 		Logged: logged,
 	}
-	initTemplate.Temp.ExecuteTemplate(w, "adminadmin", data)
+	initTemplate.Temp.ExecuteTemplate(w, "administration", data)
 }
 
 func DisplayGestionAdmin(w http.ResponseWriter, r *http.Request) {
