@@ -4,78 +4,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/admin.css" />
-    <link rel="stylesheet" href="../static/css/categories.css" />
+    <link rel="stylesheet" href="../static/css/adminadmin.css" />
     <title>Admin</title>
   </head>
   <body>
-    <header>
-      <div class="menu">
-        <div class="cont">
-          <a class="h-link" href="/Home">
-            <img class="home" src="../static/img/index/home.png" alt="Home" />
-            <p>ACCUEIL</p>
-          </a>
-        </div>
-        <div class="cont">
-          <a class="h-link" href="/categories">
+    <div class="contentall">
+      <header>
+        <div class="menu">
+          <div class="cont">
+            <a class="h-link" href="/Home">
+              <img class="home" src="../static/img/index/home.png" alt="Home" />
+              <p>ACCUEIL</p>
+            </a>
+          </div>
+          <div class="cont">
+            <a class="h-link" href="/categories">
+              <img
+                class="categories"
+                src="../static/img/index/categories.png"
+                alt="Categories"
+              />
+              <p>CATEGORIES</p>
+            </a>
+          </div>
+          <a class="h-link" href="/admin">
             <img
-              class="categories"
-              src="../static/img/index/categories.png"
-              alt="Categories"
+              class="admin"
+              src="../static/img/index/admin.png"
+              alt="Admin"
             />
-            <p>CATEGORIES</p>
           </a>
         </div>
-        <a class="h-link" href="/admin">
-          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
-        </a>
-      </div>
-      <img
-        class="logo"
-        src="../static/img/index/logo.png"
-        alt="Logo One Piece"
-      />
+        <img
+          class="logo"
+          src="../static/img/index/logo.png"
+          alt="Logo One Piece"
+        />
 
-      <div class="menu">
-        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-        <form action="" method="">
+        <div class="menu">
+          <form action="" method="">
+            <input
+              type="text"
+              id="search"
+              name="q"
+              placeholder="Cherchez le One Piece !"
+            />
+          </form>
+          <div class="cont">
+            {{if .Logged}}
+            <a class="h-link" href="/logout">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>{{.Cat}}</p></a
+            >
+            {{else}}
+            <a class="h-link" href="/login">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>LOGIN</p></a
+            >
+            {{end}}
+          </div>
+        </div>
+      </header>
+      <section>
+        <form class="formu" action="/admin/GestionAdmin" method="post">
+          <label for="username">Username:</label><br /><br />
           <input
             type="text"
-            id="search"
-            name="q"
-            placeholder="Cherchez le One Piece !"
-          />
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+          <button type="submit" class="transitionButton">Search</button>
         </form>
-        <div class="cont">
-          {{if .Logged}} 
-          <a class="h-link" href="/logout">
-          <img
-          class="login"
-          src="../static/img/index/login.png"
-          alt="Login"
-        />
-          <p>{{.Cat}}</p></a>
-        {{else}}
-        <a class="h-link" href="/login">
-        <img
-        class="login"
-        src="../static/img/index/login.png"
-        alt="Login"
-      />
-          <p>LOGIN</p></a>
-        {{end}}
-        </div>
-      </div>
-    </header>
-    <section>
-        <form action="/admin/GestionAdmin" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <button type="submit" class="transitionButton">Search</button>
-          </form>
-  </section>
-    <footer></footer>
+      </section>
+      <footer></footer>
+    </div>
   </body>
 </html>
 {{end}}
