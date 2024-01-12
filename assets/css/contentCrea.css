@@ -97,10 +97,22 @@ input{
 
 section{
   background-image: url("/static/img/background-old.jpg");
-  width: 60vw;
+  width: 40vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top:100px;
   margin-bottom: 60px;
+  padding:30px;
+  height: 40vh;
+}
+
+.formu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .imgperso{
@@ -131,6 +143,7 @@ footer{
   background-position: top;
   background-size: 3000px;
 }
+
 textarea {
   width: 300px;
   height: 100px;

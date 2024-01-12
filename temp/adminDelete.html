@@ -42,7 +42,6 @@
         />
 
         <div class="menu">
-          <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
           <form action="/search" method="get">
             <input
               type="text"
@@ -52,57 +51,35 @@
             />
           </form>
           <div class="cont">
+            {{if .Logged}}
+            <a class="h-link" href="/logout">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>{{.Cat}}</p></a
+            >
+            {{else}}
             <a class="h-link" href="/login">
               <img
                 class="login"
                 src="../static/img/index/login.png"
                 alt="Login"
               />
-              <p>LOGIN</p>
-            </a>
+              <p>LOGIN</p></a
+            >
+            {{end}}
           </div>
         </div>
       </header>
-      <section>
-        <form action="/admin/deleteThis" method="get">
-          <p>Entrer l'id du post a Supprimer</p>
-          <p>exemple artcle personnage : Persos/Monkey D. Luffy</p>
-          <p>exemple artcle arc : Arcs/Arc romance Dawn</p>
-          <p>exemple artcle event : Events/L'exécution de Gol D. Roger</p>
-          <input
-            type="text"
-            id="id"
-            name="id"
-            placeholder="Categories/full name"
-          />
-        </form>
-        <div class="cont">
-          {{if .Logged}} 
-          <a class="h-link" href="/logout">
-          <img
-          class="login"
-          src="../static/img/index/login.png"
-          alt="Login"
-        />
-          <p>{{.Cat}}</p></a>
-        {{else}}
-        <a class="h-link" href="/login">
-        <img
-        class="login"
-        src="../static/img/index/login.png"
-        alt="Login"
-      />
-          <p>LOGIN</p></a>
-        {{end}}
-        </div>
-      </div>
-    </header>
+
     <section>
         <form action="/admin/deleteThis" method="get">
-            <p>Entrer l'id du post a Supprimer</p>
+            <p>Entrer l'id du post a Supprimer<br><br></p>
             <p>exemple artcle personnage : Persos/Monkey D. Luffy</p>
             <p>exemple artcle arc : Arcs/Arc romance Dawn</p>
-            <p>exemple artcle event : Events/L'exécution de Gol D. Roger</p>
+            <p>exemple artcle event : Events/L'exécution de Gol D. Roger<br><br></p>
             <input
               type="text" id="id" name="id" placeholder="Categories/full name" />
           </form>
