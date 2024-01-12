@@ -71,7 +71,6 @@ func NewArcHandler(w http.ResponseWriter, r *http.Request) {
 		Cat:    username,
 		Logged: logged,
 	}
-	fmt.Println(data)
 	initTemplate.Temp.ExecuteTemplate(w, "newArc", data)
 }
 
