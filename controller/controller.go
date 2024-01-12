@@ -205,7 +205,7 @@ func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 	file, handler, err := r.FormFile("EventAffiche")
 	if err != nil {
 		// Handle error
-		fmt.Println("Error retrieving the EventImage:", err)
+		fmt.Println("Error retrieving the EventAffiche:", err)
 		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
 		return
 	}
@@ -228,15 +228,47 @@ func GestionNewEventHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error copying the file", http.StatusInternalServerError)
 		return
 	}
+
+	///////
+
+	file, handler2, err := r.FormFile("EventImage")
+	if err != nil {
+		// Handle error
+		fmt.Println("Error retrieving the EventImage:", err)
+		http.Error(w, "Error retrieving the file", http.StatusInternalServerError)
+		return
+	}
+	defer file.Close()
+	ext2 := filepath.Ext(handler2.Filename)
+	newFileName2 := formatString(name) + ext2
+	baseDirpath = "C:/Users/nicol/OneDrive/Bureau/Ymmersion 2/Ymmersion-2-Equipe/assets/img/imgevent/" + newFileName2
+	dst, err = os.Create(baseDirpath)
+	if err != nil {
+		fmt.Println("Error creating the file:", err)
+		http.Error(w, "Error creating the file", http.StatusInternalServerError)
+		return
+	}
+	defer dst.Close()
+
+	// Copy the file to the destination directory
+	if _, err = io.Copy(dst, file); err != nil {
+		// Handle error
+		http.Error(w, "Error copying the second file", http.StatusInternalServerError)
+		return
+	}
 	desc := r.FormValue("EventDescription")
 	affichePath := "/static/img/affiches-events/" + newFileName
+	imgPath := "/static/img/imgevent/" + newFileName2
+	intro := r.FormValue("EventIntro")
+	auteur := username
+	ddc := getCurrentDate()
 	// Call the function to update event passing the file path as img
-	if err := UpdateEvent(name, affichePath, desc); err != nil {
+	if err := UpdateEvent(name, affichePath, imgPath, desc, auteur, ddc, intro); err != nil {
 		// Handle error
 		http.Error(w, "Error updating character", http.StatusInternalServerError)
 		return
 	}
-	http.Redirect(w, r, "/Events?id=EventsOnePiece/"+name, http.StatusFound)
+	http.Redirect(w, r, "/EventsOnePiece?id=Events/"+name, http.StatusFound)
 }
 
 func DisplayHome(w http.ResponseWriter, r *http.Request) {
