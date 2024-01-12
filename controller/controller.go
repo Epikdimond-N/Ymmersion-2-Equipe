@@ -11,6 +11,33 @@ import (
 	"path/filepath"
 )
 
+func DownloadPersos(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	imagePath := "assets/img/photoTemplateVide/newPerso.webp"
+	http.ServeFile(w, r, imagePath)
+}
+
+func DownloadArc(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	imagePath := "assets/img/photoTemplateVide/newArc.webp"
+	http.ServeFile(w, r, imagePath)
+}
+
+func DownloadEvent(w http.ResponseWriter, r *http.Request) {
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+	imagePath := "assets/img/photoTemplateVide/newEvent.webp"
+	http.ServeFile(w, r, imagePath)
+}
+
 func PorjetHandler(w http.ResponseWriter, r *http.Request) {
 	data := One.CombinedData{
 		Cat:    username,

@@ -38,6 +38,9 @@ func InitServe() {
 	http.HandleFunc("/admin/newEvent/gestion", controller.GestionNewEventHandler)            //system de gestion d'ajout event << need update
 	http.HandleFunc("/mentionLegale", controller.MentionLegaleHandler)                       // affiche les mention legale
 	http.HandleFunc("/Projet", controller.PorjetHandler)                                     // affiche la gestion de projet
+	http.HandleFunc("/downloadPersos", controller.DownloadPersos)                            //permet de telecharger le tmeplate Persos
+	http.HandleFunc("/downloadArc", controller.DownloadArc)                                  //permet de telecharger le tmeplate Arc
+	http.HandleFunc("/downloadEvent", controller.DownloadEvent)                              //permet de telecharger le tmeplate Event
 
 	controller.ChargeImage()
 	fmt.Println("\nLien vers le site : http://localhost:8080/Home (CTRL+CLICK)")
