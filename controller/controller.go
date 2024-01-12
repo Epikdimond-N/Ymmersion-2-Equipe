@@ -151,10 +151,10 @@ func GestionNewArcHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func NewEventHandler(w http.ResponseWriter, r *http.Request) {
-	//if !logged {
-	//	http.Redirect(w, r, "/login", http.StatusSeeOther)
-	//	return
-	//}
+	if !logged {
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
 
 	initTemplate.Temp.ExecuteTemplate(w, "newEvent", nil)
 }
