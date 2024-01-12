@@ -36,6 +36,7 @@ func InitServe() {
 	http.HandleFunc("/admin/newChar/gestion", controller.GestionNewPersosHandler)            //system de gestion d'ajout char << need update
 	http.HandleFunc("/admin/newArc/gestion", controller.GestionNewArcHandler)                //system de gestion d'ajout arc << need update
 	http.HandleFunc("/admin/newEvent/gestion", controller.GestionNewEventHandler)            //system de gestion d'ajout event << need update
+	http.HandleFunc("/mentionLegale", controller.MentionLegaleHandler)
 
 	controller.ChargeImage()
 	fmt.Println("\nLien vers le site : http://localhost:8080/Home (CTRL+CLICK)")

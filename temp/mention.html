@@ -1,0 +1,69 @@
+{{define "mention"}}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/statics/fav.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../static/css/login.css" />
+  <title>Login</title>
+</head>
+
+<body class="element">
+  <div class="contentall">
+    <header>
+      <div class="menu">
+        <div class="cont">
+          <a class="h-link" href="/Home">
+            <img class="home" src="../static/img/index/home.png" alt="Home" />
+            <p>ACCUEIL</p>
+          </a>
+        </div>
+        <div class="cont">
+          <a class="h-link" href="/categories">
+            <img class="categories" src="../static/img/index/categories.png" alt="Categories" />
+            <p>CATEGORIES</p>
+          </a>
+        </div>
+        <a class="h-link" href="/admin">
+          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
+        </a>
+      </div>
+      <img class="logo" src="../static/img/index/logo.png" alt="Logo One Piece" />
+
+      <div class="menu">
+        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+        <form action="/search" method="get">
+          <input type="text" id="search" name="name" placeholder="Cherchez le One Piece !" />
+        </form>
+        <div class="cont">
+          <a class="h-link" href="/login">
+            <img class="login" src="../static/img/index/login.png" alt="Login" />
+            <p>LOGIN</p>
+          </a>
+        </div>
+      </div>
+    </header>
+<section><div id="mention-legale">
+    <h4>Mentions Légales -  One Piece</h4>
+    <p>Ce travail de recherche est publié en ligne par [Votre Nom] dans le cadre d'un blog dédié à l'analyse et à la discussion de l'univers de One Piece.</p>
+
+    <p>Email de contact : [Team@mail.com]</p>
+    <p>Affiliation académique : [YnovCampus]</p>
+
+    <p>One Piece est une œuvre créée par Eiichiro Oda, et les droits d'auteur sont détenus par Toei Animation, Shueisha, Eiichiro Oda, et leurs ayants droit respectifs. Ce travail de recherche respecte ces droits et vise à analyser l'œuvre dans le cadre de la critique et de la discussion académique.</p>
+
+    <p>Ce travail de recherche suit les normes académiques en termes de citations, références, et méthodologie de recherche. Toutes les sources utilisées sont correctement attribuées.</p>
+
+    <p>Les opinions exprimées dans ce travail de recherche sont celles de l'auteur et ne représentent pas nécessairement les points de vue des créateurs de One Piece ou des détenteurs des droits d'auteur.</p>
+
+    <p>&copy; 2024 [La Team]. Tous droits réservés pour le contenu original de ce travail de recherche. Toute utilisation ou reproduction non autorisée est interdite.</p>
+</div></section>
+
+    <footer></footer>
+  </div>
+</body>
+
+</html>
+{{end}}
