@@ -1,86 +1,129 @@
 {{define "char"}}
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/char.css" />
+    <title>Character Presentation</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../static/css/char.css" />
-  <title>Character Presentation</title>
-</head>
-
-<body>
-  <div class="contentall">
-    <header>
-      <div class="menu">
-        <div class="cont">
-          <a class="h-link" href="/Home">
-            <img class="home" src="../static/img/index/home.png" alt="Home" />
-            <p>ACCUEIL</p>
+  <body>
+    <div class="contentall">
+      <header>
+        <div class="menu">
+          <div class="cont">
+            <a class="h-link" href="/Home">
+              <img class="home" src="../static/img/index/home.png" alt="Home" />
+              <p>ACCUEIL</p>
+            </a>
+          </div>
+          <div class="cont">
+            <a class="h-link" href="/categories">
+              <img
+                class="categories"
+                src="../static/img/index/categories.png"
+                alt="Categories"
+              />
+              <p>CATEGORIES</p>
+            </a>
+          </div>
+          <a class="h-link" href="/admin">
+            <img
+              class="admin"
+              src="../static/img/index/admin.png"
+              alt="Admin"
+            />
           </a>
         </div>
-        <div class="cont">
-          <a class="h-link" href="/categories">
-            <img class="categories" src="../static/img/index/categories.png" alt="Categories" />
-            <p>CATEGORIES</p>
-          </a>
-        </div>
-        <a class="h-link" href="/admin">
-          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
-        </a>
-      </div>
-      <img class="logo" src="../static/img/index/logo.png" alt="Logo One Piece" />
+        <img
+          class="logo"
+          src="../static/img/index/logo.png"
+          alt="Logo One Piece"
+        />
 
-      <div class="menu">
-        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-        <form action="/search" method="get">
-          <input type="text" id="search" name="name" placeholder="Cherchez le One Piece !" />
-        </form>
-        <div class="cont">
-          {{if .Logged}}
-          <a class="h-link" href="/logout">
-            <img class="login" src="../static/img/index/login.png" alt="Login" />
-            <p>{{.Cat}}</p>
-          </a>
-          {{else}}
-          <a class="h-link" href="/login">
-            <img class="login" src="../static/img/index/login.png" alt="Login" />
-            <p>LOGIN</p>
-          </a>
-          {{end}}
+        <div class="menu">
+          <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+          <form action="/search" method="get">
+            <input
+              type="text"
+              id="search"
+              name="name"
+              placeholder="Cherchez le One Piece !"
+            />
+          </form>
+          <div class="cont">
+            {{if .Logged}}
+            <a class="h-link" href="/logout">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>{{.Cat}}</p>
+            </a>
+            {{else}}
+            <a class="h-link" href="/login">
+              <img
+                class="login"
+                src="../static/img/index/login.png"
+                alt="Login"
+              />
+              <p>LOGIN</p>
+            </a>
+            {{end}}
+          </div>
         </div>
-      </div>
-    </header>
-    <section>
-      <div class="infos">
-        <p>
-          ROLE : {{.Result.Specs.Apropos.Role}}<br /><br />
-          FRUIT DU DEMON : {{.Result.Specs.Apropos.Fruit}}<br /><br />
-          PERSONALITE : {{.Result.Specs.Apropos.Personalité}}<br /><br />
-          APPARENCE : {{.Result.Specs.Apropos.Apparence}}<br /><br />
-          CAPACITES : {{.Result.Specs.Apropos.Capacités}}<br /><br />
-          HISTOIRE : {{.Result.Specs.Apropos.Histoire}}<br /><br />
-        </p>
-        <p class="auteur-ddc">
-          {{.Result.Specs.Auteur}} {{.Result.Specs.DDC}}
-        </p>
-      </div>
-      <div class="perso">
-        <img class="imgperso" src="{{.Result.Img}}" alt="Image {{.Result.Name}}" />
-        <div class="nomprime">
+      </header>
+      <section>
+        <div class="infos">
+          <h1>{{.Result.Specs.FullName}}<br /><br /></h1>
           <p>
-            <br />
-            {{.Result.Specs.FullName}}<br /><br />
+            ROLE : {{.Result.Specs.Apropos.Role}}<br /><br />
+            FRUIT DU DEMON : {{.Result.Specs.Apropos.Fruit}}<br /><br />
+            PERSONALITE : {{.Result.Specs.Apropos.Personalité}}<br /><br />
+            APPARENCE : {{.Result.Specs.Apropos.Apparence}}<br /><br />
+            CAPACITES : {{.Result.Specs.Apropos.Capacités}}<br /><br />
+            HISTOIRE : {{.Result.Specs.Apropos.Histoire}}<br /><br />
           </p>
-          <p>{{.Result.Specs.Prime}} Berrys<br /><br /></p>
-          <p>Drapeau d'equipage :<br /><br /></p>
-          <img class="drapeaux" src="{{.Result.Specs.Drapeau}}" alt="drapeaux {{.Result.Name}}" />
+          <p class="auteur-ddc">
+            {{.Result.Specs.Auteur}} {{.Result.Specs.DDC}}
+          </p>
         </div>
-      </div>
-    </section>
-    <footer></footer>
-  </div>
-</body>
-
+        <div class="perso">
+          <img
+            class="imgperso"
+            src="{{.Result.Img}}"
+            alt="Image {{.Result.Name}}"
+          />
+          <div class="nomprime">
+            <p>
+              <br />
+              {{.Result.Specs.FullName}}<br /><br />
+            </p>
+            <p>{{.Result.Specs.Prime}} Berrys<br /><br /></p>
+            <p>Drapeau d'equipage :<br /><br /></p>
+            <img
+              class="drapeaux"
+              src="{{.Result.Specs.Drapeau}}"
+              alt="drapeaux {{.Result.Name}}"
+            />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="mentproj">
+          <br /><br /><br /><br />
+          <a class="ment" href="/mentionLegale">
+            <p>MENTIONS LEGALES</p>
+          </a>
+          <br />
+          <a class="ment" href="/Projet">
+            <p>GESTION DE PROJET</p>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
 {{end}}

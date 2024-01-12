@@ -1,69 +1,106 @@
 {{define "adminchoix"}}
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/admin.css" />
+    <link rel="stylesheet" href="../static/css/submit.css" />
+    <title>Admin</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../static/css/admin.css" />
-  <link rel="stylesheet" href="../static/css/categories.css" />
-  <title>Admin</title>
-</head>
-
-<body>
-  <header>
-    <div class="menu">
-      <div class="cont">
-        <a class="h-link" href="/Home">
-          <img class="home" src="../static/img/index/home.png" alt="Home" />
-          <p>ACCUEIL</p>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="cont">
+          <a class="h-link" href="/Home">
+            <img class="home" src="../static/img/index/home.png" alt="Home" />
+            <p>ACCUEIL</p>
+          </a>
+        </div>
+        <div class="cont">
+          <a class="h-link" href="/categories">
+            <img
+              class="categories"
+              src="../static/img/index/categories.png"
+              alt="Categories"
+            />
+            <p>CATEGORIES</p>
+          </a>
+        </div>
+        <a class="h-link" href="/admin">
+          <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
         </a>
       </div>
-      <div class="cont">
-        <a class="h-link" href="/categories">
-          <img class="categories" src="../static/img/index/categories.png" alt="Categories" />
-          <p>CATEGORIES</p>
-        </a>
-      </div>
-      <a class="h-link" href="/admin">
-        <img class="admin" src="../static/img/index/admin.png" alt="Admin" />
-      </a>
-    </div>
-    <img class="logo" src="../static/img/index/logo.png" alt="Logo One Piece" />
+      <img
+        class="logo"
+        src="../static/img/index/logo.png"
+        alt="Logo One Piece"
+      />
 
-    <div class="menu">
-      <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
-      <form action="" method="">
-        <input type="text" id="search" name="q" placeholder="Cherchez le One Piece !" />
+      <div class="menu">
+        <!-- mettre en place une route treatment pour faire fonctionner la navbar -->
+        <form action="" method="">
+          <input
+            type="text"
+            id="search"
+            name="q"
+            placeholder="Cherchez le One Piece !"
+          />
+        </form>
+        <div class="cont">
+          {{if .Logged}}
+          <a class="h-link" href="/logout">
+            <img
+              class="login"
+              src="../static/img/index/login.png"
+              alt="Login"
+            />
+            <p>{{.Cat}}</p>
+          </a>
+          {{else}}
+          <a class="h-link" href="/login">
+            <img
+              class="login"
+              src="../static/img/index/login.png"
+              alt="Login"
+            />
+            <p>LOGIN</p>
+          </a>
+          {{end}}
+        </div>
+      </div>
+    </header>
+    <section>
+      <p>Nom d'utilisateur : {{.Result.Username}}</p>
+      <br />
+      <p>Admin : {{.Result.IsAdmin}}</p>
+      <br />
+      <p>+ admin type 'yes'</p>
+      <p>- admin type 'no' or leave empty or type anything else than 'yes'</p>
+      <form action="/admin/GestionSelectionAdmin" method="get">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value="{{.Result.Username}}"
+        /><br /><br />
+        <input type="text" id="admin" name="admin" /><br /><br />
+        <button type="submit" class="transitionButton">Confirm</button>
       </form>
-      <div class="cont">
-        {{if .Logged}}
-        <a class="h-link" href="/logout">
-          <img class="login" src="../static/img/index/login.png" alt="Login" />
-          <p>{{.Cat}}</p>
+    </section>
+    <footer>
+      <div class="mentproj">
+        <br><br><br><br>
+        <a class="ment" href="/mentionLegale">
+          <p>MENTIONS LEGALES</p>
         </a>
-        {{else}}
-        <a class="h-link" href="/login">
-          <img class="login" src="../static/img/index/login.png" alt="Login" />
-          <p>LOGIN</p>
+        <br>
+        <a class="ment" href="/Projet">
+          <p>GESTION DE PROJET</p>
         </a>
-        {{end}}
       </div>
-    </div>
-  </header>
-  <section>
-    <p>Nom d'utilisateur :{{.Result.Username}}</p><br>
-    <p> Admin :{{.Result.IsAdmin}}</p><br>
-    <p>+ admin type 'yes'</p>
-    <p>- admin type 'no' or leave empty or type anything else than 'yes'</p>
-    <form action="/admin/GestionSelectionAdmin" method="get">
-      <input type="text" id="username" name="username" value="{{.Result.Username}}">
-      <input type="text" id="admin" name="admin" />
-      <button type="submit" class="transitionButton">Confirm</button>
-    </form>
-  </section>
-  <footer></footer>
-</body>
-
+    </footer>
+  </body>
 </html>
 {{end}}
