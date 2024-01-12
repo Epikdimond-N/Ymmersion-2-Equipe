@@ -27,6 +27,16 @@ var (
 	IsPath   string
 )
 
+func getCurrentDate() string {
+	// Get the current time
+	currentTime := time.Now()
+
+	// Format the time in DD/MM/YYYY
+	dateString := currentTime.Format("02/01/2006")
+
+	return dateString
+}
+
 func formatString(input string) string {
 	// Remove special characters using regular expression
 	regExp := regexp.MustCompile("[^a-zA-Z0-9 ]+")
@@ -492,7 +502,7 @@ func UpdateArc(name string, intro string, img string, affiche string, episode st
 	return nil
 }
 
-func UpdateEvent(name string, affiche string, desc string) error {
+func UpdateEvent(name string, affiche string, imgPath string, desc string, auteur string, ddc string, intro string) error {
 	// Read JSON data from file
 	fileData, err := os.ReadFile("data.json")
 	if err != nil {
@@ -515,7 +525,11 @@ func UpdateEvent(name string, affiche string, desc string) error {
 		"id":          newID,
 		"name":        name,
 		"affiche":     affiche,
+		"img":         imgPath,
 		"description": desc,
+		"auteur":      auteur,
+		"ddc":         ddc,
+		"intro":       intro,
 	}
 
 	categories, ok := parsedData["categories"].(map[string]interface{})
